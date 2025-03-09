@@ -22,11 +22,11 @@ def encounterMenu():
         print("4. Exit")
         choice = intInput()
         if choice == 1:
-            print("Players")
+            playersMenu()
         elif choice == 2:
-            print("Start Encounter")
+            encounterMenu()
         elif choice == 3:
-            print("Settings")
+            settingsMenu()
         elif choice == 4:
             return
     
@@ -45,6 +45,13 @@ def playersMenu():
         print("Remove Player")
     elif choice == 3:
         return
+
+def encounterMenu():
+    ...
+
+def settingsMenu():
+    ...
+
 
 def intInput():
     return int(msvcrt.getch().decode('utf-8') if os.name == 'nt' else getch.getch())

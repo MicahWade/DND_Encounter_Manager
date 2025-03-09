@@ -22,6 +22,8 @@ class Encounter:
     def sortCharacters(self):
         self.characters.sort(key=lambda x: x.initiative)
 
+players = []
+encountters = []
 
 def EncounterMenu():
     while True:
@@ -55,20 +57,35 @@ def PlayersMenu():
         print("Players")
         print("1. Add Player")
         print("2. Remove Player")
-        print("3. Back")
+        print("3. Player List")
+        print("4. Back")
         choice = intInput()
         if choice == 1:
             print("Enter Player Name:")
             playerName = input()
             print("Enter Player Initiative:")
             playerInit = int(input())
+            player = Player()
+            player.name = playerName
+            player.initiative = playerInit
+            players.append(player)
         elif choice == 2:
-            print("Remove Player")
+            print("Select Player to Remove")
+            for i, player in enumerate(players):
+                print(f"{i+1}. {player.name}")
+            choice = intInput()
+            players.pop(choice-1)
         elif choice == 3:
+            print("Player List")
+            for player in players:
+                print(f"{player.name} - {player.initiative}")
+            input("Press Enter to Continue")
+        elif choice == 4:
             return
+        Clear()
 
 def NewEncounter():
-    ...
+    print("Enter  Name:")
 
 def LoadEncounter():
     ...
@@ -82,16 +99,22 @@ def CreateTemplate():
 def SettingsMenu():
     ...
 
+def CreateEnemy():
+    print("Enter Enemy Name:")
+    enemyName = input()
+    print("Enter Enemy initiative modifier:")
+    enemyInit = int(input())
+    enemy = Enemy()
+    enemy.name = enemyName
+    enemy.initiative = enemyInit
+    Clear()
+    return enemy
+
 def Clear():
-    name = os.name
-
-    # for windows
-    if name == 'nt':
-        _ = os.system('cls')
-
-    # for mac and linux(here, os.name is 'posix')
+    if os.name == 'nt':
+        os.system('cls')
     else:
-        _ = os.system('clear')
+       os.system('clear')
 
 def intInput():
     return int(msvcrt.getch().decode('utf-8') if os.name == 'nt' else getch.getch())

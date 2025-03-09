@@ -1,4 +1,4 @@
 import Encounter
 
 
-Encounter.encounterMenu()
+Encounter.EncounterMenu()

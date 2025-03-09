@@ -1,0 +1,4 @@
+import Encounter
+
+
+Encounter.encounterMenu()

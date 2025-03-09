@@ -4,18 +4,30 @@ if(os.name == 'nt'):
 else:
     import getch  # Import for capturing key presses on Linux
 
+class Player:
+    name = ""
+    initiative = 0
+
+class Enemy:
+    name = ""
+    initiative = 0
+
+
 def encounterMenu():
     while True:
         print("Encounter Menu")
         print("1. Players")
         print("2. Start Encounter")
-        print("3. Exit")
+        print("3. Settings")
+        print("4. Exit")
         choice = intInput()
         if choice == 1:
             print("Players")
         elif choice == 2:
             print("Start Encounter")
         elif choice == 3:
+            print("Settings")
+        elif choice == 4:
             return
     
 def playersMenu():

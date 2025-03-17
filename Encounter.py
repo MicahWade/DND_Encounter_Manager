@@ -1,8 +1,11 @@
 import os
+import Database
 if(os.name == 'nt'):
     import msvcrt  # Import for capturing key presses on Windows
 else:
     import getch  # Import for capturing key presses on Linux
+
+dataBase = dataBase.EncounterDatabase()
 
 class Player:
     name = ""
@@ -11,6 +14,7 @@ class Player:
 class Enemy:
     name = ""
     initiative = 0
+    CR = 0
 
 class Encounter:
     characters = []
@@ -23,7 +27,7 @@ class Encounter:
         self.characters.sort(key=lambda x: x.initiative)
 
 players = []
-encountters = []
+encounters = []
 
 def EncounterMenu():
     while True:
@@ -34,7 +38,8 @@ def EncounterMenu():
         print("4. Load Template")
         print("5. Create Template")
         print("6. Settings")
-        print("7. Exit")
+        print("7. Save To DB")
+        print("8. Exit")
         choice = intInput()
         if choice == 1:
             PlayersMenu()
@@ -49,6 +54,8 @@ def EncounterMenu():
         elif choice == 6:
             SettingsMenu()
         elif choice == 7:
+            SaveToDB()
+        elif choice == 8:
             return
         Clear()
     
@@ -109,6 +116,11 @@ def CreateEnemy():
     enemy.initiative = enemyInit
     Clear()
     return enemy
+
+def SaveToDB():
+    for encounter in encounters:
+        dataBase.AddEncounter(encounter)
+
 
 def Clear():
     if os.name == 'nt':

@@ -1,5 +1,6 @@
 import os
 import Database
+import random
 if(os.name == 'nt'):
     import msvcrt  # Import for capturing key presses on Windows
 else:
@@ -10,16 +11,29 @@ dataBase = dataBase.EncounterDatabase()
 class Player:
     name = ""
     initiative = 0
+    def __init__(self, name):
+        self.name = name
 
 class Enemy:
     name = ""
-    initiative = 0
+    initiativeModifier = 0
+    initiatave = 0
     CR = 0
+    def __init__(self, name, initiativeModifier, CR):
+        self.name = name
+        self.initiativeModifier = initiativeModifier
+        self.CR = CR
+    
+    def Roll(self):
+        self.inititave = random.randint(1, 20) + self.initiativeModifier 
+
 
 class Encounter:
+    name = ""
     characters = []
     currentTurn = 0
     CR = 0
+
     def addCharacter(self, character):
         self.characters.append(character)
     def removeCharacter(self, character):
@@ -27,8 +41,15 @@ class Encounter:
     def sortCharacters(self):
         self.characters.sort(key=lambda x: x.initiative)
 
-players = []
-encounters = []
+    def __init__(self, name, enemys, CR):
+        self.name = name
+        self.characters = enemys
+        self.CR = CR
+    def StartEncounter(players):
+        ...
+
+
+currentEncouter = Encounter()
 
 def EncounterMenu():
     while True:
@@ -39,8 +60,7 @@ def EncounterMenu():
         print("4. Load Template")
         print("5. Create Template")
         print("6. Settings")
-        print("7. Save To DB")
-        print("8. Exit")
+        print("7. Exit")
         choice = intInput()
         if choice == 1:
             PlayersMenu()
@@ -117,10 +137,6 @@ def CreateEnemy():
     enemy.initiative = enemyInit
     Clear()
     return enemy
-
-def SaveToDB():
-    for encounter in encounters:
-        dataBase.AddEncounter(encounter)
 
 
 def Clear():

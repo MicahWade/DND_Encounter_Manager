@@ -3,7 +3,6 @@ import os
 import Encounter
 
 class EncounterDatabase():
-
     server = "Temp Server"
 
     def SetupTables(self):
@@ -37,9 +36,14 @@ class EncounterDatabase():
             FOREIGN KEY (EnemyID) REFERENCES Enemys(EnemyID)
         )
         ''')
+        cursor.execute('''
+        CREATE TABLE IF NOT EXISTS Players (
+            EncounterID INTEGER IDENTITY(1,1) PRIMARY KEY,
+            Name TEXT,
+        )
+        ''')
 
         self.server.commit()
-
 
     def __init__(self):
         path = os.path.expanduser('~/Documents/Dnd_Encounter')
@@ -50,11 +54,6 @@ class EncounterDatabase():
             self.SetupTables()
         except Exception as e:
             print(f"Count Not Connect to server This is the Issue {e}")
-
-    def GetEncounters(self):
-        encounters = self.server.execute("SELECT * from Encounters")
-        for encounter in encounters:
-            print(encounter)
 
     def AddEncounter(self, encounter):
         enemyDataBaseID = []
@@ -83,5 +82,39 @@ class EncounterDatabase():
         ID = self.server.lastrowid() # My need to change so that it can 
         return ID
 
+    def AddPlayer(self, Player):
+        self.server.execute(f"INSERT INTO Players (Name) VALUES ({Player.name})")
 
-test = EncounterDatabase()
+    def GetPlayers(self):
+        players = []
+        playersDB = self.server.execute(f"SELECT * FROM Players")
+        for player in playersDB:
+            players.append(Encounter.Player(player[1]))
+        return players
+
+    def GetEncounters(self):
+        encounters = []
+        encountersDB = self.server.execute("SELECT ID, EncounterID FROM Encounters")
+        for encounter in encountersDB:
+            encounters.append([encounter[0][0], encounter[0][1]])
+
+    def GetEnemy(self, EnemyID):
+        enemyDB = self.server.execute(f"SELECT * FROM Enemy WHERE {EnemyID}")
+        return Encounter.Enemy(enemyDB[0][1], enemyDB[0][2], enemyDB[0][3])
+
+    def GetEncounter(self, EncounterID):
+        # Get Enemys
+        enemysDB = self.server.execute(f"""
+        SELECT Enemys.*
+        FROM Encounters
+        INNER JOIN EncounterEnemys ON Encounters.EncounterID = EncounterEnemys.EncounterID
+        INNER JOIN Enemys ON EncounterEnemys.EnemyID = Enemys.EnemyID
+        WHERE Encounters.EncounterID = {EncounterID};
+        """)
+        enemys = []
+        for enemyDB in enemysDB:
+            enemys.append(Encounter.Enemy(enemyDB[1], enemyDB[2], enemyDB[3]))
+
+        # Get Encounter
+        encounterDB = self.server.execute(f"SELECT * FROM Encounter WHERE {EncounterID}")
+        encounter = Encounter.Encounter(encounterDB[0][1], enemys, encounterDB[0][2])

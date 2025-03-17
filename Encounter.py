@@ -19,6 +19,7 @@ class Enemy:
 class Encounter:
     characters = []
     currentTurn = 0
+    CR = 0
     def addCharacter(self, character):
         self.characters.append(character)
     def removeCharacter(self, character):

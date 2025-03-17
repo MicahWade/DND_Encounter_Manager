@@ -64,13 +64,23 @@ class EncounterDatabase():
             if dataBaseEnemy is not None:
                 enemyDataBaseID.append(dataBaseEnemy[0])
             else:
-                return self.AddEnemy(enemy)
+                enemyDataBaseID.append(self.AddEnemy(enemy))
+        # Checks that the encounter is not in the database allready 
+        dataBaseEncounter = self.server.execute(f"SELECT Name FROM Encounters WHERE {encounter.name}")
+        if dataBaseEncounter is None:
+            self.server.execute(f"INSERT INTO Encounters (Name, CR) VALUES (\"{encounter.name}\",{encounter.CR})")
+            # Adds connection between Enemy and Encounters
+            encounterID =  self.server.lastrowid()
+            for enemyID in enemyDataBaseID:
+                self.server.execute(f"INSERT INTO EncounterEnemys (EncounterID, EnemyID) VALUES ({encounterID}, {enemyID})")
+        else:
+            raise f"DataBase Allready Has Encounter {encounter.name}"
+            
             
     # Could be threaded in Future
     def AddEnemy(self, enemy):
         self.server.execute(f"INSERT INTO Enemy (Name, Initiative, CR) VALUES (\"{enemy.name}\", {enemy.initiative}, {enemy.CR})")
-        ID = cursor.lastrowid() # My need to change so that it can 
-
+        ID = self.server.lastrowid() # My need to change so that it can 
         return ID
 
 

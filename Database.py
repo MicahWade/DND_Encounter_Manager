@@ -127,3 +127,7 @@ class EncounterDatabase():
     def RemovePlayer(self, player):
         self.server.execute(f"DELETE FROM Players WHERE {player.name}")
         self.server.commit()
+    
+    def GetEnemys(self):
+        enemyDB = self.server.execute(f"SELECT Name, CR  FROM Enemy")
+        return enemyDB

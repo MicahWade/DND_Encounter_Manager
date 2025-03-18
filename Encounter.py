@@ -85,25 +85,22 @@ def EncounterMenu():
         print("Encounter Menu")
         print("1. Players")
         print("2. New Encounter")
-        print("3. Load Encounter")
-        print("4. Load Template")
-        print("5. Create Template")
-        print("6. Settings")
-        print("7. Exit")
+        print("3. Mange Encounters")
+        print("4. Enemy")
+        print("5. Settings")
+        print("6. Exit")
         choice = intInput()
         if choice == 1:
             PlayersMenu()
         elif choice == 2:
             NewEncounter()
         elif choice == 3:
-            LoadEncounter()
+            MangeEncounters()
         elif choice == 4:
-            LoadTemplate()
+            EnemyMenu()
         elif choice == 5:
-            CreateTemplate()
-        elif choice == 6:
             SettingsMenu()
-        elif choice == 7:
+        elif choice == 6:
             dataBase.server.commit()
             return
         Clear()
@@ -157,7 +154,9 @@ def NewEncounter():
     currentEncouter = Database.GetEncounter(encounters[numberInput])
     players = Database.GetPlayer
     currentEncouter.StartEncounter(players)
-    
+
+def MangeEncounters():
+    ...
 
 def LoadEncounter():
     ...
@@ -168,6 +167,19 @@ def LoadTemplate():
 def CreateTemplate():
     ...
 
+def EnemyMenu():
+    Clear()
+    print("Enemey Menu")
+    print("1. Create")
+    print("2. Remove")
+    print("3. View")
+    print("4. Exit")
+
+def SelectEnemy():
+    print("Enemys")
+    enemys = dataBase.GetEnemys()
+    for i, enemy in enumerate(enemys):
+        print(f"{i}, {enemy[0]}")
 def SettingsMenu():
     ...
 
@@ -175,11 +187,28 @@ def CreateEnemy():
     print("Enter Enemy Name:")
     enemyName = input()
     print("Enter Enemy initiative modifier:")
-    enemyInit = int(input())
-    enemy = Enemy()
-    enemy.name = enemyName
-    enemy.initiative = enemyInit
-    Clear()
+    enemyInit
+    while enemyInit == None:
+        try:
+            enemyInit = int(input())
+        except:
+            ...
+    print("Enter your HP")
+    enemyHP = None
+    while enemyHP == None:
+        try:
+            enemyHP = int(input())
+        except:
+            ...
+    print("Enter your CR")
+    enemyCR = None
+    while enemyCR == None:
+        try:
+            enemyCR = int(input())
+        except:
+            ...
+    
+    enemy = Enemy(enemyName, enemyHP, enemyInit, enemyCR)
     return enemy
 
 

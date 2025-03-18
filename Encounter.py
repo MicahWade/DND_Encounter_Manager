@@ -1,5 +1,5 @@
 import os
-import Database
+from Database import EncounterDatabase
 import random
 if(os.name == 'nt'):
     import msvcrt  # Import for capturing key presses on Windows
@@ -7,7 +7,7 @@ else:
     ...
     # import getch  # Import for capturing key presses on Linux
 
-dataBase = dataBase.EncounterDatabase()
+dataBase = EncounterDatabase()
 
 class Player:
     name = ""
@@ -78,7 +78,7 @@ def IsEnemy(list):
     for enemy in list:
         ...
 
-currentEncouter = Encounter()
+currentEncouter = None
 
 def EncounterMenu():
     while True:
@@ -104,6 +104,7 @@ def EncounterMenu():
         elif choice == 6:
             SettingsMenu()
         elif choice == 7:
+            dataBase.server.commit()
             return
         Clear()
     
@@ -117,23 +118,24 @@ def PlayersMenu():
         choice = intInput()
         if choice == 1:
             print("Enter Player Name:")
-            playerName = input()
-            print("Enter Player Initiative:")
-            playerInit = int(input())
-            player = Player()
-            player.name = playerName
-            player.initiative = playerInit
-            players.append(player)
+            name = input()
+            player = Player(name)
+            dataBase.AddPlayer(player)
         elif choice == 2:
             print("Select Player to Remove")
+            players = dataBase.GetPlayers()
             for i, player in enumerate(players):
                 print(f"{i+1}. {player.name}")
             choice = intInput()
-            players.pop(choice-1)
+            try:    
+                dataBase.RemovePlayer(players[choice-1])
+            except:
+                ...
         elif choice == 3:
             print("Player List")
+            players = dataBase.GetPlayers()
             for player in players:
-                print(f"{player.name} - {player.initiative}")
+                print(f"{player.name}")
             input("Press Enter to Continue")
         elif choice == 4:
             return

@@ -40,7 +40,7 @@ class EncounterDatabase():
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS Players (
             EncounterID INTEGER IDENTITY(1,1) PRIMARY KEY,
-            Name TEXT,
+            Name TEXT
         )
         ''')
 
@@ -54,7 +54,7 @@ class EncounterDatabase():
             self.server = sqlite3.connect(f"{path}/Encounter.db")
             self.SetupTables()
         except Exception as e:
-            print(f"Count Not Connect to server This is the Issue {e}")
+            print(f"Could Not Connect to server This is the Issue {e}")
 
     def AddEncounter(self, encounter):
         enemyDataBaseID = []
@@ -75,22 +75,26 @@ class EncounterDatabase():
                 self.server.execute(f"INSERT INTO EncounterEnemys (EncounterID, EnemyID) VALUES ({encounterID}, {enemyID})")
         else:
             raise f"DataBase Allready Has Encounter {encounter.name}"
+        self.server.commit()
             
             
     # Could be threaded in Future
     def AddEnemy(self, enemy):
         self.server.execute(f"INSERT INTO Enemy (Name, Heath, Initiative, CR) VALUES (\"{enemy.name}\", {enemy.heath}, {enemy.initiative}, {enemy.CR})")
         ID = self.server.lastrowid() # My need to change so that it can 
+        self.server.commit()
         return ID
 
     def AddPlayer(self, Player):
-        self.server.execute(f"INSERT INTO Players (Name) VALUES ({Player.name})")
+        self.server.execute(f"INSERT INTO Players (Name) VALUES (\"{Player.name}\")")
+        self.server.commit()
 
     def GetPlayers(self):
         players = []
         playersDB = self.server.execute(f"SELECT * FROM Players")
         for player in playersDB:
             players.append(Encounter.Player(player[1]))
+        
         return players
 
     def GetEncounters(self):
@@ -119,3 +123,7 @@ class EncounterDatabase():
         # Get Encounter
         encounterDB = self.server.execute(f"SELECT * FROM Encounter WHERE {EncounterID}")
         encounter = Encounter.Encounter(encounterDB[0][1], enemys, encounterDB[0][2])
+    
+    def RemovePlayer(self, player):
+        self.server.execute(f"DELETE FROM Players WHERE {player.name}")
+        self.server.commit()

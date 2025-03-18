@@ -4,11 +4,37 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts -->
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<frameset cols="*, *">
-    <frame src="/nav.html" name="menu" />
-</frameset>
-<body class="min-h-screen bg-gradient-to-b from-cyan-100 to-blue-100">
+
+<body class="font-[Poppins] bg-gradient-to-t from-rose-900 to-gray-700">
+    <heade class="bg-neutral-900">
+        <nav class="">
+            <div>
+                <img class="w-16" src="{{ url_for('static', filename='images/gettyimages-82570115-612x612.jpg') }}" alt="chunky boy" >
+            </div>
+            <div class="">
+                <ul class="flex items-center gap-[4vw]">
+                    <li>
+                        <a class="hover:text-gray-500" href="/">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="/enemys">enemys</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="/encounter">encounter</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="/settings">settings</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <p>This is Grear <br><br><br> !!!!!!!</p>
 </body>

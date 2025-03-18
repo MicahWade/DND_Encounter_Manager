@@ -10,9 +10,12 @@ def mainPage():
 def ememys():
     return render_template("enemys.html")
 
-@app.route("/nav.html")
+@app.route("/encounter")
 def nav():
-    return render_template("nav.html")
+    return render_template("encounter.html")
+@app.route("/settings")
+def nav():
+    return render_template("settings.html")
 
 if __name__ == "__main__":
     app.run(debug=True, port=3333)

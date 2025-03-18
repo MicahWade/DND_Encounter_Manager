@@ -11,10 +11,10 @@ def ememys():
     return render_template("enemys.html")
 
 @app.route("/encounter")
-def nav():
+def encounter():
     return render_template("encounter.html")
 @app.route("/settings")
-def nav():
+def settings():
     return render_template("settings.html")
 
 if __name__ == "__main__":

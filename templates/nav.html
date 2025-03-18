@@ -1,17 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<nav class="bg-white border-gray-200 dark:bg-gray-900" id="navBar">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="/"><img src="{{ url_for('static', filename='images/gettyimages-82570115-612x612.jpg') }}" alt="chunky boy" height="90" width="100"></a>
-        <a href="/enemys">enemy</a> 
-        <img src="{{ url_for('static', filename='images/360_F_330019338_FOvWpn00hfer7WJ1sP50UDIVYDjvNReT.jpg') }}" alt="chunky boy" height="90" width="100">
-    </div>
-</nav>
-
-</html>
+<header class="bg-gray-400 text-gray-800">
+    <nav class="flex justify-between items-center w-[92%] top-[-1000%] md:w-auto w-full flex items-center px-10 py-1">
+        <div>
+            <img class="h-16" src="{{ url_for('static', filename='images/gettyimages-82570115-612x612.jpg') }}" alt="chunky boy">
+        </div>
+        <div class="nav-links md:static absolute md:min-h-fit min-h-[60vh] left-0 top">
+            <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                <li>
+                    <a class="hover:text-gray-950" href="/">Home</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-950" href="/enemys">enemys</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-950" href="/encounter">encounter</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-950" href="/settings">settings</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex items-center gap-6">
+            <ion-icon onclick="onToggleMenu(this)" name="menu-sharp" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+        </div>
+    </nav>
+</header>

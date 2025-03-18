@@ -4,7 +4,8 @@ import random
 if(os.name == 'nt'):
     import msvcrt  # Import for capturing key presses on Windows
 else:
-    import getch  # Import for capturing key presses on Linux
+    ...
+    # import getch  # Import for capturing key presses on Linux
 
 dataBase = dataBase.EncounterDatabase()
 
@@ -187,4 +188,8 @@ def Clear():
        os.system('clear')
 
 def intInput():
-    return int(msvcrt.getch().decode('utf-8') if os.name == 'nt' else getch.getch())
+    while True:
+        try:
+            return int(msvcrt.getch().decode('utf-8') if os.name == 'nt' else input())
+        except:
+            ...

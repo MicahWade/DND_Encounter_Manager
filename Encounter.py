@@ -10,17 +10,29 @@ dataBase = dataBase.EncounterDatabase()
 
 class Player:
     name = ""
-    initiative = 0
+    initiative = -20
     def __init__(self, name):
         self.name = name
 
+    def EnterInitiative(self):
+        while initiative == -20:
+            try: 
+                print(f"Enter {self.name}'s initiative,")
+                self.initiative = int(input())
+            except:
+                Clear()
+        Clear()
+        return
+
 class Enemy:
     name = ""
+    heath = 0
     initiativeModifier = 0
     initiatave = 0
     CR = 0
-    def __init__(self, name, initiativeModifier, CR):
+    def __init__(self, name, heath, initiativeModifier, CR):
         self.name = name
+        self.heath = heath
         self.initiativeModifier = initiativeModifier
         self.CR = CR
     
@@ -45,9 +57,25 @@ class Encounter:
         self.name = name
         self.characters = enemys
         self.CR = CR
-    def StartEncounter(players):
-        ...
+    def StartEncounter(self, players):
+        for enemy in self.characters:
+            enemy.Roll()
 
+        for player in players:
+            player.EnterInitiative()
+            self.addCharacter(player)
+        
+        self.sortCharacters()
+    
+        inBattle = True
+        while inBattle:
+            print("1. Attack")
+            print("2. ")
+
+# Funtion to 
+def IsEnemy(list):
+    for enemy in list:
+        ...
 
 currentEncouter = Encounter()
 
@@ -75,8 +103,6 @@ def EncounterMenu():
         elif choice == 6:
             SettingsMenu()
         elif choice == 7:
-            SaveToDB()
-        elif choice == 8:
             return
         Clear()
     
@@ -113,7 +139,22 @@ def PlayersMenu():
         Clear()
 
 def NewEncounter():
-    print("Enter  Name:")
+    encounters = Database.GetEncounters() 
+    encountersLen = len(encounters)
+    numberInput = 0
+    # TODO: Check that start at one not zero
+    while numberInput <= 0 or numberInput > encountersLen: 
+        [print(f"{i}, {encounter[1]}") for i, encounter in enumerate(encounters)]
+        print("Enter Encounter Number:")
+        try:
+            numberInput = int(input())
+        except:
+            ...
+        Clear()
+    currentEncouter = Database.GetEncounter(encounters[numberInput])
+    players = Database.GetPlayer
+    currentEncouter.StartEncounter(players)
+    
 
 def LoadEncounter():
     ...

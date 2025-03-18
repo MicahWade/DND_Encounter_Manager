@@ -23,6 +23,7 @@ class EncounterDatabase():
         CREATE TABLE IF NOT EXISTS Enemys (
             EnemyID INTEGER IDENTITY(1,1) PRIMARY KEY,
             Name TEXT,
+            Heath INTEGER,
             Initiative INTEGER,
             CR INTEGER
         )
@@ -78,7 +79,7 @@ class EncounterDatabase():
             
     # Could be threaded in Future
     def AddEnemy(self, enemy):
-        self.server.execute(f"INSERT INTO Enemy (Name, Initiative, CR) VALUES (\"{enemy.name}\", {enemy.initiative}, {enemy.CR})")
+        self.server.execute(f"INSERT INTO Enemy (Name, Heath, Initiative, CR) VALUES (\"{enemy.name}\", {enemy.heath}, {enemy.initiative}, {enemy.CR})")
         ID = self.server.lastrowid() # My need to change so that it can 
         return ID
 
@@ -100,7 +101,7 @@ class EncounterDatabase():
 
     def GetEnemy(self, EnemyID):
         enemyDB = self.server.execute(f"SELECT * FROM Enemy WHERE {EnemyID}")
-        return Encounter.Enemy(enemyDB[0][1], enemyDB[0][2], enemyDB[0][3])
+        return Encounter.Enemy(enemyDB[0][1], enemyDB[0][2], enemyDB[0][3], enemyDB[0][4])
 
     def GetEncounter(self, EncounterID):
         # Get Enemys
@@ -113,7 +114,7 @@ class EncounterDatabase():
         """)
         enemys = []
         for enemyDB in enemysDB:
-            enemys.append(Encounter.Enemy(enemyDB[1], enemyDB[2], enemyDB[3]))
+            enemys.append(Encounter.Enemy(enemyDB[1], enemyDB[2], enemyDB[3], enemyDB[4]))
 
         # Get Encounter
         encounterDB = self.server.execute(f"SELECT * FROM Encounter WHERE {EncounterID}")

@@ -9,16 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
 </head>
 
-<body class="font-[Poppins] bg-gradient-to-t from-rose-900 to-gray-700">
+<body class="font-[Poppins] bg-gradient-to-t from-zinc-900 to-zinc-950">
     <heade class="bg-neutral-900">
-        <nav class="">
+        <nav class="flex justify-between items-center w-[92%] top-[-100%] md:w-auto w-full flex items-center px-5">
             <div>
                 <img class="w-16" src="{{ url_for('static', filename='images/gettyimages-82570115-612x612.jpg') }}" alt="chunky boy" >
             </div>
-            <div class="">
-                <ul class="flex items-center gap-[4vw]">
+            <div class="nav-links md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                     <li>
                         <a class="hover:text-gray-500" href="/">Home</a>
                     </li>
@@ -33,9 +36,20 @@
                     </li>
                 </ul>
             </div>
+            <div class="flex items-center gap-6">
+                <ion-icon onclick="onToggleMenu(this)" name="menu-sharp" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
         </nav>
     </header>
 
     <p>This is Grear <br><br><br> !!!!!!!</p>
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name == 'menu=sharp' ? 'close-sharp' : 'menu-sharp'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
 </body>
 </html>

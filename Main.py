@@ -8,7 +8,14 @@ app = Flask(__name__)
 @app.route("/")
 def mainPage():
     return render_template("index.html")
-    
+
+@app.route("/enemy/<name>")
+def enemy(name):
+    server = Database.EncounterDatabase()
+
+    enemy = server.GetEnemyName(name)
+    return render_template("enemy.html", enemy=enemy)
+
 # TODO: Will need to find better soltion
 @app.route("/enemys")
 def enemys():

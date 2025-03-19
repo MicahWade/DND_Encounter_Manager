@@ -104,6 +104,20 @@ class EncounterDatabase():
         for encounter in encountersDB:
             encounters.append([encounter[0][0], encounter[0][1]])
 
+    def GetEnemyName(self, EnemyName):
+        enemyDB = self.server.execute(f"SELECT * FROM Enemys WHERE Name ='{EnemyName}'")
+        name = ""
+        heath = 0
+        initiativeModifier = 0
+        CR = 0
+        for enemy in enemyDB:
+            name = enemy[1]
+            heath = enemy[2]
+            initiativeModifier = enemy[3]
+            CR = enemy[4]
+            
+        return Encounter.Enemy(name, heath, initiativeModifier, CR)
+
     def GetEnemy(self, EnemyID):
         enemyDB = self.server.execute(f"SELECT * FROM Enemys WHERE {EnemyID}")
         return Encounter.Enemy(enemyDB[0][1], enemyDB[0][2], enemyDB[0][3], enemyDB[0][4])

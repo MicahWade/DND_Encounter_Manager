@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="bg-white shadow">
+    <div class="px-6 py-3">
+        <div class="flex justify-between items-center">
+            <span class="text-left text-gray-900">{{ enemy.name }}</span> <br>
+            <span class="text-left text-gray-900">{{ enemy.heath }}</span> <br>
+            <span class="text-left text-gray-900">{{ enemy.initiativeModifier }}</span> <br>
+            <span class="text-left text-gray-900">{{ enemy.CR }}</span> <br>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,14 +1,38 @@
 import Encounter
+import Database
 from flask import *
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def mainPage():
     return render_template("index.html")
+    
+# TODO: Will need to find better soltion
 @app.route("/enemys")
-def ememys():
-    return render_template("enemys.html")
+def enemys():
+    server = Database.EncounterDatabase()
+    enemys = server.GetEnemys()
+    return render_template("enemys.html", items = enemys)
+
+@app.route("/enemys/create", methods=["GET", "POST"])
+def createEnemy():
+    if request.method == "POST":
+        server = Database.EncounterDatabase()
+        name = request.form.get("name")
+        hp = request.form.get("hp")
+        initiativeModifier = request.form.get("initiativeModifier")
+        CR = request.form.get("CR")
+        if name and hp and CR and initiativeModifier:
+            enemy = Encounter.Enemy(name, hp, initiativeModifier, CR)
+            server.AddEnemy(enemy)
+            
+            return redirect(url_for('enemys'))
+        else:
+            return "Missing data"
+    else:
+        return render_template("enemysCreate.html")
 
 @app.route("/encounter")
 def encounter():

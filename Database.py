@@ -77,11 +77,12 @@ class EncounterDatabase():
             raise f"DataBase Allready Has Encounter {encounter.name}"
         self.server.commit()
             
-            
+    # TODO Will need to add AC
     # Could be threaded in Future
     def AddEnemy(self, enemy):
-        self.server.execute(f"INSERT INTO Enemy (Name, Heath, Initiative, CR) VALUES (\"{enemy.name}\", {enemy.heath}, {enemy.initiative}, {enemy.CR})")
-        ID = self.server.lastrowid() # My need to change so that it can 
+        cursor = self.server.cursor()
+        cursor.execute(f"INSERT INTO Enemys (Name, Heath, Initiative, CR) VALUES (\"{enemy.name}\", {enemy.heath}, {enemy.initiativeModifier}, {enemy.CR})")
+        ID = cursor.lastrowid # My need to change so that it can 
         self.server.commit()
         return ID
 
@@ -104,7 +105,7 @@ class EncounterDatabase():
             encounters.append([encounter[0][0], encounter[0][1]])
 
     def GetEnemy(self, EnemyID):
-        enemyDB = self.server.execute(f"SELECT * FROM Enemy WHERE {EnemyID}")
+        enemyDB = self.server.execute(f"SELECT * FROM Enemys WHERE {EnemyID}")
         return Encounter.Enemy(enemyDB[0][1], enemyDB[0][2], enemyDB[0][3], enemyDB[0][4])
 
     def GetEncounter(self, EncounterID):
@@ -129,5 +130,8 @@ class EncounterDatabase():
         self.server.commit()
     
     def GetEnemys(self):
-        enemyDB = self.server.execute(f"SELECT Name, CR  FROM Enemy")
-        return enemyDB
+        enemysDB = self.server.execute(f"SELECT Name, CR  FROM Enemys")
+        enemyList = []
+        for enemyDB in enemysDB:
+            enemyList.append([enemyDB[0], enemyDB[1]])
+        return enemyList

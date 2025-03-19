@@ -1,5 +1,28 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<p>I am strong Enemy<br><br><br> !!!!!!!</p>
+<div class="max-w-4xl mx-auto">
+    <!-- Header Row -->
+    <a href="/enemys/create"><button type="button" class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Create</button></a> 
+    <div class="bg-white shadow">
+        <div class="px-6 py-3 border-b border-gray-200">
+            <div class="flex justify-between items-center">
+                <span class="text-left text-gray-600">Name</span>
+                <span class="text-left text-gray-600">CR</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data Row -->
+    {%for item in items%} 
+    <div class="bg-white shadow">
+        <div class="px-6 py-3">
+            <div class="flex justify-between items-center">
+                <span class="text-left text-gray-900">{{ item[0] }}</span>
+                <span class="text-left text-gray-900">{{ item[1] }}</span>
+            </div>
+        </div>
+    </div>
+    {%endfor%}
+</div>
 {% endblock %}

@@ -103,11 +103,10 @@ class EncounterDatabase():
             raise f"DataBase Allready Has Encounter {encounter.name}"
         self.server.commit()
             
-    # TODO Will need to add AC
-    # Could be threaded in Future
+    #TODO: Could be threaded in Future
     def AddEnemy(self, enemy):
         cursor = self.server.cursor()
-        cursor.execute(f"INSERT INTO Enemys (Name, Heath, Initiative, CR) VALUES (\"{enemy.name}\", {enemy.heath}, {enemy.initiativeModifier}, {enemy.CR})")
+        cursor.execute(f"INSERT INTO Enemys (Name, Size, Heath, Speed, CR, STR, DEX, CON, INT, WIS, CHA) VALUES (\"{enemy.name}\", {enemy.Size}, {enemy.heath}, {enemy.speed}, {enemy.CR}, {enemy.STR}, {enemy.DEX}, {enemy.CON}, {enemy.INT}, {enemy.WIS}, {enemy.CHA})")
         ID = cursor.lastrowid # My need to change so that it can 
         self.server.commit()
         return ID
@@ -134,15 +133,27 @@ class EncounterDatabase():
         enemyDB = self.server.execute(f"SELECT * FROM Enemys WHERE Name ='{EnemyName}'")
         name = ""
         heath = 0
-        initiativeModifier = 0
+        speed = 0
         CR = 0
+        STR = 0
+        DEX = 0
+        CON = 0
+        INT = 0
+        WIS = 0
+        CHA = 0
         for enemy in enemyDB:
             name = enemy[1]
             heath = enemy[2]
-            initiativeModifier = enemy[3]
+            speed = enemy[3]
             CR = enemy[4]
+            STR = enemy[5]
+            DEX = enemy[6]
+            CON = enemy[7]
+            INT = enemy[8]
+            WIS = enemy[9]
+            CHA = enemy[10]
             
-        return Encounter.Enemy(name, heath, initiativeModifier, CR)
+        return Encounter.Enemy(name, heath, speed, CR, STR, DEX, CON, INT, WIS, CHA)
 
     def GetEnemy(self, EnemyID):
         enemyDB = self.server.execute(f"SELECT * FROM Enemys WHERE {EnemyID}")

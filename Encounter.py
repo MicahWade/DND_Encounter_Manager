@@ -27,15 +27,29 @@ class Player:
 
 class Enemy:
     name = ""
+    size = ""
     heath = 0
-    initiativeModifier = 0
+    speed = 0
     initiatave = 0
     CR = 0
-    def __init__(self, name, heath, initiativeModifier, CR):
+    STR = 0
+    DEX = 0
+    CON = 0
+    INT = 0
+    WIS = 0
+    CHA = 0
+    def __init__(self, name, size, heath, speed, CR, STR, DEX, CON, INT, WIS, CHA):
         self.name = name
+        self.size = size
         self.heath = heath
-        self.initiativeModifier = initiativeModifier
+        self.speed = speed
         self.CR = CR
+        self.STR = STR
+        self.DEX = DEX
+        self.CON = CON
+        self.INT = INT
+        self.WIS = WIS
+        self.CHA = CHA
     
     def Roll(self):
         self.inititave = random.randint(1, 20) + self.initiativeModifier 

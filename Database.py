@@ -23,9 +23,16 @@ class EncounterDatabase():
         CREATE TABLE IF NOT EXISTS Enemys (
             EnemyID INTEGER IDENTITY(1,1) PRIMARY KEY,
             Name TEXT,
+            Size TEXT,
             Heath INTEGER,
-            Initiative INTEGER,
-            CR INTEGER
+            Speed INTEGER,
+            CR INTEGER,
+            STR INTEGER,
+            DEX INTEGER,
+            CON INTEGER,
+            INT INTEGER,
+            WIS INTEGER,
+            CHA INTEGER,
         )
         ''')
         cursor.execute('''
@@ -41,6 +48,25 @@ class EncounterDatabase():
         CREATE TABLE IF NOT EXISTS Players (
             EncounterID INTEGER IDENTITY(1,1) PRIMARY KEY,
             Name TEXT
+        )
+        ''')
+        cursor.execute('''
+        CREATE TABLE IF NOT EXISTS Attacks(
+            AttackID INTEGER IDENTITY(1,1) PRIMARY KEY,
+            Name TEXT,
+            Description TEXT,
+            AttackModifier INTEGER, 
+            AmountOfDice INTEGER,
+            Dice INTEGER
+        )
+        ''')
+        cursor.execute('''
+        CREATE TABLE IF NOT EXISTS EnemyAttack(
+            AttackID INTEGER,
+            EnemyID INTEGER,
+            PRIMARY KEY (AttackID, EnemyID),
+            FOREIGN KEY (AttackID) REFERENCES Attacks(AttackID)
+            FOREIGN KEY (EnemyID) REFERENCES Enemys(EnemyID)
         )
         ''')
 

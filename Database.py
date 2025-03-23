@@ -51,21 +51,25 @@ class EncounterDatabase():
         )
         ''')
         cursor.execute('''
-        CREATE TABLE IF NOT EXISTS Attacks(
-            AttackID INTEGER IDENTITY(1,1) PRIMARY KEY,
+        CREATE TABLE IF NOT EXISTS Weapon(
+            WeaponID INTEGER IDENTITY(1,1) PRIMARY KEY,
             Name TEXT,
             Description TEXT,
+            WeaponType TEXT,
+            Properties TEXT,
             AttackModifier INTEGER, 
+            DamgeType TEXT,
             AmountOfDice INTEGER,
-            Dice INTEGER
+            Dice INTEGER,
+            DamgeModifier
         )
         ''')
         cursor.execute('''
-        CREATE TABLE IF NOT EXISTS EnemyAttack(
-            AttackID INTEGER,
+        CREATE TABLE IF NOT EXISTS EnemyWeapon(
+            WeaponID INTEGER,
             EnemyID INTEGER,
-            PRIMARY KEY (AttackID, EnemyID),
-            FOREIGN KEY (AttackID) REFERENCES Attacks(AttackID)
+            PRIMARY KEY (WeaponID, EnemyID),
+            FOREIGN KEY (WeaponID) REFERENCES Weapon(WeaponID)
             FOREIGN KEY (EnemyID) REFERENCES Enemys(EnemyID)
         )
         ''')

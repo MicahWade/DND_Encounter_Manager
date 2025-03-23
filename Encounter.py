@@ -25,6 +25,30 @@ class Player:
         Clear()
         return
 
+class Weapon:
+    name = ""
+    description = ""
+    weaponType = ""
+    # Strings
+    properties = []
+    attackModifier = 0
+    damageType = ""
+    damageDiceAmount = 1
+    # D4 D6 D8 D10 D12
+    diceType = 4
+    damageModifier = 0
+    def __init__(self, name, description, weaponType, properties, attackModifier, damageType, damageDiceAmount, diceType, damageModifier):
+        self.name = name
+        self.description = description
+        self.weaponType = weaponType
+        self.properties = properties.spilt(',')
+        self.attackModifier = attackModifier
+        self.damageType = damageType
+        self.damageDiceAmount = damageDiceAmount
+        self.diceType = diceType
+        self.damageType = damageModifier
+
+
 class Enemy:
     name = ""
     size = ""

@@ -61,7 +61,7 @@ class EncounterDatabase():
             DamgeType TEXT,
             AmountOfDice INTEGER,
             Dice INTEGER,
-            DamgeModifier
+            DamgeModifier INTEGER
         )
         ''')
         cursor.execute('''
@@ -106,6 +106,13 @@ class EncounterDatabase():
         else:
             raise f"DataBase Allready Has Encounter {encounter.name}"
         self.server.commit()
+
+    def AddWeapons(self, enemyID, weapon):
+        cursor = self.server.cursor()
+        cursor.execute(f"INSERT INTO WEAPON (Name, Description, WeaponType, Properties, AttackModifier, DamgeType, AmountOfDice, Dice, DamgeModifier) VALUES (\"{weapon.name}\", \"{weapon.description}\", \"{weapon.weaponType}\", \"{",".join(weapon.properties)}\", {weapon.attackModifier}, \"{weapon.damgeType}\", {weapon.damgeDiceAmount}, {weapon.diceType}, {weapon.damgeModifier})")
+        ID = cursor.lastrowid
+        cursor.execute(f"INSERT INTO EnemyWeapon (WeaponID, EnemyID) VALUES ({ID}, {enemyID})")
+        self.server.commit()
             
     #TODO: Could be threaded in Future
     def AddEnemy(self, enemy):
@@ -113,11 +120,16 @@ class EncounterDatabase():
         cursor.execute(f"INSERT INTO Enemys (Name, Size, Heath, Speed, CR, STR, DEX, CON, INT, WIS, CHA) VALUES (\"{enemy.name}\", {enemy.Size}, {enemy.heath}, {enemy.speed}, {enemy.CR}, {enemy.STR}, {enemy.DEX}, {enemy.CON}, {enemy.INT}, {enemy.WIS}, {enemy.CHA})")
         ID = cursor.lastrowid # My need to change so that it can 
         self.server.commit()
+        for weapon in enemy.weapon:
+            self.AddWeapons(ID, weapon)
         return ID
 
     def AddPlayer(self, Player):
         self.server.execute(f"INSERT INTO Players (Name) VALUES (\"{Player.name}\")")
         self.server.commit()
+
+    def GetWeapons(self, ID):
+        weaponDB = self.server.execute(f"SELECT WeaponsID FROM EncounterEnemys WHERE ")
 
     def GetPlayers(self):
         players = []

@@ -62,7 +62,8 @@ class Enemy:
     INT = 0
     WIS = 0
     CHA = 0
-    def __init__(self, name, size, heath, speed, CR, STR, DEX, CON, INT, WIS, CHA):
+    weapon = []
+    def __init__(self, name, size, heath, speed, CR, STR, DEX, CON, INT, WIS, CHA, weapon):
         self.name = name
         self.size = size
         self.heath = heath
@@ -74,6 +75,7 @@ class Enemy:
         self.INT = INT
         self.WIS = WIS
         self.CHA = CHA
+        self.weapon = weapon
     
     def Roll(self):
         self.inititave = random.randint(1, 20) + self.initiativeModifier 

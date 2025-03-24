@@ -76,7 +76,7 @@ def createEnemy():
         properties = weapon_properties.split(',')
 
         # Create Weapon object
-        weapon = Weapon(
+        weapon = Encounter.Weapon(
             name=weapon_name,
             description=weapon_description,
             weaponType="",  # You may need to adjust this based on your implementation

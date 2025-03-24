@@ -1,9 +1,6 @@
 {% extends 'base.html' %}
 
 {% block content %}
-{% extends 'base.html' %}
-
-{% block content %}
 <div class="container mx-auto p-4 bg-gray-100">
     <div class="bg-white rounded-lg shadow-lg p-6">
         <h1 class="text-3xl font-bold text-gray-900 mb-6">Create a D&D Enemy</h1>
@@ -29,10 +26,72 @@
                         <input type="number" 
                                id="hp" 
                                name="hp" 
+                               min="0"
+                               step="1"
                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                                required>
                     </div>
 
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="size">
+                            Size
+                        </label>
+                        <select id="size" 
+                                name="size" 
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                                required>
+                            <option value="" disabled selected>Select Size</option>
+                            <option value="0">Tiny</option>
+                            <option value="1">Small</option>
+                            <option value="2">Medium</option>
+                            <option value="3">Large</option>
+                            <option value="4">Huge</option>
+                            <option value="5">Gargantuan</option>
+                            <option value="6">Colossal</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="STR">
+                            Strength (STR)
+                        </label>
+                        <input type="number" 
+                               id="STR" 
+                               name="STR" 
+                               min="3"
+                               max="30"
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                               required>
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="CON">
+                            Constitution (CON)
+                        </label>
+                        <input type="number" 
+                               id="CON" 
+                               name="CON" 
+                               min="3"
+                               max="30"
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                               required>
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="CON">
+                            Wisdom (WIS)
+                        </label>
+                        <input type="number" 
+                               id="WIS" 
+                               name="WIS" 
+                               min="3"
+                               max="30"
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                               required>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
                     <div>
                         <label class="block text-gray-700 text-sm font-bold mb-2" for="CR">
                             Challenge Rating
@@ -45,16 +104,17 @@
                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                                required>
                     </div>
-                </div>
 
-                <div class="space-y-4">
                     <div>
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="STR">
-                            Strength (STR)
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="speed">
+                            Speed
                         </label>
                         <input type="number" 
-                               id="STR" 
-                               name="STR" 
+                               id="speed" 
+                               name="speed" 
+                               min="5"
+                               max="500"
+                               step="5"
                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                                required>
                     </div>
@@ -66,17 +126,8 @@
                         <input type="number" 
                                id="DEX" 
                                name="DEX" 
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                               required>
-                    </div>
-
-                    <div>
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="CON">
-                            Constitution (CON)
-                        </label>
-                        <input type="number" 
-                               id="CON" 
-                               name="CON" 
+                               min="3"
+                               max="30"
                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                                required>
                     </div>
@@ -88,17 +139,8 @@
                         <input type="number" 
                                id="INT" 
                                name="INT" 
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                               required>
-                    </div>
-
-                    <div>
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="CON">
-                            Wisdom (WIS)
-                        </label>
-                        <input type="number" 
-                               id="WIS" 
-                               name="WIS" 
+                               min="3"
+                               max="30"
                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                                required>
                     </div>
@@ -110,17 +152,8 @@
                         <input type="number" 
                                id="CON" 
                                name="CON" 
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                               required>
-                    </div>
-
-                    <div>
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="speed">
-                            Speed
-                        </label>
-                        <input type="number" 
-                               id="speed" 
-                               name="speed" 
+                               min="3"
+                               max="30"
                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                                required>
                     </div>
@@ -159,15 +192,31 @@
                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                            required>
                     
-                    <label class="block text-gray-700 text-sm font-bold mb-2 mt-2" for="weapon_damageDice">
-                        Damage Dice (e.g., "2d6+3")
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_damageDice">
+                        Damage Dice
                     </label>
-                    <input type="text" 
-                           id="weapon_damageDice" 
-                           name="weapon_damageDice" 
+                    <select id="weapon_damageDice" 
+                            name="weapon_damageDice" 
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                            required>
+                        <option value="" disabled selected>Select Damage Dice</option>
+                        <option value=d4>d4</option>
+                        <option value=6>d6</option>
+                        <option value=8>d8</option>
+                        <option value=10>d10</option>
+                        <option value=12>d12</option>
+                    </select>
+                    
+                    <label class="block text-gray-700 text-sm font-bold mb-2 mt-2" for="weapon_amount">
+                        Amount Of Dice
+                    </label>
+                    <input type="number" 
+
+                           id="weapon_amount" 
+                           name="weapon_amount" 
                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                            required>
-                    
+                           
                     <label class="block text-gray-700 text-sm font-bold mb-2 mt-2" for="weapon_properties">
                         Properties (comma-separated)
                     </label>
@@ -199,19 +248,19 @@
         const INT = document.getElementById('INT').value;
         const WIS = document.getElementById('WIS').value;
         const CHA = document.getElementById('CHA').value;
+        const size = document.getElementById('size').value;
         const speed = document.getElementById('speed').value;
-        const initiativeModifier = document.getElementById('initiativeModifier').value;
         const weaponName = document.getElementById('weapon_name').value;
         const weaponDescription = document.getElementById('weapon_description').value;
         const weaponAttackModifier = document.getElementById('weapon_attackModifier').value;
         const weaponDamageDice = document.getElementById('weapon_damageDice').value;
+        const WeaponDiceAmount = document.getElementById('weapon_amount').value;
         const weaponProperties = document.getElementById('weapon_properties').value;
 
-        if (!name || !hp || !CR || !speed || !weaponName || !weaponDescription || !weaponAttackModifier || !weaponDamageDice || !weaponProperties || !STR || !DEX || !CON || !INT || !WIS || !CHA) {
+        if (!name || !hp || !CR || !speed || !weaponName || !weaponDescription || !weaponAttackModifier || !weaponDamageDice || !STR || !DEX || !CON || !INT || !WIS || !CHA || !size) {
             alert('Please fill in all required fields');
             e.preventDefault();
         }
     });
 </script>
-{% endblock %}
 {% endblock %}

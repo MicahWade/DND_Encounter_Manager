@@ -41,7 +41,7 @@ class Weapon:
         self.name = name
         self.description = description
         self.weaponType = weaponType
-        self.properties = properties.spilt(',')
+        self.properties = properties
         self.attackModifier = attackModifier
         self.damageType = damageType
         self.damageDiceAmount = damageDiceAmount

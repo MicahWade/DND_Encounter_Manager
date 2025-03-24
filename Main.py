@@ -14,7 +14,7 @@ def enemy(name):
     server = Database.EncounterDatabase()
 
     enemy = server.GetEnemyName(name)
-    return render_template("enemy.html", enemy=enemy)
+    return render_template("enemy.html", enemy=enemy )
 
 # TODO: Will need to find better soltion
 @app.route("/enemys")
@@ -42,6 +42,7 @@ def createEnemy():
         weapon_description = request.form.get("weapon_description")
         weapon_attackModifier = request.form.get("weapon_attackModifier")
         weapon_damageDice = request.form.get("weapon_damageDice")
+        weapon_amount = request.form.get("weapon_amount")
         weapon_properties = request.form.get("weapon_properties")
 
         # Convert numeric fields to appropriate types
@@ -59,37 +60,26 @@ def createEnemy():
         except ValueError:
             return "Invalid data format"
 
-        # Split damage dice into components
-        # Example: "2d6+3" -> amount=2, diceType=6, modifier=3
-        # This parsing can be simplified based on your needs
-        damage_parts = weapon_damageDice.split('d')
-        if len(damage_parts) != 2:
-            return "Invalid damage dice format"
-        damage_diceParts = damage_parts[1].split('+')
-        damageModifier = 0
-        if len(damage_diceParts) > 1:
-            damageModifier = int(damage_diceParts[1])
-        damageDiceAmount = int(damage_parts[0])
-        diceType = int(damage_diceParts[0])
-
         # Split weapon properties into a list
         properties = weapon_properties.split(',')
 
+        weapons = []
+
         # Create Weapon object
-        weapon = Encounter.Weapon(
+        weapons.append(Encounter.Weapon(
             name=weapon_name,
             description=weapon_description,
             weaponType="",  # You may need to adjust this based on your implementation
             properties=properties,
             attackModifier=weapon_attackModifier,
             damageType="slashing",  # You may need to adjust this based on your input
-            damageDiceAmount=damageDiceAmount,
-            diceType=diceType,
-            damageModifier=damageModifier
-        )
+            damageDiceAmount=weapon_amount,
+            diceType=weapon_damageDice,
+            damageModifier=0
+        ))
 
         # Create Enemy object
-        enemy = Enemy(
+        enemy = Encounter.Enemy(
             name=name,
             size=size,
             heath=hp,
@@ -101,7 +91,7 @@ def createEnemy():
             INT=INT,
             WIS=WIS,
             CHA=CHA,
-            weapon=[weapon]  # Assuming the enemy can have multiple weapons
+            weapon=weapons
         )
 
         # Add enemy to the database

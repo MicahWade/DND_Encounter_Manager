@@ -32,7 +32,7 @@ class EncounterDatabase():
             CON INTEGER,
             INT INTEGER,
             WIS INTEGER,
-            CHA INTEGER,
+            CHA INTEGER
         )
         ''')
         cursor.execute('''
@@ -108,16 +108,15 @@ class EncounterDatabase():
         self.server.commit()
 
     def AddWeapons(self, enemyID, weapon):
-        cursor = self.server.cursor()
-        cursor.execute(f"INSERT INTO WEAPON (Name, Description, WeaponType, Properties, AttackModifier, DamgeType, AmountOfDice, Dice, DamgeModifier) VALUES (\"{weapon.name}\", \"{weapon.description}\", \"{weapon.weaponType}\", \"{",".join(weapon.properties)}\", {weapon.attackModifier}, \"{weapon.damgeType}\", {weapon.damgeDiceAmount}, {weapon.diceType}, {weapon.damgeModifier})")
+        params = (weapon.name, weapon.description, weapon.weaponType, ",".join(weapon.properties), weapon.attackModifier, weapon.damageType, weapon.damageDiceAmount, weapon.diceType, weapon.damageModifier) 
+        cursor = self.server.execute(f"INSERT INTO WEAPON VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?)", params)
         ID = cursor.lastrowid
         cursor.execute(f"INSERT INTO EnemyWeapon (WeaponID, EnemyID) VALUES ({ID}, {enemyID})")
         self.server.commit()
             
     #TODO: Could be threaded in Future
     def AddEnemy(self, enemy):
-        cursor = self.server.cursor()
-        cursor.execute(f"INSERT INTO Enemys (Name, Size, Heath, Speed, CR, STR, DEX, CON, INT, WIS, CHA) VALUES (\"{enemy.name}\", {enemy.Size}, {enemy.heath}, {enemy.speed}, {enemy.CR}, {enemy.STR}, {enemy.DEX}, {enemy.CON}, {enemy.INT}, {enemy.WIS}, {enemy.CHA})")
+        cursor = self.server.execute(f"INSERT INTO Enemys (Name, Size, Heath, Speed, CR, STR, DEX, CON, INT, WIS, CHA) VALUES (\'{enemy.name}\', \'{enemy.size}\', {enemy.heath}, {enemy.speed}, {enemy.CR}, {enemy.STR}, {enemy.DEX}, {enemy.CON}, {enemy.INT}, {enemy.WIS}, {enemy.CHA})")
         ID = cursor.lastrowid # My need to change so that it can 
         self.server.commit()
         for weapon in enemy.weapon:
@@ -135,7 +134,7 @@ class EncounterDatabase():
 
     def GetWeapons(self, ID):
         weapons = []
-        weaponsDB = self.server.execute(f"SELECT WeaponsID FROM EncounterEnemys WHERE EnemyID ='{ID}'")
+        weaponsDB = self.server.execute(f"SELECT WeaponID FROM EnemyWeapon WHERE EnemyID ='{ID}'")
         for weaponID in weaponsDB:
             weapons.append(self.GetWeapon(weaponID[0]))        
         return weapons    
@@ -166,20 +165,23 @@ class EncounterDatabase():
         INT = 0
         WIS = 0
         CHA = 0
+        weapon = []
+
         for enemy in enemyDB:
-            print(enemy)
+            weapon = self.GetWeapons(enemy[0])
             name = enemy[1]
-            heath = enemy[2]
-            speed = enemy[3]
-            CR = enemy[4]
-            STR = enemy[5]
-            DEX = enemy[6]
-            CON = enemy[7]
-            INT = enemy[8]
-            WIS = enemy[9]
-            CHA = enemy[10]
+            size = enemy [2]
+            heath = enemy[3]
+            speed = enemy[4]
+            CR = enemy[5]
+            STR = enemy[6]
+            DEX = enemy[7]
+            CON = enemy[8]
+            INT = enemy[9]
+            WIS = enemy[10]
+            CHA = enemy[11]
             
-        return Encounter.Enemy(name, heath, speed, CR, STR, DEX, CON, INT, WIS, CHA)
+        return Encounter.Enemy(name, size, heath, speed, CR, STR, DEX, CON, INT, WIS, CHA, weapon)
 
     def GetEnemy(self, EnemyID):
         enemyDB = self.server.execute(f"SELECT * FROM Enemys WHERE {EnemyID}")

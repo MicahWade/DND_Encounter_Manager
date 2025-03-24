@@ -1,3 +1,6 @@
+{% extends 'base.html' %}
+
+{% block content %}
 <div class="container mx-auto p-4 bg-gray-100">
     <div class="bg-white rounded-lg shadow-lg p-6">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -38,8 +41,8 @@
                     <h4 class="font-bold text-gray-900">{{ weapon.name }}</h4>
                     <p class="text-gray-700">{{ weapon.description }}</p>
                     <div class="text-gray-600 mt-2">
-                        Attack: +{{ weapon.attackModifier }} 
-                        Damage: {{ weapon.damageDiceAmount }}d{{ weapon.diceType }}+{{ weapon.damageModifier }} {{ weapon.damageType }}
+                        <button class="hover:text-teal-600" type="weaponAttack"> Attack: +{{ weapon.attackModifier }} </button>
+                        <button class="hover:text-teal-600" type="weaponAttack"> Damage: {{ weapon.damageDiceAmount }}d{{ weapon.diceType }}+{{ weapon.damageModifier }} {{ weapon.damageType }} </button>
                     </div>
                     <div class="mt-1 text-sm text-gray-500">
                         Properties: {{ ', '.join(weapon.properties) }}
@@ -50,3 +53,4 @@
         </div>
     </div>
 </div>
+{% endblock %}

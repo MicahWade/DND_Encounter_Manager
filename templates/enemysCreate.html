@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% extends 'base.html' %}
+
+{% block content %}
 <div class="container mx-auto p-4 bg-gray-100">
     <div class="bg-white rounded-lg shadow-lg p-6">
         <h1 class="text-3xl font-bold text-gray-900 mb-6">Create a D&D Enemy</h1>
@@ -15,7 +18,7 @@
                         <input type="text" 
                                id="name" 
                                name="name" 
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                                required>
                     </div>
 
@@ -26,8 +29,7 @@
                         <input type="number" 
                                id="hp" 
                                name="hp" 
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                               min="1"
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                                required>
                     </div>
 
@@ -38,23 +40,9 @@
                         <input type="number" 
                                id="CR" 
                                name="CR" 
-                               step="0.125" 
-                               min="0"
                                max="30"
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                               required>
-                    </div>
-
-                    <div>
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="initiativeModifier">
-                            Initiative Modifier
-                        </label>
-                        <input type="number" 
-                               id="initiativeModifier" 
-                               name="initiativeModifier" 
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                               min="-5"
-                               max="20"
+                               step="0.125"
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                                required>
                     </div>
                 </div>
@@ -62,37 +50,67 @@
                 <div class="space-y-4">
                     <div>
                         <label class="block text-gray-700 text-sm font-bold mb-2" for="STR">
-                            Strength
+                            Strength (STR)
                         </label>
                         <input type="number" 
                                id="STR" 
                                name="STR" 
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                               min="1"
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                                required>
                     </div>
 
                     <div>
                         <label class="block text-gray-700 text-sm font-bold mb-2" for="DEX">
-                            Dexterity
+                            Dexterity (DEX)
                         </label>
                         <input type="number" 
                                id="DEX" 
                                name="DEX" 
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                               min="1"
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                                required>
                     </div>
 
                     <div>
                         <label class="block text-gray-700 text-sm font-bold mb-2" for="CON">
-                            Constitution
+                            Constitution (CON)
                         </label>
                         <input type="number" 
                                id="CON" 
                                name="CON" 
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                               min="1"
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                               required>
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="CON">
+                            Intelligence (INT)
+                        </label>
+                        <input type="number" 
+                               id="INT" 
+                               name="INT" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                               required>
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="CON">
+                            Wisdom (WIS)
+                        </label>
+                        <input type="number" 
+                               id="WIS" 
+                               name="WIS" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                               required>
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="CON">
+                            Charisma (CHA)
+                        </label>
+                        <input type="number" 
+                               id="CON" 
+                               name="CON" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                                required>
                     </div>
 
@@ -103,52 +121,60 @@
                         <input type="number" 
                                id="speed" 
                                name="speed" 
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                               min="1"
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                                required>
                     </div>
                 </div>
             </div>
 
             <div class="space-y-4">
-                <h2 class="text-xl font-bold text-gray-900 mb-4">Weapons</h2>
+                <h2 class="text-xl font-bold text-gray-900 mb-4">Weapon Details</h2>
                 
                 <!-- Weapon 1 -->
                 <div class="border-l-2 border-blue-500 pl-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon1_name">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_name">
                         Weapon Name
                     </label>
                     <input type="text" 
-                           id="weapon1_name" 
-                           name="weapon1_name" 
-                           class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                           id="weapon_name" 
+                           name="weapon_name" 
+                           class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                            required>
-                    
-                    <label class="block text-gray-700 text-sm font-bold mb-2 mt-2" for="weapon1_description">
+
+                    <label class="block text-gray-700 text-sm font-bold mb-2 mt-2" for="weapon_description">
                         Description
                     </label>
-                    <input type="text" 
-                           id="weapon1_description" 
-                           name="weapon1_description" 
-                           class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <textarea type="text" 
+                              id="weapon_description" 
+                              name="weapon_description" 
+                              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                              rows="3"></textarea>
                     
-                    <label class="block text-gray-700 text-sm font-bold mb-2 mt-2" for="weapon1_attackModifier">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 mt-2" for="weapon_attackModifier">
                         Attack Modifier
                     </label>
                     <input type="number" 
-                           id="weapon1_attackModifier" 
-                           name="weapon1_attackModifier" 
-                           class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                           id="weapon_attackModifier" 
+                           name="weapon_attackModifier" 
+                           class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                            required>
                     
-                    <label class="block text-gray-700 text-sm font-bold mb-2 mt-2" for="weapon1_damageDice">
-                        Damage Dice (e.g., 2d6+3 slashing)
+                    <label class="block text-gray-700 text-sm font-bold mb-2 mt-2" for="weapon_damageDice">
+                        Damage Dice (e.g., "2d6+3")
                     </label>
                     <input type="text" 
-                           id="weapon1_damageDice" 
-                           name="weapon1_damageDice" 
-                           placeholder="e.g., 2d6+3 slashing"
-                           class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                           id="weapon_damageDice" 
+                           name="weapon_damageDice" 
+                           class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                           required>
+                    
+                    <label class="block text-gray-700 text-sm font-bold mb-2 mt-2" for="weapon_properties">
+                        Properties (comma-separated)
+                    </label>
+                    <input type="text" 
+                           id="weapon_properties" 
+                           name="weapon_properties" 
+                           class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                            required>
                 </div>
             </div>
@@ -162,35 +188,30 @@
 </div>
 
 <script>
-    const form = document.querySelector('form');
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Validate required fields
-        const requiredFields = {
-            name: document.getElementById('name').value,
-            hp: document.getElementById('hp').value,
-            CR: document.getElementById('CR').value,
-            initiativeModifier: document.getElementById('initiativeModifier').value,
-            STR: document.getElementById('STR').value,
-            DEX: document.getElementById('DEX').value,
-            CON: document.getElementById('CON').value,
-            speed: document.getElementById('speed').value,
-            weapon1_name: document.getElementById('weapon1_name').value,
-            weapon1_damageDice: document.getElementById('weapon1_damageDice').value,
-            weapon1_attackModifier: document.getElementById('weapon1_attackModifier').value
-        };
+    document.querySelector('form').addEventListener('submit', function(e) {
+        // You can add additional client-side validation here if needed
+        const name = document.getElementById('name').value;
+        const hp = document.getElementById('hp').value;
+        const CR = document.getElementById('CR').value;
+        const STR = document.getElementById('STR').value;
+        const DEX = document.getElementById('DEX').value;
+        const CON = document.getElementById('CON').value;
+        const INT = document.getElementById('INT').value;
+        const WIS = document.getElementById('WIS').value;
+        const CHA = document.getElementById('CHA').value;
+        const speed = document.getElementById('speed').value;
+        const initiativeModifier = document.getElementById('initiativeModifier').value;
+        const weaponName = document.getElementById('weapon_name').value;
+        const weaponDescription = document.getElementById('weapon_description').value;
+        const weaponAttackModifier = document.getElementById('weapon_attackModifier').value;
+        const weaponDamageDice = document.getElementById('weapon_damageDice').value;
+        const weaponProperties = document.getElementById('weapon_properties').value;
 
-        Object.values(requiredFields).forEach(value => {
-            if (!value) {
-                alert('Please fill in all required fields');
-                return false;
-            }
-        });
-
-        // Submit the form
-        this.submit();
-        return true;
+        if (!name || !hp || !CR || !speed || !weaponName || !weaponDescription || !weaponAttackModifier || !weaponDamageDice || !weaponProperties || !STR || !DEX || !CON || !INT || !WIS || !CHA) {
+            alert('Please fill in all required fields');
+            e.preventDefault();
+        }
     });
 </script>
+{% endblock %}
 {% endblock %}

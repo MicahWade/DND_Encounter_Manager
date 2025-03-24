@@ -46,7 +46,7 @@ class Weapon:
         self.damageType = damageType
         self.damageDiceAmount = damageDiceAmount
         self.diceType = diceType
-        self.damageType = damageModifier
+        self.damageModifier = damageModifier
 
 
 class Enemy:
@@ -78,7 +78,7 @@ class Enemy:
         self.weapon = weapon
     
     def Roll(self):
-        self.inititave = random.randint(1, 20) + self.initiativeModifier 
+        self.inititave = random.randint(1, 20) + self.DEX 
 
 
 class Encounter:

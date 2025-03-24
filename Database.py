@@ -128,8 +128,17 @@ class EncounterDatabase():
         self.server.execute(f"INSERT INTO Players (Name) VALUES (\"{Player.name}\")")
         self.server.commit()
 
+    def GetWeapon(self, ID):
+        weaponDB = self.server.execute(f"SELECT * FROM Weapon WHERE WeaponID ='{ID}'")
+        weapon = Encounter.Weapon(weaponDB[0][1], weaponDB[0][2], weaponDB[0][3], weaponDB[0][4].split(','), weaponDB[0][5], weaponDB[0][6], weaponDB[0][7], weaponDB[0][8], weaponDB[0][9])
+        return weapon
+
     def GetWeapons(self, ID):
-        weaponDB = self.server.execute(f"SELECT WeaponsID FROM EncounterEnemys WHERE ")
+        weapons = []
+        weaponsDB = self.server.execute(f"SELECT WeaponsID FROM EncounterEnemys WHERE EnemyID ='{ID}'")
+        for weaponID in weaponsDB:
+            weapons.append(self.GetWeapon(weaponID[0]))        
+        return weapons    
 
     def GetPlayers(self):
         players = []
@@ -158,6 +167,7 @@ class EncounterDatabase():
         WIS = 0
         CHA = 0
         for enemy in enemyDB:
+            print(enemy)
             name = enemy[1]
             heath = enemy[2]
             speed = enemy[3]
@@ -173,7 +183,8 @@ class EncounterDatabase():
 
     def GetEnemy(self, EnemyID):
         enemyDB = self.server.execute(f"SELECT * FROM Enemys WHERE {EnemyID}")
-        return Encounter.Enemy(enemyDB[0][1], enemyDB[0][2], enemyDB[0][3], enemyDB[0][4])
+        enemyWeapons = self.GetWeapons(EnemyID)
+        return Encounter.Enemy(enemyDB[0][1], enemyDB[0][2], enemyDB[0][3], enemyDB[0][4], enemyDB[0][5], enemyDB[0][6], enemyDB[0][7], enemyDB[0][8], enemyDB[0][9], enemyDB[0][10], enemyDB[0][11], enemyWeapons)
 
     def GetEncounter(self, EncounterID):
         # Get Enemys
@@ -197,8 +208,11 @@ class EncounterDatabase():
         self.server.commit()
     
     def GetEnemys(self):
-        enemysDB = self.server.execute(f"SELECT Name, CR  FROM Enemys")
-        enemyList = []
-        for enemyDB in enemysDB:
-            enemyList.append([enemyDB[0], enemyDB[1]])
-        return enemyList
+        try:
+            enemysDB = self.server.execute(f"SELECT Name, CR  FROM Enemys")
+            enemyList = []
+            for enemyDB in enemysDB:
+                enemyList.append([enemyDB[0], enemyDB[1]])
+            return enemyList
+        except Exception:
+            return []

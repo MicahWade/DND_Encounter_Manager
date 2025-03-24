@@ -1,70 +1,196 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container mx-auto p-4">
-    <h1 class="text-3xl font-bold mb-4">Create a D&D Enemy</h1>
-    
-    <form action="/enemys/create" method="POST" class="bg-white p-6 rounded-lg shadow-md">
-        <div class="mb-4">
-            <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
-                Name
-            </label>
-            <input type="text" 
-                   id="name" 
-                   name="name" 
-                   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500">
-        </div>
+<div class="container mx-auto p-4 bg-gray-100">
+    <div class="bg-white rounded-lg shadow-lg p-6">
+        <h1 class="text-3xl font-bold text-gray-900 mb-6">Create a D&D Enemy</h1>
+        
+        <form action="/enemys/create" method="POST" class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                            Name
+                        </label>
+                        <input type="text" 
+                               id="name" 
+                               name="name" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                               required>
+                    </div>
 
-        <div class="mb-4">
-            <label class="block text-gray-700 text-sm font-bold mb-2" for="hp">
-                Hit Points
-            </label>
-            <input type="number" 
-                   id="hp" 
-                   name="hp" 
-                   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500">
-        </div>
-        <div class="mb-4">
-            <label class="block text-gray-700 text-sm font-bold mb-2" for="hp">
-                Initiative Modifier
-            </label>
-            <input type="number" 
-                   id="initiativeModifier" 
-                   name="initiativeModifier" 
-                    max="20"
-                    min="-5"
-                   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500">
-        </div>
-        <div class="mb-4">
-            <label class="block text-gray-700 text-sm font-bold mb-2" for="ac">
-                Challenge Rating
-            </label>
-            <input type="number" 
-                   id="CR" 
-                   name="CR" 
-                   max="30"
-                   step="0.125"
-                   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500">
-        </div>
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="hp">
+                            Health
+                        </label>
+                        <input type="number" 
+                               id="hp" 
+                               name="hp" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                               min="1"
+                               required>
+                    </div>
 
-        <button type="submit" 
-                class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transform transition hover:scale-100 scale-90">
-            Create Enemy
-        </button>
-    </form>
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="CR">
+                            Challenge Rating
+                        </label>
+                        <input type="number" 
+                               id="CR" 
+                               name="CR" 
+                               step="0.125" 
+                               min="0"
+                               max="30"
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                               required>
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="initiativeModifier">
+                            Initiative Modifier
+                        </label>
+                        <input type="number" 
+                               id="initiativeModifier" 
+                               name="initiativeModifier" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                               min="-5"
+                               max="20"
+                               required>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="STR">
+                            Strength
+                        </label>
+                        <input type="number" 
+                               id="STR" 
+                               name="STR" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                               min="1"
+                               required>
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="DEX">
+                            Dexterity
+                        </label>
+                        <input type="number" 
+                               id="DEX" 
+                               name="DEX" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                               min="1"
+                               required>
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="CON">
+                            Constitution
+                        </label>
+                        <input type="number" 
+                               id="CON" 
+                               name="CON" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                               min="1"
+                               required>
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="speed">
+                            Speed
+                        </label>
+                        <input type="number" 
+                               id="speed" 
+                               name="speed" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                               min="1"
+                               required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h2 class="text-xl font-bold text-gray-900 mb-4">Weapons</h2>
+                
+                <!-- Weapon 1 -->
+                <div class="border-l-2 border-blue-500 pl-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon1_name">
+                        Weapon Name
+                    </label>
+                    <input type="text" 
+                           id="weapon1_name" 
+                           name="weapon1_name" 
+                           class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                           required>
+                    
+                    <label class="block text-gray-700 text-sm font-bold mb-2 mt-2" for="weapon1_description">
+                        Description
+                    </label>
+                    <input type="text" 
+                           id="weapon1_description" 
+                           name="weapon1_description" 
+                           class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    
+                    <label class="block text-gray-700 text-sm font-bold mb-2 mt-2" for="weapon1_attackModifier">
+                        Attack Modifier
+                    </label>
+                    <input type="number" 
+                           id="weapon1_attackModifier" 
+                           name="weapon1_attackModifier" 
+                           class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                           required>
+                    
+                    <label class="block text-gray-700 text-sm font-bold mb-2 mt-2" for="weapon1_damageDice">
+                        Damage Dice (e.g., 2d6+3 slashing)
+                    </label>
+                    <input type="text" 
+                           id="weapon1_damageDice" 
+                           name="weapon1_damageDice" 
+                           placeholder="e.g., 2d6+3 slashing"
+                           class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                           required>
+                </div>
+            </div>
+
+            <button type="submit" 
+                    class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transform transition hover:scale-100 scale-90">
+                Create Enemy
+            </button>
+        </form>
+    </div>
 </div>
 
 <script>
-    document.querySelector('form').addEventListener('submit', function(e) {
-        const name = document.getElementById('name').value;
-        const hp = document.getElementById('hp').value;
-        const initiativeModifier = document.getElementById('initiativeModifier').value;
-        const CR = document.getElementById('CR').value;
-    
-        if (!name || !hp || !CR || !initiativeModifier) {
-            alert('Please fill in all fields');
-            e.preventDefault();
-        }
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Validate required fields
+        const requiredFields = {
+            name: document.getElementById('name').value,
+            hp: document.getElementById('hp').value,
+            CR: document.getElementById('CR').value,
+            initiativeModifier: document.getElementById('initiativeModifier').value,
+            STR: document.getElementById('STR').value,
+            DEX: document.getElementById('DEX').value,
+            CON: document.getElementById('CON').value,
+            speed: document.getElementById('speed').value,
+            weapon1_name: document.getElementById('weapon1_name').value,
+            weapon1_damageDice: document.getElementById('weapon1_damageDice').value,
+            weapon1_attackModifier: document.getElementById('weapon1_attackModifier').value
+        };
+
+        Object.values(requiredFields).forEach(value => {
+            if (!value) {
+                alert('Please fill in all required fields');
+                return false;
+            }
+        });
+
+        // Submit the form
+        this.submit();
+        return true;
     });
 </script>
 {% endblock %}

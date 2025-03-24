@@ -47,7 +47,6 @@ def createEnemy():
         # Convert numeric fields to appropriate types
         try:
             hp = int(hp)
-            initiativeModifier = int(initiativeModifier)
             CR = float(CR)
             STR = int(STR)
             DEX = int(DEX)

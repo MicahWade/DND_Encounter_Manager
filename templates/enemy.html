@@ -75,6 +75,7 @@
         <div>
             <h3 class="text-xl font-bold text-gray-900 mb-6">Weapons</h3>
             <div class="space-y-6">
+                <p>{{ enemy.weapon[0].name }}</p>
                 {% for weapon in enemy.weapon %}
                 <div class="bg-gray-50 p-6 rounded-lg">
                     <h4 class="text-xl font-bold text-gray-900 mb-4">{{ weapon.name }}</h4>

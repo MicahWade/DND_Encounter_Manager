@@ -97,14 +97,14 @@
                         <h4 class="text-xl font-bold text-gray-900 mb-4">{{ weapon.name }}</h4>
                         <p class="text-gray-600 mb-4">{{ weapon.description }}</p>
                         <div class="flex flex-wrap gap-3 mb-4">
-                            <button class="px-4 py-2 bg-blue-100 border border-blue-300 rounded-md hover:bg-blue-200 transition-colors">
+                            <button onclick="rollDice(1, 20, {{ weapon.attackModifier }})" class="px-4 py-2 bg-blue-100 border border-blue-300 rounded-md hover:bg-blue-200 transition-colors">
                                 Attack: {% if weapon.attackModifier >= 0 %}
                                 <span class="text-sm font-medium text-green-600">+{{ weapon.attackModifier }}</span>
                                 {% else %}
                                 <span class="text-sm font-medium text-red-600">-{{ weapon.attackModifier }}</span>
                                 {% endif %}
                             </button>
-                            <button onclick="rollDice(1, 4, 0)" class="px-4 py-2 bg-orange-100 border border-orange-300 rounded-md hover:bg-orange-200 transition-colors">
+                            <button onclick="rollDice({{ weapon.damageDiceAmount }}, {{ weapon.diceType }}, {{ weapon.damageModifier }})" class="px-4 py-2 bg-orange-100 border border-orange-300 rounded-md hover:bg-orange-200 transition-colors">
                                 Damage: 
                                 <span class="font-medium">{{ weapon.damageDiceAmount }}d{{ weapon.diceType }}</span>
                                 <span class="text-green-600">+{{ weapon.damageModifier }}</span>
@@ -130,7 +130,7 @@
             total += roll
         } 
         console.log(total)
-        // return total
+        return total
     }
 </script>
 {% endblock %}

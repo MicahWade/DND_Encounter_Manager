@@ -13,7 +13,7 @@ class EncounterDatabase():
 
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS Encounters (
-            EncounterID INTEGER IDENTITY(1,1) PRIMARY KEY,
+            EncounterID INTEGER PRIMARY KEY,
             Name TEXT,
             CR INTEGER
         )
@@ -21,10 +21,10 @@ class EncounterDatabase():
         # IDENTITY(1,1) PRIMARY KEY This increments the ID
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS Enemys (
-            EnemyID INTEGER IDENTITY(1,1) PRIMARY KEY,
+            EnemyID INTEGER PRIMARY KEY,
             Name TEXT,
             Size TEXT,
-            Heath INTEGER,
+            Health INTEGER,
             Speed INTEGER,
             CR INTEGER,
             STR INTEGER,
@@ -39,20 +39,19 @@ class EncounterDatabase():
         CREATE TABLE IF NOT EXISTS EncounterEnemys (
             EncounterID INTEGER,
             EnemyID INTEGER,
-            PRIMARY KEY (EncounterID, EnemyID),
             FOREIGN KEY (EncounterID) REFERENCES Encounters(EncounterID)
             FOREIGN KEY (EnemyID) REFERENCES Enemys(EnemyID)
         )
         ''')
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS Players (
-            EncounterID INTEGER IDENTITY(1,1) PRIMARY KEY,
+            EncounterID INTEGER PRIMARY KEY,
             Name TEXT
         )
         ''')
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS Weapon(
-            WeaponID INTEGER IDENTITY(1,1) PRIMARY KEY,
+            WeaponID INTEGER PRIMARY KEY,
             Name TEXT,
             Description TEXT,
             WeaponType TEXT,
@@ -68,7 +67,6 @@ class EncounterDatabase():
         CREATE TABLE IF NOT EXISTS EnemyWeapon(
             WeaponID INTEGER,
             EnemyID INTEGER,
-            PRIMARY KEY (WeaponID, EnemyID),
             FOREIGN KEY (WeaponID) REFERENCES Weapon(WeaponID)
             FOREIGN KEY (EnemyID) REFERENCES Enemys(EnemyID)
         )
@@ -116,10 +114,11 @@ class EncounterDatabase():
             
     #TODO: Could be threaded in Future
     def AddEnemy(self, enemy):
-        cursor = self.server.execute(f"INSERT INTO Enemys (Name, Size, Heath, Speed, CR, STR, DEX, CON, INT, WIS, CHA) VALUES (\'{enemy.name}\', \'{enemy.size}\', {enemy.heath}, {enemy.speed}, {enemy.CR}, {enemy.STR}, {enemy.DEX}, {enemy.CON}, {enemy.INT}, {enemy.WIS}, {enemy.CHA})")
+        cursor = self.server.execute(f"INSERT INTO Enemys (Name, Size, Health, Speed, CR, STR, DEX, CON, INT, WIS, CHA) VALUES (\'{enemy.name}\', \'{enemy.size}\', {enemy.health}, {enemy.speed}, {enemy.CR}, {enemy.STR}, {enemy.DEX}, {enemy.CON}, {enemy.INT}, {enemy.WIS}, {enemy.CHA})")
         ID = cursor.lastrowid # My need to change so that it can 
+        print(ID)
         self.server.commit()
-        for weapon in enemy.weapon:
+        for weapon in enemy.weapons:
             self.AddWeapons(ID, weapon)
         return ID
 
@@ -129,8 +128,9 @@ class EncounterDatabase():
 
     def GetWeapon(self, ID):
         weaponDB = self.server.execute(f"SELECT * FROM Weapon WHERE WeaponID ='{ID}'")
-        weapon = Encounter.Weapon(weaponDB[0][1], weaponDB[0][2], weaponDB[0][3], weaponDB[0][4].split(','), weaponDB[0][5], weaponDB[0][6], weaponDB[0][7], weaponDB[0][8], weaponDB[0][9])
-        return weapon
+        for weapon in weaponDB:
+            weaponClass = Encounter.Weapon(weapon[1], weapon[2], weapon[3], weapon[4].split(','), weapon[5], weapon[6], weapon[7], weapon[8], weapon[9])
+        return weaponClass
 
     def GetWeapons(self, ID):
         weapons = []
@@ -154,9 +154,9 @@ class EncounterDatabase():
             encounters.append([encounter[0][0], encounter[0][1]])
 
     def GetEnemyName(self, EnemyName):
-        enemyDB = self.server.execute(f"SELECT * FROM Enemys WHERE Name ='{EnemyName}'")
+        enemyDB = self.server.execute(f"SELECT EnemyID, Name, Size, Health, Speed, CR, STR, DEX, CON, INT, WIS, CHA FROM Enemys WHERE Name ='{EnemyName}'")
         name = ""
-        heath = 0
+        health = 0
         speed = 0
         CR = 0
         STR = 0
@@ -167,11 +167,12 @@ class EncounterDatabase():
         CHA = 0
         weapon = []
 
+
         for enemy in enemyDB:
             weapon = self.GetWeapons(enemy[0])
             name = enemy[1]
             size = enemy [2]
-            heath = enemy[3]
+            health = enemy[3]
             speed = enemy[4]
             CR = enemy[5]
             STR = enemy[6]
@@ -181,7 +182,7 @@ class EncounterDatabase():
             WIS = enemy[10]
             CHA = enemy[11]
             
-        return Encounter.Enemy(name, size, heath, speed, CR, STR, DEX, CON, INT, WIS, CHA, weapon)
+        return Encounter.Enemy(name, size, health, speed, CR, STR, DEX, CON, INT, WIS, CHA, weapon)
 
     def GetEnemy(self, EnemyID):
         enemyDB = self.server.execute(f"SELECT * FROM Enemys WHERE {EnemyID}")

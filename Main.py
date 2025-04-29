@@ -14,7 +14,8 @@ def enemy(name):
     server = Database.EncounterDatabase()
 
     enemy = server.GetEnemyName(name)
-    return render_template("enemy.html", enemy=enemy )
+    print(enemy.weapons)
+    return render_template("enemy.html", enemy=enemy)
 
 # TODO: Will need to find better soltion
 @app.route("/enemys")
@@ -30,13 +31,13 @@ def createEnemy():
         name = request.form.get("name")
         hp = request.form.get("hp")
         CR = request.form.get("CR")
-        size = request.form.get("size", "")
+        size = request.form.get("size")
         STR = request.form.get("STR")
         DEX = request.form.get("DEX")
         CON = request.form.get("CON")
-        INT = request.form.get("INT", "0")
-        WIS = request.form.get("WIS", "0")
-        CHA = request.form.get("CHA", "0")
+        INT = request.form.get("INT")
+        WIS = request.form.get("WIS")
+        CHA = request.form.get("CHA")
         speed = request.form.get("speed")
         weapon_name = request.form.get("weapon_name")
         weapon_description = request.form.get("weapon_description")
@@ -44,6 +45,8 @@ def createEnemy():
         weapon_damageDice = request.form.get("weapon_damageDice")
         weapon_amount = request.form.get("weapon_amount")
         weapon_properties = request.form.get("weapon_properties")
+
+        print(size)
 
         # Convert numeric fields to appropriate types
         try:
@@ -69,8 +72,8 @@ def createEnemy():
         weapons.append(Encounter.Weapon(
             name=weapon_name,
             description=weapon_description,
-            weaponType="",  # You may need to adjust this based on your implementation
-            properties=properties,
+            weaponType="",  # You may need to adjust this based on (1,1)properties,
+            properties=[],
             attackModifier=weapon_attackModifier,
             damageType="slashing",  # You may need to adjust this based on your input
             damageDiceAmount=weapon_amount,
@@ -82,7 +85,7 @@ def createEnemy():
         enemy = Encounter.Enemy(
             name=name,
             size=size,
-            heath=hp,
+            health=hp,
             speed=speed,
             CR=CR,
             STR=STR,

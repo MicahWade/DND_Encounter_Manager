@@ -2,115 +2,121 @@
 
 {% block content %}
 <!-- Enemy -->
-<div class="container mx-auto p-4 bg-gray-50">
-    <div class="bg-white rounded-xl shadow-lg p-6">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <div class="space-y-4">
-                <h2 class="text-3xl font-bold text-gray-900">{{ enemy.name }}</h2>
-                <div class="space-y-2">
-                    <p class="text-gray-600">
-                        <span class="font-medium">Size:</span> {{ enemy.size }}
-                    </p>
-                    <p class="text-gray-600">
-                        <span class="font-medium">Health:</span> {{ enemy.health }}
-                    </p>
-                    <p class="text-gray-600">
-                        <span class="font-medium">Initiative:</span>  {% if enemy.DEX >= 10 %}+{{ (enemy.DEX - 10) // 2 }} {% else %}-{{ (10 - enemy.DEX) // 2 }}{% endif %} 
-                    </p>
-                    <p class="text-gray-600">
-                        <span class="font-medium">CR:</span> {{ enemy.CR }}
-                    </p>
-                </div>
-            </div>
-            
-            <div class="space-y-4">
-                <h3 class="text-xl font-bold text-gray-900">Attributes</h3>
-                <div class="space-y-2">
-                    <p class="text-gray-600">
-                        STR: {{ enemy.STR }}
-                        {% if enemy.STR >= 10 %}
-                        <span class="text-sm font-medium text-green-600">+{{ (enemy.STR - 10) // 2 }}</span>
-                        {% else %}
-                        <span class="text-sm font-medium text-red-600">-{{ (10 - enemy.STR) // 2 }}</span>
-                        {% endif %} 
-                    </p>
-                    <p class="text-gray-600">
-                        DEX: {{ enemy.DEX }}
-                        {% if enemy.DEX >= 10 %}
-                        <span class="text-sm font-medium text-green-600">+{{ (enemy.DEX - 10) // 2 }}</span>
-                        {% else %}
-                        <span class="text-sm font-medium text-red-600">-{{ (10 - enemy.DEX) // 2 }}</span>
-                        {% endif %} 
-                    </p>
-                    <p class="text-gray-600">
-                        CON: {{ enemy.CON }}
-                        {% if enemy.CON >= 10 %}
-                        <span class="text-sm font-medium text-green-600">+{{ (enemy.CON - 10) // 2 }}</span>
-                        {% else %}
-                        <span class="text-sm font-medium text-red-600">-{{ (10 - enemy.CON) // 2 }}</span>
-                        {% endif %} 
-                    </p>
-                    <p class="text-gray-600">
-                        INT: {{ enemy.INT }}
-                        {% if enemy.INT >= 10 %}
-                        <span class="text-sm font-medium text-green-600">+{{ (enemy.INT - 10) // 2 }}</span>
-                        {% else %}
-                        <span class="text-sm font-medium text-red-600">-{{ (10 - enemy.INT) // 2 }}</span>
-                        {% endif %} 
-                    </p>
-                    <p class="text-gray-600">
-                        WIS: {{ enemy.WIS }}
-                        {% if enemy.WIS >= 10 %}
-                        <span class="text-sm font-medium text-green-600">+{{ (enemy.WIS - 10) // 2 }}</span>
-                        {% else %}
-                        <span class="text-sm font-medium text-red-600">-{{ (10 - enemy.WIS) // 2 }}</span>
-                        {% endif %} 
-                    </p>
-                    <p class="text-gray-600">
-                        CHA: {{ enemy.CHA }} {% if enemy.CHA >= 10 %}
-                        <span class="text-sm font-medium text-green-600">+{{ (enemy.CHA - 10) // 2 }}</span>
-                        {% else %}
-                        <span class="text-sm font-medium text-red-600">-{{ (10 - enemy.CHA) // 2 }}</span>
-                        {% endif %} 
-                    </p>
-                </div>
-            </div>
-            
-            <div class="space-y-4">
-                <h3 class="text-xl font-bold text-gray-900">Speed</h3>
-                <p class="text-gray-600 bg-gray-50 p-3 rounded-lg">
-                    {{ enemy.speed }} ft
-                </p>
-            </div>
-        </div>
-
-        <!-- <div class="mb-8">
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Description</h3>
-            <p class="text-gray-600">{{ enemy.description }}</p>
-        </div> -->
-
-        <div>
-            <div class="space-y-6">
-                {% for weapon in enemy.weapons %}
-                <div class="bg-gray-50 p-6 rounded-lg">
-                    <h4 class="text-xl font-bold text-gray-900 mb-4">{{ weapon.name }}</h4>
-                    <p class="text-gray-600 mb-4">{{ weapon.description }}</p>
-                    <div class="flex flex-wrap gap-3 mb-4">
-                        <button class="px-4 py-2 bg-blue-100 border border-blue-300 rounded-md hover:bg-blue-200 transition-colors">
-                            Attack: +{{ weapon.attackModifier }}
-                        </button>
-                        <button class="px-4 py-2 bg-orange-100 border border-orange-300 rounded-md hover:bg-orange-200 transition-colors">
-                            Damage: 
-                            <span class="font-medium">{{ weapon.damageDiceAmount }}d{{ weapon.diceType }}</span>
-                            <span class="text-green-600">+{{ weapon.damageModifier }}</span>
-                            <span class="text-sm text-gray-600 ml-1">{{ weapon.damageType }}</span>
-                        </button>
-                    </div>
-                    <div class="text-sm text-gray-500">
-                        Properties: {{ ', '.join(weapon.properties) }}
+<div class="px-40">
+    <div class="container mx-auto p-4 bg-gray-50">
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="space-y-4">
+                    <h2 class="text-3xl font-bold text-gray-900">{{ enemy.name }}</h2>
+                    <div class="space-y-2">
+                        <p class="text-gray-600">
+                            <span class="font-medium">Size:</span> {{ enemy.size }}
+                        </p>
+                        <p class="text-gray-600">
+                            <span class="font-medium">Health:</span> {{ enemy.health }}
+                        </p>
+                        <p class="text-gray-600">
+                            <span class="font-medium">Initiative:</span>  {% if enemy.DEX >= 10 %}+{{ (enemy.DEX - 10) // 2 }} {% else %}-{{ (10 - enemy.DEX) // 2 }}{% endif %} 
+                        </p>
+                        <p class="text-gray-600">
+                            <span class="font-medium">CR:</span> {{ enemy.CR }}
+                        </p>
                     </div>
                 </div>
-                {% endfor %}
+                
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold text-gray-900">Attributes</h3>
+                    <div class="space-y-2">
+                        <p class="text-gray-600">
+                            STR: {{ enemy.STR }}
+                            {% if enemy.STR >= 10 %}
+                            <span class="text-sm font-medium text-green-600">+{{ (enemy.STR - 10) // 2 }}</span>
+                            {% else %}
+                            <span class="text-sm font-medium text-red-600">-{{ (10 - enemy.STR) // 2 }}</span>
+                            {% endif %} 
+                        </p>
+                        <p class="text-gray-600">
+                            DEX: {{ enemy.DEX }}
+                            {% if enemy.DEX >= 10 %}
+                            <span class="text-sm font-medium text-green-600">+{{ (enemy.DEX - 10) // 2 }}</span>
+                            {% else %}
+                            <span class="text-sm font-medium text-red-600">-{{ (10 - enemy.DEX) // 2 }}</span>
+                            {% endif %} 
+                        </p>
+                        <p class="text-gray-600">
+                            CON: {{ enemy.CON }}
+                            {% if enemy.CON >= 10 %}
+                            <span class="text-sm font-medium text-green-600">+{{ (enemy.CON - 10) // 2 }}</span>
+                            {% else %}
+                            <span class="text-sm font-medium text-red-600">-{{ (10 - enemy.CON) // 2 }}</span>
+                            {% endif %} 
+                        </p>
+                        <p class="text-gray-600">
+                            INT: {{ enemy.INT }}
+                            {% if enemy.INT >= 10 %}
+                            <span class="text-sm font-medium text-green-600">+{{ (enemy.INT - 10) // 2 }}</span>
+                            {% else %}
+                            <span class="text-sm font-medium text-red-600">-{{ (10 - enemy.INT) // 2 }}</span>
+                            {% endif %} 
+                        </p>
+                        <p class="text-gray-600">
+                            WIS: {{ enemy.WIS }}
+                            {% if enemy.WIS >= 10 %}
+                            <span class="text-sm font-medium text-green-600">+{{ (enemy.WIS - 10) // 2 }}</span>
+                            {% else %}
+                            <span class="text-sm font-medium text-red-600">-{{ (10 - enemy.WIS) // 2 }}</span>
+                            {% endif %} 
+                        </p>
+                        <p class="text-gray-600">
+                            CHA: {{ enemy.CHA }} {% if enemy.CHA >= 10 %}
+                            <span class="text-sm font-medium text-green-600">+{{ (enemy.CHA - 10) // 2 }}</span>
+                            {% else %}
+                            <span class="text-sm font-medium text-red-600">-{{ (10 - enemy.CHA) // 2 }}</span>
+                            {% endif %} 
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold text-gray-900">Speed</h3>
+                    <p class="text-gray-600 bg-gray-50 p-3 rounded-lg">
+                        {{ enemy.speed }} ft
+                    </p>
+                </div>
+            </div>
+    
+            <!-- <div class="mb-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Description</h3>
+                <p class="text-gray-600">{{ enemy.description }}</p>
+            </div> -->
+    
+            <div>
+                <div class="space-y-6">
+                    {% for weapon in enemy.weapons %}
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">{{ weapon.name }}</h4>
+                        <p class="text-gray-600 mb-4">{{ weapon.description }}</p>
+                        <div class="flex flex-wrap gap-3 mb-4">
+                            <button class="px-4 py-2 bg-blue-100 border border-blue-300 rounded-md hover:bg-blue-200 transition-colors">
+                                Attack: {% if weapon.attackModifier >= 0 %}
+                                <span class="text-sm font-medium text-green-600">+{{ weapon.attackModifier }}</span>
+                                {% else %}
+                                <span class="text-sm font-medium text-red-600">-{{ weapon.attackModifier }}</span>
+                                {% endif %}
+                            </button>
+                            <button onclick="rollDice(1, 4, 0)" class="px-4 py-2 bg-orange-100 border border-orange-300 rounded-md hover:bg-orange-200 transition-colors">
+                                Damage: 
+                                <span class="font-medium">{{ weapon.damageDiceAmount }}d{{ weapon.diceType }}</span>
+                                <span class="text-green-600">+{{ weapon.damageModifier }}</span>
+                                <span class="text-sm text-gray-600 ml-1">{{ weapon.damageType }}</span>
+                            </button>
+                        </div>
+                        <div class="text-sm text-gray-500">
+                            Properties: {{ ', '.join(weapon.properties) }}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
@@ -118,12 +124,13 @@
 
 <script>
     function rollDice(amount, dice, modifier){
-        total
+        total = 0
         for(let i = 0; i < amount; i++){
             roll = Math.floor(Math.random() * dice) + 1
-            roll += total
+            total += roll
         } 
-        return total
+        console.log(total)
+        // return total
     }
 </script>
 {% endblock %}

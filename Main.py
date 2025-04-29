@@ -1,5 +1,6 @@
 import Encounter
 import Database
+import os
 from flask import *
 
 app = Flask(__name__)
@@ -113,8 +114,11 @@ def encounter():
 def settings():
     return render_template("settings.html")
 
+
+# @app.route('/favicon.ico')
+# def favicon():
+#     return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/Sealicon.ico')
+
 if __name__ == "__main__":
     app.run(debug=True, port=3333)
-
-
 # Encounter.EncounterMenu()

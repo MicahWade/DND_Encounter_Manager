@@ -29,6 +29,9 @@ def enemys():
 def createEnemy():
     if request.method == "POST":
         # Extract form data
+        print("\n\n\n\n\n\n\n")
+        print(weapon_description = request.form.get("weapon_description"))
+        print("\n\n\n\n\n\n\n")
         name = request.form.get("name")
         hp = request.form.get("hp")
         CR = request.form.get("CR")
@@ -114,11 +117,16 @@ def encounter():
 def settings():
     return render_template("settings.html")
 
-
-# @app.route('/favicon.ico')
-# def favicon():
-#     return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/Sealicon.ico')
+@app.route('/favicon.ico')
+def favicon():
+    print("Test")
+    return send_from_directory(os.path.join(app.root_path, 'static'),'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 if __name__ == "__main__":
     app.run(debug=True, port=3333)
+    app.add_url_rule(
+    "/favicon.ico",
+    endpoint="favicon",
+    redirect_to=url_for("static", filename="favicon.ico"),
+    )
 # Encounter.EncounterMenu()

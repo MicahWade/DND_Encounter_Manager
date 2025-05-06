@@ -209,6 +209,16 @@ class EncounterDatabase():
     def RemovePlayer(self, player):
         self.server.execute(f"DELETE FROM Players WHERE {player.name}")
         self.server.commit()
+
+    def RemoveEnemyName(self, name):
+        enemyDB = self.server.execute(f"SELECT EnemyID FROM Enemys WHERE Name ='{name}'")
+        self.server.execute(f"DELETE FROM Enemys WHERE Name='{name}'")
+        for enemy in enemyDB:
+            self.RemoveWeaponEnemyID(enemy[0])
+        self.server.commit()
+    
+    def RemoveWeaponEnemyID(self, ID):
+        self.server.execute(f"DELETE FROM EnemyWeapon WHERE EnemyID={ID}")
     
     def GetEnemys(self):
         try:

@@ -18,6 +18,12 @@ def enemy(name):
     print(enemy.weapons)
     return render_template("enemy.html", enemy=enemy)
 
+@app.route("/enemys/remove/<name>")
+def removeEnemy(name):
+    server = Database.EncounterDatabase()
+    server.RemoveEnemyName(name)
+    return redirect(url_for('enemys'))
+
 # TODO: Will need to find better soltion
 @app.route("/enemys")
 def enemys():

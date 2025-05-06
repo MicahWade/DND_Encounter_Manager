@@ -189,6 +189,7 @@
 </div>
 
 <script>
+
     document.querySelector('form').addEventListener('submit', function(e) {
         // You can add additional client-side validation here if needed
         const name = document.getElementById('name').value;
@@ -233,7 +234,18 @@
         // Initial section template
         for (let i = 1; i <= amount; i++) {
             const initialSection = `
-            <div class="border-l-2 border-blue-500 pl-4">
+            <select id="Weapon ${i}" 
+                    name="weapon_${i}" 
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required>
+                <option value="" disabled selected>Select Weapon</option>
+                <option value=0>Create Weapon</option>
+                <option value=1>defult 1</option>
+                <option value=2>defult 2</option>
+                <option value=3>defult 3</option>
+                <option value=4>defult 4</option>
+            </select>
+            <div class="border-l-2 border-blue-500 pl-4" id="weapon_list_${i}">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_name_${i}">
                     Weapon ${i} Name
                 </label>
@@ -291,7 +303,12 @@
                        id="weapon_properties_${i}" 
                        name="weapon_properties_${i}" 
                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                       required>`;
+                       required>
+                <script>
+                    const selectWeapon = document.getElementById("weapon_${i}")
+                    const createWeaponMenu = document.getElementById("weapon_list_${i}")
+                    
+                </script>`;
             let section = initialSection.replace(/\$/g, i);
             const weaponDiv = document.createElement('div');
             weaponDiv.innerHTML = section;

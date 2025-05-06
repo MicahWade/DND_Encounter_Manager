@@ -235,13 +235,14 @@
         }
         
         // Initial section template
-        const initialSection = `
+        for (let i = 1; i <= amount; i++) {
+                    const initialSection = `
             <div class="border-l-2 border-blue-500 pl-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_name_$">
                     Weapon $ Name
                 </label>
                 <input type="text" 
-                    id="weapon_name_$"
+                    id="weapon_name_${i}"
                     name="weapon_name[]"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     required>
@@ -249,7 +250,7 @@
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_description_$">
                     Description
                 </label>
-                <textarea id="weapon_description_$" 
+                <textarea id="weapon_description_${i}" 
                         name="weapon_description[]" 
                         class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                         rows="3"></textarea>
@@ -258,7 +259,7 @@
                     Attack Modifier
                 </label>
                 <input type="number" 
-                    id="weapon_attackModifier_$"
+                    id="weapon_attackModifier_${i}"
                     name="weapon_attackModifier[]"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     required>
@@ -266,7 +267,7 @@
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_damageDice_$">
                     Damage Dice
                 </label>
-                <select id="weapon_damageDice_$" 
+                <select id="weapon_damageDice_${i}" 
                         name="weapon_damageDice[]" 
                         class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                         required>
@@ -282,7 +283,7 @@
                     Amount Of Dice
                 </label>
                 <input type="number" 
-                    id="weapon_amount_$"
+                    id="weapon_amount_${i}"
                     name="weapon_amount[]"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     required>
@@ -295,7 +296,6 @@
                        name="weapon_properties" 
                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                        required>`;
-        for (let i = 1; i <= amount; i++) {
             let section = initialSection.replace(/\$/g, i);
             const weaponDiv = document.createElement('div');
             weaponDiv.innerHTML = section;

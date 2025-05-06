@@ -203,22 +203,18 @@
         const size = document.getElementById('size').value;
         const speed = document.getElementById('speed').value;
         const weaponAmount = document.getElementById('weaponAmount').value;
-        weaponName = '';
-        weaponDescription = '';
-        weaponAttackModifier = '';
-        weaponDamageDice = '';
-        WeaponDiceAmount = '';
-        weaponProperties = '';
-        for(let i = 1; i <= document.getElementById('weaponAmount').value; i++){
-            weaponName += `,${document.getElementById(`weapon_name_${i}`).value}`;
-            weaponDescription += `,${document.getElementById(`weapon_description_${i}`).value}`;
-            weaponAttackModifier += `,${document.getElementById(`weapon_attackModifier_${i}`).value}`;
-            weaponDamageDice += `,${document.getElementById(`weapon_damageDice_${i}`).value}`;
-            WeaponDiceAmount += `,${document.getElementById(`weapon_amount_${i}`).value}`;
-            weaponProperties += `,${document.getElementById(`weapon_properties_${i}`).value}`;
+        WeaponNone = false 
+        for(let i = 1; i <= weaponAmount; i++){
+            weaponName += `+${document.getElementById(`weapon_name_${i}`).value}`;
+            weaponDescription += `+${document.getElementById(`weapon_description_${i}`).value}`;
+            weaponAttackModifier += `+${document.getElementById(`weapon_attackModifier_${i}`).value}`;
+            weaponDamageDice += `+${document.getElementById(`weapon_damageDice_${i}`).value}`;
+            WeaponDiceAmount += `+${document.getElementById(`weapon_amount_${i}`).value}`;
+            if (!weaponName || !weaponDescription || !weaponAttackModifier || !weaponDamageDice || !WeaponDiceAmount){
+                WeaponNone = null
+            }
         }
-
-        if (!weaponAmount || !name || !hp || !CR || !speed || !weaponName || !weaponDescription || !weaponAttackModifier || !weaponDamageDice || !STR || !DEX || !CON || !INT || !WIS || !CHA || !size) {
+        if (!WeaponNone || !weaponAmount || !name || !hp || !CR || !speed || !weaponName || !weaponDescription || !weaponAttackModifier || !weaponDamageDice || !STR || !DEX || !CON || !INT || !WIS || !CHA || !size) {
             alert('Please fill in all required fields');
             e.preventDefault();
         }
@@ -238,37 +234,37 @@
         for (let i = 1; i <= amount; i++) {
             const initialSection = `
             <div class="border-l-2 border-blue-500 pl-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_name_$">
-                    Weapon $ Name
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_name_${i}">
+                    Weapon ${i} Name
                 </label>
                 <input type="text" 
                     id="weapon_name_${i}"
-                    name="weapon_name[]"
+                    name="weapon_name_${i}"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     required>
                 
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_description_$">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_description_${i}">
                     Description
                 </label>
                 <textarea id="weapon_description_${i}" 
-                        name="weapon_description[]" 
+                        name="weapon_description_${i}" 
                         class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                         rows="3"></textarea>
                 
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_attackModifier_$">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_attackModifier_${i}">
                     Attack Modifier
                 </label>
                 <input type="number" 
                     id="weapon_attackModifier_${i}"
-                    name="weapon_attackModifier[]"
+                    name="weapon_attackModifier_${i}"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     required>
                 
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_damageDice_$">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_damageDice_${i}">
                     Damage Dice
                 </label>
                 <select id="weapon_damageDice_${i}" 
-                        name="weapon_damageDice[]" 
+                        name="weapon_damageDice_${i}" 
                         class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                         required>
                     <option value="" disabled selected>Select Damage Dice</option>
@@ -279,21 +275,21 @@
                     <option value=12>d12</option>
                 </select>
                 
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_amount_$">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_amount_${i}">
                     Amount Of Dice
                 </label>
                 <input type="number" 
                     id="weapon_amount_${i}"
-                    name="weapon_amount[]"
+                    name="weapon_amount_${i}"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     required>
                     
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_properties_$">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_properties_${i}">
                     Properties (comma-separated)
                 </label> 
                 <input type="text" 
-                       id="weapon_properties" 
-                       name="weapon_properties" 
+                       id="weapon_properties_${i}" 
+                       name="weapon_properties_${i}" 
                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                        required>`;
             let section = initialSection.replace(/\$/g, i);

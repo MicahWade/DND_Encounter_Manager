@@ -28,13 +28,10 @@ def enemys():
 @app.route("/enemys/create", methods=["GET", "POST"])
 def createEnemy():
     if request.method == "POST":
-        # Extract form data
-        print("\n\n\n\n\n\n\n")
-        print(weapon_description = request.form.get("weapon_description"))
-        print("\n\n\n\n\n\n\n")
         name = request.form.get("name")
         hp = request.form.get("hp")
         CR = request.form.get("CR")
+        # TODO: Check Size
         size = request.form.get("size")
         STR = request.form.get("STR")
         DEX = request.form.get("DEX")
@@ -43,14 +40,14 @@ def createEnemy():
         WIS = request.form.get("WIS")
         CHA = request.form.get("CHA")
         speed = request.form.get("speed")
-        weapon_name = request.form.get("weapon_name")
-        weapon_description = request.form.get("weapon_description")
-        weapon_attackModifier = request.form.get("weapon_attackModifier")
-        weapon_damageDice = request.form.get("weapon_damageDice")
-        weapon_amount = request.form.get("weapon_amount")
-        weapon_properties = request.form.get("weapon_properties")
+        weaponAmount = request.form.get("weaponAmount")
 
-        print(size)
+        # weapon_name = request.form.get("weapon_name")
+        # weapon_description = request.form.get("weapon_description")
+        # weapon_attackModifier = request.form.get("weapon_attackModifier")
+        # weapon_damageDice = request.form.get("weapon_damageDice")
+        # weapon_amount = request.form.get("weapon_amount")
+        # weapon_properties = request.form.get("weapon_properties")
 
         # Convert numeric fields to appropriate types
         try:
@@ -63,27 +60,39 @@ def createEnemy():
             WIS = int(WIS)
             CHA = int(CHA)
             speed = int(speed)
-            weapon_attackModifier = int(weapon_attackModifier)
+            weaponAmount = int(weaponAmount)
         except ValueError:
             return "Invalid data format"
 
-        # Split weapon properties into a list
-        properties = weapon_properties.split(',')
-
         weapons = []
 
-        # Create Weapon object
-        weapons.append(Encounter.Weapon(
-            name=weapon_name,
-            description=weapon_description,
-            weaponType="",  # You may need to adjust this based on (1,1)properties,
-            properties=[],
-            attackModifier=weapon_attackModifier,
-            damageType="slashing",  # You may need to adjust this based on your input
-            damageDiceAmount=weapon_amount,
-            diceType=weapon_damageDice,
-            damageModifier=0
-        ))
+
+        for i in range(1, weaponAmount+1):
+            weapon_name = request.form.get(f"weapon_name_{i}")
+            weapon_description = request.form.get(f"weapon_description_{i}")
+            weapon_attackModifier = request.form.get(f"weapon_attackModifier_{i}")
+            weapon_damageDice = request.form.get(f"weapon_damageDice_{i}")
+            weapon_DiceAmount = request.form.get(f"weapon_amount_{i}")
+            weapon_properties = request.form.get(f"weapon_properties_{i}")
+            print(weapon_damageDice)
+            weapon_damageDice = int(weapon_damageDice)
+            weapon_attackModifier = int(weapon_attackModifier)
+            weapon_DiceAmount = int(weapon_DiceAmount)
+            # Create Weapon object
+            try:
+                weapons.append(Encounter.Weapon(
+                    name=weapon_name,
+                    description=weapon_description,
+                    weaponType="",  # You may need to adjust this based on (1,1)properties,
+                    properties=weapon_properties.split(","),
+                    attackModifier=weapon_attackModifier,
+                    damageType="slashing",  # You may need to adjust this based on your input
+                    damageDiceAmount=weapon_DiceAmount,
+                    diceType=weapon_damageDice,
+                    damageModifier=0
+                ))
+            except ValueError:
+                print("Invalid data format")
 
         # Create Enemy object
         enemy = Encounter.Enemy(

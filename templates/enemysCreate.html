@@ -1,162 +1,184 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container mx-auto p-4 bg-gray-100 max-w-4xl">
+<div class="container mx-auto p-4 bg-gray-100 max-w-4xl rounded-sm">
     <div class="bg-white rounded-lg shadow-lg p-6">
-        <h1 class="text-3xl font-bold text-gray-900 mb-6">Create a D&D Enemy</h1>
+        <h1 class="text-3xl font-bold text-gray-900 mb-6 text-center">D&D Enemy</h1>
         <form action="/enemys/create" method="POST" class="space-y-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="space-y-4">
-                    <div>
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-5 text-center">
+                <span class="col-span-4 place-items-center font-bold text-lg">
+                    <div class="w-1/2">
+                        <label class="block text-gray-700 font-bold mb-2 text-md" for="name">
                             Name
                         </label>
                         <input type="text" 
-                               id="name" 
-                               name="name" 
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                               required>
+                            id="name" 
+                            name="name" 
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                            required>
                     </div>
-
-                    <div>
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="hp">
-                            Health
-                        </label>
-                        <input type="number" 
-                               id="hp" 
-                               name="hp" 
-                               min="0"
-                               step="1"
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                               required>
-                    </div>
-
-                    <div>
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="size">
-                            Size
-                        </label>
-                        <select id="size" 
-                                name="size" 
-                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                </span>
+                <span>
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="hp">
+                        Health
+                    </label>
+                    <input type="number" 
+                           id="hp" 
+                           name="hp" 
+                           min="0"
+                           step="1"
+                           class="border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-4/5 aspect-[4/3] text-6xl text-center" 
+                           required>
+                </span>
+                <span>
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="size">
+                        Size
+                    </label>
+                    <select id="size" 
+                            name="size" 
+                            class="border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-4/5 aspect-[4/3] text-2xl text-center" 
+                            required>
+                        <option value="" disabled selected>Select Size</option>
+                        <option value="0">Tiny</option>
+                        <option value="1">Small</option>
+                        <option value="2">Medium</option>
+                        <option value="3">Large</option>
+                        <option value="4">Huge</option>
+                        <option value="5">Gargantuan</option>
+                        <option value="6">Colossal</option>
+                    </select>
+                </span>
+                <span class="col-span-2 row-span-2">
+                    <div class="grid grid-rows-2 grid-cols-3">
+                        <span>
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="STR">
+                                <span class="group inline-block relative font-semibold text-xl">
+                                    STR
+                                    <span class="absolute invisible group-hover:visible bg-gray-600 text-white text-xs p-2 rounded-lg z-10 -bottom-10 -left-1/2 whitespace-nowrap">
+                                        Strength
+                                    </span>
+                                </span>
+                            </label>
+                            <input type="number" 
+                                id="STR" 
+                                name="STR" 
+                                min="3"
+                                max="30"
+                                class="border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-2/3 aspect-square text-6xl text-center" 
                                 required>
-                            <option value="" disabled selected>Select Size</option>
-                            <option value="0">Tiny</option>
-                            <option value="1">Small</option>
-                            <option value="2">Medium</option>
-                            <option value="3">Large</option>
-                            <option value="4">Huge</option>
-                            <option value="5">Gargantuan</option>
-                            <option value="6">Colossal</option>
-                        </select>
+                        </span>
+                        <span>
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="CON">
+                                <span class="group inline-block relative font-semibold text-xl">
+                                    CON
+                                    <span class="absolute invisible group-hover:visible bg-gray-600 text-white text-xs p-2 rounded-lg z-10 -bottom-10 -left-1/2 whitespace-nowrap">
+                                        Constitution 
+                                    </span>
+                                </span>
+                            </label>
+                            <input type="number" 
+                                id="CON" 
+                                name="CON" 
+                                min="3"
+                                max="30"
+                                class="border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-2/3 aspect-square text-6xl text-center" 
+                                required>
+                        </span>
+                        <span>
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="WIS">
+                                <span class="group inline-block relative font-semibold text-xl">
+                                    WIS
+                                    <span class="absolute invisible group-hover:visible bg-gray-600 text-white text-xs p-2 rounded-lg z-10 -bottom-10 -left-1/2 whitespace-nowrap">
+                                        Wisdom
+                                    </span>
+                                </span>
+                            </label>
+                            <input type="number" 
+                                id="WIS" 
+                                name="WIS" 
+                                min="3"
+                                max="30"
+                                class="border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-2/3 aspect-square text-6xl text-center" 
+                                required>
+                        </span>
+                        <span>
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="DEX">
+                                <span class="group inline-block relative font-semibold text-xl">
+                                    DEX
+                                    <span class="absolute invisible group-hover:visible bg-gray-600 text-white text-xs p-2 rounded-lg z-10 -bottom-10 -left-1/2 whitespace-nowrap">
+                                        Dexterity
+                                    </span>
+                                </span>
+                            </label>
+                            <input type="number" 
+                                id="DEX" 
+                                name="DEX" 
+                                min="3"
+                                max="30"
+                                class="border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-2/3 aspect-square text-6xl text-center" 
+                                required>
+                        </span>
+                        <span>
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="INT">
+                                <span class="group inline-block relative font-semibold text-xl">
+                                    INT
+                                    <span class="absolute invisible group-hover:visible bg-gray-600 text-white text-xs p-2 rounded-lg z-10 -bottom-10 -left-1/2 whitespace-nowrap">
+                                        Intelligence
+                                    </span>
+                                </span>
+                            </label>
+                            <input type="number" 
+                                id="INT"
+                                name="INT"
+                                min="3"
+                                max="30"
+                                class="border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-2/3 aspect-square text-6xl text-center" 
+                                required>
+                        </span>
+                        <span>
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="CHA">
+                                <span class="group inline-block relative font-semibold text-xl">
+                                    CHA
+                                    <span class="absolute invisible group-hover:visible bg-gray-600 text-white text-xs p-2 rounded-lg z-10 -bottom-10 -left-1/2 whitespace-nowrap">
+                                        Charisma
+                                    </span>
+                                </span>
+                            </label>
+                            <input type="number" 
+                                id="CHA"
+                                name="CHA"
+                                min="3"
+                                max="30"
+                                class="border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-2/3 aspect-square text-6xl text-center" 
+                                required>
+                        </span>
                     </div>
-
-                    <div>
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="STR">
-                            Strength (STR)
-                        </label>
-                        <input type="number" 
-                               id="STR" 
-                               name="STR" 
-                               min="3"
-                               max="30"
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                               required>
-                    </div>
-
-                    <div>
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="CON">
-                            Constitution (CON)
-                        </label>
-                        <input type="number" 
-                               id="CON" 
-                               name="CON" 
-                               min="3"
-                               max="30"
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                               required>
-                    </div>
-
-                    <div>
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="CON">
-                            Wisdom (WIS)
-                        </label>
-                        <input type="number" 
-                               id="WIS" 
-                               name="WIS" 
-                               min="3"
-                               max="30"
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                               required>
-                    </div>
-                </div>
-
-                <div class="space-y-4">
-                    <div>
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="CR">
-                            Challenge Rating
-                        </label>
-                        <input type="number" 
-                               id="CR" 
-                               name="CR" 
-                               max="30"
-                               step="0.125"
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                               required>
-                    </div>
-
-                    <div>
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="speed">
-                            Speed
-                        </label>
-                        <input type="number" 
-                               id="speed" 
-                               name="speed" 
-                               min="5"
-                               max="500"
-                               step="5"
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                               required>
-                    </div>
-
-                    <div>
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="DEX">
-                            Dexterity (DEX)
-                        </label>
-                        <input type="number" 
-                               id="DEX" 
-                               name="DEX" 
-                               min="3"
-                               max="30"
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                               required>
-                    </div>
-
-                    <div>
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="INT">
-                            Intelligence (INT)
-                        </label>
-                        <input type="number" 
-                               id="INT"
-                               name="INT"
-                               min="3"
-                               max="30"
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                               required>
-                    </div>
-
-                    <div>
-                        <label class="block text-gray-700 text-sm font-bold mb-2" for="CHA">
-                            Charisma (CHA)
-                        </label>
-                        <input type="number" 
-                               id="CHA"
-                               name="CHA"
-                               min="3"
-                               max="30"
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                               required>
-                    </div>
-                </div>
+                </span>
+                <span>
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="speed">
+                        Speed
+                    </label>
+                    <input type="number" 
+                           id="speed" 
+                           name="speed" 
+                           min="5"
+                           max="500"
+                           step="5"
+                           class="border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-4/5 aspect-[4/3] text-6xl text-center" 
+                           required>
+                </span>
+                <span>
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="CR">
+                        Challenge Rating
+                    </label>
+                    <input type="number" 
+                           id="CR" 
+                           name="CR" 
+                           max="30"
+                           step="0.125"
+                           class="border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-4/5 aspect-[4/3] text-6xl text-center" 
+                           required>
+                </span>
             </div>
 
             <!-- Weapons -->
@@ -188,5 +210,7 @@
         </form>
     </div>
     <script src="{{ url_for('static', filename='js/createEnemy.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/styles.css') }}"></script>
+
 </div>
 {% endblock %}

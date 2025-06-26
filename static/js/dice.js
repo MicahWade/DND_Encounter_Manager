@@ -1,10 +1,12 @@
 function closeDice() {
     const mainDiceRollMenu = document.getElementById('mainDiceRoll');
     mainDiceRollMenu.classList.add('hidden');
+    popup.classList.remove('show');
 }
 function openDice() {
     const mainDiceRollMenu = document.getElementById('mainDiceRoll');
     mainDiceRollMenu.classList.remove('hidden');
+    popup.classList.add('show');
 }
 function rollDice(amount, dice, modifier){
     total = 0;

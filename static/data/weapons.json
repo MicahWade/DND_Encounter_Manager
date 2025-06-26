@@ -1,0 +1,332 @@
+[
+  {
+    "name": "Longsword",
+    "type": "Melee Weapon (simple)",
+    "properties": ["Versatile"],
+    "attackModifier": 1,
+    "damageType": "Slashing",
+    "amountOfDice": 1,
+    "dice": 8,
+    "damageModifier": 0
+  },
+  {
+    "name": "Greatsword",
+    "type": "Melee Weapon (simple)",
+    "properties": ["Two-Handed", "Heavy"],
+    "attackModifier": 1,
+    "damageType": "Slashing",
+    "amountOfDice": 2,
+    "dice": 6,
+    "damageModifier": 0
+  },
+  {
+    "name": "Shortsword",
+    "type": "Melee Weapon (simple)",
+    "properties": ["Finesse", "Light"],
+    "attackModifier": 1,
+    "damageType": "Piercing",
+    "amountOfDice": 1,
+    "dice": 6,
+    "damageModifier": 0
+  },
+  {
+    "name": "Dagger",
+    "type": "Melee Weapon (simple)",
+    "properties": ["Finesse", "Light", "Range", "Thrown"],
+    "attackModifier": 1,
+    "damageType": "Bludgeoning",
+    "amountOfDice": 1,
+    "dice": 4,
+    "damageModifier": 0
+  },
+  {
+    "name": "Light Crossbow",
+    "type": "Ranged Weapon (simple)",
+    "properties": ["Two-Handed", "Range", "Loading", "Ammunition"],
+    "attackModifier": 1,
+    "damageType": "Piercing",
+    "amountOfDice": 1,
+    "dice": 8,
+    "damageModifier": 0
+  },
+  {
+    "name": "Club",
+    "type": "simple",
+    "properties": ["light"],
+    "attackModifier": 1,
+    "damageType": "Bludgeoning",
+    "amountOfDice": 1,
+    "dice": 4,
+    "damageModifier": 0
+  },
+  {
+    "name": "Battleaxe",
+    "type": "Melee Weapon (martial)",
+    "properties": ["Versatile"],
+    "attackModifier": 1,
+    "damageType": "Slashing",
+    "amountOfDice": 1,
+    "dice": 8,
+    "damageModifier": 0
+  },
+  {
+    "name": "Handaxe",
+    "type": "Melee Weapon (simple)",
+    "properties": ["Light", "Thrown"],
+    "attackModifier": 1,
+    "damageType": "Slashing",
+    "amountOfDice": 1,
+    "dice": 6,
+    "damageModifier": 0
+  },
+  {
+    "name": "Greataxe",
+    "type": "Melee Weapon (martial)",
+    "properties": ["Heavy", "Two-Handed"],
+    "attackModifier": 1,
+    "damageType": "Slashing",
+    "amountOfDice": 1,
+    "dice": 12,
+    "damageModifier": 0
+  },
+  {
+    "name": "Halberd",
+    "type": "Melee Weapon (martial)",
+    "properties": ["Heavy", "Reach", "Two-Handed"],
+    "attackModifier": 1,
+    "damageType": "Slashing",
+    "amountOfDice": 1,
+    "dice": 10,
+    "damageModifier": 0
+  },
+  {
+    "name": "Glaive",
+    "type": "Melee Weapon (martial)",
+    "properties": ["Heavy", "Reach", "Two-Handed"],
+    "attackModifier": 1,
+    "damageType": "Slashing",
+    "amountOfDice": 1,
+    "dice": 10,
+    "damageModifier": 0
+  },
+  {
+    "name": "Maul",
+    "type": "Melee Weapon (martial)",
+    "properties": ["Heavy", "Two-Handed"],
+    "attackModifier": 1,
+    "damageType": "Bludgeoning",
+    "amountOfDice": 2,
+    "dice": 6,
+    "damageModifier": 0
+  },
+  {
+    "name": "Warhammer",
+    "type": "Melee Weapon (martial)",
+    "properties": ["Versatile"],
+    "attackModifier": 1,
+    "damageType": "Bludgeoning",
+    "amountOfDice": 1,
+    "dice": 8,
+    "damageModifier": 0
+  },
+  {
+    "name": "Mace",
+    "type": "Melee Weapon (simple)",
+    "properties": [],
+    "attackModifier": 1,
+    "damageType": "Bludgeoning",
+    "amountOfDice": 1,
+    "dice": 6,
+    "damageModifier": 0
+  },
+  {
+    "name": "Morningstar",
+    "type": "Melee Weapon (martial)",
+    "properties": [],
+    "attackModifier": 1,
+    "damageType": "Piercing",
+    "amountOfDice": 1,
+    "dice": 8,
+    "damageModifier": 0
+  },
+  {
+    "name": "Quarterstaff",
+    "type": "Melee Weapon (simple)",
+    "properties": ["Versatile"],
+    "attackModifier": 1,
+    "damageType": "Bludgeoning",
+    "amountOfDice": 1,
+    "dice": 6,
+    "damageModifier": 0
+  },
+  {
+    "name": "Spear",
+    "type": "Melee Weapon (simple)",
+    "properties": ["Thrown", "Versatile"],
+    "attackModifier": 1,
+    "damageType": "Piercing",
+    "amountOfDice": 1,
+    "dice": 6,
+    "damageModifier": 0
+  },
+  {
+    "name": "Rapier",
+    "type": "Melee Weapon (martial)",
+    "properties": ["Finesse"],
+    "attackModifier": 1,
+    "damageType": "Piercing",
+    "amountOfDice": 1,
+    "dice": 8,
+    "damageModifier": 0
+  },
+  {
+    "name": "Scimitar",
+    "type": "Melee Weapon (martial)",
+    "properties": ["Finesse", "Light"],
+    "attackModifier": 1,
+    "damageType": "Slashing",
+    "amountOfDice": 1,
+    "dice": 6,
+    "damageModifier": 0
+  },
+  {
+    "name": "Trident",
+    "type": "Melee Weapon (martial)",
+    "properties": ["Thrown", "Versatile"],
+    "attackModifier": 1,
+    "damageType": "Piercing",
+    "amountOfDice": 1,
+    "dice": 6,
+    "damageModifier": 0
+  },
+  {
+    "name": "Whip",
+    "type": "Melee Weapon (martial)",
+    "properties": ["Finesse", "Reach"],
+    "attackModifier": 1,
+    "damageType": "Slashing",
+    "amountOfDice": 1,
+    "dice": 4,
+    "damageModifier": 0
+  },
+  {
+    "name": "Sickle",
+    "type": "Melee Weapon (simple)",
+    "properties": ["Light"],
+    "attackModifier": 1,
+    "damageType": "Slashing",
+    "amountOfDice": 1,
+    "dice": 4,
+    "damageModifier": 0
+  },
+  {
+    "name": "Flail",
+    "type": "Melee Weapon (martial)",
+    "properties": [],
+    "attackModifier": 1,
+    "damageType": "Bludgeoning",
+    "amountOfDice": 1,
+    "dice": 8,
+    "damageModifier": 0
+  },
+  {
+    "name": "Pike",
+    "type": "Melee Weapon (martial)",
+    "properties": ["Heavy", "Reach", "Two-Handed"],
+    "attackModifier": 1,
+    "damageType": "Piercing",
+    "amountOfDice": 1,
+    "dice": 10,
+    "damageModifier": 0
+  },
+  {
+    "name": "Lance",
+    "type": "Melee Weapon (martial)",
+    "properties": ["Reach", "Special"],
+    "attackModifier": 1,
+    "damageType": "Piercing",
+    "amountOfDice": 1,
+    "dice": 12,
+    "damageModifier": 0
+  },
+  {
+    "name": "Sling",
+    "type": "Ranged Weapon (simple)",
+    "properties": ["Ammunition"],
+    "attackModifier": 1,
+    "damageType": "Bludgeoning",
+    "amountOfDice": 1,
+    "dice": 4,
+    "damageModifier": 0
+  },
+  {
+    "name": "Shortbow",
+    "type": "Ranged Weapon (simple)",
+    "properties": ["Ammunition", "Two-Handed"],
+    "attackModifier": 1,
+    "damageType": "Piercing",
+    "amountOfDice": 1,
+    "dice": 6,
+    "damageModifier": 0
+  },
+  {
+    "name": "Longbow",
+    "type": "Ranged Weapon (martial)",
+    "properties": ["Ammunition", "Heavy", "Two-Handed"],
+    "attackModifier": 1,
+    "damageType": "Piercing",
+    "amountOfDice": 1,
+    "dice": 8,
+    "damageModifier": 0
+  },
+  {
+    "name": "Heavy Crossbow",
+    "type": "Ranged Weapon (martial)",
+    "properties": ["Ammunition", "Heavy", "Loading", "Two-Handed"],
+    "attackModifier": 1,
+    "damageType": "Piercing",
+    "amountOfDice": 1,
+    "dice": 10,
+    "damageModifier": 0
+  },
+  {
+    "name": "Blowgun",
+    "type": "Ranged Weapon (martial)",
+    "properties": ["Ammunition"],
+    "attackModifier": 1,
+    "damageType": "Piercing",
+    "amountOfDice": 1,
+    "dice": 1,
+    "damageModifier": 0
+  },
+  {
+    "name": "Dart",
+    "type": "Ranged Weapon (simple)",
+    "properties": ["Finesse", "Thrown"],
+    "attackModifier": 1,
+    "damageType": "Piercing",
+    "amountOfDice": 1,
+    "dice": 4,
+    "damageModifier": 0
+  },
+  {
+    "name": "Javelin",
+    "type": "Ranged Weapon (simple)",
+    "properties": ["Thrown"],
+    "attackModifier": 1,
+    "damageType": "Piercing",
+    "amountOfDice": 1,
+    "dice": 6,
+    "damageModifier": 0
+  },
+  {
+    "name": "Net",
+    "type": "Ranged Weapon (martial)",
+    "properties": ["Thrown", "Special"],
+    "attackModifier": 0,
+    "damageType": "None",
+    "amountOfDice": 0,
+    "dice": 0,
+    "damageModifier": 0
+  }
+]

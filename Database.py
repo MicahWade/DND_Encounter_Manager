@@ -1,19 +1,34 @@
 import sqlite3
 import os
+import json
 import Encounter
 
 class EncounterDatabase():
     server = "Temp Server"
 
     def CreateDefultWeapons(self):
-        weapons = []
-        weapons.append(Encounter.Weapon("Longsword", "Melee Weapon (simple)", ["Versatile",], 1, "Slashing", 1, 8, 0))
-        weapons.append(Encounter.Weapon("Greatsword", "Melee Weapon (simple)", ["Two-Handed", "Heavy"], 1, "Slashing", 2, 6, 0))
-        weapons.append(Encounter.Weapon("Shortsword", "Melee Weapon (simple)", ["Finesse", "Light"], 1, "Piercing", 1, 6, 0))
-        weapons.append(Encounter.Weapon("Dagger", "Melee Weapon (simple)", ["Finesse", "Light", "Range", "Thrown"], 1, "Bludgeoning", 1, 4, 0))
-        weapons.append(Encounter.Weapon("Light Crossbow", "Ranged Weapon (simple)", ["Two-Handed", "Range", "Loading", "Ammunition"], 1, "Piercing", 1, 8, 0))
-        weapons.append(Encounter.Weapon("Club", "simple", ["light",], 1, "Bludgeoning", 1, 4, 0))
-
+        # Read weapon data from JSON file
+        static_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static", "data")
+        json_path = os.path.join(static_dir, "weapons.json")
+        if not os.path.exists(json_path):
+            print("Error Now weapon.json file in static/data/")
+        else:
+            with open(json_path, "r", encoding="utf-8") as f:
+                weapon_data = json.load(f)
+            weapons = []
+            for weapon in weapon_data:
+                weapons.append(
+                    Encounter.Weapon(
+                        weapon["name"],
+                        weapon["type"],
+                        weapon["properties"],
+                        weapon["attackModifier"],
+                        weapon["damageType"],
+                        weapon["amountOfDice"],
+                        weapon["dice"],
+                        weapon["damageModifier"]
+                    )
+                )
         for weapon in weapons:
             self.AddWeapon(weapon)
 
@@ -128,6 +143,10 @@ class EncounterDatabase():
             ID = self.server.execute("SELECT last_insert_rowid()").fetchone()[0]
             self.server.execute("INSERT INTO EnemyWeapon (WeaponID, EnemyID) VALUES (?, ?)", (ID, enemyID))
         self.server.commit()
+
+    def AddPremadeWeapon(self, weaponid, enemyID):
+        self.server.execute("INSERT INTO EnemyWeapon (WeaponID, EnemyID) VALUES (?, ?)", (weaponid, enemyID))
+        self.server.commit()
             
     #TODO: Could be threaded in Future
     def AddEnemy(self, enemy):
@@ -135,7 +154,10 @@ class EncounterDatabase():
         ID = cursor.lastrowid # My need to change so that it can 
         self.server.commit()
         for weapon in enemy.weapons:
-            self.AddWeapon(ID, weapon)
+            if type(weapon) is type(1):
+                self.AddPremadeWeapon(weapon, ID)
+            else: 
+                self.AddWeapon(ID, weapon)
         return ID
 
     def AddPlayer(self, Player):
@@ -146,7 +168,7 @@ class EncounterDatabase():
         weaponDB = self.server.execute(f"SELECT * FROM Weapon WHERE WeaponID ='{ID}'")
         weaponClass = None
         for weapon in weaponDB:
-            weaponClass = Encounter.Weapon(weapon[1], weapon[2], weapon[3], weapon[4], weapon[5], weapon[6], weapon[7], weapon[8])
+            weaponClass = Encounter.Weapon(weapon[1], weapon[2], weapon[3].split(","), weapon[4], weapon[5], weapon[6], weapon[7], weapon[8])
         return weaponClass
 
     def GetWeapons(self, ID):
@@ -159,7 +181,7 @@ class EncounterDatabase():
             WHERE ew.EnemyID = ?
         """, (ID,))
         for weapon in weaponsDB:
-            weapons.append(Encounter.Weapon(weapon[1], weapon[2], weapon[3], weapon[4], weapon[5], weapon[6], weapon[7], weapon[8]))        
+            weapons.append(Encounter.Weapon(weapon[1], weapon[2], weapon[3].split(","), weapon[4], weapon[5], weapon[6], weapon[7], weapon[8]))        
         return weapons    
 
     def GetPlayers(self):

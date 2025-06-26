@@ -29,16 +29,15 @@ document.querySelector('form').addEventListener('submit', function(e) {
 });
 function generateWeaponSections() {
     const container = document.getElementById('weaponContainer');
-    
     const amount = parseInt(document.getElementById("weaponAmount").value);
-    
+
     // Clear existing sections except the heading
     container.innerHTML = '<h2 class="text-xl font-bold text-gray-900 mb-4">Weapon Details</h2>';
-    
+
     if (isNaN(amount) || amount < 1 || amount > 8) {
         return;
     }
-    
+
     // Initial section template
     for (let i = 1; i <= amount; i++) {
         const initialSection = `
@@ -49,12 +48,46 @@ function generateWeaponSections() {
                 oninput="sendWeaponRequest('${i}')">
             <option value="" disabled selected>Select Weapon</option>
             <option value=0>Create Weapon</option>
-            <option value=1>Longsword</option>
-            <option value=2>Greatsword</option>
-            <option value=3>Shortsword</option>
-            <option value=4>Dagger</option>
-            <option value=5>Light Crossbow</option>
-            <option value=6>Club</option>
+            <optgroup label="Simple Melee Weapons">
+                <option value=6>Club</option>
+                <option value=4>Dagger</option>
+                <option value=14>Mace</option>
+                <option value=16>Quarterstaff</option>
+                <option value=22>Sickle</option>
+                <option value=17>Spear</option>
+                <option value=8>Handaxe</option>
+            </optgroup>
+            <optgroup label="Simple Ranged Weapons">
+                <option value=5>Light Crossbow</option>
+                <option value=26>Sling</option>
+                <option value=27>Shortbow</option>
+                <option value=31>Dart</option>
+                <option value=32>Javelin</option>
+            </optgroup>
+            <optgroup label="Martial Melee Weapons">
+                <option value=1>Longsword</option>
+                <option value=2>Greatsword</option>
+                <option value=7>Battleaxe</option>
+                <option value=9>Greataxe</option>
+                <option value=10>Halberd</option>
+                <option value=11>Glaive</option>
+                <option value=12>Maul</option>
+                <option value=13>Warhammer</option>
+                <option value=15>Morningstar</option>
+                <option value=18>Rapier</option>
+                <option value=19>Scimitar</option>
+                <option value=20>Trident</option>
+                <option value=21>Whip</option>
+                <option value=23>Flail</option>
+                <option value=24>Pike</option>
+                <option value=25>Lance</option>
+            </optgroup>
+            <optgroup label="Martial Ranged Weapons">
+                <option value=28>Longbow</option>
+                <option value=29>Heavy Crossbow</option>
+                <option value=30>Blowgun</option>
+                <option value=33>Net</option>
+            </optgroup>
         </select>
         <div class="border-l-2 border-blue-500 pl-4" id="weapon_list_${i}">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_name_${i}">

@@ -65,27 +65,31 @@ def createEnemy():
 
 
         for i in range(1, weaponAmount+1):
+            weapon_type = request.form.get(f"weapon_{i}")
             weapon_name = request.form.get(f"weapon_name_{i}")
             weapon_attackModifier = request.form.get(f"weapon_attackModifier_{i}")
             weapon_damageDice = request.form.get(f"weapon_damageDice_{i}")
             weapon_DiceAmount = request.form.get(f"weapon_amount_{i}")
             weapon_properties = request.form.get(f"weapon_properties_{i}")
-            print(weapon_damageDice)
             weapon_damageDice = int(weapon_damageDice)
             weapon_attackModifier = int(weapon_attackModifier)
             weapon_DiceAmount = int(weapon_DiceAmount)
+            weapon_type = int(weapon_type)
             # Create Weapon object
             try:
-                weapons.append(Encounter.Weapon(
-                    name=weapon_name,
-                    weaponType="",  # You may need to adjust this based on (1,1)properties,
-                    properties=weapon_properties.split(","),
-                    attackModifier=weapon_attackModifier,
-                    damageType="slashing",  # You may need to adjust this based on your input
-                    damageDiceAmount=weapon_DiceAmount,
-                    diceType=weapon_damageDice,
-                    damageModifier=0
-                ))
+                if weapon_type == 0:
+                    weapons.append(Encounter.Weapon(
+                        name=weapon_name,
+                        weaponType="",  # You may need to adjust this based on (1,1)properties,
+                        properties=weapon_properties.split(", "),
+                        attackModifier=weapon_attackModifier,
+                        damageType="slashing",  # You may need to adjust this based on your input
+                        damageDiceAmount=weapon_DiceAmount,
+                        diceType=weapon_damageDice,
+                        damageModifier=0
+                    ))
+                elif weapon_type > 0 and weapon_type <= 33:
+                    weapons.append(weapon_type)
             except ValueError:
                 print("Invalid data format")
 

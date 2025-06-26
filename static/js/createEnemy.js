@@ -53,8 +53,8 @@ function generateWeaponSections() {
             <option value=2>Greatsword</option>
             <option value=3>Shortsword</option>
             <option value=4>Dagger</option>
-            <option value=4>Light Crossbow</option>
-            <option value=4>Club</option>
+            <option value=5>Light Crossbow</option>
+            <option value=6>Club</option>
         </select>
         <div class="border-l-2 border-blue-500 pl-4" id="weapon_list_${i}">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_name_${i}">

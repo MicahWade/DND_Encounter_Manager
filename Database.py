@@ -87,29 +87,31 @@ class EncounterDatabase():
     def AddEncounter(self, encounter):
         enemyDataBaseID = []
         for enemy in encounter.characters:
-            dataBaseEnemy = self.server.execute(f"SELECT EnemyID, Name FROM Enemys WHERE {enemy.name}")
-            print(dataBaseEnemy) # Should be a list
-            if dataBaseEnemy is not None:
-                enemyDataBaseID.append(dataBaseEnemy[0])
+            # Only select EnemyID and Name, and use parameterized query
+            dataBaseEnemy = self.server.execute("SELECT EnemyID, Name FROM Enemys WHERE Name = ?", (enemy.name,))
+            dataBaseEnemyRow = dataBaseEnemy.fetchone()
+            print(dataBaseEnemyRow) # Should be a tuple or None
+            if dataBaseEnemyRow is not None:
+                enemyDataBaseID.append(dataBaseEnemyRow[0])
             else:
                 enemyDataBaseID.append(self.AddEnemy(enemy))
-        # Checks that the encounter is not in the database allready 
-        dataBaseEncounter = self.server.execute(f"SELECT Name FROM Encounters WHERE {encounter.name}")
-        if dataBaseEncounter is None:
-            self.server.execute(f"INSERT INTO Encounters (Name, CR) VALUES (\"{encounter.name}\",{encounter.CR})")
+        # Checks that the encounter is not in the database already 
+        dataBaseEncounter = self.server.execute("SELECT Name FROM Encounters WHERE Name = ?", (encounter.name,))
+        if dataBaseEncounter.fetchone() is None:
+            self.server.execute("INSERT INTO Encounters (Name, CR) VALUES (?, ?)", (encounter.name, encounter.CR))
             # Adds connection between Enemy and Encounters
-            encounterID =  self.server.lastrowid()
+            encounterID = self.server.execute("SELECT last_insert_rowid()").fetchone()[0]
             for enemyID in enemyDataBaseID:
-                self.server.execute(f"INSERT INTO EncounterEnemys (EncounterID, EnemyID) VALUES ({encounterID}, {enemyID})")
+                self.server.execute("INSERT INTO EncounterEnemys (EncounterID, EnemyID) VALUES (?, ?)", (encounterID, enemyID))
         else:
-            raise f"DataBase Allready Has Encounter {encounter.name}"
+            raise Exception(f"DataBase Already Has Encounter {encounter.name}")
         self.server.commit()
 
     def AddWeapons(self, enemyID, weapon):
         params = (weapon.name, weapon.description, weapon.weaponType, ",".join(weapon.properties), weapon.attackModifier, weapon.damageType, weapon.damageDiceAmount, weapon.diceType, weapon.damageModifier) 
-        cursor = self.server.execute(f"INSERT INTO WEAPON VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?)", params)
-        ID = cursor.lastrowid
-        cursor.execute(f"INSERT INTO EnemyWeapon (WeaponID, EnemyID) VALUES ({ID}, {enemyID})")
+        cursor = self.server.execute("INSERT INTO Weapon (Name, Description, WeaponType, Properties, AttackModifier, DamgeType, AmountOfDice, Dice, DamgeModifier) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", params)
+        ID = self.server.execute("SELECT last_insert_rowid()").fetchone()[0]
+        self.server.execute("INSERT INTO EnemyWeapon (WeaponID, EnemyID) VALUES (?, ?)", (ID, enemyID))
         self.server.commit()
             
     #TODO: Could be threaded in Future
@@ -134,78 +136,78 @@ class EncounterDatabase():
 
     def GetWeapons(self, ID):
         weapons = []
-        weaponsDB = self.server.execute(f"SELECT WeaponID FROM EnemyWeapon WHERE EnemyID ='{ID}'")
-        for weaponID in weaponsDB:
-            weapons.append(self.GetWeapon(weaponID[0]))        
+        # Use JOIN to get all weapon fields for a given enemy
+        weaponsDB = self.server.execute("""
+            SELECT w.WeaponID, w.Name, w.Description, w.WeaponType, w.Properties, w.AttackModifier, w.DamgeType, w.AmountOfDice, w.Dice, w.DamgeModifier
+            FROM Weapon w
+            INNER JOIN EnemyWeapon ew ON w.WeaponID = ew.WeaponID
+            WHERE ew.EnemyID = ?
+        """, (ID,))
+        for weapon in weaponsDB:
+            weapons.append(Encounter.Weapon(weapon[1], weapon[2], weapon[3], weapon[4].split(','), weapon[5], weapon[6], weapon[7], weapon[8], weapon[9]))        
         return weapons    
 
     def GetPlayers(self):
         players = []
-        playersDB = self.server.execute(f"SELECT * FROM Players")
+        playersDB = self.server.execute("SELECT Name FROM Players")
         for player in playersDB:
-            players.append(Encounter.Player(player[1]))
-        
+            players.append(Encounter.Player(player[0]))
         return players
 
     def GetEncounters(self):
         encounters = []
-        encountersDB = self.server.execute("SELECT ID, EncounterID FROM Encounters")
+        # Only select EncounterID and Name
+        encountersDB = self.server.execute("SELECT EncounterID, Name FROM Encounters")
         for encounter in encountersDB:
-            encounters.append([encounter[0][0], encounter[0][1]])
+            encounters.append([encounter[0], encounter[1]])
+        return encounters
 
     def GetEnemyName(self, EnemyName):
-        enemyDB = self.server.execute(f"SELECT EnemyID, Name, Size, Health, Speed, CR, STR, DEX, CON, INT, WIS, CHA FROM Enemys WHERE Name ='{EnemyName}'")
-        name = ""
-        health = 0
-        speed = 0
-        CR = 0
-        STR = 0
-        DEX = 0
-        CON = 0
-        INT = 0
-        WIS = 0
-        CHA = 0
-        weapon = []
-
-
-        for enemy in enemyDB:
-            weapon = self.GetWeapons(enemy[0])
-            name = enemy[1]
-            size = enemy [2]
-            health = enemy[3]
-            speed = enemy[4]
-            CR = enemy[5]
-            STR = enemy[6]
-            DEX = enemy[7]
-            CON = enemy[8]
-            INT = enemy[9]
-            WIS = enemy[10]
-            CHA = enemy[11]
-            
-        return Encounter.Enemy(name, size, health, speed, CR, STR, DEX, CON, INT, WIS, CHA, weapon)
+        # Use JOIN to get enemy and their weapons in one go
+        enemyDB = self.server.execute("""
+            SELECT e.EnemyID, e.Name, e.Size, e.Health, e.Speed, e.CR, e.STR, e.DEX, e.CON, e.INT, e.WIS, e.CHA
+            FROM Enemys e
+            WHERE e.Name = ?
+        """, (EnemyName,))
+        enemyRow = enemyDB.fetchone()
+        if enemyRow:
+            weapon = self.GetWeapons(enemyRow[0])
+            return Encounter.Enemy(enemyRow[1], enemyRow[2], enemyRow[3], enemyRow[4], enemyRow[5], enemyRow[6], enemyRow[7], enemyRow[8], enemyRow[9], enemyRow[10], enemyRow[11], weapon)
+        return None
 
     def GetEnemy(self, EnemyID):
-        enemyDB = self.server.execute(f"SELECT * FROM Enemys WHERE {EnemyID}")
-        enemyWeapons = self.GetWeapons(EnemyID)
-        return Encounter.Enemy(enemyDB[0][1], enemyDB[0][2], enemyDB[0][3], enemyDB[0][4], enemyDB[0][5], enemyDB[0][6], enemyDB[0][7], enemyDB[0][8], enemyDB[0][9], enemyDB[0][10], enemyDB[0][11], enemyWeapons)
+        # Use JOIN to get enemy by ID
+        enemyDB = self.server.execute("""
+            SELECT EnemyID, Name, Size, Health, Speed, CR, STR, DEX, CON, INT, WIS, CHA
+            FROM Enemys
+            WHERE EnemyID = ?
+        """, (EnemyID,))
+        enemyRow = enemyDB.fetchone()
+        if enemyRow:
+            enemyWeapons = self.GetWeapons(EnemyID)
+            return Encounter.Enemy(enemyRow[1], enemyRow[2], enemyRow[3], enemyRow[4], enemyRow[5], enemyRow[6], enemyRow[7], enemyRow[8], enemyRow[9], enemyRow[10], enemyRow[11], enemyWeapons)
+        return None
 
     def GetEncounter(self, EncounterID):
-        # Get Enemys
-        enemysDB = self.server.execute(f"""
-        SELECT Enemys.*
-        FROM Encounters
-        INNER JOIN EncounterEnemys ON Encounters.EncounterID = EncounterEnemys.EncounterID
-        INNER JOIN Enemys ON EncounterEnemys.EnemyID = Enemys.EnemyID
-        WHERE Encounters.EncounterID = {EncounterID};
-        """)
+        # Get Enemys using JOIN, only select required columns
+        enemysDB = self.server.execute("""
+            SELECT e.EnemyID, e.Name, e.Size, e.Health, e.Speed, e.CR, e.STR, e.DEX, e.CON, e.INT, e.WIS, e.CHA
+            FROM EncounterEnemys ee
+            INNER JOIN Enemys e ON ee.EnemyID = e.EnemyID
+            WHERE ee.EncounterID = ?
+        """, (EncounterID,))
         enemys = []
         for enemyDB in enemysDB:
-            enemys.append(Encounter.Enemy(enemyDB[1], enemyDB[2], enemyDB[3], enemyDB[4]))
+            weapons = self.GetWeapons(enemyDB[0])
+            enemys.append(Encounter.Enemy(enemyDB[1], enemyDB[2], enemyDB[3], enemyDB[4], enemyDB[5], enemyDB[6], enemyDB[7], enemyDB[8], enemyDB[9], enemyDB[10], enemyDB[11], weapons))
 
-        # Get Encounter
-        encounterDB = self.server.execute(f"SELECT * FROM Encounter WHERE {EncounterID}")
-        encounter = Encounter.Encounter(encounterDB[0][1], enemys, encounterDB[0][2])
-    
+        # Get Encounter, only select required columns
+        encounterDB = self.server.execute("SELECT Name, CR FROM Encounters WHERE EncounterID = ?", (EncounterID,))
+        encounterRow = encounterDB.fetchone()
+        if encounterRow:
+            return Encounter.Encounter(encounterRow[0], enemys, encounterRow[1])
+        return None
+
     def RemovePlayer(self, player):
         self.server.execute(f"DELETE FROM Players WHERE {player.name}")
         self.server.commit()

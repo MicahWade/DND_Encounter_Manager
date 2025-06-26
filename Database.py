@@ -15,7 +15,7 @@ class EncounterDatabase():
         weapons.append(Encounter.Weapon("Club", "simple", ["light",], 1, "Bludgeoning", 1, 4, 0))
 
         for weapon in weapons:
-            print(self.AddWeapon(weapon))
+            self.AddWeapon(weapon)
 
     def SetupTables(self):
         if self.server == "Temp Server":
@@ -105,7 +105,6 @@ class EncounterDatabase():
             # Only select EnemyID and Name, and use parameterized query
             dataBaseEnemy = self.server.execute("SELECT EnemyID, Name FROM Enemys WHERE Name = ?", (enemy.name,))
             dataBaseEnemyRow = dataBaseEnemy.fetchone()
-            print(dataBaseEnemyRow) # Should be a tuple or None
             if dataBaseEnemyRow is not None:
                 enemyDataBaseID.append(dataBaseEnemyRow[0])
             else:
@@ -125,7 +124,6 @@ class EncounterDatabase():
     def AddWeapon(self, weapon, enemyID = None):
         params = (weapon.name, weapon.weaponType, ",".join(weapon.properties), weapon.attackModifier, weapon.damageType, weapon.damageDiceAmount, weapon.diceType, weapon.damageModifier) 
         cursor = self.server.execute("INSERT INTO Weapon (Name, WeaponType, Properties, AttackModifier, DamgeType, AmountOfDice, Dice, DamgeModifier) VALUES (?, ?, ?, ?, ?, ?, ?, ?)", params)
-        print(self.server.execute("SELECT last_insert_rowid()").fetchone()[0])
         if(enemyID is not None):
             ID = self.server.execute("SELECT last_insert_rowid()").fetchone()[0]
             self.server.execute("INSERT INTO EnemyWeapon (WeaponID, EnemyID) VALUES (?, ?)", (ID, enemyID))
@@ -135,7 +133,6 @@ class EncounterDatabase():
     def AddEnemy(self, enemy):
         cursor = self.server.execute(f"INSERT INTO Enemys (Name, Size, Health, Speed, CR, STR, DEX, CON, INT, WIS, CHA) VALUES (\'{enemy.name}\', \'{enemy.size}\', {enemy.health}, {enemy.speed}, {enemy.CR}, {enemy.STR}, {enemy.DEX}, {enemy.CON}, {enemy.INT}, {enemy.WIS}, {enemy.CHA})")
         ID = cursor.lastrowid # My need to change so that it can 
-        print(ID)
         self.server.commit()
         for weapon in enemy.weapons:
             self.AddWeapon(ID, weapon)

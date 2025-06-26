@@ -39,7 +39,7 @@ class Weapon:
     def __init__(self, name, weaponType, properties, attackModifier, damageType, damageDiceAmount, diceType, damageModifier):
         self.name = name
         self.weaponType = weaponType
-        self.properties = properties
+        self.properties = properties.split(",")
         self.attackModifier = attackModifier
         self.damageType = damageType
         self.damageDiceAmount = damageDiceAmount
@@ -51,7 +51,7 @@ class Weapon:
             "attackmodifier": self.attackModifier,
             "dicetype": self.diceType,
             "damgedice": self.damageDiceAmount,
-            "properties": self.properties,
+            "properties": ", ".join(self.properties),
         }
 
 class Enemy:

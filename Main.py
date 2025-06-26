@@ -47,15 +47,6 @@ def createEnemy():
         CHA = request.form.get("CHA")
         speed = request.form.get("speed")
         weaponAmount = request.form.get("weaponAmount")
-
-        # weapon_name = request.form.get("weapon_name")
-        # weapon_description = request.form.get("weapon_description")
-        # weapon_attackModifier = request.form.get("weapon_attackModifier")
-        # weapon_damageDice = request.form.get("weapon_damageDice")
-        # weapon_amount = request.form.get("weapon_amount")
-        # weapon_properties = request.form.get("weapon_properties")
-
-        # Convert numeric fields to appropriate types
         try:
             hp = int(hp)
             CR = float(CR)
@@ -132,15 +123,11 @@ def encounter():
 def settings():
     return render_template("settings.html")
 
-@app.route('/favicon.ico')
-def favicon():
-    return send_from_directory(os.path.join(app.root_path, 'static'),'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 if __name__ == "__main__":
     app.run(debug=True, port=3333)
     app.add_url_rule(
-    "/favicon.ico",
-    endpoint="favicon",
-    redirect_to=url_for("static", filename="favicon.ico"),
+        "/favicon.ico",
+        endpoint="favicon",
+        redirect_to=url_for("static", filename="favicon.ico"),
     )
-# Encounter.EncounterMenu()

@@ -12,7 +12,7 @@ def mainPage():
 
 @app.route("/enemy/<name>")
 def enemy(name):
-    server = Database.EncounterDatabase()
+    server = Database.EncounterDatabase(False)
 
     enemy = server.GetEnemyName(name)
     print(enemy.weapons)
@@ -20,14 +20,14 @@ def enemy(name):
 
 @app.route("/enemys/remove/<name>")
 def removeEnemy(name):
-    server = Database.EncounterDatabase()
+    server = Database.EncounterDatabase(False)
     server.RemoveEnemyName(name)
     return redirect(url_for('enemys'))
 
 # TODO: Will need to find better soltion
 @app.route("/enemys")
 def enemys():
-    server = Database.EncounterDatabase()
+    server = Database.EncounterDatabase(False)
     enemys = server.GetEnemys()
     return render_template("enemys.html", items = enemys)
 
@@ -66,7 +66,6 @@ def createEnemy():
 
         for i in range(1, weaponAmount+1):
             weapon_name = request.form.get(f"weapon_name_{i}")
-            weapon_description = request.form.get(f"weapon_description_{i}")
             weapon_attackModifier = request.form.get(f"weapon_attackModifier_{i}")
             weapon_damageDice = request.form.get(f"weapon_damageDice_{i}")
             weapon_DiceAmount = request.form.get(f"weapon_amount_{i}")
@@ -79,7 +78,6 @@ def createEnemy():
             try:
                 weapons.append(Encounter.Weapon(
                     name=weapon_name,
-                    description=weapon_description,
                     weaponType="",  # You may need to adjust this based on (1,1)properties,
                     properties=weapon_properties.split(","),
                     attackModifier=weapon_attackModifier,
@@ -108,7 +106,7 @@ def createEnemy():
         )
 
         # Add enemy to the database
-        server = Database.EncounterDatabase()
+        server = Database.EncounterDatabase(False)
         server.AddEnemy(enemy)
 
         # Redirect to the enemies list page
@@ -123,8 +121,28 @@ def encounter():
 def settings():
     return render_template("settings.html")
 
+@app.route("/weapon/get", methods=["GET"])
+def getWeaponInfo():
+    server = Database.EncounterDatabase(False)
+    weapon = server.GetWeapon(0)
+    print(weapon)
+    if request.method == "GET":
+        try:
+            weapon_id = request.args.get("weapon")
+            server = Database.EncounterDatabase(False)
+            weapon = server.GetWeapon(int(weapon_id))
+            if weapon is None:
+                return "Not found", 404
+            print(weapon)
+            print(weapon.JsonDetails())
+            return jsonify(weapon.JsonDetails())
+        except:
+            return "Not found", 404
+    else: 
+        return "Error Wrong type of request", 405
 
 if __name__ == "__main__":
+    server = Database.EncounterDatabase(True)
     app.run(debug=True, port=3333)
     app.add_url_rule(
         "/favicon.ico",

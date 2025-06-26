@@ -5,6 +5,18 @@ import Encounter
 class EncounterDatabase():
     server = "Temp Server"
 
+    def CreateDefultWeapons(self):
+        weapons = []
+        weapons.append(Encounter.Weapon("Longsword", "Melee Weapon (simple)", ["Versatile",], 1, "Slashing", 1, 8, 0))
+        weapons.append(Encounter.Weapon("Greatsword", "Melee Weapon (simple)", ["Two-Handed", "Heavy"], 1, "Slashing", 2, 6, 0))
+        weapons.append(Encounter.Weapon("Shortsword", "Melee Weapon (simple)", ["Finesse", "Light"], 1, "Piercing", 1, 6, 0))
+        weapons.append(Encounter.Weapon("Dagger", "Melee Weapon (simple)", ["Finesse", "Light", "Range", "Thrown"], 1, "Bludgeoning", 1, 4, 0))
+        weapons.append(Encounter.Weapon("Light Crossbow", "Ranged Weapon (simple)", ["Two-Handed", "Range", "Loading", "Ammunition"], 1, "Piercing", 1, 8, 0))
+        weapons.append(Encounter.Weapon("Club", "simple", ["light",], 1, "Bludgeoning", 1, 4, 0))
+
+        for weapon in weapons:
+            print(self.AddWeapon(weapon))
+
     def SetupTables(self):
         if self.server == "Temp Server":
             raise "Server Not Setup yet"
@@ -49,11 +61,12 @@ class EncounterDatabase():
             Name TEXT
         )
         ''')
+        cursor = self.server.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='Weapon'")
+        result = cursor.fetchone()
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS Weapon(
             WeaponID INTEGER PRIMARY KEY,
             Name TEXT,
-            Description TEXT,
             WeaponType TEXT,
             Properties TEXT,
             AttackModifier INTEGER, 
@@ -71,16 +84,18 @@ class EncounterDatabase():
             FOREIGN KEY (EnemyID) REFERENCES Enemys(EnemyID)
         )
         ''')
-
         self.server.commit()
+        if result is None:
+            self.CreateDefultWeapons()
 
-    def __init__(self):
+    def __init__(self, first):
         path = os.path.expanduser('~/Documents/Dnd_Encounter')
         if not os.path.exists(path):
             os.makedirs(path)
         try:
             self.server = sqlite3.connect(f"{path}/Encounter.db")
-            self.SetupTables()
+            if first:
+                self.SetupTables()
         except Exception as e:
             print(f"Could Not Connect to server This is the Issue {e}")
 
@@ -107,11 +122,13 @@ class EncounterDatabase():
             raise Exception(f"DataBase Already Has Encounter {encounter.name}")
         self.server.commit()
 
-    def AddWeapons(self, enemyID, weapon):
-        params = (weapon.name, weapon.description, weapon.weaponType, ",".join(weapon.properties), weapon.attackModifier, weapon.damageType, weapon.damageDiceAmount, weapon.diceType, weapon.damageModifier) 
-        cursor = self.server.execute("INSERT INTO Weapon (Name, Description, WeaponType, Properties, AttackModifier, DamgeType, AmountOfDice, Dice, DamgeModifier) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", params)
-        ID = self.server.execute("SELECT last_insert_rowid()").fetchone()[0]
-        self.server.execute("INSERT INTO EnemyWeapon (WeaponID, EnemyID) VALUES (?, ?)", (ID, enemyID))
+    def AddWeapon(self, weapon, enemyID = None):
+        params = (weapon.name, weapon.weaponType, ",".join(weapon.properties), weapon.attackModifier, weapon.damageType, weapon.damageDiceAmount, weapon.diceType, weapon.damageModifier) 
+        cursor = self.server.execute("INSERT INTO Weapon (Name, WeaponType, Properties, AttackModifier, DamgeType, AmountOfDice, Dice, DamgeModifier) VALUES (?, ?, ?, ?, ?, ?, ?, ?)", params)
+        print(self.server.execute("SELECT last_insert_rowid()").fetchone()[0])
+        if(enemyID is not None):
+            ID = self.server.execute("SELECT last_insert_rowid()").fetchone()[0]
+            self.server.execute("INSERT INTO EnemyWeapon (WeaponID, EnemyID) VALUES (?, ?)", (ID, enemyID))
         self.server.commit()
             
     #TODO: Could be threaded in Future
@@ -121,7 +138,7 @@ class EncounterDatabase():
         print(ID)
         self.server.commit()
         for weapon in enemy.weapons:
-            self.AddWeapons(ID, weapon)
+            self.AddWeapon(ID, weapon)
         return ID
 
     def AddPlayer(self, Player):
@@ -130,21 +147,22 @@ class EncounterDatabase():
 
     def GetWeapon(self, ID):
         weaponDB = self.server.execute(f"SELECT * FROM Weapon WHERE WeaponID ='{ID}'")
+        weaponClass = None
         for weapon in weaponDB:
-            weaponClass = Encounter.Weapon(weapon[1], weapon[2], weapon[3], weapon[4].split(','), weapon[5], weapon[6], weapon[7], weapon[8], weapon[9])
+            weaponClass = Encounter.Weapon(weapon[1], weapon[2], weapon[3], weapon[4], weapon[5], weapon[6], weapon[7], weapon[8])
         return weaponClass
 
     def GetWeapons(self, ID):
         weapons = []
         # Use JOIN to get all weapon fields for a given enemy
         weaponsDB = self.server.execute("""
-            SELECT w.WeaponID, w.Name, w.Description, w.WeaponType, w.Properties, w.AttackModifier, w.DamgeType, w.AmountOfDice, w.Dice, w.DamgeModifier
+            SELECT w.WeaponID, w.Name, w.WeaponType, w.Properties, w.AttackModifier, w.DamgeType, w.AmountOfDice, w.Dice, w.DamgeModifier
             FROM Weapon w
             INNER JOIN EnemyWeapon ew ON w.WeaponID = ew.WeaponID
             WHERE ew.EnemyID = ?
         """, (ID,))
         for weapon in weaponsDB:
-            weapons.append(Encounter.Weapon(weapon[1], weapon[2], weapon[3], weapon[4].split(','), weapon[5], weapon[6], weapon[7], weapon[8], weapon[9]))        
+            weapons.append(Encounter.Weapon(weapon[1], weapon[2], weapon[3], weapon[4], weapon[5], weapon[6], weapon[7], weapon[8]))        
         return weapons    
 
     def GetPlayers(self):

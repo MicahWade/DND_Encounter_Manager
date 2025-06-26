@@ -7,7 +7,7 @@ else:
     ...
     # import getch  # Import for capturing key presses on Linux
 
-dataBase = EncounterDatabase()
+dataBase = EncounterDatabase(False)
 
 class Player:
     name = ""
@@ -27,7 +27,6 @@ class Player:
 
 class Weapon:
     name = ""
-    description = ""
     weaponType = ""
     # Strings
     properties = []
@@ -37,9 +36,8 @@ class Weapon:
     # D4 D6 D8 D10 D12
     diceType = 4
     damageModifier = 0
-    def __init__(self, name, description, weaponType, properties, attackModifier, damageType, damageDiceAmount, diceType, damageModifier):
+    def __init__(self, name, weaponType, properties, attackModifier, damageType, damageDiceAmount, diceType, damageModifier):
         self.name = name
-        self.description = description
         self.weaponType = weaponType
         self.properties = properties
         self.attackModifier = attackModifier
@@ -47,7 +45,14 @@ class Weapon:
         self.damageDiceAmount = damageDiceAmount
         self.diceType = diceType
         self.damageModifier = damageModifier
-
+    def JsonDetails(self):
+        return {
+            "name": self.name,
+            "attackmodifier": self.attackModifier,
+            "dicetype": self.diceType,
+            "damgedice": self.damageDiceAmount,
+            "properties": self.properties,
+        }
 
 class Enemy:
     name = ""

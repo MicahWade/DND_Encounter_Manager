@@ -15,7 +15,6 @@ document.querySelector('form').addEventListener('submit', function(e) {
     WeaponNone = false 
     for(let i = 1; i <= weaponAmount; i++){
         weaponName += `+${document.getElementById(`weapon_name_${i}`).value}`;
-        weaponDescription += `+${document.getElementById(`weapon_description_${i}`).value}`;
         weaponAttackModifier += `+${document.getElementById(`weapon_attackModifier_${i}`).value}`;
         weaponDamageDice += `+${document.getElementById(`weapon_damageDice_${i}`).value}`;
         WeaponDiceAmount += `+${document.getElementById(`weapon_amount_${i}`).value}`;
@@ -43,16 +42,19 @@ function generateWeaponSections() {
     // Initial section template
     for (let i = 1; i <= amount; i++) {
         const initialSection = `
-        <select id="Weapon_${i}" 
+        <select id="weapon_${i}" 
                 name="weapon_${i}" 
                 class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required>
+                required
+                oninput="sendWeaponRequest('${i}')">
             <option value="" disabled selected>Select Weapon</option>
             <option value=0>Create Weapon</option>
-            <option value=1>defult 1</option>
-            <option value=2>defult 2</option>
-            <option value=3>defult 3</option>
-            <option value=4>defult 4</option>
+            <option value=1>Longsword</option>
+            <option value=2>Greatsword</option>
+            <option value=3>Shortsword</option>
+            <option value=4>Dagger</option>
+            <option value=4>Light Crossbow</option>
+            <option value=4>Club</option>
         </select>
         <div class="border-l-2 border-blue-500 pl-4" id="weapon_list_${i}">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_name_${i}">
@@ -62,16 +64,8 @@ function generateWeaponSections() {
                 id="weapon_name_${i}"
                 name="weapon_name_${i}"
                 class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required>
-            
-            <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_description_${i}">
-                Description
-            </label>
-            <textarea id="weapon_description_${i}" 
-                    name="weapon_description_${i}" 
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                    rows="3"></textarea>
-            
+                required
+                placeholder="name....">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_attackModifier_${i}">
                 Attack Modifier
             </label>
@@ -79,7 +73,8 @@ function generateWeaponSections() {
                 id="weapon_attackModifier_${i}"
                 name="weapon_attackModifier_${i}"
                 class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required>
+                required
+                placeholder="+20 | -20">
             
             <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_damageDice_${i}">
                 Damage Dice
@@ -103,7 +98,8 @@ function generateWeaponSections() {
                 id="weapon_amount_${i}"
                 name="weapon_amount_${i}"
                 class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required>
+                required
+                placeholder="1...">
                 
             <label class="block text-gray-700 text-sm font-bold mb-2" for="weapon_properties_${i}">
                 Properties (comma-separated)
@@ -112,12 +108,8 @@ function generateWeaponSections() {
                    id="weapon_properties_${i}" 
                    name="weapon_properties_${i}" 
                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                   required>
-            <script>
-                const selectWeapon = document.getElementById("weapon_${i}")
-                const createWeaponMenu = document.getElementById("weapon_list_${i}")
-                
-            </script>`;
+                   required
+                   placeholder="Heavy, two-handed">`;
         let section = initialSection.replace(/\$/g, i);
         const weaponDiv = document.createElement('div');
         weaponDiv.innerHTML = section;
@@ -125,14 +117,61 @@ function generateWeaponSections() {
     }
 }
 
-// Generate sections initially
-window.onload = generateWeaponSections;
-    for (let i = 1; i <= document.getElementById('weaponAmount').value; i++){
-        let section = initialSection.replace(/\$/g, i);
-        const weaponDiv = document.createElement('div');
-        weaponDiv.innerHTML = section;
-        container.appendChild(weaponDiv);
+function sendWeaponRequest(id){
+    // Get Elements
+    const nameElement = document.getElementById(`weapon_name_${id}`);
+    const attackModElement = document.getElementById(`weapon_attackModifier_${id}`);
+    const damageDiceElement = document.getElementById(`weapon_damageDice_${id}`);
+    const diceAmountElement = document.getElementById(`weapon_amount_${id}`);
+    const propertiesElement = document.getElementById(`weapon_properties_${id}`);
+    const weaponid = document.getElementById(`weapon_${id}`).value;
+    if (weaponid != 0){
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "../weapon/get?weapon=" + encodeURIComponent(weaponid));
+        xhr.send();
+        xhr.responseType = "json";
+        xhr.onload = () => {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            const data = xhr.response;
+            // Make Elements Read Only 
+            nameElement.setAttribute("readOnly", true);
+            attackModElement.setAttribute("readOnly", true);
+            const damageDiceChildElements = damageDiceElement.children;
+            for (let i = 0; i < damageDiceChildElements.length; i++) {
+                if(damageDiceChildElements[i].value != data["dicetype"]){
+                    damageDiceChildElements[i].setAttribute("disabled", true);
+                }
+            };
+            diceAmountElement.setAttribute("readOnly", true);
+            propertiesElement.setAttribute("readOnly", true);
+
+            nameElement.value = data["name"];
+            attackModElement.value = data["attackmodifier"];
+            damageDiceElement.value = data["dicetype"];
+            diceAmountElement.value = data["damgedice"];
+            propertiesElement.value = data["properties"];
+        } else {
+            console.log(`Error: ${xhr.status}`);
+        }
+    } 
+    } else {
+        nameElement.setAttribute("readOnly", false);
+        attackModElement.setAttribute("readOnly", false);
+        const damageDiceChildElements = damageDiceElement.children;
+        for (let i = 0; i < damageDiceChildElements.length; i++) {
+            if (damageDiceChildElements[i].value != ""){
+                damageDiceChildElements[i].setAttribute("disabled", false);
+            }
+        };
+        diceAmountElement.setAttribute("readOnly", false);
+        propertiesElement.setAttribute("readOnly", false);
+        nameElement.value = "";
+        attackModElement.value = "";
+        damageDiceElement.value = "";
+        diceAmountElement.value = "";
+        propertiesElement.value ="";
     }
+}
 
 // Generate sections initially
-window.onload = generateWeaponSections;
+window.onload = generateWeaponSections();

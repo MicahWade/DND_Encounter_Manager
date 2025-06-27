@@ -2,6 +2,7 @@ import sqlite3
 import os
 import json
 import Encounter
+from werkzeug.security import generate_password_hash, check_password_hash
 
 class EncounterDatabase():
     server = "Temp Server"
@@ -29,13 +30,12 @@ class EncounterDatabase():
                         weapon["damageModifier"]
                     )
                 )
-        for weapon in weapons:
-            self.AddWeapon(weapon)
+            for weapon in weapons:
+                self.AddWeapon(weapon)
 
     def SetupTables(self):
         if self.server == "Temp Server":
-            raise "Server Not Setup yet"
-            return
+            raise Exception("Server Not Setup yet")
         cursor = self.server.cursor()
 
         cursor.execute('''
@@ -45,7 +45,6 @@ class EncounterDatabase():
             CR INTEGER
         )
         ''')
-        # IDENTITY(1,1) PRIMARY KEY This increments the ID
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS Enemys (
             EnemyID INTEGER PRIMARY KEY,

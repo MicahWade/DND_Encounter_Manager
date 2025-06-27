@@ -24,7 +24,6 @@ def removeEnemy(name):
     server.RemoveEnemyName(name)
     return redirect(url_for('enemys'))
 
-# TODO: Will need to find better soltion
 @app.route("/enemys")
 def enemys():
     server = Database.EncounterDatabase(False)
@@ -144,6 +143,25 @@ def getWeaponInfo():
             return "Not found", 404
     else: 
         return "Error Wrong type of request", 405
+
+# Account Managment
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "POST":
+        ...
+    elif request.method == "GET":
+        return render_template("login.html")
+    else:
+        return "Wrong Method", 405
+
+@app.route("/regester", methods=["POST"])
+def regester():
+    if request.method == "POST":
+        ...
+    else:
+        redirect(url_for("login"))
+
+    
 
 if __name__ == "__main__":
     server = Database.EncounterDatabase(True)

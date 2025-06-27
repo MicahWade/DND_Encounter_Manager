@@ -143,7 +143,8 @@ def getWeaponInfo():
             return "Not found", 404
     else: 
         return "Error Wrong type of request", 405
-
+# Responce Need to be a json
+# { "redirect": "/dashboard" }
 # Account Managment
 @app.route("/login", methods=["GET", "POST"])
 def login():
@@ -154,8 +155,8 @@ def login():
     else:
         return "Wrong Method", 405
 
-@app.route("/regester", methods=["POST"])
-def regester():
+@app.route("/register", methods=["POST"])
+def register():
     if request.method == "POST":
         ...
     else:

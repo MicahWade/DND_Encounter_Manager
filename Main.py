@@ -2,9 +2,21 @@ import Encounter
 import Database
 import os
 from flask import *
+from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
 
+env_path = os.path.join(os.path.dirname(__file__), '.env')
+secret_key = None
+if os.path.exists(env_path):
+    with open(env_path, 'r') as f:
+        for line in f:
+            if line.startswith('FLASK_SECRET_KEY='):
+                secret_key = line.strip().split('=', 1)[1]
+                break
+if not secret_key:
+    raise RuntimeError(".env file missing FLASK_SECRET_KEY or file not found")
+app.secret_key = secret_key
 
 @app.route("/")
 def mainPage():
@@ -12,7 +24,7 @@ def mainPage():
 
 @app.route("/enemy/<name>")
 def enemy(name):
-    server = Database.EncounterDatabase(False)
+    server = Database.Database(False)
 
     enemy = server.GetEnemyName(name)
     print(enemy.weapons)
@@ -20,13 +32,13 @@ def enemy(name):
 
 @app.route("/enemys/remove/<name>")
 def removeEnemy(name):
-    server = Database.EncounterDatabase(False)
+    server = Database.Database(False)
     server.RemoveEnemyName(name)
     return redirect(url_for('enemys'))
 
 @app.route("/enemys")
 def enemys():
-    server = Database.EncounterDatabase(False)
+    server = Database.Database(False)
     enemys = server.GetEnemys()
     return render_template("enemys.html", items = enemys)
 
@@ -109,7 +121,7 @@ def createEnemy():
         )
 
         # Add enemy to the database
-        server = Database.EncounterDatabase(False)
+        server = Database.Database(False)
         server.AddEnemy(enemy)
 
         # Redirect to the enemies list page
@@ -126,13 +138,13 @@ def settings():
 
 @app.route("/weapon/get", methods=["GET"])
 def getWeaponInfo():
-    server = Database.EncounterDatabase(False)
+    server = Database.Database(False)
     weapon = server.GetWeapon(0)
     print(weapon)
     if request.method == "GET":
         try:
             weapon_id = request.args.get("weapon")
-            server = Database.EncounterDatabase(False)
+            server = Database.Database(False)
             weapon = server.GetWeapon(int(weapon_id))
             if weapon is None:
                 return "Not found", 404
@@ -158,14 +170,31 @@ def login():
 @app.route("/register", methods=["POST"])
 def register():
     if request.method == "POST":
-        ...
+        db = Database.Database(False)
+        data = request.get_json()
+        print(type(data))
+        print(data)
+        
+        email = data["email"]
+        user = db.getUserByEmail(email)
+
+        if user:
+            return render_template("login.html", error="Username already exists.")
+
+        hashed_pw = generate_password_hash(data["password"])
+        fullname = data["firstname"] + " " + data["lastname"]
+    
+        userid = db.createUser(fullname, email, hashed_pw)
+        session['userid'] = userid
+        session['email'] = email
+        return jsonify({ "redirect": "/" }), 200
     else:
         redirect(url_for("login"))
 
     
 
 if __name__ == "__main__":
-    server = Database.EncounterDatabase(True)
+    server = Database.Database(True)
     app.run(debug=True, port=3333)
     app.add_url_rule(
         "/favicon.ico",

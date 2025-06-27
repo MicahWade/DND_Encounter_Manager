@@ -1,13 +1,5 @@
 import os
-from Database import EncounterDatabase
 import random
-if(os.name == 'nt'):
-    import msvcrt  # Import for capturing key presses on Windows
-else:
-    ...
-    # import getch  # Import for capturing key presses on Linux
-
-dataBase = EncounterDatabase(False)
 
 class Player:
     name = ""

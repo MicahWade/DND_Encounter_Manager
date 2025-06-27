@@ -41,7 +41,7 @@ function register(){
                     return;
                 }
             } catch (e) {}
-            alert("Account created successfully!");
+            // alert("Account created successfully!");
         } else {
             alert("Account creation failed: " + xhr.responseText);
         }

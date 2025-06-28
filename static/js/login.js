@@ -5,6 +5,9 @@ const password = document.getElementById(`password`);
 const email = document.getElementById(`email`);
 const terms = document.getElementById('terms');
 const termDiv = document.getElementById('allterms');
+// Alerts
+const existEmail = document.getElementById('existEmail');
+const passwordAlert = document.getElementById('passwordAlert')
 
 function register(){
     if(firstname.classList.contains("hidden")){
@@ -43,7 +46,10 @@ function register(){
                 }
             } catch (e) {}
             // alert("Account created successfully!");
-        } else {
+        } else if (xhr.status === 409) {
+            checkEmail.innerHTML = "An acount exists with this Email!";
+            existEmail.classList.remove("hidden");
+ 1       } else {
             alert("Account creation failed: " + xhr.responseText);
         }
     };
@@ -58,32 +64,7 @@ function register(){
 function registerToggle(){
     firstname.classList.remove("hidden");
     lastname.classList.remove("hidden");
-    allterms.classList.remove("hidden")
-
-    const xhr = new XMLHttpRequest();
-    xhr.open("POST", "./register");
-    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-    xhr.withCredentials = true; // Allow cookies like a form
-
-    xhr.onload = function() {
-        if (xhr.status === 200 || xhr.status === 201) {
-            try {
-                const resp = JSON.parse(xhr.responseText);
-                if (resp.redirect) {
-                    window.location.href = resp.redirect;
-                    return;
-                }
-            } catch (e) {}
-            // alert("Account created successfully!");
-        } else {
-            alert("Account creation failed: " + xhr.responseText);
-        }
-    };
-    const data = {
-        email: email.value,
-        password: password.value
-    };
-    xhr.send(JSON.stringify(data));
+    allterms.classList.remove("hidden");
 }
 function login(){
     if(!checkPassword()){
@@ -100,38 +81,47 @@ function checkPassword(){
     const pwdLower = pwd.toLowerCase();
 
     if (pwd.length < 8) {
-        alert("Password must be at least 8 characters long.");
+        passwordAlert.innerHTML = "Must be at least 8 characters long";
+        passwordAlert.classList.remove("hidden");
         return false;
     }
     if (pwd.length > 40) {
-        alert("Password must not be longer than 40 characters.");
+        passwordAlert.innerHTML = "Must not be longer than 40 characters";
+        passwordAlert.classList.remove("hidden");
         return false;
     }
     if (!/[a-zA-Z]/.test(pwd)) {
-        alert("Password must contain at least one letter.");
+        passwordAlert.innerHTML = "Must contain at least one letter";
+        passwordAlert.classList.remove("hidden");
         return false;
     }
     if (!/\d/.test(pwd)) {
-        alert("Password must contain at least one number.");
+        passwordAlert.innerHTML = "Must contain at least one number";
+        passwordAlert.classList.remove("hidden");
         return false;
     }
     if (!/[^a-zA-Z0-9]/.test(pwd) && pwd.length < 14) {
-        alert("Password must contain at least one special character or be more than 14 characters long.");
+        passwordAlert.innerHTML = "Must contain at least one special character";
+        passwordAlert.classList.remove("hidden");
         return false;
     }
     if (fname && pwdLower.includes(fname)) {
-        alert("Password must not contain your first name.");
+        passwordAlert.innerHTML = "Must not contain your first name";
+        passwordAlert.classList.remove("hidden");
         return false;
     }
     if (lname && pwdLower.includes(lname)) {
-        alert("Password must not contain your last name.");
+        passwordAlert.innerHTML = "Must not contain your last name";
+        passwordAlert.classList.remove("hidden");
         return false;
     }
     const uniqueChars = new Set(pwd).size;
     if (uniqueChars < 6) {
-        alert("Password must contain at least 6 unique characters.");
+        passwordAlert.innerHTML = "Must contain at least 6 unique characters";
+        passwordAlert.classList.remove("hidden");
         return false;
     }
+    passwordAlert.classList.add("hidden")
     return true;
 }
 function checkEmail() {
@@ -139,8 +129,10 @@ function checkEmail() {
     // Simple email regex for demonstration
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(emailValue)) {
-        alert("Please enter a valid email address.");
+        existEmail.innerHTML = "Please enter a valid email address";
+        existEmail.classList.remove("hidden");
         return false;
     }
+    existEmail.classList.add("hidden");
     return true;
 }

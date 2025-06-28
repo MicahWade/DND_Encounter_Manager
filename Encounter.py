@@ -73,9 +73,6 @@ class Enemy:
         self.WIS = WIS
         self.CHA = CHA
         self.weapons = weapon
-    
-    def Roll(self):
-        self.inititave = random.randint(1, 20) + self.DEX 
 
 
 class Encounter:

@@ -199,14 +199,12 @@ def register():
     if request.method == "POST":
         db = Database.Database(False)
         data = request.get_json()
-        print(type(data))
-        print(data)
         
         email = data["email"]
         user = db.getUserByEmail(email)
 
-        if user:
-            return render_template("login.html", error="Username already exists.")
+        if user is None:
+            return "Email Acount already exists.", 409
 
         hashed_pw = generate_password_hash(data["password"])
         fullname = data["firstname"] + " " + data["lastname"]

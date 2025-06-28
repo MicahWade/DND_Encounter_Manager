@@ -286,5 +286,5 @@ class Database():
         cursor.execute("SELECT UserID, FullName, Email, Password FROM User WHERE FullName = ?", (email,))
         row = cursor.fetchone()
         if row:
-            return {'userid': row[0], 'username': row[1], 'password': row[2]}
+            return {'userid': row[0], 'fullname': row[1], 'email': row[2], 'password': row[3]}
         return None

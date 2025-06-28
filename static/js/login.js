@@ -3,7 +3,8 @@ const firstname = document.getElementById(`firstname`);
 const lastname = document.getElementById(`lastname`);
 const password = document.getElementById(`password`);
 const email = document.getElementById(`email`);
-const terms = document.getElementById('terms')
+const terms = document.getElementById('terms');
+const termDiv = document.getElementById('allterms');
 
 function register(){
     if(firstname.classList.contains("hidden")){
@@ -57,9 +58,40 @@ function register(){
 function registerToggle(){
     firstname.classList.remove("hidden");
     lastname.classList.remove("hidden");
+    allterms.classList.remove("hidden")
+
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "./register");
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhr.withCredentials = true; // Allow cookies like a form
+
+    xhr.onload = function() {
+        if (xhr.status === 200 || xhr.status === 201) {
+            try {
+                const resp = JSON.parse(xhr.responseText);
+                if (resp.redirect) {
+                    window.location.href = resp.redirect;
+                    return;
+                }
+            } catch (e) {}
+            // alert("Account created successfully!");
+        } else {
+            alert("Account creation failed: " + xhr.responseText);
+        }
+    };
+    const data = {
+        email: email.value,
+        password: password.value
+    };
+    xhr.send(JSON.stringify(data));
 }
 function login(){
-
+    if(!checkPassword()){
+        return
+    } if(!checkEmail()){
+        return
+    }
+    
 }
 function checkPassword(){
     const pwd = password.value;

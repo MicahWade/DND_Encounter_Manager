@@ -24,6 +24,8 @@ def mainPage():
 
 @app.route("/enemy/<name>")
 def enemy(name):
+    if 'userid' not in session:
+        return redirect(url_for('login'))
     server = Database.Database(False)
 
     enemy = server.GetEnemyName(name)
@@ -32,18 +34,24 @@ def enemy(name):
 
 @app.route("/enemys/remove/<name>")
 def removeEnemy(name):
+    if 'userid' not in session:
+        return redirect(url_for('login'))
     server = Database.Database(False)
     server.RemoveEnemyName(name)
     return redirect(url_for('enemys'))
 
 @app.route("/enemys")
 def enemys():
+    if 'userid' not in session:
+        return redirect(url_for('login'))
     server = Database.Database(False)
     enemys = server.GetEnemys()
     return render_template("enemys.html", items = enemys)
 
 @app.route("/enemys/create", methods=["GET", "POST"])
 def createEnemy():
+    if 'userid' not in session:
+        return redirect(url_for('login'))
     if request.method == "POST":
         name = request.form.get("name")
         hp = request.form.get("hp")
@@ -131,13 +139,19 @@ def createEnemy():
 
 @app.route("/encounter")
 def encounter():
+    if 'userid' not in session:
+        return redirect(url_for('login'))
     return render_template("encounter.html")
 @app.route("/settings")
 def settings():
+    if 'userid' not in session:
+        return redirect(url_for('login'))
     return render_template("settings.html")
 
 @app.route("/weapon/get", methods=["GET"])
 def getWeaponInfo():
+    if 'userid' not in session:
+        return redirect(url_for('login'))
     server = Database.Database(False)
     weapon = server.GetWeapon(0)
     print(weapon)
@@ -160,8 +174,19 @@ def getWeaponInfo():
 # Account Managment
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    if 'userid' in session:
+        return redirect(url_for('mainPage'))
     if request.method == "POST":
-        ...
+        data = request.get_json()
+        email = data["email"]
+        password = data["password"]
+
+        db = Database.Database(False)
+        user = db.getUserByEmail(email)
+        if user and check_password_hash(user['password'], password):
+            session['userid'] = user['userid']
+            session['email'] = email
+            return redirect(url_for('mainPage'))
     elif request.method == "GET":
         return render_template("login.html")
     else:
@@ -169,6 +194,8 @@ def login():
 
 @app.route("/register", methods=["POST"])
 def register():
+    if 'userid' in session:
+        return redirect(url_for('mainPage'))
     if request.method == "POST":
         db = Database.Database(False)
         data = request.get_json()

@@ -26,7 +26,7 @@
                     <input class="cursor-default focus:outline-none border-2 bg-slate-700/75 focus:border-sky-800/75 hover:border-sky-700/75 hover:scale-105 focus:scale-100 border-sky-950/75 w-full h-4/5 shadow-sm rounded-md p-2" placeholder="Password" type="password" id="password" class="password">
                 </span>
                 <span class="col-span-2">
-                    <div>
+                    <div id="allterms" class="hidden">
                         <input class="focus:outline-none w-4 h-4 border-1 border-slate-800/50 checked:bg-slate-700 rounded-sm bg-white scale-150 checked:100 mr-2 mt-1" type="checkbox" id="terms" type="terms">
                         <label for="terms">
                             I agree to the <a>Terms & Conditions</a>
@@ -39,7 +39,7 @@
                     </button>
                 </span>
                 <span>
-                    <button class="bg-slate-700 w-full h-full rounded-lg scale-95 hover:scale-105 text-xl p-4 border-2 border-slate-600/75 shadow-sm" oninput="login()" id="login">
+                    <button class="bg-slate-700 w-full h-full rounded-lg scale-95 hover:scale-105 text-xl p-4 border-2 border-slate-600/75 shadow-sm" onclick="login()" id="login">
                         Login
                     </button>
                 </span>

@@ -4,20 +4,13 @@ import os
 from flask import *
 from werkzeug.security import generate_password_hash, check_password_hash
 import user
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 
-env_path = os.path.join(os.path.dirname(__file__), '.env')
-secret_key = None
-if os.path.exists(env_path):
-    with open(env_path, 'r') as f:
-        for line in f:
-            if line.startswith('FLASK_SECRET_KEY='):
-                secret_key = line.strip().split('=', 1)[1]
-                break
-if not secret_key:
-    raise RuntimeError(".env file missing FLASK_SECRET_KEY or file not found")
-app.secret_key = secret_key
+load_dotenv()
+
+app.secret_key = os.environ.get("FLASK_SECRET_KEY")
 
 @app.route("/")
 def mainPage():
@@ -173,11 +166,11 @@ def getWeaponInfo():
 # Responce Need to be a json
 # { "redirect": "/dashboard" }
 # Account Managment
-@app.route("/login", methods=["GET", "POST"])
+@app.route("/login", methods=["GET", "PUT"])
 def login():
     if 'userid' in session:
         return redirect(url_for('mainPage'))
-    if request.method == "POST":
+    if request.method == "PUT":
         data = request.get_json()
         email = data["email"]
         password = data["password"]
@@ -187,11 +180,13 @@ def login():
         if user and check_password_hash(user['password'], password):
             session['userid'] = user['userid']
             session['email'] = email
-            return redirect(url_for('mainPage'))
+            return jsonify({ "redirect": "/" }), 200
+        else:
+            return jsonify({"Email or Password where Incorect"})
     elif request.method == "GET":
         return render_template("login.html")
     else:
-        return "Wrong Method", 405
+        return jsonify({"Email or Password where Incorect"}), 405
 
 @app.route("/register", methods=["POST", "PUT" ])
 def register():
@@ -206,7 +201,7 @@ def register():
                 "firstname": data.get("firstname", ""),
                 "lastname": data.get("lastname", ""),
                 "email": data.get("email", ""),
-                "password": "dummyPassword123!" # dummy to satisfy validation
+                "password": data.get("password", "")
             }
             valid, error = user.validate_registration(check_data)
             if not valid:
@@ -241,7 +236,14 @@ def register():
     else:
         redirect(url_for("login"))
 
-    
+# Error Handling
+@app.errorhandler(405)
+def method_not_allowed(error):
+    return jsonify({'error': 'Method not allowed'}), 405
+
+@app.errorhandler(404)
+def not_found(error):
+    return jsonify({'error': 'Resource not found'}), 404
 
 if __name__ == "__main__":
     server = Database.Database(True)

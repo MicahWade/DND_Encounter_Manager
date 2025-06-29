@@ -68,12 +68,31 @@ function registerToggle(){
     allterms.classList.remove("hidden");
 }
 function login(){
-    if(!checkPassword()){
-        return
-    } if(!checkEmail()){
-        return
-    }
-    
+    const xhr = new XMLHttpRequest();
+    xhr.open("PUT", "./login");
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhr.withCredentials = true; // Allow cookies like a form
+
+    xhr.onload = function() {
+        if (xhr.status === 200 || xhr.status === 201) {
+            try {
+                const resp = JSON.parse(xhr.responseText);
+                if (resp.redirect) {
+                    window.location.href = resp.redirect;
+                    return;
+                }
+            } catch (e) {
+                alert("An error happend, if this persistes please contact support");
+            }
+        } else {
+            alert("Account login failed: " + JSON.parse(xhr.responseText).error);
+        }
+    };
+    const data = {
+        email: email.value,
+        password: password.value
+    };
+    xhr.send(JSON.stringify(data));
 }
 function checkPassword(){
     const pwd = password.value;

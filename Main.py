@@ -16,16 +16,17 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY")
 def mainPage():
     return render_template("home.html")
 
-@app.route("/enemy/<name>")
-def enemy(name):
+@app.route("/enemy/<id>")
+def enemy(id):
     if 'userid' not in session:
         return redirect(url_for('login'))
     server = Database.Database(False)
 
-    enemy = server.GetEnemyName(name)
-    print(enemy.weapons)
+    enemy = server.GetEnemy(id)
+    if enemy is None:
+        return "Bad Enemy Id", 404
     return render_template("enemy.html", enemy=enemy)
-
+# TODO: Make User ID
 @app.route("/enemys/remove/<name>")
 def removeEnemy(name):
     if 'userid' not in session:
@@ -60,6 +61,14 @@ def createEnemy():
         CHA = request.form.get("CHA")
         speed = request.form.get("speed")
         weaponAmount = request.form.get("weaponAmount")
+        # New fields
+        type_ = request.form.get("type")
+        alignment = request.form.get("alignment")
+        languages = request.form.get("languages")
+        skills = request.form.get("skills")
+        saving_throws = request.form.get("saving_throws")
+        senses = request.form.get("senses")
+        multiattack = request.form.get("multiattack")
         try:
             hp = int(hp)
             CR = float(CR)
@@ -79,16 +88,20 @@ def createEnemy():
         server = Database.Database(False)
         for i in range(1, weaponAmount+1):
             weapon_id = request.form.get(f"weapon_{i}")
-            if(weapon_id == 0):
+            if(weapon_id == 0 or weapon_id == "0"):
                 weapon_name = request.form.get(f"weapon_name_{i}")
+                weapon_type = request.form.get(f"weapon_type_{i}")
                 weapon_attackModifier = request.form.get(f"weapon_attackModifier_{i}")
+                weapon_damageType = request.form.get(f"weapon_damageType_{i}")
                 weapon_damageDice = request.form.get(f"weapon_damageDice_{i}")
                 weapon_DiceAmount = request.form.get(f"weapon_amount_{i}")
                 weapon_properties = request.form.get(f"weapon_properties_{i}")
                 # Check for missing fields
                 if (
                     weapon_name is None or weapon_name == "" or
+                    weapon_type is None or weapon_type == "" or
                     weapon_attackModifier is None or weapon_attackModifier == "" or
+                    weapon_damageType is None or weapon_damageType == "" or
                     weapon_damageDice is None or weapon_damageDice == "" or
                     weapon_DiceAmount is None or weapon_DiceAmount == "" or
                     weapon_properties is None
@@ -99,15 +112,23 @@ def createEnemy():
                     weapon_damageDice = int(weapon_damageDice)
                     weapon_attackModifier = int(weapon_attackModifier)
                     weapon_DiceAmount = int(weapon_DiceAmount)
-                    weapon_type = int(weapon_type)
-                    weapons.append(Encounter.Weapon(weapon_name, "", weapon_properties.split[','], weapon_attackModifier, "", weapon_DiceAmount, weapon_damageDice, weapon_attackModifier))
+                    weapons.append(Encounter.Weapon(
+                        weapon_name,
+                        weapon_type,
+                        weapon_properties.split(','),
+                        weapon_attackModifier,
+                        weapon_damageType,
+                        weapon_DiceAmount,
+                        weapon_damageDice,
+                        weapon_attackModifier
+                    ))
                 except ValueError:
                     print("Invalid data format")
             else:
                 weapons.append(server.GetWeapon(weapon_id))
-
         # Create Enemy object
         enemy = Encounter.Enemy(
+            id = 0,
             name=name,
             size=size,
             health=hp,
@@ -119,7 +140,14 @@ def createEnemy():
             INT=INT,
             WIS=WIS,
             CHA=CHA,
-            weapon=weapons
+            weapon=weapons,
+            type=type_,
+            alignment=alignment,
+            languages=languages,
+            skills=skills,
+            saving_throws=saving_throws,
+            senses=senses,
+            multiattack=multiattack
         )
         # Add enemy to the database
         server.AddEnemy(enemy)

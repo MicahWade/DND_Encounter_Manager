@@ -1,7 +1,3 @@
-{% extends 'base.html' %}
-
-{% block content %}
-<!-- Enemy -->
 <div class="px-40 ">
     <div class="container mx-auto p-4 bg-gray-50 h-full max-w-4xl rounded-sm">
         <div class="bg-white rounded-xl shadow-lg p-6">
@@ -10,7 +6,22 @@
                     <h2 class="text-3xl font-bold text-gray-900">{{ enemy.name }}</h2>
                     <div class="space-y-2">
                         <p class="text-gray-600">
-                            <span class="font-medium">Size:</span> {{ enemy.size }}
+                            <span class="font-medium">Type:</span> {{ enemy.type }}
+                        </p>
+                        <p class="text-gray-600">
+                            <span class="font-medium">Alignment:</span> {{ enemy.alignment }}
+                        </p>
+                        <p class="text-gray-600">
+                            <span class="font-medium">Languages:</span> {{ enemy.languages }}
+                        </p>
+                        <p class="text-gray-600">
+                            <span class="font-medium">Skills:</span> {{ enemy.skills }}
+                        </p>
+                        <p class="text-gray-600">
+                            <span class="font-medium">Saving Throws:</span> {{ enemy.saving_throws }}
+                        </p>
+                        <p class="text-gray-600">
+                            <span class="font-medium">Senses:</span> {{ enemy.senses }}
                         </p>
                         <p class="text-gray-600">
                             <span class="font-medium">Health:</span> {{ enemy.health }}
@@ -21,6 +32,11 @@
                         <p class="text-gray-600">
                             <span class="font-medium">CR:</span> {{ enemy.CR }}
                         </p>
+                        {%  if enemy.multiattack  %}
+                        <p class="text-gray-600">
+                            <span class="font-medium">Multiattack:</span> ({{ enemy.multiattack }})
+                        </p>
+                        {%  endif  %}
                     </div>
                 </div>
                 <div class="space-y-4">
@@ -81,7 +97,8 @@
                     <p class="text-gray-600 bg-gray-50 p-3 rounded-lg">
                         {{ enemy.speed }} ft
                     </p>
-                    <a href="/enemys/remove/{{ enemy.name }}">
+                    <!-- TODO: MAKE US ID -->
+                    <a href="/enemys/remove/{{ enemy.id }}">
                         <button type="button" class="m-2 focus:scale-90 scale-100 shadow-2xl text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Delete</button>
                     </a> 
                 </div>
@@ -90,8 +107,8 @@
                 <div class="space-y-6">
                     {% for weapon in enemy.weapons %}
                     <div class="bg-gray-50 p-6 rounded-lg border-4">
-                        <h4 class="text-xl font-bold text-gray-900 mb-4">{{ weapon.name }}</h4>
-                        <p class="text-gray-600 mb-4">{{ weapon.description }}</p>
+                        <h4 class="text-xl font-bold text-gray-900 mb-1">{{ weapon.name }}</h4>
+                        <p class="text-sm text-gray-600 mb-3">{{ weapon.weaponType }}</p>
                         <div class="flex flex-wrap gap-3 mb-4">
                             <button onclick="rollDice(1, 20, {{ weapon.attackModifier }})" class="px-4 py-2 bg-blue-100 border border-blue-300 rounded-md hover:bg-blue-200 transition-colors">
                                 Attack: {% if weapon.attackModifier >= 0 %}
@@ -143,4 +160,3 @@
 
 <script src="{{ url_for('static', filename='js/styles.css') }}"></script>
 <script src="{{ url_for('static', filename='js/dice.js') }}"></script>
-{% endblock %}

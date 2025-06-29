@@ -2,6 +2,7 @@ import sqlite3
 import os
 import json
 import Encounter
+import defults
 
 class Database():
     __server = "Temp __server"
@@ -57,7 +58,14 @@ class Database():
             CON INTEGER,
             INT INTEGER,
             WIS INTEGER,
-            CHA INTEGER
+            CHA INTEGER,
+            Type TEXT,
+            Alignment TEXT,
+            Languages TEXT,
+            Skills TEXT,
+            SavingThrows TEXT,
+            Senses TEXT,
+            Multiattack TEXT
         )
         ''')
         cursor.execute('''
@@ -155,14 +163,21 @@ class Database():
             
     #TODO: Could be threaded in Future
     def AddEnemy(self, enemy):
-        cursor = self.__server.execute(f"INSERT INTO Enemys (Name, Size, Health, Speed, CR, STR, DEX, CON, INT, WIS, CHA) VALUES (\'{enemy.name}\', \'{enemy.size}\', {enemy.health}, {enemy.speed}, {enemy.CR}, {enemy.STR}, {enemy.DEX}, {enemy.CON}, {enemy.INT}, {enemy.WIS}, {enemy.CHA})")
-        ID = cursor.lastrowid # My need to change so that it can 
+        # Insert with new fields
+        cursor = self.__server.execute(
+            "INSERT INTO Enemys (Name, Size, Health, Speed, CR, STR, DEX, CON, INT, WIS, CHA, Type, Alignment, Languages, Skills, SavingThrows, Senses, Multiattack) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            (
+                enemy.name, enemy.size, enemy.health, enemy.speed, enemy.CR, enemy.STR, enemy.DEX, enemy.CON, enemy.INT, enemy.WIS, enemy.CHA,
+                getattr(enemy, "type", ""), getattr(enemy, "alignment", ""), getattr(enemy, "languages", ""), getattr(enemy, "skills", ""), getattr(enemy, "saving_throws", ""), getattr(enemy, "senses", ""), getattr(enemy, "multiattack", "")
+            )
+        )
+        ID = cursor.lastrowid
         self.__server.commit()
         for weapon in enemy.weapons:
-            if weapon.weaponid != None:
+            if getattr(weapon, "weaponid", None) != None:
                 self.AddPremadeWeapon(weapon.weaponid, ID)
             else: 
-                self.AddWeapon(ID, weapon)
+                self.AddWeapon(weapon, ID)
         return ID
 
     def AddPlayer(self, Player):
@@ -214,20 +229,29 @@ class Database():
         enemyRow = enemyDB.fetchone()
         if enemyRow:
             weapon = self.GetWeapons(enemyRow[0])
-            return Encounter.Enemy(enemyRow[1], enemyRow[2], enemyRow[3], enemyRow[4], enemyRow[5], enemyRow[6], enemyRow[7], enemyRow[8], enemyRow[9], enemyRow[10], enemyRow[11], weapon)
+            return Encounter.Enemy(enemyRow[0], enemyRow[1], enemyRow[2], enemyRow[3], enemyRow[4], enemyRow[5], enemyRow[6], enemyRow[7], enemyRow[8], enemyRow[9], enemyRow[10], enemyRow[11], weapon)
         return None
 
     def GetEnemy(self, EnemyID):
         # Use JOIN to get enemy by ID
         enemyDB = self.__server.execute("""
-            SELECT EnemyID, Name, Size, Health, Speed, CR, STR, DEX, CON, INT, WIS, CHA
+            SELECT EnemyID, Name, Size, Health, Speed, CR, STR, DEX, CON, INT, WIS, CHA, Type, Alignment, Languages, Skills, SavingThrows, Senses, Multiattack
             FROM Enemys
             WHERE EnemyID = ?
         """, (EnemyID,))
         enemyRow = enemyDB.fetchone()
         if enemyRow:
             enemyWeapons = self.GetWeapons(EnemyID)
-            return Encounter.Enemy(enemyRow[1], enemyRow[2], enemyRow[3], enemyRow[4], enemyRow[5], enemyRow[6], enemyRow[7], enemyRow[8], enemyRow[9], enemyRow[10], enemyRow[11], enemyWeapons)
+            return Encounter.Enemy(
+                enemyRow[0], enemyRow[1], enemyRow[2], enemyRow[3], enemyRow[4], enemyRow[5], enemyRow[6], enemyRow[7], enemyRow[8], enemyRow[9], enemyRow[10], enemyRow[11], enemyWeapons,
+                type=enemyRow[12] if len(enemyRow) > 12 else "",
+                alignment=enemyRow[13] if len(enemyRow) > 13 else "",
+                languages=enemyRow[14] if len(enemyRow) > 14 else "",
+                skills=enemyRow[15] if len(enemyRow) > 15 else "",
+                saving_throws=enemyRow[16] if len(enemyRow) > 16 else "",
+                senses=enemyRow[17] if len(enemyRow) > 17 else "",
+                multiattack=enemyRow[18] if len(enemyRow) > 18 else ""
+            )
         return None
 
     def GetEncounter(self, EncounterID):
@@ -266,14 +290,14 @@ class Database():
     
     def GetEnemys(self):
         try:
-            enemysDB = self.__server.execute(f"SELECT Name, CR  FROM Enemys")
+            enemysDB = self.__server.execute(f"SELECT EnemyID, Name, CR FROM Enemys")
             enemyList = []
             for enemyDB in enemysDB:
-                enemyList.append([enemyDB[0], enemyDB[1]])
+                # [Name, CR, EnemyID]
+                enemyList.append([enemyDB[1], enemyDB[2], enemyDB[0]])
             return enemyList
         except Exception:
             return []
-        
     # User name auth
     def createUser(self, fullname, email, passwordHash):
         cursor = self.__server.cursor()

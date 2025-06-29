@@ -4,7 +4,7 @@
 <div class="container mx-auto p-4 bg-gray-100 max-w-4xl rounded-sm">
     <div class="bg-white rounded-lg shadow-lg p-6">
         <h1 class="text-3xl font-bold text-gray-900 mb-6 text-center">D&D Enemy</h1>
-        <form action="/enemys/create" method="POST" class="space-y-6">
+        <form id="enemyForm" action="/enemys/create" method="POST" class="space-y-6">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-5 text-center">
                 <span class="col-span-4 place-items-center font-bold text-lg">
                     <div class="w-1/2">
@@ -18,6 +18,116 @@
                             required>
                     </div>
                 </span>
+                <!-- New fields start -->
+                <span>
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="type">
+                        Type
+                    </label>
+                    <input type="text"
+                        id="type"
+                        name="type"
+                        class="border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-4/5 aspect-[4/3] text-lg text-center"
+                        required
+                        placeholder="e.g. Humanoid, Aberration">
+                </span>
+                <span>
+                    <label class="block text-gray-700 text-sm font-bold mb-2">
+                        Languages
+                    </label>
+                    <div class="relative">
+                        <button type="button" onclick="toggleDropdown('languagesDropdown')" class="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-left focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            Select Languages
+                        </button>
+                        <div id="languagesDropdown" class="absolute z-10 bg-white border border-gray-300 rounded-md mt-1 w-full hidden max-h-48 overflow-y-auto">
+                            {% set languages = [
+                                'Common', 'Dwarvish', 'Elvish', 'Giant', 'Gnomish', 'Goblin', 'Halfling', 'Orc', 'Abyssal', 'Celestial', 'Draconic', 'Deep Speech', 'Infernal', 'Primordial', 'Sylvan', 'Undercommon'
+                            ] %}
+                            {% for lang in languages %}
+                            <label class="block px-3 py-1 hover:bg-gray-100">
+                                <input type="checkbox" name="languages_cb" value="{{ lang }}" class="mr-2"> {{ lang }}
+                            </label>
+                            {% endfor %}
+                        </div>
+                        <input type="hidden" id="languages" name="languages">
+                    </div>
+                </span>
+                <span>
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="alignment">
+                        Alignment
+                    </label>
+                    <input type="text"
+                        id="alignment"
+                        name="alignment"
+                        class="border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-4/5 aspect-[4/3] text-lg text-center"
+                        required
+                        placeholder="e.g. Chaotic Evil">
+                </span>
+                <span>
+                    <label class="block text-gray-700 text-sm font-bold mb-2">
+                        Skills
+                    </label>
+                    <div class="relative">
+                        <button type="button" onclick="toggleDropdown('skillsDropdown')" class="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-left focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            Select Skills
+                        </button>
+                        <div id="skillsDropdown" class="absolute z-10 bg-white border border-gray-300 rounded-md mt-1 w-full hidden max-h-64 overflow-y-auto">
+                            {% set skills = [
+                                'Acrobatics', 'Animal Handling', 'Arcana', 'Athletics', 'Deception', 'History', 'Insight', 'Intimidation', 'Investigation', 'Medicine', 'Nature', 'Perception', 'Performance', 'Persuasion', 'Religion', 'Sleight of Hand', 'Stealth', 'Survival'
+                            ] %}
+                            {% for skill in skills %}
+                            <div class="flex items-center px-3 py-1 hover:bg-gray-100">
+                                <input type="checkbox" id="skill_cb_{{ loop.index0 }}" class="mr-2" onchange="toggleSkillInput({{ loop.index0 }})">
+                                <label for="skill_cb_{{ loop.index0 }}" class="mr-2">{{ skill }}</label>
+                                <input type="number" id="skill_val_{{ loop.index0 }}" value="2" class="w-16 px-1 py-0.5 border border-gray-300 rounded ml-2" style="display:none;" placeholder="+0">
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <input type="hidden" id="skills" name="skills">
+                    </div>
+                </span>
+                <span>
+                    <label class="block text-gray-700 text-sm font-bold mb-2">
+                        Saving Throws
+                    </label>
+                    <div class="relative">
+                        <button type="button" onclick="toggleDropdown('savingThrowsDropdown')" class="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-left focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            Select Saving Throws
+                        </button>
+                        <div id="savingThrowsDropdown" class="absolute z-10 bg-white border border-gray-300 rounded-md mt-1 w-full hidden max-h-64 overflow-y-auto">
+                            {% set saves = ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA'] %}
+                            {% for save in saves %}
+                            <div class="flex items-center px-3 py-1 hover:bg-gray-100">
+                                <input type="checkbox" id="save_cb_{{ loop.index0 }}" class="mr-2" onchange="toggleSaveInput({{ loop.index0 }})">
+                                <label for="save_cb_{{ loop.index0 }}" class="mr-2">{{ save }}</label>
+                                <input type="number" id="save_val_{{ loop.index0 }}" class="w-16 px-1 py-0.5 border border-gray-300 rounded ml-2" style="display:none;" placeholder="+0">
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <input type="hidden" id="saving_throws" name="saving_throws">
+                    </div>
+                </span>
+                <span>
+                    <label class="block text-gray-700 text-sm font-bold mb-2">
+                        Senses
+                    </label>
+                    <div class="relative">
+                        <button type="button" onclick="toggleDropdown('sensesDropdown')" class="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-left focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            Select Senses
+                        </button>
+                        <div id="sensesDropdown" class="absolute z-10 bg-white border border-gray-300 rounded-md mt-1 w-full hidden max-h-64 overflow-y-auto">
+                            {% set senses = ['Blindsight', 'Darkvision', 'Tremorsense', 'Truesight', 'Passive Perception'] %}
+                            {% for sense in senses %}
+                            <div class="flex items-center px-3 py-1 hover:bg-gray-100">
+                                <input type="checkbox" id="sense_cb_{{ loop.index0 }}" class="mr-2" onchange="toggleSenseInput({{ loop.index0 }})">
+                                <label for="sense_cb_{{ loop.index0 }}" class="mr-2">{{ sense }}</label>
+                                <input type="text" id="sense_val_{{ loop.index0 }}" class="w-24 px-1 py-0.5 border border-gray-300 rounded ml-2" style="display:none;" placeholder="e.g. 60 ft">
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <input type="hidden" id="senses" name="senses">
+                    </div>
+                </span>
+                <!-- New fields end -->
                 <span>
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="hp">
                         Health
@@ -195,7 +305,17 @@
                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                            required
                            value="1"
-                           oninput="generateWeaponSections()"/>
+                           oninput="generateWeaponSections();showMultiattackField()"/>
+                </div>
+                <div id="multiattackField" style="display:none;">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="multiattack">
+                        Multiattack <span class="text-xs text-gray-500">(optional, only if more than one weapon)</span>
+                    </label>
+                    <input type="text"
+                        id="multiattack"
+                        name="multiattack"
+                        class="border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-4/5 aspect-[4/3] text-lg text-center"
+                        placeholder="e.g. 2 attacks, 1 bite & 1 claw">
                 </div>
                 <div id="weaponContainer" class="space-y-10">
                     <h2 class="text-xl font-bold text-gray-900 mb-4">Weapon Details</h2>
@@ -210,6 +330,5 @@
         </form>
     </div>
     <script src="{{ url_for('static', filename='js/createEnemy.js') }}"></script>
-
 </div>
 {% endblock %}

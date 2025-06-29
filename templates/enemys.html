@@ -14,19 +14,20 @@
     </div>
 
     <!-- Data Row -->
-    <div class="bg-white shadow w-full min-h-96 rounded-b-lg">
+    <div class="bg-white shadow w-full min-h-96 rounded-b-lg grid-cols-2">
         {%for item in items%} 
-        <div class="px-6 py-3">
-            <a href="/enemy/{{ item[0] }}">
-                <div class="flex justify-between items-center">
-                    <span class="text-left text-gray-900 hover:text-sky-300">{{ item[0] }}</span>
-                    <span class="text-left text-gray-900">{{ item[1] }}</span>
-                </div>
-            </a>
-        </div>
+            <div class="px-6 py-3">
+                <button class="w-full" onclick="getEnemy({{  item[2]  }})">
+                    <div class=" justify-between items-center w-full grid grid-cols-2">
+                        <span class="text-left text-gray-900 hover:text-sky-300 text-left">{{ item[0] }}</span>
+                        <span class="text-left text-gray-900 text-right">{{ item[1] }}</span>
+                    </div>
+                </button>
+            </div>
         {%endfor%}
         <div class="px-1 py-1 border-b border-gray-200">
         </div>
     </div>
 </div>
+<script src="{{ url_for('static', filename='js/enemys.js') }}"></script>
 {% endblock %}

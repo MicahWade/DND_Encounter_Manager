@@ -76,35 +76,35 @@ def createEnemy():
 
         weapons = []
 
-
+        server = Database.Database(False)
         for i in range(1, weaponAmount+1):
-            weapon_type = request.form.get(f"weapon_{i}")
-            weapon_name = request.form.get(f"weapon_name_{i}")
-            weapon_attackModifier = request.form.get(f"weapon_attackModifier_{i}")
-            weapon_damageDice = request.form.get(f"weapon_damageDice_{i}")
-            weapon_DiceAmount = request.form.get(f"weapon_amount_{i}")
-            weapon_properties = request.form.get(f"weapon_properties_{i}")
-            weapon_damageDice = int(weapon_damageDice)
-            weapon_attackModifier = int(weapon_attackModifier)
-            weapon_DiceAmount = int(weapon_DiceAmount)
-            weapon_type = int(weapon_type)
-            # Create Weapon object
-            try:
-                if weapon_type == 0:
-                    weapons.append(Encounter.Weapon(
-                        name=weapon_name,
-                        weaponType="",  # You may need to adjust this based on (1,1)properties,
-                        properties=weapon_properties.split(", "),
-                        attackModifier=weapon_attackModifier,
-                        damageType="slashing",  # You may need to adjust this based on your input
-                        damageDiceAmount=weapon_DiceAmount,
-                        diceType=weapon_damageDice,
-                        damageModifier=0
-                    ))
-                elif weapon_type > 0 and weapon_type <= 33:
-                    weapons.append(weapon_type)
-            except ValueError:
-                print("Invalid data format")
+            weapon_id = request.form.get(f"weapon_{i}")
+            if(weapon_id == 0):
+                weapon_name = request.form.get(f"weapon_name_{i}")
+                weapon_attackModifier = request.form.get(f"weapon_attackModifier_{i}")
+                weapon_damageDice = request.form.get(f"weapon_damageDice_{i}")
+                weapon_DiceAmount = request.form.get(f"weapon_amount_{i}")
+                weapon_properties = request.form.get(f"weapon_properties_{i}")
+                # Check for missing fields
+                if (
+                    weapon_name is None or weapon_name == "" or
+                    weapon_attackModifier is None or weapon_attackModifier == "" or
+                    weapon_damageDice is None or weapon_damageDice == "" or
+                    weapon_DiceAmount is None or weapon_DiceAmount == "" or
+                    weapon_properties is None
+                ):
+                    print(f"Weapon {i} fields missing or invalid!")
+                    return "Weapon fields missing or invalid", 400
+                try:
+                    weapon_damageDice = int(weapon_damageDice)
+                    weapon_attackModifier = int(weapon_attackModifier)
+                    weapon_DiceAmount = int(weapon_DiceAmount)
+                    weapon_type = int(weapon_type)
+                    weapons.append(Encounter.Weapon(weapon_name, "", weapon_properties.split[','], weapon_attackModifier, "", weapon_DiceAmount, weapon_damageDice, weapon_attackModifier))
+                except ValueError:
+                    print("Invalid data format")
+            else:
+                weapons.append(server.GetWeapon(weapon_id))
 
         # Create Enemy object
         enemy = Encounter.Enemy(
@@ -121,9 +121,7 @@ def createEnemy():
             CHA=CHA,
             weapon=weapons
         )
-
         # Add enemy to the database
-        server = Database.Database(False)
         server.AddEnemy(enemy)
 
         # Redirect to the enemies list page

@@ -1,5 +1,6 @@
 import os
 import random
+import typing
 
 class Player:
     name = ""
@@ -18,6 +19,7 @@ class Player:
         return
 
 class Weapon:
+    weaponid = ""
     name = ""
     weaponType = ""
     # Strings
@@ -28,7 +30,7 @@ class Weapon:
     # D4 D6 D8 D10 D12
     diceType = 4
     damageModifier = 0
-    def __init__(self, name, weaponType, properties, attackModifier, damageType, damageDiceAmount, diceType, damageModifier):
+    def __init__(self, name: str, weaponType: str, properties: list[str], attackModifier: int, damageType: str, damageDiceAmount: int, diceType: int, damageModifier: int, weaponid: int = None):
         self.name = name
         self.weaponType = weaponType
         self.properties = properties
@@ -37,6 +39,8 @@ class Weapon:
         self.damageDiceAmount = damageDiceAmount
         self.diceType = diceType
         self.damageModifier = damageModifier
+        if weaponid != None:
+            self.weaponid = weaponid
     def JsonDetails(self):
         return {
             "name": self.name,
@@ -60,7 +64,7 @@ class Enemy:
     WIS = 0
     CHA = 0
     weapons = []
-    def __init__(self, name, size, health, speed, CR, STR, DEX, CON, INT, WIS, CHA, weapon):
+    def __init__(self, name: str, size: type, health: int, speed: int, CR: int, STR: int, DEX: int, CON: int, INT: int, WIS: int, CHA: int, weapon: Weapon):
         self.name = name
         self.size = size
         self.health = health

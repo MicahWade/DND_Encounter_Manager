@@ -159,8 +159,8 @@ class Database():
         ID = cursor.lastrowid # My need to change so that it can 
         self.__server.commit()
         for weapon in enemy.weapons:
-            if type(weapon) is type(1):
-                self.AddPremadeWeapon(weapon, ID)
+            if weapon.weaponid != None:
+                self.AddPremadeWeapon(weapon.weaponid, ID)
             else: 
                 self.AddWeapon(ID, weapon)
         return ID
@@ -173,7 +173,7 @@ class Database():
         weaponDB = self.__server.execute(f"SELECT * FROM Weapon WHERE WeaponID ='{ID}'")
         weaponClass = None
         for weapon in weaponDB:
-            weaponClass = Encounter.Weapon(weapon[1], weapon[2], weapon[3].split(","), weapon[4], weapon[5], weapon[6], weapon[7], weapon[8])
+            weaponClass = Encounter.Weapon(weapon[1], weapon[2], weapon[3].split(","), weapon[4], weapon[5], weapon[6], weapon[7], weapon[8], weapon[0])
         return weaponClass
 
     def GetWeapons(self, ID):

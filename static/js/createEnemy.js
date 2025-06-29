@@ -13,16 +13,22 @@ document.querySelector('form').addEventListener('submit', function(e) {
     const speed = document.getElementById('speed').value;
     const weaponAmount = document.getElementById('weaponAmount').value;
     WeaponNone = false 
+
     for(let i = 1; i <= weaponAmount; i++){
-        weaponName += `+${document.getElementById(`weapon_name_${i}`).value}`;
-        weaponAttackModifier += `+${document.getElementById(`weapon_attackModifier_${i}`).value}`;
-        weaponDamageDice += `+${document.getElementById(`weapon_damageDice_${i}`).value}`;
-        WeaponDiceAmount += `+${document.getElementById(`weapon_amount_${i}`).value}`;
-        if (!weaponName || !weaponDescription || !weaponAttackModifier || !weaponDamageDice || !WeaponDiceAmount){
+        weaponName = document.getElementById(`weapon_name_${i}`).value;
+        weaponAttackModifier = document.getElementById(`weapon_attackModifier_${i}`).value;
+        weaponDamageDice = document.getElementById(`weapon_damageDice_${i}`).value;
+        weaponDiceAmount = document.getElementById(`weapon_amount_${i}`).value;
+        console.log(!weaponDamageDice)
+        console.log(!weaponName)
+        console.log(!weaponAttackModifier)
+        console.log(!weaponDiceAmount)
+        if (!(!weaponName || !weaponAttackModifier || !weaponDamageDice || !weaponDiceAmount)){
             WeaponNone = null
+            console.log("weapon")
         }
     }
-    if (!WeaponNone || !weaponAmount || !name || !hp || !CR || !speed || !weaponName || !weaponDescription || !weaponAttackModifier || !weaponDamageDice || !STR || !DEX || !CON || !INT || !WIS || !CHA || !size) {
+    if (!(!WeaponNone || !weaponAmount || !name || !hp || !CR || !speed || !STR || !DEX || !CON || !INT || !WIS || !CHA || !size)) {
         alert('Please fill in all required fields');
         e.preventDefault();
     }
@@ -164,29 +170,33 @@ function sendWeaponRequest(id){
         xhr.send();
         xhr.responseType = "json";
         xhr.onload = () => {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            const data = xhr.response;
-            // Make Elements Read Only 
-            nameElement.setAttribute("readOnly", true);
-            attackModElement.setAttribute("readOnly", true);
-            const damageDiceChildElements = damageDiceElement.children;
-            for (let i = 0; i < damageDiceChildElements.length; i++) {
-                if(damageDiceChildElements[i].value != data["dicetype"]){
-                    damageDiceChildElements[i].setAttribute("disabled", true);
-                }
-            };
-            diceAmountElement.setAttribute("readOnly", true);
-            propertiesElement.setAttribute("readOnly", true);
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                const data = xhr.response;
+                // Make Elements Read Only 
+                nameElement.setAttribute("readOnly", true);
+                attackModElement.setAttribute("readOnly", true);
+                const damageDiceChildElements = damageDiceElement.children;
+                for (let i = 0; i < damageDiceChildElements.length; i++) {
+                    if(damageDiceChildElements[i].value != data["dicetype"]){
+                        damageDiceChildElements[i].setAttribute("disabled", true);
+                    }
+                    else{
+                        damageDiceChildElements[i].setAttribute("disabled", false);
+                        damageDiceChildElements[i].setAttribute("selected", true);
+                    }
+                };
+                diceAmountElement.setAttribute("readOnly", true);
+                propertiesElement.setAttribute("readOnly", true);
 
-            nameElement.value = data["name"];
-            attackModElement.value = data["attackmodifier"];
-            damageDiceElement.value = data["dicetype"];
-            diceAmountElement.value = data["damgedice"];
-            propertiesElement.value = data["properties"];
-        } else {
-            console.log(`Error: ${xhr.status}`);
-        }
-    } 
+                nameElement.value = data["name"];
+                attackModElement.value = data["attackmodifier"];
+                // damageDiceElement.value = data["dicetype"];
+                diceAmountElement.value = data["damgedice"];
+                propertiesElement.value = data["properties"];
+            } else {
+                console.log(`Error: ${xhr.status}`);
+            }
+        } 
     } else {
         nameElement.setAttribute("readOnly", false);
         attackModElement.setAttribute("readOnly", false);
@@ -194,6 +204,9 @@ function sendWeaponRequest(id){
         for (let i = 0; i < damageDiceChildElements.length; i++) {
             if (damageDiceChildElements[i].value != ""){
                 damageDiceChildElements[i].setAttribute("disabled", false);
+            } else {
+                damageDiceChildElements[i].setAttribute("disabled", true);
+                damageDiceChildElements[i].setAttribute("selected", true)
             }
         };
         diceAmountElement.setAttribute("readOnly", false);

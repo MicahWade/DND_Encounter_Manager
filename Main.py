@@ -3,6 +3,7 @@ import Database
 import os
 from flask import *
 from werkzeug.security import generate_password_hash, check_password_hash
+import user
 
 app = Flask(__name__)
 
@@ -200,26 +201,38 @@ def register():
         if request.is_json:
             db = Database.Database(False)
             data = request.get_json()
-            email = data["email"]
-            user = db.getUserByEmail(email)
-            resp = { "unique": user is None }
+            # Only check email, firstname, lastname for POST (email uniqueness check)
+            check_data = {
+                "firstname": data.get("firstname", ""),
+                "lastname": data.get("lastname", ""),
+                "email": data.get("email", ""),
+                "password": "dummyPassword123!" # dummy to satisfy validation
+            }
+            valid, error = user.validate_registration(check_data)
+            if not valid:
+                return jsonify({"unique": False, "error": error}), 400
+
+            user_obj = db.getUserByEmail(data.get("email", ""))
+            resp = { "unique": user_obj is None }
             print(resp)
             return jsonify(resp)
-
         else:
             return redirect(url_for('login'))
     if request.method == "PUT":
         db = Database.Database(False)
         data = request.get_json()
-        
-        email = data["email"]
-        user = db.getUserByEmail(email)
+        # Validate all fields for full registration
+        valid, error = user.validate_registration(data)
+        if not valid:
+            return error, 400
 
-        if user is not None:
+        email = data.get("email", "")
+        user_obj = db.getUserByEmail(email)
+        if user_obj is not None:
             return "Email Acount already exists.", 409
 
-        hashed_pw = generate_password_hash(data["password"])
-        fullname = data["firstname"] + " " + data["lastname"]
+        hashed_pw = generate_password_hash(data.get("password", ""))
+        fullname = data.get("firstname", "") + " " + data.get("lastname", "")
     
         userid = db.createUser(fullname, email, hashed_pw)
         session['userid'] = userid

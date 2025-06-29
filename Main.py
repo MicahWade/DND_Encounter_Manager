@@ -192,18 +192,30 @@ def login():
     else:
         return "Wrong Method", 405
 
-@app.route("/register", methods=["POST"])
+@app.route("/register", methods=["POST", "PUT" ])
 def register():
     if 'userid' in session:
         return redirect(url_for('mainPage'))
     if request.method == "POST":
+        if request.is_json:
+            db = Database.Database(False)
+            data = request.get_json()
+            email = data["email"]
+            user = db.getUserByEmail(email)
+            resp = { "unique": user is None }
+            print(resp)
+            return jsonify(resp)
+
+        else:
+            return redirect(url_for('login'))
+    if request.method == "PUT":
         db = Database.Database(False)
         data = request.get_json()
         
         email = data["email"]
         user = db.getUserByEmail(email)
 
-        if user is None:
+        if user is not None:
             return "Email Acount already exists.", 409
 
         hashed_pw = generate_password_hash(data["password"])

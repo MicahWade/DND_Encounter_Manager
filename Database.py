@@ -283,7 +283,7 @@ class Database():
 
     def getUserByEmail(self, email):
         cursor = self.__server.cursor()
-        cursor.execute("SELECT UserID, FullName, Email, Password FROM User WHERE FullName = ?", (email,))
+        cursor.execute("SELECT UserID, FullName, Email, Password FROM User WHERE Email = ?", (email,))
         row = cursor.fetchone()
         if row:
             return {'userid': row[0], 'fullname': row[1], 'email': row[2], 'password': row[3]}

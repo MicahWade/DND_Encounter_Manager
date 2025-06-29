@@ -26,13 +26,11 @@ function register(){
         return
     } if(!checkPassword()){
         return
-    } if(!checkEmail()){
-        return
     }
 
     // JSON request 
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "./register");
+    xhr.open("PUT", "./register");
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.withCredentials = true; // Allow cookies like a form
 
@@ -44,10 +42,11 @@ function register(){
                     window.location.href = resp.redirect;
                     return;
                 }
-            } catch (e) {}
-            // alert("Account created successfully!");
+            } catch (e) {
+                alert("An error happend, if this persistes please contact support");
+            }
         } else if (xhr.status === 409) {
-            checkEmail.innerHTML = "An acount exists with this Email!";
+            existEmail.innerHTML = "An acount exists with this Email!";
             existEmail.classList.remove("hidden");
  1       } else {
             alert("Account creation failed: " + xhr.responseText);
@@ -62,6 +61,8 @@ function register(){
     xhr.send(JSON.stringify(data));
 }
 function registerToggle(){
+    password.addEventListener('focusout', checkPassword);
+    email.addEventListener('focusout', checkEmail);
     firstname.classList.remove("hidden");
     lastname.classList.remove("hidden");
     allterms.classList.remove("hidden");
@@ -133,6 +134,37 @@ function checkEmail() {
         existEmail.classList.remove("hidden");
         return false;
     }
+    console.log(emailUnique(emailValue))
     existEmail.classList.add("hidden");
     return true;
+}
+function emailUnique(email){
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "./register");
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhr.withCredentials = true; // Allow cookies like a form
+
+    xhr.onload = function() {
+        if (xhr.status === 200 || xhr.status === 201) {
+            try {
+                const resp = JSON.parse(xhr.responseText);
+                console.log(resp["unique"] == true)
+                if(resp["unique"] == true){
+                    return true
+                }
+                else{
+                    existEmail.innerHTML = "An acount exists with this Email!";
+                    existEmail.classList.remove("hidden");
+                }
+            } catch (e) {
+                alert("An error happend, if this persistes please contact support");
+            }
+        } else{
+            return false
+        }
+    };
+    const data = {
+        email: email
+    };
+    xhr.send(JSON.stringify(data));
 }

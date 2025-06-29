@@ -1,6 +1,4 @@
 import os
-import random
-import typing
 
 class Player:
     name = ""
@@ -8,18 +6,8 @@ class Player:
     def __init__(self, name):
         self.name = name
 
-    def EnterInitiative(self):
-        while initiative == -20:
-            try: 
-                print(f"Enter {self.name}'s initiative,")
-                self.initiative = int(input())
-            except:
-                Clear()
-        Clear()
-        return
-
 class Weapon:
-    weaponid = ""
+    weaponid = None
     name = ""
     weaponType = ""
     # Strings
@@ -75,7 +63,7 @@ class Enemy:
     saving_throws = ""
     senses = ""
     multiattack = ""
-    def __init__(self, id: int, name: str, size: type, health: int, speed: int, CR: int, STR: int, DEX: int, CON: int, INT: int, WIS: int, CHA: int, weapon: list, type: str = "", alignment: str = "", languages: str = "", skills: str = "", saving_throws: str = "", senses: str = "", multiattack: str = ""):
+    def __init__(self, id: int, name: str, size: str, health: int, speed: int, CR: int, STR: int, DEX: int, CON: int, INT: int, WIS: int, CHA: int, weapon: list, type: str = "", alignment: str = "", languages: str = "", skills: str = "", saving_throws: str = "", senses: str = "", multiattack: str = ""):
         self.name = name
         self.size = size
         self.health = health

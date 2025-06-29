@@ -5,6 +5,7 @@ from flask import *
 from werkzeug.security import generate_password_hash, check_password_hash
 import user
 from dotenv import load_dotenv
+from defults import create_default_weapons, create_default_enemys
 
 app = Flask(__name__)
 
@@ -273,6 +274,9 @@ def not_found(error):
 
 if __name__ == "__main__":
     server = Database.Database(True)
+    if server.wasfirst:
+        create_default_enemys()
+        create_default_weapons()
     app.run(debug=True, port=3333)
     app.add_url_rule(
         "/favicon.ico",

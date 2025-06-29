@@ -2,37 +2,11 @@ import sqlite3
 import os
 import json
 import Encounter
-import defults
 
 class Database():
     __server = "Temp __server"
+    wasfirst = False
     
-    def __CreateDefultWeapons(self):
-        # Read weapon data from JSON file
-        static_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static", "data")
-        json_path = os.path.join(static_dir, "weapons.json")
-        if not os.path.exists(json_path):
-            print("Error Now weapon.json file in static/data/")
-        else:
-            with open(json_path, "r", encoding="utf-8") as f:
-                weapon_data = json.load(f)
-            weapons = []
-            for weapon in weapon_data:
-                weapons.append(
-                    Encounter.Weapon(
-                        weapon["name"],
-                        weapon["type"],
-                        weapon["properties"],
-                        weapon["attackModifier"],
-                        weapon["damageType"],
-                        weapon["amountOfDice"],
-                        weapon["dice"],
-                        weapon["damageModifier"]
-                    )
-                )
-            for weapon in weapons:
-                self.AddWeapon(weapon)
-
     def __SetupTables(self):
         if self.__server == "Temp __server":
             raise Exception("__server Not Setup yet")
@@ -114,7 +88,7 @@ class Database():
         )''')
         self.__server.commit()
         if result is None:
-            self.__CreateDefultWeapons()
+            self.wasfirst = True
 
     def __init__(self, first):
         path = os.path.expanduser('~/Documents/Dnd_Encounter')
@@ -152,9 +126,9 @@ class Database():
     def AddWeapon(self, weapon, enemyID = None):
         params = (weapon.name, weapon.weaponType, ",".join(weapon.properties), weapon.attackModifier, weapon.damageType, weapon.damageDiceAmount, weapon.diceType, weapon.damageModifier) 
         cursor = self.__server.execute("INSERT INTO Weapon (Name, WeaponType, Properties, AttackModifier, DamgeType, AmountOfDice, Dice, DamgeModifier) VALUES (?, ?, ?, ?, ?, ?, ?, ?)", params)
+        weaponID = cursor.lastrowid
         if(enemyID is not None):
-            ID = self.__server.execute("SELECT last_insert_rowid()").fetchone()[0]
-            self.__server.execute("INSERT INTO EnemyWeapon (WeaponID, EnemyID) VALUES (?, ?)", (ID, enemyID))
+            self.__server.execute("INSERT INTO EnemyWeapon (WeaponID, EnemyID) VALUES (?, ?)", (weaponID, enemyID))
         self.__server.commit()
 
     def AddPremadeWeapon(self, weaponid, enemyID):
@@ -171,14 +145,14 @@ class Database():
                 getattr(enemy, "type", ""), getattr(enemy, "alignment", ""), getattr(enemy, "languages", ""), getattr(enemy, "skills", ""), getattr(enemy, "saving_throws", ""), getattr(enemy, "senses", ""), getattr(enemy, "multiattack", "")
             )
         )
-        ID = cursor.lastrowid
+        enemyID = cursor.lastrowid
         self.__server.commit()
         for weapon in enemy.weapons:
-            if getattr(weapon, "weaponid", None) != None:
-                self.AddPremadeWeapon(weapon.weaponid, ID)
+            if weapon.weaponid != None and weapon.weaponid != 0:
+                self.AddPremadeWeapon(weapon.weaponid, enemyID)
             else: 
-                self.AddWeapon(weapon, ID)
-        return ID
+                self.AddWeapon(weapon, enemyID)
+        return enemyID
 
     def AddPlayer(self, Player):
         self.__server.execute(f"INSERT INTO Players (Name) VALUES (\"{Player.name}\")")

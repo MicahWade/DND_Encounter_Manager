@@ -124,7 +124,7 @@
                                 <span class="text-sm text-gray-600 ml-1">{{ weapon.damageType }}</span>
                             </button>
                         </div>
-                        {% if weapon.properties != [] and weapon.properties != None %}
+                        {% if weapon.properties != [] and weapon.properties != None and weapon.properties != [''] %}
                         <div class="text-sm text-gray-500">
                             Properties: {{ ', '.join(weapon.properties) }}
                         </div>

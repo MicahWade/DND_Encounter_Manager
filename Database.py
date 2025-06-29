@@ -101,6 +101,10 @@ class Database():
         except Exception as e:
             print(f"Could Not Connect to __server This is the Issue {e}")
 
+
+
+
+    #region Add
     def AddEncounter(self, encounter):
         enemyDataBaseID = []
         for enemy in encounter.characters:
@@ -157,7 +161,11 @@ class Database():
     def AddPlayer(self, Player):
         self.__server.execute(f"INSERT INTO Players (Name) VALUES (\"{Player.name}\")")
         self.__server.commit()
+    #endregion
 
+
+
+    # region GET
     def GetWeapon(self, ID):
         weaponDB = self.__server.execute(f"SELECT * FROM Weapon WHERE WeaponID ='{ID}'")
         weaponClass = None
@@ -247,7 +255,37 @@ class Database():
         if encounterRow:
             return Encounter.Encounter(encounterRow[0], enemys, encounterRow[1])
         return None
+    def GetEnemys(self):
+        try:
+            enemysDB = self.__server.execute(f"SELECT EnemyID, Name, CR FROM Enemys ORDER BY RANDOM() LIMIT 20")
+            enemyList = []
+            for enemyDB in enemysDB:
+                enemyList.append([enemyDB[1], enemyDB[2], enemyDB[0]])
+            return enemyList
+        except Exception as e:
+            print(e)
+            return []
+    #endregion
 
+
+
+    #region Search
+    def searchEnemys(self, term):
+        try:
+            enemysDB = self.__server.execute(f"SELECT EnemyID, Name, CR FROM Enemys WHERE LOWER(Name) LIKE ? ORDER BY Name LIMIT 20", (f"%{term}%",))
+            enemyList = []
+            for enemyDB in enemysDB:
+                enemyList.append([enemyDB[1], enemyDB[2], enemyDB[0]])
+            return enemyList
+        except Exception as e:
+            print(e)
+            return []
+
+    #endregion
+
+
+
+    #region Remove
     def RemovePlayer(self, player):
         self.__server.execute(f"DELETE FROM Players WHERE {player.name}")
         self.__server.commit()
@@ -258,21 +296,11 @@ class Database():
         for enemy in enemyDB:
             self.RemoveWeaponEnemyID(enemy[0])
         self.__server.commit()
-    
     def RemoveWeaponEnemyID(self, ID):
         self.__server.execute(f"DELETE FROM EnemyWeapon WHERE EnemyID={ID}")
+    #endregion
     
-    def GetEnemys(self):
-        try:
-            enemysDB = self.__server.execute(f"SELECT EnemyID, Name, CR FROM Enemys")
-            enemyList = []
-            for enemyDB in enemysDB:
-                # [Name, CR, EnemyID]
-                enemyList.append([enemyDB[1], enemyDB[2], enemyDB[0]])
-            return enemyList
-        except Exception:
-            return []
-    # User name auth
+    # region User name auth
     def createUser(self, fullname, email, passwordHash):
         cursor = self.__server.cursor()
         cursor.execute("INSERT INTO User (FullName, Email, Password) VALUES (?, ?, ?)", (fullname, email, passwordHash))
@@ -286,3 +314,5 @@ class Database():
         if row:
             return {'userid': row[0], 'fullname': row[1], 'email': row[2], 'password': row[3]}
         return None
+
+    #endregion

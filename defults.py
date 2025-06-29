@@ -135,7 +135,7 @@ def create_default_enemys():
         # Parse normal actions
         for action in monster.get("actions", []):
             if action['name'] == "Multiattack":
-                multiattack = action['desc']
+                multiattack = action['desc'].replace("(", "").replace(")", "")
             else:
                 weapons.append(action_to_weapon(action, is_legendary=False))
         # Parse legendary actions

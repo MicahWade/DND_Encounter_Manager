@@ -23,18 +23,26 @@ def enemy(id):
         return redirect(url_for('login'))
     server = Database.Database(False)
 
+
     enemy = server.GetEnemy(id)
     if enemy is None:
         return "Bad Enemy Id", 404
     return render_template("enemy.html", enemy=enemy)
 # TODO: Make User ID
-@app.route("/enemys/remove/<name>")
+@app.route("/enemys/remove/<name>", methods=["GET"])
 def removeEnemy(name):
     if 'userid' not in session:
         return redirect(url_for('login'))
     server = Database.Database(False)
     server.RemoveEnemyName(name)
     return redirect(url_for('enemys'))
+
+@app.route("/search/enemy/<term>", methods=["GET"])
+def searchEnemys(term):
+    print(term)
+    server = Database.Database(False)
+    results = server.searchEnemys(term)
+    return jsonify({'enemys': results})
 
 @app.route("/enemys")
 def enemys():

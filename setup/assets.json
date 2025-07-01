@@ -1,0 +1,3954 @@
+[
+    {
+        "title": "AlchemyShop-Herbalist-Dark-Floor1-14x15-300DPI",
+        "type": "map",
+        "Tags": "Alchemy Shop",
+        "path": "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Dark - Floor 1 - 14x15 - 300 DPI.webp",
+        "variants": "Dark, Light",
+        "size": "14x15"
+    },
+    {
+        "title": "AlchemyShop-Herbalist-Dark-Floor2-14x15-300DPI",
+        "type": "map",
+        "Tags": "Alchemy Shop",
+        "path": "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Dark - Floor 2 - 14x15 - 300 DPI.webp",
+        "variants": "Dark, Light",
+        "size": "14x15"
+    },
+    {
+        "title": "AlchemyShop-Herbalist-Light-Floor1-14x15-300DPI",
+        "type": "map",
+        "Tags": "Alchemy Shop",
+        "path": "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Light - Floor 1 - 14x15 - 300 DPI.webp",
+        "variants": "Dark, Light",
+        "size": "14x15"
+    },
+    {
+        "title": "AlchemyShop-Herbalist-Light-Floor2-14x15-300DPI",
+        "type": "map",
+        "Tags": "Alchemy Shop",
+        "path": "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Light - Floor 2 - 14x15 - 300 DPI.webp",
+        "variants": "Dark, Light",
+        "size": "14x15"
+    },
+    {
+        "title": "ArtistAtelier-ArtClass-Day-14x16-300DPI",
+        "type": "map",
+        "Tags": "Artist Atelier",
+        "path": "images/maps/Artist_Atelier___Art_Class/Artist Atelier - Art Class - Day - 14x16 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "14x16"
+    },
+    {
+        "title": "ArtistAtelier-ArtClass-Day-Loft-9x6-300DPI",
+        "type": "map",
+        "Tags": "Artist Atelier",
+        "path": "images/maps/Artist_Atelier___Art_Class/Artist Atelier - Art Class - Day - Loft - 9x6 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "9x6"
+    },
+    {
+        "title": "ArtistAtelier-ArtClass-Night-14x16-300DPI",
+        "type": "map",
+        "Tags": "Artist Atelier",
+        "path": "images/maps/Artist_Atelier___Art_Class/Artist Atelier - Art Class - Night - 14x16 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "14x16"
+    },
+    {
+        "title": "ArtistAtelier-ArtClass-Night-Loft-9x6-300DPI",
+        "type": "map",
+        "Tags": "Artist Atelier",
+        "path": "images/maps/Artist_Atelier___Art_Class/Artist Atelier - Art Class - Night - Loft - 9x6 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "9x6"
+    },
+    {
+        "title": "BanditAmbush-Summer-Day-22x16-300DPI",
+        "type": "map",
+        "Tags": "Bandit Ambush",
+        "path": "images/maps/Bandit_Ambush___Summer/Bandit Ambush - Summer - Day - 22x16 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "22x16"
+    },
+    {
+        "title": "BanditAmbush-Summer-Night-22x16-300DPI",
+        "type": "map",
+        "Tags": "Bandit Ambush",
+        "path": "images/maps/Bandit_Ambush___Summer/Bandit Ambush - Summer - Night - 22x16 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "22x16"
+    },
+    {
+        "title": "Treetops-Summer-Day1-11x14-300DPI",
+        "type": "map",
+        "Tags": "Bandit Ambush",
+        "path": "images/maps/Treetops___Summer/Treetops - Summer - Day 1 - 11x14 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "11x14"
+    },
+    {
+        "title": "Treetops-Summer-Day2-11x8-300DPI",
+        "type": "map",
+        "Tags": "Bandit Ambush",
+        "path": "images/maps/Treetops___Summer/Treetops - Summer - Day 2 - 11x8 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "11x8"
+    },
+    {
+        "title": "Treetops-Summer-Day3-12x8-300DPI",
+        "type": "map",
+        "Tags": "Bandit Ambush",
+        "path": "images/maps/Treetops___Summer/Treetops - Summer - Day 3 - 12x8 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "12x8"
+    },
+    {
+        "title": "Treetops-Summer-Night1-11x14-300DPI",
+        "type": "map",
+        "Tags": "Bandit Ambush",
+        "path": "images/maps/Treetops___Summer/Treetops - Summer - Night 1 - 11x14 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "11x14"
+    },
+    {
+        "title": "Treetops-Summer-Night3-11x8-300DPI",
+        "type": "map",
+        "Tags": "Bandit Ambush",
+        "path": "images/maps/Treetops___Summer/Treetops - Summer - Night 3 - 11x8 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "11x8"
+    },
+    {
+        "title": "Treetops-Summer-Night3-12x8-300DPI",
+        "type": "map",
+        "Tags": "Bandit Ambush",
+        "path": "images/maps/Treetops___Summer/Treetops - Summer - Night 3 - 12x8 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "12x8"
+    },
+    {
+        "title": "BuriedTemple-Light-Active-32x44-300DPI",
+        "type": "map",
+        "Tags": "Buried Temple",
+        "path": "images/maps/Buried_Temple/Buried Temple - Light - Active - 32x44 - 300 DPI.jpg",
+        "variants": "Light",
+        "size": "32x44"
+    },
+    {
+        "title": "BuriedTemple-Light-Inactive-32x44-300DPI",
+        "type": "map",
+        "Tags": "Buried Temple",
+        "path": "images/maps/Buried_Temple/Buried Temple - Light - Inactive - 32x44 - 300 DPI.jpg",
+        "variants": "Light",
+        "size": "32x44"
+    },
+    {
+        "title": "CrystalCrypts-LichLight-32x22-300DPI",
+        "type": "map",
+        "Tags": "Crystal Crypts",
+        "path": "images/maps/Crystal Crypts - Lich Light - 32x22 - 300 DPI.jpg",
+        "variants": "Light",
+        "size": "32x22"
+    },
+    {
+        "title": "FloodedRoom-LichLight1-11x6-300DPI",
+        "type": "map",
+        "Tags": "Crystal Crypts",
+        "path": "images/maps/Flooded Room - Lich Light 1 - 11x6 - 300 DPI.jpg",
+        "variants": "Light",
+        "size": "11x6"
+    },
+    {
+        "title": "FloodedRoom-LichLight2-16x9-300DPI",
+        "type": "map",
+        "Tags": "Crystal Crypts",
+        "path": "images/maps/Flooded Room - Lich Light 2 - 16x9 - 300 DPI.jpg",
+        "variants": "Light",
+        "size": "16x9"
+    },
+    {
+        "title": "FloodedRoom-LichLight3-11x6-300DPI",
+        "type": "map",
+        "Tags": "Crystal Crypts",
+        "path": "images/maps/Flooded Room - Lich Light 3 - 11x6 - 300 DPI.jpg",
+        "variants": "Light",
+        "size": "11x6"
+    },
+    {
+        "title": "FloodedRoom-LichLight4-11x9-300DPI",
+        "type": "map",
+        "Tags": "Crystal Crypts",
+        "path": "images/maps/Flooded Room - Lich Light 4 - 11x9 - 300 DPI.jpg",
+        "variants": "Light",
+        "size": "11x9"
+    },
+    {
+        "title": "FloodedRoom-LichLight5-16x10-300DPI",
+        "type": "map",
+        "Tags": "Crystal Crypts",
+        "path": "images/maps/Flooded Room - Lich Light 5 - 16x10 - 300 DPI.jpg",
+        "variants": "Light",
+        "size": "16x10"
+    },
+    {
+        "title": "DeluxeSuite1-Sunset-Dark-13x17-300DPI",
+        "type": "map",
+        "Tags": "Deluxe Suites",
+        "path": "images/maps/Deluxe_Suite_1___Sunset/Deluxe Suite 1 - Sunset - Dark - 13x17 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "13x17"
+    },
+    {
+        "title": "DeluxeSuite1-Sunset-Light-13x17-300DPI",
+        "type": "map",
+        "Tags": "Deluxe Suites",
+        "path": "images/maps/Deluxe_Suite_1___Sunset/Deluxe Suite 1 - Sunset - Light - 13x17 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "13x17"
+    },
+    {
+        "title": "DeluxeSuite2-Sunset-Dark-13x17-300DPI",
+        "type": "map",
+        "Tags": "Deluxe Suites",
+        "path": "images/maps/Deluxe_Suite_2___Sunset/Deluxe Suite 2 - Sunset - Dark - 13x17 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "13x17"
+    },
+    {
+        "title": "DeluxeSuite2-Sunset-Light-13x17-300DPI",
+        "type": "map",
+        "Tags": "Deluxe Suites",
+        "path": "images/maps/Deluxe_Suite_2___Sunset/Deluxe Suite 2 - Sunset - Light - 13x17 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "13x17"
+    },
+    {
+        "title": "Demiplane-Stone1-Dark-10x10-300DPI",
+        "type": "map",
+        "Tags": "Demiplanes",
+        "path": "images/maps/Demiplane___Stone_1/Demiplane - Stone 1 - Dark - 10x10 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "10x10"
+    },
+    {
+        "title": "Demiplane-Stone1-Light-10x10-300DPI",
+        "type": "map",
+        "Tags": "Demiplanes",
+        "path": "images/maps/Demiplane___Stone_1/Demiplane - Stone 1 - Light - 10x10 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "10x10"
+    },
+    {
+        "title": "Demiplane-Stone2-Dark-10x10-300DPI",
+        "type": "map",
+        "Tags": "Demiplanes",
+        "path": "images/maps/Demiplane___Stone_2/Demiplane - Stone 2 - Dark - 10x10 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "10x10"
+    },
+    {
+        "title": "Demiplane-Stone2-Light-10x10-300DPI",
+        "type": "map",
+        "Tags": "Demiplanes",
+        "path": "images/maps/Demiplane___Stone_2/Demiplane - Stone 2 - Light - 10x10 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "10x10"
+    },
+    {
+        "title": "Demiplane-Stone3-Dark-10x10-300DPI",
+        "type": "map",
+        "Tags": "Demiplanes",
+        "path": "images/maps/Demiplane___Stone_3/Demiplane - Stone 3 - Dark - 10x10 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "10x10"
+    },
+    {
+        "title": "Demiplane-Stone3-Light-10x10-300DPI",
+        "type": "map",
+        "Tags": "Demiplanes",
+        "path": "images/maps/Demiplane___Stone_3/Demiplane - Stone 3 - Light - 10x10 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "10x10"
+    },
+    {
+        "title": "Demiplane-Wood1-Dark-10x10-300DPI",
+        "type": "map",
+        "Tags": "Demiplanes",
+        "path": "images/maps/Demiplane___Wood_1/Demiplane - Wood 1 - Dark - 10x10 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "10x10"
+    },
+    {
+        "title": "Demiplane-Wood1-Light-10x10-300DPI",
+        "type": "map",
+        "Tags": "Demiplanes",
+        "path": "images/maps/Demiplane___Wood_1/Demiplane - Wood 1 - Light - 10x10 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "10x10"
+    },
+    {
+        "title": "Demiplane-Wood2-Dark-10x10-300DPI",
+        "type": "map",
+        "Tags": "Demiplanes",
+        "path": "images/maps/Demiplane___Wood_2/Demiplane - Wood 2 - Dark - 10x10 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "10x10"
+    },
+    {
+        "title": "Demiplane-Wood2-Light-10x10-300DPI",
+        "type": "map",
+        "Tags": "Demiplanes",
+        "path": "images/maps/Demiplane___Wood_2/Demiplane - Wood 2 - Light - 10x10 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "10x10"
+    },
+    {
+        "title": "Demiplane-Wood3-Dark-10x10-300DPI",
+        "type": "map",
+        "Tags": "Demiplanes",
+        "path": "images/maps/Demiplane___Wood_3/Demiplane - Wood 3 - Dark - 10x10 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "10x10"
+    },
+    {
+        "title": "Demiplane-Wood3-Light-10x10-300DPI",
+        "type": "map",
+        "Tags": "Demiplanes",
+        "path": "images/maps/Demiplane___Wood_3/Demiplane - Wood 3 - Light - 10x10 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "10x10"
+    },
+    {
+        "title": "Devil'sMill,Floor1",
+        "type": "asset",
+        "Tags": "DevilsMill",
+        "path": "images/assets/floors/Devil's Mill, Floor 1 (6x6).png",
+        "variants": "None",
+        "size": "6x6"
+    },
+    {
+        "title": "Devil'sMill,Floor2",
+        "type": "asset",
+        "Tags": "DevilsMill",
+        "path": "images/assets/floors/Devil's Mill, Floor 2 (8x8).png",
+        "variants": "None",
+        "size": "8x8"
+    },
+    {
+        "title": "Devil'sMill,Floor3",
+        "type": "asset",
+        "Tags": "DevilsMill",
+        "path": "images/assets/floors/Devil's Mill, Floor 3 (6x6).png",
+        "variants": "None",
+        "size": "6x6"
+    },
+    {
+        "title": "Devil'sMill,Floor4",
+        "type": "asset",
+        "Tags": "DevilsMill",
+        "path": "images/assets/floors/Devil's Mill, Floor 4 (5x5).png",
+        "variants": "None",
+        "size": "5x5"
+    },
+    {
+        "title": "Devil'sMill,Roof",
+        "type": "asset",
+        "Tags": "DevilsMill",
+        "path": "images/assets/Devil's Mill, Roof (5x5).png",
+        "variants": "None",
+        "size": "5x5"
+    },
+    {
+        "title": "Devil'sMill,Turbine",
+        "type": "asset",
+        "Tags": "DevilsMill",
+        "path": "images/assets/Devil's Mill, Turbine (10x2).png",
+        "variants": "None",
+        "size": "10x2"
+    },
+    {
+        "title": "DriftwoodCove-Tropical-Day-44x32-300DPI",
+        "type": "map",
+        "Tags": "Driftwood Cove",
+        "path": "images/maps/Driftwood_Cove___Tropical/Driftwood Cove - Tropical - Day - 44x32 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "44x32"
+    },
+    {
+        "title": "DriftwoodCove-Tropical-Night-44x32-300DPI",
+        "type": "map",
+        "Tags": "Driftwood Cove",
+        "path": "images/maps/Driftwood_Cove___Tropical/Driftwood Cove - Tropical - Night - 44x32 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "44x32"
+    },
+    {
+        "title": "Acidcloud",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Acid cloud (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Acidmushroom",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Acid mushroom (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Acidspray",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Acid spray (4x2).png",
+        "variants": "None",
+        "size": "4x2"
+    },
+    {
+        "title": "Ballbearings",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Ball bearings (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Beartrap",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Bear trap (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Bomb",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Bomb (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Boulder",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Boulder (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Caltrops",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Caltrops (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Cat",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Cat (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Ceilingfan",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Ceiling fan (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Crackedfloor",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Cracked floor (4x4).png",
+        "variants": "None",
+        "size": "4x4"
+    },
+    {
+        "title": "Dangerslit",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Danger slit (1x3).png",
+        "variants": "None",
+        "size": "1x3"
+    },
+    {
+        "title": "Dragonbust",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Dragon bust (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Electricityburst",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Electricity burst (3x2).png",
+        "variants": "None",
+        "size": "3x2"
+    },
+    {
+        "title": "Explosion",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Explosion (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Eyeball",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Eyeball (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Eyeball,wall",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Eyeball, wall (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Fire",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Fire (4x4).png",
+        "variants": "None",
+        "size": "4x4"
+    },
+    {
+        "title": "Firegout",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Fire gout (3x2).png",
+        "variants": "None",
+        "size": "3x2"
+    },
+    {
+        "title": "Floorflesh",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Floor flesh (3x3).png",
+        "variants": "None",
+        "size": "3x3"
+    },
+    {
+        "title": "Handwarmer",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Hand warmer (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "IronBoulder",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Iron Boulder (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Log,rolling,swinging",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Log, rolling, swinging (1x3).png",
+        "variants": "None",
+        "size": "1x3"
+    },
+    {
+        "title": "Mysterysack",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Mystery sack (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Obviouspressurepad",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Obvious pressure pad (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Pit",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Pit (4x4).png",
+        "variants": "None",
+        "size": "4x4"
+    },
+    {
+        "title": "Pitacid",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Pit acid (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Pitlava",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Pit lava (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Pitspikes",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Pit spikes (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Pitwater",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Pit water (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Pit,collapsed",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Pit, collapsed (4x4).png",
+        "variants": "None",
+        "size": "4x4"
+    },
+    {
+        "title": "Rollingpinofdoom",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Rolling pin of doom (3x4).png",
+        "variants": "None",
+        "size": "3x4"
+    },
+    {
+        "title": "Scythe",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Scythe (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Slidingspikes",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Sliding spikes (3x2).png",
+        "variants": "None",
+        "size": "3x2"
+    },
+    {
+        "title": "Spiderweb",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Spider web (2x3).png",
+        "variants": "None",
+        "size": "2x3"
+    },
+    {
+        "title": "Suitofarmor",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Suit of armor (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Swingingblade",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Swinging blade (1x3).png",
+        "variants": "None",
+        "size": "1x3"
+    },
+    {
+        "title": "Swingingblade,floor",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Swinging blade, floor (1x3).png",
+        "variants": "None",
+        "size": "1x3"
+    },
+    {
+        "title": "Tiltingfloor",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Tilting floor (4x4).png",
+        "variants": "None",
+        "size": "4x4"
+    },
+    {
+        "title": "Tripwire",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Trip wire (1x2).png",
+        "variants": "None",
+        "size": "1x2"
+    },
+    {
+        "title": "Unskilledspider'sweb",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Unskilled spider's web (2x3).png",
+        "variants": "None",
+        "size": "2x3"
+    },
+    {
+        "title": "Wallbuzzsaw",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Wall buzzsaw (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Wallchomper",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Wall chomper (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Wallcrystal",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Wall crystal (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Wallcutter",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Wall cutter (2x1).png",
+        "variants": "None",
+        "size": "2x1"
+    },
+    {
+        "title": "Wallflesh",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Wall flesh (1x2).png",
+        "variants": "None",
+        "size": "1x2"
+    },
+    {
+        "title": "Wallhatch",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Wall hatch (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Wallhatch,open",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Wall hatch, open (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Wallholes",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Wall holes (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Wallspikes",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Wall spikes (1x2).png",
+        "variants": "None",
+        "size": "1x2"
+    },
+    {
+        "title": "Wallvent",
+        "type": "enemy",
+        "Tags": "DungeonTrapTokens",
+        "path": "images/tokens/Wall vent (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "DwarvenBurrow-Abandoned-Dark-14x14-300DPI",
+        "type": "map",
+        "Tags": "Dwarven Burrow",
+        "path": "images/maps/Dwarven_Burrow___Abandoned/Dwarven Burrow - Abandoned - Dark - 14x14 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "14x14"
+    },
+    {
+        "title": "DwarvenBurrow-Abandoned-Light-14x14-300DPI",
+        "type": "map",
+        "Tags": "Dwarven Burrow",
+        "path": "images/maps/Dwarven_Burrow___Abandoned/Dwarven Burrow - Abandoned - Light - 14x14 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "14x14"
+    },
+    {
+        "title": "DwarvenBurrow-Bachelor-Dark-14x14-300DPI",
+        "type": "map",
+        "Tags": "Dwarven Burrow",
+        "path": "images/maps/Dwarven_Burrow___Bachelor/Dwarven Burrow - Bachelor - Dark - 14x14 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "14x14"
+    },
+    {
+        "title": "DwarvenBurrow-Bachelor-Dark-Unlit-14x14-300DPI",
+        "type": "map",
+        "Tags": "Dwarven Burrow",
+        "path": "images/maps/Dwarven_Burrow___Bachelor/Dwarven Burrow - Bachelor - Dark - Unlit - 14x14 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "14x14"
+    },
+    {
+        "title": "DwarvenBurrow-Bachelor-Light-14x14-300DPI",
+        "type": "map",
+        "Tags": "Dwarven Burrow",
+        "path": "images/maps/Dwarven_Burrow___Bachelor/Dwarven Burrow - Bachelor - Light - 14x14 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "14x14"
+    },
+    {
+        "title": "DwarvenBurrow-Bachelor-Light-Unlit-14x14-300DPI",
+        "type": "map",
+        "Tags": "Dwarven Burrow",
+        "path": "images/maps/Dwarven_Burrow___Bachelor/Dwarven Burrow - Bachelor - Light - Unlit - 14x14 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "14x14"
+    },
+    {
+        "title": "DwarvenRanch-Spring-Day-44x32-300DPI",
+        "type": "map",
+        "Tags": "Dwarven Ranch",
+        "path": "images/maps/Dwarven_Ranch___Spring/Dwarven Ranch - Spring - Day - 44x32 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "44x32"
+    },
+    {
+        "title": "DwarvenRanch-Spring-Night-44x32-300DPI",
+        "type": "map",
+        "Tags": "Dwarven Ranch",
+        "path": "images/maps/Dwarven_Ranch___Spring/Dwarven Ranch - Spring - Night - 44x32 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "44x32"
+    },
+    {
+        "title": "FightingPit-Muddy-Dark-16x22-300DPI",
+        "type": "map",
+        "Tags": "Fighting Pit",
+        "path": "images/maps/Fighting_Pit___Muddy/Fighting Pit - Muddy - Dark - 16x22 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "16x22"
+    },
+    {
+        "title": "FightingPit-Muddy-Light-16x22-300DPI",
+        "type": "map",
+        "Tags": "Fighting Pit",
+        "path": "images/maps/Fighting_Pit___Muddy/Fighting Pit - Muddy - Light - 16x22 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "16x22"
+    },
+    {
+        "title": "ForestCamp-Dark-Occupied-44x32",
+        "type": "map",
+        "Tags": "Forest Camp",
+        "path": "images/maps/Forest_Camp/Forest Camp - Dark - Occupied - 44x32.jpg",
+        "variants": "Dark",
+        "size": "44x32"
+    },
+    {
+        "title": "ForestCamp-Dark-Vacant-44x32",
+        "type": "map",
+        "Tags": "Forest Camp",
+        "path": "images/maps/Forest_Camp/Forest Camp - Dark - Vacant - 44x32.jpg",
+        "variants": "Dark",
+        "size": "44x32"
+    },
+    {
+        "title": "GoblinCamp-Base-Day16x22-300DPI",
+        "type": "map",
+        "Tags": "Goblin Camp",
+        "path": "images/maps/Goblin_Camp___Base/Goblin Camp - Base - Day 16x22 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "16x22"
+    },
+    {
+        "title": "GoblinCamp-Base-Night16x22-300DPI",
+        "type": "map",
+        "Tags": "Goblin Camp",
+        "path": "images/maps/Goblin_Camp___Base/Goblin Camp - Base - Night 16x22 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "16x22"
+    },
+    {
+        "title": "goblinconductor1",
+        "type": "enemy",
+        "Tags": "Goblin Camp",
+        "path": "images/tokens/goblin conductor 1 (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "goblinconductor2",
+        "type": "enemy",
+        "Tags": "Goblin Camp",
+        "path": "images/tokens/goblin conductor 2 (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "goblinconductor3",
+        "type": "enemy",
+        "Tags": "Goblin Camp",
+        "path": "images/tokens/goblin conductor 3 (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Moretokens!",
+        "type": "enemy",
+        "Tags": "Goblin Camp",
+        "path": "images/tokens/More tokens!.url",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "GrandMageTower-Base-Bedroom-Day-16x16",
+        "type": "map",
+        "Tags": "Grand Mage Tower",
+        "path": "images/maps/Grand_Mage_Tower___Base___Bedroom/Grand Mage Tower - Base - Bedroom - Day - 16x16.jpg",
+        "variants": "Day, Night",
+        "size": "16x16"
+    },
+    {
+        "title": "GrandMageTower-Base-Bedroom-Night-16x16",
+        "type": "map",
+        "Tags": "Grand Mage Tower",
+        "path": "images/maps/Grand_Mage_Tower___Base___Bedroom/Grand Mage Tower - Base - Bedroom - Night - 16x16.jpg",
+        "variants": "Day, Night",
+        "size": "16x16"
+    },
+    {
+        "title": "GrandMageTower-Base-Empty-Day-16x16",
+        "type": "map",
+        "Tags": "Grand Mage Tower",
+        "path": "images/maps/Grand_Mage_Tower___Base___Empty/Grand Mage Tower - Base - Empty - Day - 16x16.jpg",
+        "variants": "Day, Night",
+        "size": "16x16"
+    },
+    {
+        "title": "GrandMageTower-Base-Empty-Night-16x16",
+        "type": "map",
+        "Tags": "Grand Mage Tower",
+        "path": "images/maps/Grand_Mage_Tower___Base___Empty/Grand Mage Tower - Base - Empty - Night - 16x16.jpg",
+        "variants": "Day, Night",
+        "size": "16x16"
+    },
+    {
+        "title": "GrandMageTower-Base-Library-Day-16x16",
+        "type": "map",
+        "Tags": "Grand Mage Tower",
+        "path": "images/maps/Grand_Mage_Tower___Base___Library/Grand Mage Tower - Base - Library - Day - 16x16.jpg",
+        "variants": "Day, Night",
+        "size": "16x16"
+    },
+    {
+        "title": "GrandMageTower-Base-Library-Night-16x16",
+        "type": "map",
+        "Tags": "Grand Mage Tower",
+        "path": "images/maps/Grand_Mage_Tower___Base___Library/Grand Mage Tower - Base - Library - Night - 16x16.jpg",
+        "variants": "Day, Night",
+        "size": "16x16"
+    },
+    {
+        "title": "GrandMageTower-Base-Observatory-Day-16x16",
+        "type": "map",
+        "Tags": "Grand Mage Tower",
+        "path": "images/maps/Grand_Mage_Tower___Base___Observatory/Grand Mage Tower - Base - Observatory - Day - 16x16.jpg",
+        "variants": "Day, Night",
+        "size": "16x16"
+    },
+    {
+        "title": "GrandMageTower-Base-Observatory-Night-16x16",
+        "type": "map",
+        "Tags": "Grand Mage Tower",
+        "path": "images/maps/Grand_Mage_Tower___Base___Observatory/Grand Mage Tower - Base - Observatory - Night - 16x16.jpg",
+        "variants": "Day, Night",
+        "size": "16x16"
+    },
+    {
+        "title": "Minotaur",
+        "type": "enemy",
+        "Tags": "Hedge Maze",
+        "path": "images/tokens/Minotaur.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Mooseotaur",
+        "type": "enemy",
+        "Tags": "Hedge Maze",
+        "path": "images/tokens/Mooseotaur.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "swinotaur",
+        "type": "enemy",
+        "Tags": "Hedge Maze",
+        "path": "images/tokens/swinotaur (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "1",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/1.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "10",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/10.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "11",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/11.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "12",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/12.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "13",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/13.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "14",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/14.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "15",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/15.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "16",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/16.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "17",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/17.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "18",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/18.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "19",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/19.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "2",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/2.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "20",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/20.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "21",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/21.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "22",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/22.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "23",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/23.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "24",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/24.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "25",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/25.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "26",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/26.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "27",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/27.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "28",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/28.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "29",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/29.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "3",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/3.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "30",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/30.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "31",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/31.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "32",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/32.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "4",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/4.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "5",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/5.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "6",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/6.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "7",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/7.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "8",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/8.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "9",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/9.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border1",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 1.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border10",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 10.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border11",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 11.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border12",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 12.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border13",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 13.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border14",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 14.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border15",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 15.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border16",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 16.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border17",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 17.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border18",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 18.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border19",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 19.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border2",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 2.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border20",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 20.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border21",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 21.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border22",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 22.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border23",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 23.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border24",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 24.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border25",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 25.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border26",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 26.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border27",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 27.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border28",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 28.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border29",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 29.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border3",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 3.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border30",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 30.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border31",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 31.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border32",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 32.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border4",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 4.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border5",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 5.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border6",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 6.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border7",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 7.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border8",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 8.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Border9",
+        "type": "player",
+        "Tags": "HeroTokens",
+        "path": "images/tokens/hero/Border 9.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "HiddenPool-Blooming-Day-16x22-300DPI",
+        "type": "map",
+        "Tags": "Hidden Pool",
+        "path": "images/maps/Hidden_Pool___Blooming/Hidden Pool - Blooming - Day - 16x22 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "16x22"
+    },
+    {
+        "title": "HiddenPool-Blooming-Night-16x22-300DPI",
+        "type": "map",
+        "Tags": "Hidden Pool",
+        "path": "images/maps/Hidden_Pool___Blooming/Hidden Pool - Blooming - Night - 16x22 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "16x22"
+    },
+    {
+        "title": "Lighthouse,floor1",
+        "type": "asset",
+        "Tags": "Lighthouse",
+        "path": "images/assets/floors/Lighthouse, floor 1 (10x11).png",
+        "variants": "None",
+        "size": "10x11"
+    },
+    {
+        "title": "Lighthouse,floor2",
+        "type": "asset",
+        "Tags": "Lighthouse",
+        "path": "images/assets/floors/Lighthouse, floor 2 (10x11).png",
+        "variants": "None",
+        "size": "10x11"
+    },
+    {
+        "title": "Lighthouse,floor3",
+        "type": "asset",
+        "Tags": "Lighthouse",
+        "path": "images/assets/floors/Lighthouse, floor 3 (10x10).png",
+        "variants": "None",
+        "size": "10x10"
+    },
+    {
+        "title": "Lighthouse,roof",
+        "type": "asset",
+        "Tags": "Lighthouse",
+        "path": "images/assets/Lighthouse, roof (8x8).png",
+        "variants": "None",
+        "size": "8x8"
+    },
+    {
+        "title": "Beacon,magical",
+        "type": "asset",
+        "Tags": "Lighthouse",
+        "path": "images/assets/Beacon, magical (6x6).png",
+        "variants": "None",
+        "size": "6x6"
+    },
+    {
+        "title": "Connector1",
+        "type": "asset",
+        "Tags": "Lighthouse",
+        "path": "images/assets/Connector 1 (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Connector2",
+        "type": "asset",
+        "Tags": "Lighthouse",
+        "path": "images/assets/Connector 2 (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Lens1",
+        "type": "asset",
+        "Tags": "Lighthouse",
+        "path": "images/assets/Lens 1 (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Lens2",
+        "type": "asset",
+        "Tags": "Lighthouse",
+        "path": "images/assets/Lens 2 (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Lens3",
+        "type": "asset",
+        "Tags": "Lighthouse",
+        "path": "images/assets/Lens 3 (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Lens4",
+        "type": "asset",
+        "Tags": "Lighthouse",
+        "path": "images/assets/Lens 4 (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Lens5",
+        "type": "asset",
+        "Tags": "Lighthouse",
+        "path": "images/assets/Lens 5 (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Lens6",
+        "type": "asset",
+        "Tags": "Lighthouse",
+        "path": "images/assets/Lens 6 (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Lens7",
+        "type": "asset",
+        "Tags": "Lighthouse",
+        "path": "images/assets/Lens 7 (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Lens8",
+        "type": "asset",
+        "Tags": "Lighthouse",
+        "path": "images/assets/Lens 8 (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Lens9",
+        "type": "asset",
+        "Tags": "Lighthouse",
+        "path": "images/assets/Lens 9 (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "MegafloraGrotto-Verdant-Day-32x22-300DPI",
+        "type": "map",
+        "Tags": "Megaflora Grotto",
+        "path": "images/maps/Megaflora_Grotto___Verdant/Megaflora Grotto - Verdant - Day - 32x22 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "32x22"
+    },
+    {
+        "title": "MegafloraGrotto-Verdant-Night-32x22-300DPI",
+        "type": "map",
+        "Tags": "Megaflora Grotto",
+        "path": "images/maps/Megaflora_Grotto___Verdant/Megaflora Grotto - Verdant - Night - 32x22 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "32x22"
+    },
+    {
+        "title": "MetalsmithsWorkshop-Base-Day-22x16-300DPI",
+        "type": "map",
+        "Tags": "Metalsmiths Workshop",
+        "path": "images/maps/Metalsmiths_Workshop___Base/Metalsmiths Workshop - Base - Day - 22x16 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "22x16"
+    },
+    {
+        "title": "MetalsmithsWorkshop-Base-Night-22x16-300DPI",
+        "type": "map",
+        "Tags": "Metalsmiths Workshop",
+        "path": "images/maps/Metalsmiths_Workshop___Base/Metalsmiths Workshop - Base - Night - 22x16 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "22x16"
+    },
+    {
+        "title": "MoonlitCathedral-Night-Pews-26x52",
+        "type": "map",
+        "Tags": "Moonlit Cathedral",
+        "path": "images/maps/Moonlit_Cathedral/Moonlit Cathedral - Night - Pews - 26x52.jpg",
+        "variants": "Night",
+        "size": "26x52"
+    },
+    {
+        "title": "MoonlitCathedral-Night-Rafters-26x52",
+        "type": "map",
+        "Tags": "Moonlit Cathedral",
+        "path": "images/maps/Moonlit_Cathedral/Moonlit Cathedral - Night - Rafters - 26x52.jpg",
+        "variants": "Night",
+        "size": "26x52"
+    },
+    {
+        "title": "MushroomVillage-Forest-Day-43x29-300DPI",
+        "type": "map",
+        "Tags": "Mushroom Village",
+        "path": "images/maps/Mushroom_Village___Forest/Mushroom Village - Forest - Day - 43x29 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "43x29"
+    },
+    {
+        "title": "MushroomVillage-Forest-Day-EmptyPen-6x9-300DPI",
+        "type": "map",
+        "Tags": "Mushroom Village",
+        "path": "images/maps/Mushroom_Village___Forest/Mushroom Village - Forest - Day - Empty Pen - 6x9 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "6x9"
+    },
+    {
+        "title": "MushroomVillage-Forest-Night-43x29-300DPI",
+        "type": "map",
+        "Tags": "Mushroom Village",
+        "path": "images/maps/Mushroom_Village___Forest/Mushroom Village - Forest - Night - 43x29 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "43x29"
+    },
+    {
+        "title": "Brightcapsizedrowboat",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright capsized rowboat (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Brightcargo,barrel",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright cargo, barrel (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Brightcargo,crate1",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright cargo, crate (1x1) 1.png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Brightcargo,crate2",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright cargo, crate (1x1) 2.png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Brightcargo,crate3",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright cargo, crate (1x1) 3.png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Brightcasualty1",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright casualty (1x1) 1.png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Brightcasualty2",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright casualty (1x1) 2.png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Brightcasualty",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright casualty (1x2).png",
+        "variants": "None",
+        "size": "1x2"
+    },
+    {
+        "title": "Brightcasualty",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright casualty (2x1).png",
+        "variants": "None",
+        "size": "2x1"
+    },
+    {
+        "title": "Brightcreature,shark",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright creature, shark (2x3).png",
+        "variants": "None",
+        "size": "2x3"
+    },
+    {
+        "title": "Brightcreature,shark,hammerhead",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright creature, shark, hammerhead (2x3).png",
+        "variants": "None",
+        "size": "2x3"
+    },
+    {
+        "title": "Brightcreature,turtle",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright creature, turtle (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Brightdoomedship",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright doomed ship (8x6).png",
+        "variants": "None",
+        "size": "8x6"
+    },
+    {
+        "title": "Brightdriftingtrunk",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright drifting trunk (8x2).png",
+        "variants": "None",
+        "size": "8x2"
+    },
+    {
+        "title": "Brightdriftwood1",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright driftwood (1x2) 1.png",
+        "variants": "None",
+        "size": "1x2"
+    },
+    {
+        "title": "Brightdriftwood2",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright driftwood (1x2) 2.png",
+        "variants": "None",
+        "size": "1x2"
+    },
+    {
+        "title": "Brightdriftwood1",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright driftwood (2x2) 1.png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Brightdriftwood2",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright driftwood (2x2) 2.png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Brightdriftwood",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright driftwood (3x3).png",
+        "variants": "None",
+        "size": "3x3"
+    },
+    {
+        "title": "Brightfish",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright fish (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Brightfishschool",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright fish school (2x4).png",
+        "variants": "None",
+        "size": "2x4"
+    },
+    {
+        "title": "Brightislet,barren",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright islet, barren (7x6).png",
+        "variants": "None",
+        "size": "7x6"
+    },
+    {
+        "title": "Brightislet,palmtree",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright islet, palm tree (8x6).png",
+        "variants": "None",
+        "size": "8x6"
+    },
+    {
+        "title": "Brightraft",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright raft (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Brightreef",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright reef (10x3).png",
+        "variants": "None",
+        "size": "10x3"
+    },
+    {
+        "title": "Brightreef1",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright reef (6x3) 1.png",
+        "variants": "None",
+        "size": "6x3"
+    },
+    {
+        "title": "Brightreef2",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright reef (6x3) 2.png",
+        "variants": "None",
+        "size": "6x3"
+    },
+    {
+        "title": "Brightrockpillar",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright rock pillar (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Brightrockpillar",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright rock pillar (3x3).png",
+        "variants": "None",
+        "size": "3x3"
+    },
+    {
+        "title": "Brightrockpillar1",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright rock pillar (3x4) 1.png",
+        "variants": "None",
+        "size": "3x4"
+    },
+    {
+        "title": "Brightrockpillar2",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright rock pillar (3x4) 2.png",
+        "variants": "None",
+        "size": "3x4"
+    },
+    {
+        "title": "Brightrocks",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright rocks (2x5).png",
+        "variants": "None",
+        "size": "2x5"
+    },
+    {
+        "title": "Brightrocks",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright rocks (4x10).png",
+        "variants": "None",
+        "size": "4x10"
+    },
+    {
+        "title": "Brightrocks",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright rocks (5x10).png",
+        "variants": "None",
+        "size": "5x10"
+    },
+    {
+        "title": "Brightrocks",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright rocks (6x9).png",
+        "variants": "None",
+        "size": "6x9"
+    },
+    {
+        "title": "Brightsubmergedflag",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright submerged flag (4x4).png",
+        "variants": "None",
+        "size": "4x4"
+    },
+    {
+        "title": "Brightwave",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright wave (8x4).png",
+        "variants": "None",
+        "size": "8x4"
+    },
+    {
+        "title": "Brightwhirlpool",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Bright whirlpool (4x4).png",
+        "variants": "None",
+        "size": "4x4"
+    },
+    {
+        "title": "Darkcapsizedrowboat",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark capsized rowboat (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Darkcargo,barrel",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark cargo, barrel (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Darkcargo,crate1",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark cargo, crate (1x1) 1.png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Darkcargo,crate2",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark cargo, crate (1x1) 2.png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Darkcargo,crate3",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark cargo, crate (1x1) 3.png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Darkcasualty1",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark casualty (1x1) 1.png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Darkcasualty2",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark casualty (1x1) 2.png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Darkcasualty",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark casualty (1x2).png",
+        "variants": "None",
+        "size": "1x2"
+    },
+    {
+        "title": "Darkcasualty",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark casualty (2x1).png",
+        "variants": "None",
+        "size": "2x1"
+    },
+    {
+        "title": "Darkcreature,shark",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark creature, shark (2x3).png",
+        "variants": "None",
+        "size": "2x3"
+    },
+    {
+        "title": "Darkcreature,shark,hammerhead",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark creature, shark, hammerhead (2x3).png",
+        "variants": "None",
+        "size": "2x3"
+    },
+    {
+        "title": "Darkcreature,turtle",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark creature, turtle (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Darkdoomedship",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark doomed ship (8x6).png",
+        "variants": "None",
+        "size": "8x6"
+    },
+    {
+        "title": "Darkdriftingtrunk",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark drifting trunk (8x2).png",
+        "variants": "None",
+        "size": "8x2"
+    },
+    {
+        "title": "Darkdriftwood1",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark driftwood (1x2) 1.png",
+        "variants": "None",
+        "size": "1x2"
+    },
+    {
+        "title": "Darkdriftwood2",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark driftwood (1x2) 2.png",
+        "variants": "None",
+        "size": "1x2"
+    },
+    {
+        "title": "Darkdriftwood1",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark driftwood (2x2) 1.png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Darkdriftwood2",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark driftwood (2x2) 2.png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Darkdriftwood",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark driftwood (3x3).png",
+        "variants": "None",
+        "size": "3x3"
+    },
+    {
+        "title": "Darkfish",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark fish (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Darkfishschool",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark fish school (2x4).png",
+        "variants": "None",
+        "size": "2x4"
+    },
+    {
+        "title": "Darkislet,barren",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark islet, barren (7x6).png",
+        "variants": "None",
+        "size": "7x6"
+    },
+    {
+        "title": "Darkislet,palmtree",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark islet, palm tree (8x6).png",
+        "variants": "None",
+        "size": "8x6"
+    },
+    {
+        "title": "Darkraft",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark raft (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Darkreef",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark reef (10x3).png",
+        "variants": "None",
+        "size": "10x3"
+    },
+    {
+        "title": "Darkreef1",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark reef (6x3) 1.png",
+        "variants": "None",
+        "size": "6x3"
+    },
+    {
+        "title": "Darkreef2",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark reef (6x3) 2.png",
+        "variants": "None",
+        "size": "6x3"
+    },
+    {
+        "title": "Darkrockpillar",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark rock pillar (2x2).png",
+        "variants": "None",
+        "size": "2x2"
+    },
+    {
+        "title": "Darkrockpillar",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark rock pillar (3x3).png",
+        "variants": "None",
+        "size": "3x3"
+    },
+    {
+        "title": "Darkrockpillar1",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark rock pillar (3x4) 1.png",
+        "variants": "None",
+        "size": "3x4"
+    },
+    {
+        "title": "Darkrockpillar2",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark rock pillar (3x4) 2.png",
+        "variants": "None",
+        "size": "3x4"
+    },
+    {
+        "title": "Darkrocks",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark rocks (2x5).png",
+        "variants": "None",
+        "size": "2x5"
+    },
+    {
+        "title": "Darkrocks",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark rocks (4x10).png",
+        "variants": "None",
+        "size": "4x10"
+    },
+    {
+        "title": "Darkrocks",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark rocks (5x10).png",
+        "variants": "None",
+        "size": "5x10"
+    },
+    {
+        "title": "Darkrocks",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark rocks (6x9).png",
+        "variants": "None",
+        "size": "6x9"
+    },
+    {
+        "title": "Darksubmergedflag",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark submerged flag (4x4).png",
+        "variants": "None",
+        "size": "4x4"
+    },
+    {
+        "title": "Darkwave",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark wave (8x4).png",
+        "variants": "None",
+        "size": "8x4"
+    },
+    {
+        "title": "Darkwhirlpool",
+        "type": "asset",
+        "Tags": "OceanSurfaceAssets",
+        "path": "images/assets/Dark whirlpool (4x4).png",
+        "variants": "None",
+        "size": "4x4"
+    },
+    {
+        "title": "PaintedTundra-Autumn-Day-22x16-300DPI",
+        "type": "map",
+        "Tags": "Painted Tundra",
+        "path": "images/maps/Painted_Tundra___Autumn/Painted Tundra - Autumn - Day - 22x16 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "22x16"
+    },
+    {
+        "title": "PaintedTundra-Autumn-Night-22x16-300DPI",
+        "type": "map",
+        "Tags": "Painted Tundra",
+        "path": "images/maps/Painted_Tundra___Autumn/Painted Tundra - Autumn - Night - 22x16 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "22x16"
+    },
+    {
+        "title": "PalatialPortal-Marble-Day-25x18-300DPI",
+        "type": "map",
+        "Tags": "Palatial Portal",
+        "path": "images/maps/Palatial_Portal___Marble/Palatial Portal - Marble - Day - 25x18 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "25x18"
+    },
+    {
+        "title": "PalatialPortal-Marble-Night-25x18-300DPI",
+        "type": "map",
+        "Tags": "Palatial Portal",
+        "path": "images/maps/Palatial_Portal___Marble/Palatial Portal - Marble - Night - 25x18 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "25x18"
+    },
+    {
+        "title": "PalatialThrone-Marble-Day-32x46-300DPI",
+        "type": "map",
+        "Tags": "Palatial Throne",
+        "path": "images/maps/Palatial_Throne___Marble/Palatial Throne - Marble - Day - 32x46 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "32x46"
+    },
+    {
+        "title": "PalatialThrone-Marble-Night-32x46-300DPI",
+        "type": "map",
+        "Tags": "Palatial Throne",
+        "path": "images/maps/Palatial_Throne___Marble/Palatial Throne - Marble - Night - 32x46 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "32x46"
+    },
+    {
+        "title": "RicketyRopeBridge-Clouds-16x22-300DPI",
+        "type": "map",
+        "Tags": "Rickety Rope Bridge",
+        "path": "images/maps/Rickety Rope Bridge - Clouds - 16x22 - 300 DPI.jpg",
+        "variants": "None",
+        "size": "16x22"
+    },
+    {
+        "title": "RicketyRopeBridge-Day-16x22-300DPI",
+        "type": "map",
+        "Tags": "Rickety Rope Bridge",
+        "path": "images/maps/Rickety_Rope_Bridge/Rickety Rope Bridge - Day - 16x22 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "16x22"
+    },
+    {
+        "title": "RicketyRopeBridge-Night-16x22-300DPI",
+        "type": "map",
+        "Tags": "Rickety Rope Bridge",
+        "path": "images/maps/Rickety_Rope_Bridge/Rickety Rope Bridge - Night - 16x22 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "16x22"
+    },
+    {
+        "title": "RockyDesert-BaseMap-Day-32x22",
+        "type": "map",
+        "Tags": "Rocky Desert",
+        "path": "images/maps/Rocky_Desert___Base_Map/Rocky Desert - Base Map - Day - 32x22.jpg",
+        "variants": "Day, Night",
+        "size": "32x22"
+    },
+    {
+        "title": "RockyDesert-BaseMap-Night-32x22",
+        "type": "map",
+        "Tags": "Rocky Desert",
+        "path": "images/maps/Rocky_Desert___Base_Map/Rocky Desert - Base Map - Night - 32x22.jpg",
+        "variants": "Day, Night",
+        "size": "32x22"
+    },
+    {
+        "title": "RockyFissures-Desert-Day-22x16",
+        "type": "map",
+        "Tags": "Rocky Fissures",
+        "path": "images/maps/Rocky_Fissures___Desert/Rocky Fissures - Desert - Day - 22x16.jpg",
+        "variants": "Day, Night",
+        "size": "22x16"
+    },
+    {
+        "title": "RockyFissures-Desert-Night-22x16",
+        "type": "map",
+        "Tags": "Rocky Fissures",
+        "path": "images/maps/Rocky_Fissures___Desert/Rocky Fissures - Desert - Night - 22x16.jpg",
+        "variants": "Day, Night",
+        "size": "22x16"
+    },
+    {
+        "title": "RoundTable-Valiant-Dark-26x18-300DPI",
+        "type": "map",
+        "Tags": "Round Table",
+        "path": "images/maps/Round_Table___Valiant/Round Table - Valiant - Dark - 26x18 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "26x18"
+    },
+    {
+        "title": "RoundTable-Valiant-Light-26x18-300DPI",
+        "type": "map",
+        "Tags": "Round Table",
+        "path": "images/maps/Round_Table___Valiant/Round Table - Valiant - Light - 26x18 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "26x18"
+    },
+    {
+        "title": "RoyalBank-Vaults-Dark-32x23-300DPI",
+        "type": "map",
+        "Tags": "Royal Bank",
+        "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Dark - 32x23 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "32x23"
+    },
+    {
+        "title": "RoyalBank-Vaults-Light-32x23-300DPI",
+        "type": "map",
+        "Tags": "Royal Bank",
+        "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Light - 32x23 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "32x23"
+    },
+    {
+        "title": "RoyalBank-Vaults-Dark-Door1Alt-4x4-300DPI",
+        "type": "map",
+        "Tags": "Royal Bank",
+        "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Dark - Door 1 Alt - 4x4 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "4x4"
+    },
+    {
+        "title": "RoyalBank-Vaults-Dark-Door2Alt-2x6-300DPI",
+        "type": "map",
+        "Tags": "Royal Bank",
+        "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Dark - Door 2 Alt - 2x6 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "2x6"
+    },
+    {
+        "title": "RoyalBank-Vaults-Dark-Door3Alt-3x4-300DPI",
+        "type": "map",
+        "Tags": "Royal Bank",
+        "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Dark - Door 3 Alt - 3x4 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "3x4"
+    },
+    {
+        "title": "RoyalBank-Vaults-Light-Door1Alt-4x4-300DPI",
+        "type": "map",
+        "Tags": "Royal Bank",
+        "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Light - Door 1 Alt - 4x4 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "4x4"
+    },
+    {
+        "title": "RoyalBank-Vaults-Light-Door2Alt-2x6-300DPI",
+        "type": "map",
+        "Tags": "Royal Bank",
+        "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Light - Door 2 Alt - 2x6 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "2x6"
+    },
+    {
+        "title": "RoyalBank-Vaults-Light-Door3Alt-3x4-300DPI",
+        "type": "map",
+        "Tags": "Royal Bank",
+        "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Light - Door 3 Alt - 3x4 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "3x4"
+    },
+    {
+        "title": "LionStatue1",
+        "type": "map",
+        "Tags": "Royal Bank",
+        "path": "images/maps/Lion Statue 1.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "LionStatue2",
+        "type": "map",
+        "Tags": "Royal Bank",
+        "path": "images/maps/Lion Statue 2.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "RoyalOverlook-City-Day-16x22-300DPI",
+        "type": "map",
+        "Tags": "Royal Overlook",
+        "path": "images/maps/Royal_Overlook___City/Royal Overlook - City - Day - 16x22 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "16x22"
+    },
+    {
+        "title": "RoyalOverlook-City-Night-16x22-300DPI",
+        "type": "map",
+        "Tags": "Royal Overlook",
+        "path": "images/maps/Royal_Overlook___City/Royal Overlook - City - Night - 16x22 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "16x22"
+    },
+    {
+        "title": "Block",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Block (2x1).png",
+        "variants": "None",
+        "size": "2x1"
+    },
+    {
+        "title": "Block",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Block (3x1).png",
+        "variants": "None",
+        "size": "3x1"
+    },
+    {
+        "title": "Block,large",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Block, large (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Block,medium",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Block, medium (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Block,small",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Block, small (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Exteriordeck",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Exterior deck (8x8).png",
+        "variants": "None",
+        "size": "8x8"
+    },
+    {
+        "title": "Exteriorhatch,large",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Exterior hatch, large (4x4).png",
+        "variants": "None",
+        "size": "4x4"
+    },
+    {
+        "title": "Exteriorhatch,medium",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Exterior hatch, medium (3x4).png",
+        "variants": "None",
+        "size": "3x4"
+    },
+    {
+        "title": "Exteriorhatch,small",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Exterior hatch, small (3x3).png",
+        "variants": "None",
+        "size": "3x3"
+    },
+    {
+        "title": "Exteriorstairs",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Exterior stairs (3x3).png",
+        "variants": "None",
+        "size": "3x3"
+    },
+    {
+        "title": "Exteriorstairs",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Exterior stairs (3x4).png",
+        "variants": "None",
+        "size": "3x4"
+    },
+    {
+        "title": "Exteriorstructuralplank",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Exterior structural plank (3x2).png",
+        "variants": "None",
+        "size": "3x2"
+    },
+    {
+        "title": "Exteriorstructuralplank",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Exterior structural plank (4x2).png",
+        "variants": "None",
+        "size": "4x2"
+    },
+    {
+        "title": "Exteriorstructuralplank",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Exterior structural plank (5x2).png",
+        "variants": "None",
+        "size": "5x2"
+    },
+    {
+        "title": "Exteriorstructuralplank",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Exterior structural plank (6x2).png",
+        "variants": "None",
+        "size": "6x2"
+    },
+    {
+        "title": "Exteriortrapdoor",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Exterior trapdoor (3x3).png",
+        "variants": "None",
+        "size": "3x3"
+    },
+    {
+        "title": "Interiordeck",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Interior deck (8x8).png",
+        "variants": "None",
+        "size": "8x8"
+    },
+    {
+        "title": "Interiorhatch,large",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Interior hatch, large (4x4).png",
+        "variants": "None",
+        "size": "4x4"
+    },
+    {
+        "title": "Interiorhatch,medium",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Interior hatch, medium (3x4).png",
+        "variants": "None",
+        "size": "3x4"
+    },
+    {
+        "title": "Interiorhatch,small",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Interior hatch, small (3x3).png",
+        "variants": "None",
+        "size": "3x3"
+    },
+    {
+        "title": "Interiorstairs",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Interior stairs (3x3).png",
+        "variants": "None",
+        "size": "3x3"
+    },
+    {
+        "title": "Interiorstairs",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Interior stairs (3x4).png",
+        "variants": "None",
+        "size": "3x4"
+    },
+    {
+        "title": "Interiorstructuralplank",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Interior structural plank (3x2).png",
+        "variants": "None",
+        "size": "3x2"
+    },
+    {
+        "title": "Interiorstructuralplank",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Interior structural plank (4x2).png",
+        "variants": "None",
+        "size": "4x2"
+    },
+    {
+        "title": "Interiorstructuralplank",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Interior structural plank (5x2).png",
+        "variants": "None",
+        "size": "5x2"
+    },
+    {
+        "title": "Interiorstructuralplank",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Interior structural plank (6x2).png",
+        "variants": "None",
+        "size": "6x2"
+    },
+    {
+        "title": "Interiortrapdoor",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Interior trapdoor (3x3).png",
+        "variants": "None",
+        "size": "3x3"
+    },
+    {
+        "title": "Mast",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Mast (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Railing,long",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Railing, long (10x2).png",
+        "variants": "None",
+        "size": "10x2"
+    },
+    {
+        "title": "Railing,long",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Railing, long (14x3).png",
+        "variants": "None",
+        "size": "14x3"
+    },
+    {
+        "title": "Railing,long",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Railing, long (17x3).png",
+        "variants": "None",
+        "size": "17x3"
+    },
+    {
+        "title": "Railing,long",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Railing, long (22x4).png",
+        "variants": "None",
+        "size": "22x4"
+    },
+    {
+        "title": "Railing,straight",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Railing, straight (3x2).png",
+        "variants": "None",
+        "size": "3x2"
+    },
+    {
+        "title": "Railing,straight",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Railing, straight (4x2).png",
+        "variants": "None",
+        "size": "4x2"
+    },
+    {
+        "title": "Railing,straight",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Railing, straight (5x2).png",
+        "variants": "None",
+        "size": "5x2"
+    },
+    {
+        "title": "Railing,straight",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Railing, straight (6x2).png",
+        "variants": "None",
+        "size": "6x2"
+    },
+    {
+        "title": "Railing,wide",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Railing, wide (10x3).png",
+        "variants": "None",
+        "size": "10x3"
+    },
+    {
+        "title": "Railing,wide",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Railing, wide (14x3).png",
+        "variants": "None",
+        "size": "14x3"
+    },
+    {
+        "title": "Railing,wide",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Railing, wide (17x4).png",
+        "variants": "None",
+        "size": "17x4"
+    },
+    {
+        "title": "Railing,wide",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Railing, wide (22x5).png",
+        "variants": "None",
+        "size": "22x5"
+    },
+    {
+        "title": "Ship'swheel",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Ship's wheel (2x1).png",
+        "variants": "None",
+        "size": "2x1"
+    },
+    {
+        "title": "Wall,door",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Wall, door (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Wall,door,double",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Wall, door, double (2x1).png",
+        "variants": "None",
+        "size": "2x1"
+    },
+    {
+        "title": "Wall,long",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Wall, long (10x2).png",
+        "variants": "None",
+        "size": "10x2"
+    },
+    {
+        "title": "Wall,long",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Wall, long (14x3).png",
+        "variants": "None",
+        "size": "14x3"
+    },
+    {
+        "title": "Wall,long",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Wall, long (17x3).png",
+        "variants": "None",
+        "size": "17x3"
+    },
+    {
+        "title": "Wall,long",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Wall, long (22x4).png",
+        "variants": "None",
+        "size": "22x4"
+    },
+    {
+        "title": "Wall,straight",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Wall, straight (3x2).png",
+        "variants": "None",
+        "size": "3x2"
+    },
+    {
+        "title": "Wall,straight",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Wall, straight (4x2).png",
+        "variants": "None",
+        "size": "4x2"
+    },
+    {
+        "title": "Wall,straight",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Wall, straight (5x2).png",
+        "variants": "None",
+        "size": "5x2"
+    },
+    {
+        "title": "Wall,straight",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Wall, straight (6x2).png",
+        "variants": "None",
+        "size": "6x2"
+    },
+    {
+        "title": "Wall,wide",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Wall, wide (10x3).png",
+        "variants": "None",
+        "size": "10x3"
+    },
+    {
+        "title": "Wall,wide",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Wall, wide (14x3).png",
+        "variants": "None",
+        "size": "14x3"
+    },
+    {
+        "title": "Wall,wide",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Wall, wide (17x4).png",
+        "variants": "None",
+        "size": "17x4"
+    },
+    {
+        "title": "Wall,wide",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Wall, wide (22x5).png",
+        "variants": "None",
+        "size": "22x5"
+    },
+    {
+        "title": "Wall,window",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Wall, window (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "Wall,window,porthole",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/Wall, window, porthole (1x1).png",
+        "variants": "None",
+        "size": "1x1"
+    },
+    {
+        "title": "_Example,bottom",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/_Example, bottom (10x5).png",
+        "variants": "None",
+        "size": "10x5"
+    },
+    {
+        "title": "_Example,top",
+        "type": "asset",
+        "Tags": "Sailing Ship Assets",
+        "path": "images/assets/_Example, top(10x5).png",
+        "variants": "None",
+        "size": "10x5"
+    },
+    {
+        "title": "SeasideBar-Tropical-Day-22x16-300DPI",
+        "type": "map",
+        "Tags": "Seaside Bar",
+        "path": "images/maps/Seaside_Bar___Tropical/Seaside Bar - Tropical - Day - 22x16 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "22x16"
+    },
+    {
+        "title": "SeasideBar-Tropical-Night-22x16-300DPI",
+        "type": "map",
+        "Tags": "Seaside Bar",
+        "path": "images/maps/Seaside_Bar___Tropical/Seaside Bar - Tropical - Night - 22x16 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "22x16"
+    },
+    {
+        "title": "SewerHideout-Basic-Day-22x16",
+        "type": "map",
+        "Tags": "Sewer Hideout",
+        "path": "images/maps/Sewer_Hideout___Basic/Sewer Hideout - Basic - Day - 22x16.jpg",
+        "variants": "Day, Night",
+        "size": "22x16"
+    },
+    {
+        "title": "SewerHideout-Basic-Night-22x16",
+        "type": "map",
+        "Tags": "Sewer Hideout",
+        "path": "images/maps/Sewer_Hideout___Basic/Sewer Hideout - Basic - Night - 22x16.jpg",
+        "variants": "Day, Night",
+        "size": "22x16"
+    },
+    {
+        "title": "ShatteredStronghold-AstralSea-BlueStar-22x16-300DPI",
+        "type": "map",
+        "Tags": "Shattered Stronghold",
+        "path": "images/maps/Shattered Stronghold - Astral Sea - Blue Star - 22x16 - 300 DPI.jpg",
+        "variants": "None",
+        "size": "22x16"
+    },
+    {
+        "title": "ShatteredStronghold-AstralSea-RedStar-22x16-300DPI",
+        "type": "map",
+        "Tags": "Shattered Stronghold",
+        "path": "images/maps/Shattered Stronghold - Astral Sea - Red Star - 22x16 - 300 DPI.jpg",
+        "variants": "None",
+        "size": "22x16"
+    },
+    {
+        "title": "ShiftingSwamp-Jungle-23x16",
+        "type": "map",
+        "Tags": "ShiftingSwamp",
+        "path": "images/maps/Shifting Swamp - Jungle - 23x16.jpg",
+        "variants": "None",
+        "size": "23x16"
+    },
+    {
+        "title": "ShipyardWarehouse-Day-Floor1-23x32",
+        "type": "map",
+        "Tags": "Shipyard Warehouse",
+        "path": "images/maps/Shipyard_Warehouse/Shipyard Warehouse - Day - Floor 1 - 23x32.jpg",
+        "variants": "Day, Night",
+        "size": "23x32"
+    },
+    {
+        "title": "ShipyardWarehouse-Day-Floor2-21x12",
+        "type": "map",
+        "Tags": "Shipyard Warehouse",
+        "path": "images/maps/Shipyard_Warehouse/Shipyard Warehouse - Day - Floor 2 - 21x12.jpg",
+        "variants": "Day, Night",
+        "size": "21x12"
+    },
+    {
+        "title": "ShipyardWarehouse-Night-Floor1-23x32",
+        "type": "map",
+        "Tags": "Shipyard Warehouse",
+        "path": "images/maps/Shipyard_Warehouse/Shipyard Warehouse - Night - Floor 1 - 23x32.jpg",
+        "variants": "Day, Night",
+        "size": "23x32"
+    },
+    {
+        "title": "ShipyardWarehouse-Night-Floor2-21x12",
+        "type": "map",
+        "Tags": "Shipyard Warehouse",
+        "path": "images/maps/Shipyard_Warehouse/Shipyard Warehouse - Night - Floor 2 - 21x12.jpg",
+        "variants": "Day, Night",
+        "size": "21x12"
+    },
+    {
+        "title": "SinisterCabin-Occupied-Dark-Basement1-6x8",
+        "type": "map",
+        "Tags": "Sinister Cabin",
+        "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Dark - Basement 1 - 6x8.png",
+        "variants": "Dark, Light",
+        "size": "6x8"
+    },
+    {
+        "title": "SinisterCabin-Occupied-Dark-Basement2-5x7",
+        "type": "map",
+        "Tags": "Sinister Cabin",
+        "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Dark - Basement 2 - 5x7.png",
+        "variants": "Dark, Light",
+        "size": "5x7"
+    },
+    {
+        "title": "SinisterCabin-Occupied-Dark-GroundFloor-11x8",
+        "type": "map",
+        "Tags": "Sinister Cabin",
+        "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Dark - Ground Floor - 11x8.png",
+        "variants": "Dark, Light",
+        "size": "11x8"
+    },
+    {
+        "title": "SinisterCabin-Occupied-Dark-Roof-12x9",
+        "type": "map",
+        "Tags": "Sinister Cabin",
+        "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Dark - Roof - 12x9.png",
+        "variants": "Dark, Light",
+        "size": "12x9"
+    },
+    {
+        "title": "SinisterCabin-Occupied-Light-Basement1-6x8",
+        "type": "map",
+        "Tags": "Sinister Cabin",
+        "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Light - Basement 1 - 6x8.png",
+        "variants": "Dark, Light",
+        "size": "6x8"
+    },
+    {
+        "title": "SinisterCabin-Occupied-Light-Basement2-5x7",
+        "type": "map",
+        "Tags": "Sinister Cabin",
+        "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Light - Basement 2 - 5x7.png",
+        "variants": "Dark, Light",
+        "size": "5x7"
+    },
+    {
+        "title": "SinisterCabin-Occupied-Light-GroundFloor-11x8",
+        "type": "map",
+        "Tags": "Sinister Cabin",
+        "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Light - Ground Floor - 11x8.png",
+        "variants": "Dark, Light",
+        "size": "11x8"
+    },
+    {
+        "title": "SinisterCabin-Occupied-Light-Roof-12x9",
+        "type": "map",
+        "Tags": "Sinister Cabin",
+        "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Light - Roof - 12x9.png",
+        "variants": "Dark, Light",
+        "size": "12x9"
+    },
+    {
+        "title": "SwampTrail-Gloomy-Day-44x32-300DPI",
+        "type": "map",
+        "Tags": "Swamp Trail",
+        "path": "images/maps/Swamp_Trail___Gloomy/Swamp Trail - Gloomy - Day - 44x32 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "44x32"
+    },
+    {
+        "title": "SwampTrail-Gloomy-Night-44x32-300DPI",
+        "type": "map",
+        "Tags": "Swamp Trail",
+        "path": "images/maps/Swamp_Trail___Gloomy/Swamp Trail - Gloomy - Night - 44x32 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "44x32"
+    },
+    {
+        "title": "Arena",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Arena.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Banner1",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Banner 1.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Banner2",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Banner 2.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Banner3",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Banner 3.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Bridge,stone",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Bridge, stone.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Bridge,wooden,small",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Bridge, wooden, small.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Bridge,wooden",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Bridge, wooden.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,ampitheatre",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, ampitheatre.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,cathedral",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, cathedral.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,church",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, church.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,circle",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, circle.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,fishingwharf",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, fishing wharf.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,foundry",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, foundry.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,guildhall",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, guild hall.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,L-house",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, L-house.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,library",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, library.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,lumbermill",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, lumber mill.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,smith,exterior",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, smith, exterior.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,smith",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, smith.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,straw1",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, straw 1.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,straw2",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, straw 2.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,straw3",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, straw 3.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,straw4",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, straw 4.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,straw5",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, straw 5.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,tower,circle",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, tower, circle.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,tower,square,small",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, tower, square, small.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,tower,square",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, tower, square.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,watermill",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, water mill.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Building,windmill",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Building, windmill.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Canal,bend",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Canal, bend.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Canal,corner",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Canal, corner.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Canal,intersection",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Canal, intersection.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Canal,junction",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Canal, junction.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Canal,straight",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Canal, straight.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Chimney1",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Chimney 1.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Chimney2",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Chimney 2.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Chimney3",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Chimney 3.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Cliff,caveentrance",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Cliff, cave entrance.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Cliff,short,bend,gentle",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Cliff, short, bend, gentle.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Cliff,short,bend",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Cliff, short, bend.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Cliff,short,straight",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Cliff, short, straight.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Cliff,tall,bend,gentle",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Cliff, tall, bend, gentle.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Cliff,tall,bend",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Cliff, tall, bend.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Cliff,tall,straight",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Cliff, tall, straight.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Minetracks,bend",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Mine tracks, bend.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Minetracks,straight",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Mine tracks, straight.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Mine",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Mine.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Monument",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Monument.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Palisadegate",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Palisade gate.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Palisadetower",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Palisade tower.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Palisade,long",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Palisade, long.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Palisade,short",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Palisade, short.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Park,garden",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Park, garden.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Quarry",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Quarry.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Ship,large",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Ship, large.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Ship,small",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Ship, small.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Staircase,narrow",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Staircase, narrow.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Staircase,staggered",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Staircase, staggered.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Staircase,wide",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Staircase, wide.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Tents,large",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Tents, large.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Tents,market,small",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Tents, market, small.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Tents,market",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Tents, market.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Tents",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Tents.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Trees,grove",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Trees, grove.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Trees,scattered",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Trees, scattered.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Trees,single,large",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Trees, single, large.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Trees,single,small",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Trees, single, small.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Trees,trio1",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Trees, trio 1.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Trees,trio2",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Trees, trio 2.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "Wagon",
+        "type": "asset",
+        "Tags": "Town and City Assets 3",
+        "path": "images/assets/Wagon.png",
+        "variants": "None",
+        "size": ""
+    },
+    {
+        "title": "TradingPost-Occupied-Dark-14x14-300DPI",
+        "type": "map",
+        "Tags": "Trading Post",
+        "path": "images/maps/Trading_Post___Occupied/Trading Post - Occupied - Dark - 14x14 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "14x14"
+    },
+    {
+        "title": "TradingPost-Occupied-Light-14x14-300DPI",
+        "type": "map",
+        "Tags": "Trading Post",
+        "path": "images/maps/Trading_Post___Occupied/Trading Post - Occupied - Light - 14x14 - 300 DPI.jpg",
+        "variants": "Dark, Light",
+        "size": "14x14"
+    },
+    {
+        "title": "TwilightTavern-Everyday-Dark-Cellar-22x16",
+        "type": "map",
+        "Tags": "Twilight Tavern",
+        "path": "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Dark - Cellar - 22x16.jpg",
+        "variants": "Dark, Day, Light",
+        "size": "22x16"
+    },
+    {
+        "title": "TwilightTavern-Everyday-Dark-Floor1-22x16",
+        "type": "map",
+        "Tags": "Twilight Tavern",
+        "path": "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Dark - Floor 1 - 22x16.jpg",
+        "variants": "Dark, Day, Light",
+        "size": "22x16"
+    },
+    {
+        "title": "TwilightTavern-Everyday-Dark-Floor2-22x16",
+        "type": "map",
+        "Tags": "Twilight Tavern",
+        "path": "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Dark - Floor 2 - 22x16.jpg",
+        "variants": "Dark, Day, Light",
+        "size": "22x16"
+    },
+    {
+        "title": "TwilightTavern-Everyday-Light-Cellar-22x16",
+        "type": "map",
+        "Tags": "Twilight Tavern",
+        "path": "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Light - Cellar - 22x16.jpg",
+        "variants": "Dark, Day, Light",
+        "size": "22x16"
+    },
+    {
+        "title": "TwilightTavern-Everyday-Light-Floor1-22x16",
+        "type": "map",
+        "Tags": "Twilight Tavern",
+        "path": "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Light - Floor 1 - 22x16.jpg",
+        "variants": "Dark, Day, Light",
+        "size": "22x16"
+    },
+    {
+        "title": "TwilightTavern-Everyday-Light-Floor2-22x16",
+        "type": "map",
+        "Tags": "Twilight Tavern",
+        "path": "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Light - Floor 2 - 22x16.jpg",
+        "variants": "Dark, Day, Light",
+        "size": "22x16"
+    },
+    {
+        "title": "UndergroundOutpost-Everyday-Dark-22x16",
+        "type": "map",
+        "Tags": "Underground Outpost",
+        "path": "images/maps/Underground_Outpost___Everyday/Underground Outpost - Everyday - Dark - 22x16.jpg",
+        "variants": "Dark, Day, Light",
+        "size": "22x16"
+    },
+    {
+        "title": "UndergroundOutpost-Everyday-Light-22x16",
+        "type": "map",
+        "Tags": "Underground Outpost",
+        "path": "images/maps/Underground_Outpost___Everyday/Underground Outpost - Everyday - Light - 22x16.jpg",
+        "variants": "Dark, Day, Light",
+        "size": "22x16"
+    },
+    {
+        "title": "UndergroundSanctuary-Inviting-Dark-44x32",
+        "type": "map",
+        "Tags": "Underground Sanctuary",
+        "path": "images/maps/Underground_Sanctuary___Inviting/Underground Sanctuary - Inviting - Dark - 44x32.jpg",
+        "variants": "Dark, Light",
+        "size": "44x32"
+    },
+    {
+        "title": "UndergroundSanctuary-Inviting-Light-44x32",
+        "type": "map",
+        "Tags": "Underground Sanctuary",
+        "path": "images/maps/Underground_Sanctuary___Inviting/Underground Sanctuary - Inviting - Light - 44x32.jpg",
+        "variants": "Dark, Light",
+        "size": "44x32"
+    },
+    {
+        "title": "WildWestHighStreet-Everyday-Day-22x16",
+        "type": "map",
+        "Tags": "Wild West High Street",
+        "path": "images/maps/Wild_West_High_Street___Everyday/Wild West High Street - Everyday - Day - 22x16.jpg",
+        "variants": "Day, Night",
+        "size": "22x16"
+    },
+    {
+        "title": "WildWestHighStreet-Everyday-Night-22x16",
+        "type": "map",
+        "Tags": "Wild West High Street",
+        "path": "images/maps/Wild_West_High_Street___Everyday/Wild West High Street - Everyday - Night - 22x16.jpg",
+        "variants": "Day, Night",
+        "size": "22x16"
+    },
+    {
+        "title": "WildWestHighStreet-Everyday-Interior-Day-22x16",
+        "type": "map",
+        "Tags": "Wild West High Street",
+        "path": "images/maps/Wild_West_High_Street___Everyday___Interior/Wild West High Street - Everyday - Interior - Day - 22x16.jpg",
+        "variants": "Day, Night",
+        "size": "22x16"
+    },
+    {
+        "title": "WildWestHighStreet-Everyday-Interior-Night-22x16",
+        "type": "map",
+        "Tags": "Wild West High Street",
+        "path": "images/maps/Wild_West_High_Street___Everyday___Interior/Wild West High Street - Everyday - Interior - Night - 22x16.jpg",
+        "variants": "Day, Night",
+        "size": "22x16"
+    },
+    {
+        "title": "WildWestSheriff'sOffice-Everyday-ExteriorOverlay-Day-10x15-300DPI",
+        "type": "map",
+        "Tags": "Wild West Sheriffs Office",
+        "path": "images/maps/Wild_West_Sheriff_s_Office___Everyday___Exterior_Overlay/Wild West Sheriff's Office - Everyday - Exterior Overlay - Day - 10x15 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "10x15"
+    },
+    {
+        "title": "WildWestSheriff'sOffice-Everyday-ExteriorOverlay-Night-10x15-300DPI",
+        "type": "map",
+        "Tags": "Wild West Sheriffs Office",
+        "path": "images/maps/Wild_West_Sheriff_s_Office___Everyday___Exterior_Overlay/Wild West Sheriff's Office - Everyday - Exterior Overlay - Night - 10x15 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "10x15"
+    },
+    {
+        "title": "WildWestSheriff'sOffice-Everyday-Interior-Day-22x20-300DPI",
+        "type": "map",
+        "Tags": "Wild West Sheriffs Office",
+        "path": "images/maps/Wild_West_Sheriff_s_Office___Everyday___Interior/Wild West Sheriff's Office - Everyday - Interior - Day - 22x20 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "22x20"
+    },
+    {
+        "title": "WildWestSheriff'sOffice-Everyday-Interior-Night-22x20-300DPI",
+        "type": "map",
+        "Tags": "Wild West Sheriffs Office",
+        "path": "images/maps/Wild_West_Sheriff_s_Office___Everyday___Interior/Wild West Sheriff's Office - Everyday - Interior - Night - 22x20 - 300 DPI.jpg",
+        "variants": "Day, Night",
+        "size": "22x20"
+    },
+    {
+        "title": "WizardingSchoolGreatHall-RadiantDragon-Day-32x44",
+        "type": "map",
+        "Tags": "Wizarding School Great Hall",
+        "path": "images/maps/Wizarding_School_Great_Hall___Radiant_Dragon/Wizarding School Great Hall - Radiant Dragon - Day - 32x44.jpg",
+        "variants": "Day, Night",
+        "size": "32x44"
+    },
+    {
+        "title": "WizardingSchoolGreatHall-RadiantDragon-Night-32x44",
+        "type": "map",
+        "Tags": "Wizarding School Great Hall",
+        "path": "images/maps/Wizarding_School_Great_Hall___Radiant_Dragon/Wizarding School Great Hall - Radiant Dragon - Night - 32x44.jpg",
+        "variants": "Day, Night",
+        "size": "32x44"
+    }
+]

@@ -19,3 +19,9 @@ To run the project, execute the `main.py` file.
 
 ## Contact
 I welcome inquiries and collaboration opportunities regarding this project. Please don't hesitate to reach out for more information or to discuss potential collaborations.
+
+## Maps
+Battle maps from https://2minutetabletop.com/
+Map made with assets by https://2minutetabletop.com/
+City map by https://2minutetabletop.com/
+Make your own token https://2minutetabletop.com/customtoken/index.php?col=heroes

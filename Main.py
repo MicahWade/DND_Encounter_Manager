@@ -4,6 +4,7 @@ import os
 from flask import *
 from werkzeug.security import generate_password_hash, check_password_hash
 import user
+from setup.sqlEnter import insert_assets_from_json
 from dotenv import load_dotenv
 from defults import create_default_weapons, create_default_enemys
 
@@ -289,6 +290,7 @@ def not_found(error):
 
 if __name__ == "__main__":
     server = Database.Database(True)
+    insert_assets_from_json(server)
     if server.wasfirst:
         create_default_enemys()
         create_default_weapons()

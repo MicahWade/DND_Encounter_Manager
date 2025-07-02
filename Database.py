@@ -4,13 +4,13 @@ import json
 import Encounter
 
 class Database():
-    __server = "Temp __server"
+    server = "Temp __server"
     wasfirst = False
     
     def __SetupTables(self):
-        if self.__server == "Temp __server":
+        if self.server == "Temp __server":
             raise Exception("__server Not Setup yet")
-        cursor = self.__server.cursor()
+        cursor = self.server.cursor()
 
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS Encounters (
@@ -51,12 +51,75 @@ class Database():
         )
         ''')
         cursor.execute('''
-        CREATE TABLE IF NOT EXISTS Players (
-            EncounterID INTEGER PRIMARY KEY,
-            Name TEXT
+        CREATE TABLE IF NOT EXISTS MapTags (
+            MapID INTEGER,
+            Tag TEXT,
+            FOREIGN KEY (MapID) REFERENCES Maps(MapID))
+        ''')
+        cursor.execute('''
+        CREATE INDEX IF NOT EXISTS MapTagsIndex ON MapTags (Tag);
+        ''')
+        cursor.execute('''
+        CREATE TABLE IF NOT EXISTS Maps (
+            MapID INTEGER PRIMARY KEY,
+            Title TEXT,
+            Path TEXT,
+            Variants TEXT,
+            Size TEXT
         )
         ''')
-        cursor = self.__server.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='Weapon'")
+        cursor.execute('''
+        CREATE TABLE IF NOT EXISTS PlayerTag (
+            PlayerID INTEGER,
+            Tag TEXT,
+            FOREIGN KEY (PlayerID) REFERENCES PlayerToken(PlayerID))
+        ''')
+        cursor.execute('''
+        CREATE INDEX IF NOT EXISTS PlayerTagsIndex ON PlayerTag (Tag);
+        ''')
+        cursor.execute('''
+        CREATE TABLE IF NOT EXISTS PlayerToken (
+            PlayerID INTEGER PRIMARY KEY,
+            Title TEXT,
+            Path TEXT,
+            Size TEXT
+        )
+        ''')
+        cursor.execute('''
+        CREATE TABLE IF NOT EXISTS EnemyTag (
+            EnemyID INTEGER,
+            Tag TEXT,
+            FOREIGN KEY (EnemyID) REFERENCES EnemyToken(EnemyID))
+        ''')
+        cursor.execute('''
+        CREATE INDEX IF NOT EXISTS EnemyTagsIndex ON EnemyTag (Tag);
+        ''')
+        cursor.execute('''
+        CREATE TABLE IF NOT EXISTS EnemyToken (
+            EnemyID INTEGER PRIMARY KEY,
+            Title TEXT,
+            Path TEXT,
+            Size TEXT
+        )
+        ''')
+        cursor.execute('''
+        CREATE TABLE IF NOT EXISTS AssetTag (
+            AssetID INTEGER,
+            Tag TEXT,
+            FOREIGN KEY (AssetID) REFERENCES Asset(AssetID))
+        ''')
+        cursor.execute('''
+        CREATE INDEX IF NOT EXISTS AssetTagsIndex ON AssetTag (Tag);
+        ''')
+        cursor.execute('''
+        CREATE TABLE IF NOT EXISTS Asset (
+            AssetID INTEGER PRIMARY KEY,
+            Title TEXT,
+            Path TEXT,
+            Size TEXT
+        )
+        ''')
+        cursor = self.server.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='Weapon'")
         result = cursor.fetchone()
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS Weapon(
@@ -86,7 +149,10 @@ class Database():
             Email TEXT UNIQUE,
             Password TEXT
         )''')
-        self.__server.commit()
+        cursor.execute('''
+        CREATE INDEX IF NOT EXISTS NameEnemy 
+        ON Enemys (Name); ''')
+        self.server.commit()
         if result is None:
             self.wasfirst = True
 
@@ -95,7 +161,7 @@ class Database():
         if not os.path.exists(path):
             os.makedirs(path)
         try:
-            self.__server = sqlite3.connect(f"{path}/Encounter.db")
+            self.server = sqlite3.connect(f"{path}/Encounter.db")
             if first:
                 self.__SetupTables()
         except Exception as e:
@@ -109,40 +175,40 @@ class Database():
         enemyDataBaseID = []
         for enemy in encounter.characters:
             # Only select EnemyID and Name, and use parameterized query
-            dataBaseEnemy = self.__server.execute("SELECT EnemyID, Name FROM Enemys WHERE Name = ?", (enemy.name,))
+            dataBaseEnemy = self.server.execute("SELECT EnemyID, Name FROM Enemys WHERE Name = ?", (enemy.name,))
             dataBaseEnemyRow = dataBaseEnemy.fetchone()
             if dataBaseEnemyRow is not None:
                 enemyDataBaseID.append(dataBaseEnemyRow[0])
             else:
                 enemyDataBaseID.append(self.AddEnemy(enemy))
         # Checks that the encounter is not in the database already 
-        dataBaseEncounter = self.__server.execute("SELECT Name FROM Encounters WHERE Name = ?", (encounter.name,))
+        dataBaseEncounter = self.server.execute("SELECT Name FROM Encounters WHERE Name = ?", (encounter.name,))
         if dataBaseEncounter.fetchone() is None:
-            self.__server.execute("INSERT INTO Encounters (Name, CR) VALUES (?, ?)", (encounter.name, encounter.CR))
+            self.server.execute("INSERT INTO Encounters (Name, CR) VALUES (?, ?)", (encounter.name, encounter.CR))
             # Adds connection between Enemy and Encounters
-            encounterID = self.__server.execute("SELECT last_insert_rowid()").fetchone()[0]
+            encounterID = self.server.execute("SELECT last_insert_rowid()").fetchone()[0]
             for enemyID in enemyDataBaseID:
-                self.__server.execute("INSERT INTO EncounterEnemys (EncounterID, EnemyID) VALUES (?, ?)", (encounterID, enemyID))
+                self.server.execute("INSERT INTO EncounterEnemys (EncounterID, EnemyID) VALUES (?, ?)", (encounterID, enemyID))
         else:
             raise Exception(f"DataBase Already Has Encounter {encounter.name}")
-        self.__server.commit()
+        self.server.commit()
 
     def AddWeapon(self, weapon, enemyID = None):
         params = (weapon.name, weapon.weaponType, ",".join(weapon.properties), weapon.attackModifier, weapon.damageType, weapon.damageDiceAmount, weapon.diceType, weapon.damageModifier) 
-        cursor = self.__server.execute("INSERT INTO Weapon (Name, WeaponType, Properties, AttackModifier, DamgeType, AmountOfDice, Dice, DamgeModifier) VALUES (?, ?, ?, ?, ?, ?, ?, ?)", params)
+        cursor = self.server.execute("INSERT INTO Weapon (Name, WeaponType, Properties, AttackModifier, DamgeType, AmountOfDice, Dice, DamgeModifier) VALUES (?, ?, ?, ?, ?, ?, ?, ?)", params)
         weaponID = cursor.lastrowid
         if(enemyID is not None):
-            self.__server.execute("INSERT INTO EnemyWeapon (WeaponID, EnemyID) VALUES (?, ?)", (weaponID, enemyID))
-        self.__server.commit()
+            self.server.execute("INSERT INTO EnemyWeapon (WeaponID, EnemyID) VALUES (?, ?)", (weaponID, enemyID))
+        self.server.commit()
 
     def AddPremadeWeapon(self, weaponid, enemyID):
-        self.__server.execute("INSERT INTO EnemyWeapon (WeaponID, EnemyID) VALUES (?, ?)", (weaponid, enemyID))
-        self.__server.commit()
+        self.server.execute("INSERT INTO EnemyWeapon (WeaponID, EnemyID) VALUES (?, ?)", (weaponid, enemyID))
+        self.server.commit()
             
     #TODO: Could be threaded in Future
     def AddEnemy(self, enemy):
         # Insert with new fields
-        cursor = self.__server.execute(
+        cursor = self.server.execute(
             "INSERT INTO Enemys (Name, Size, Health, Speed, CR, STR, DEX, CON, INT, WIS, CHA, Type, Alignment, Languages, Skills, SavingThrows, Senses, Multiattack) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (
                 enemy.name, enemy.size, enemy.health, enemy.speed, enemy.CR, enemy.STR, enemy.DEX, enemy.CON, enemy.INT, enemy.WIS, enemy.CHA,
@@ -150,7 +216,7 @@ class Database():
             )
         )
         enemyID = cursor.lastrowid
-        self.__server.commit()
+        self.server.commit()
         for weapon in enemy.weapons:
             if weapon.weaponid != None and weapon.weaponid != 0:
                 self.AddPremadeWeapon(weapon.weaponid, enemyID)
@@ -159,15 +225,15 @@ class Database():
         return enemyID
 
     def AddPlayer(self, Player):
-        self.__server.execute(f"INSERT INTO Players (Name) VALUES (\"{Player.name}\")")
-        self.__server.commit()
+        self.server.execute(f"INSERT INTO Players (Name) VALUES (\"{Player.name}\")")
+        self.server.commit()
     #endregion
 
 
 
     # region GET
     def GetWeapon(self, ID):
-        weaponDB = self.__server.execute(f"SELECT * FROM Weapon WHERE WeaponID ='{ID}'")
+        weaponDB = self.server.execute(f"SELECT * FROM Weapon WHERE WeaponID ='{ID}'")
         weaponClass = None
         for weapon in weaponDB:
             weaponClass = Encounter.Weapon(weapon[1], weapon[2], weapon[3].split(","), weapon[4], weapon[5], weapon[6], weapon[7], weapon[8], weapon[0])
@@ -176,7 +242,7 @@ class Database():
     def GetWeapons(self, ID):
         weapons = []
         # Use JOIN to get all weapon fields for a given enemy
-        weaponsDB = self.__server.execute("""
+        weaponsDB = self.server.execute("""
             SELECT w.WeaponID, w.Name, w.WeaponType, w.Properties, w.AttackModifier, w.DamgeType, w.AmountOfDice, w.Dice, w.DamgeModifier
             FROM Weapon w
             INNER JOIN EnemyWeapon ew ON w.WeaponID = ew.WeaponID
@@ -188,7 +254,7 @@ class Database():
 
     def GetPlayers(self):
         players = []
-        playersDB = self.__server.execute("SELECT Name FROM Players")
+        playersDB = self.server.execute("SELECT Name FROM Players")
         for player in playersDB:
             players.append(Encounter.Player(player[0]))
         return players
@@ -196,14 +262,14 @@ class Database():
     def GetEncounters(self):
         encounters = []
         # Only select EncounterID and Name
-        encountersDB = self.__server.execute("SELECT EncounterID, Name FROM Encounters")
+        encountersDB = self.server.execute("SELECT EncounterID, Name FROM Encounters")
         for encounter in encountersDB:
             encounters.append([encounter[0], encounter[1]])
         return encounters
 
     def GetEnemyName(self, EnemyName):
         # Use JOIN to get enemy and their weapons in one go
-        enemyDB = self.__server.execute("""
+        enemyDB = self.server.execute("""
             SELECT e.EnemyID, e.Name, e.Size, e.Health, e.Speed, e.CR, e.STR, e.DEX, e.CON, e.INT, e.WIS, e.CHA
             FROM Enemys e
             WHERE e.Name = ?
@@ -216,7 +282,7 @@ class Database():
 
     def GetEnemy(self, EnemyID):
         # Use JOIN to get enemy by ID
-        enemyDB = self.__server.execute("""
+        enemyDB = self.server.execute("""
             SELECT EnemyID, Name, Size, Health, Speed, CR, STR, DEX, CON, INT, WIS, CHA, Type, Alignment, Languages, Skills, SavingThrows, Senses, Multiattack
             FROM Enemys
             WHERE EnemyID = ?
@@ -238,7 +304,7 @@ class Database():
 
     def GetEncounter(self, EncounterID):
         # Get Enemys using JOIN, only select required columns
-        enemysDB = self.__server.execute("""
+        enemysDB = self.server.execute("""
             SELECT e.EnemyID, e.Name, e.Size, e.Health, e.Speed, e.CR, e.STR, e.DEX, e.CON, e.INT, e.WIS, e.CHA
             FROM EncounterEnemys ee
             INNER JOIN Enemys e ON ee.EnemyID = e.EnemyID
@@ -250,14 +316,14 @@ class Database():
             enemys.append(Encounter.Enemy(enemyDB[1], enemyDB[2], enemyDB[3], enemyDB[4], enemyDB[5], enemyDB[6], enemyDB[7], enemyDB[8], enemyDB[9], enemyDB[10], enemyDB[11], weapons))
 
         # Get Encounter, only select required columns
-        encounterDB = self.__server.execute("SELECT Name, CR FROM Encounters WHERE EncounterID = ?", (EncounterID,))
+        encounterDB = self.server.execute("SELECT Name, CR FROM Encounters WHERE EncounterID = ?", (EncounterID,))
         encounterRow = encounterDB.fetchone()
         if encounterRow:
             return Encounter.Encounter(encounterRow[0], enemys, encounterRow[1])
         return None
     def GetEnemys(self):
         try:
-            enemysDB = self.__server.execute(f"SELECT EnemyID, Name, CR FROM Enemys ORDER BY RANDOM() LIMIT 20")
+            enemysDB = self.server.execute(f"SELECT EnemyID, Name, CR FROM Enemys ORDER BY RANDOM() LIMIT 20")
             enemyList = []
             for enemyDB in enemysDB:
                 enemyList.append([enemyDB[1], enemyDB[2], enemyDB[0]])
@@ -272,7 +338,7 @@ class Database():
     #region Search
     def searchEnemys(self, term):
         try:
-            enemysDB = self.__server.execute(f"SELECT EnemyID, Name, CR FROM Enemys WHERE LOWER(Name) LIKE ? ORDER BY Name LIMIT 20", (f"%{term}%",))
+            enemysDB = self.server.execute(f"SELECT EnemyID, Name, CR FROM Enemys WHERE LOWER(Name) LIKE ? ORDER BY Name LIMIT 20", (f"%{term}%",))
             enemyList = []
             for enemyDB in enemysDB:
                 enemyList.append([enemyDB[1], enemyDB[2], enemyDB[0]])
@@ -287,28 +353,28 @@ class Database():
 
     #region Remove
     def RemovePlayer(self, player):
-        self.__server.execute(f"DELETE FROM Players WHERE {player.name}")
-        self.__server.commit()
+        self.server.execute(f"DELETE FROM Players WHERE {player.name}")
+        self.server.commit()
 
     def RemoveEnemyName(self, name):
-        enemyDB = self.__server.execute(f"SELECT EnemyID FROM Enemys WHERE Name ='{name}'")
-        self.__server.execute(f"DELETE FROM Enemys WHERE Name='{name}'")
+        enemyDB = self.server.execute(f"SELECT EnemyID FROM Enemys WHERE Name ='{name}'")
+        self.server.execute(f"DELETE FROM Enemys WHERE Name='{name}'")
         for enemy in enemyDB:
             self.RemoveWeaponEnemyID(enemy[0])
-        self.__server.commit()
+        self.server.commit()
     def RemoveWeaponEnemyID(self, ID):
-        self.__server.execute(f"DELETE FROM EnemyWeapon WHERE EnemyID={ID}")
+        self.server.execute(f"DELETE FROM EnemyWeapon WHERE EnemyID={ID}")
     #endregion
     
     # region User name auth
     def createUser(self, fullname, email, passwordHash):
-        cursor = self.__server.cursor()
+        cursor = self.server.cursor()
         cursor.execute("INSERT INTO User (FullName, Email, Password) VALUES (?, ?, ?)", (fullname, email, passwordHash))
-        self.__server.commit()
+        self.server.commit()
         return cursor.lastrowid
 
     def getUserByEmail(self, email):
-        cursor = self.__server.cursor()
+        cursor = self.server.cursor()
         cursor.execute("SELECT UserID, FullName, Email, Password FROM User WHERE Email = ?", (email,))
         row = cursor.fetchone()
         if row:

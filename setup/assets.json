@@ -2,7 +2,7 @@
     {
         "title": "AlchemyShop-Herbalist-Dark-Floor1-14x15-300DPI",
         "type": "map",
-        "Tags": "Alchemy Shop",
+        "Tags": "Alchemy Shop,fantasy, board game, castle, medieval, interior, labyrinth, escape room, puzzle, immersive, tabletop",
         "path": "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Dark - Floor 1 - 14x15 - 300 DPI.webp",
         "variants": "Dark, Light",
         "size": "14x15"
@@ -10,7 +10,7 @@
     {
         "title": "AlchemyShop-Herbalist-Dark-Floor2-14x15-300DPI",
         "type": "map",
-        "Tags": "Alchemy Shop",
+        "Tags": "Dungeon, map, fantasy, roleplaying game, grid, top down, tiles, board, game, dice roll, character, party, exploration,fantasy, map, interior, layout, design, labyrinth, puzzle, adventure, exploration, escape room, virtual tour,\"map\", \"room\", \"fantasy\", \"video game\", \"layout\", \"isometric\", \"furniture\", \"decoration\", \"level\", \"architecture\"",
         "path": "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Dark - Floor 2 - 14x15 - 300 DPI.webp",
         "variants": "Dark, Light",
         "size": "14x15"
@@ -18,7 +18,7 @@
     {
         "title": "AlchemyShop-Herbalist-Light-Floor1-14x15-300DPI",
         "type": "map",
-        "Tags": "Alchemy Shop",
+        "Tags": "Alchemy Shop,board game, medieval, map, rooms, furniture, characters, dice, tokens, strategy game, handcrafted, immersive, artisanal",
         "path": "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Light - Floor 1 - 14x15 - 300 DPI.webp",
         "variants": "Dark, Light",
         "size": "14x15"
@@ -26,7 +26,7 @@
     {
         "title": "AlchemyShop-Herbalist-Light-Floor2-14x15-300DPI",
         "type": "map",
-        "Tags": "Alchemy Shop",
+        "Tags": "Alchemy Shop,mansion, floor plan, interior design, architecture, layout, 3d rendering, interior decoration, furniture, room, home theater, spacious living room, kitchen area, dining table, windows, lighting fixtures, door, entryway, stairs, bedroom, bathroom, outdoor space, patio, garden, pool, hot tub, gazebo, pergola, fountain, water feature, landscaping, wall decor, art, carpet, flooring, curtains, blinds, ceiling fan, chandelier",
         "path": "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Light - Floor 2 - 14x15 - 300 DPI.webp",
         "variants": "Dark, Light",
         "size": "14x15"
@@ -34,7 +34,7 @@
     {
         "title": "ArtistAtelier-ArtClass-Day-14x16-300DPI",
         "type": "map",
-        "Tags": "Artist Atelier",
+        "Tags": "room, attic, cluttered, messy, fantasy, loft, junk, haphazard, disorganized, medieval, game,floor, wall, room, furniture, game, board, table, chair, toy, decoration, carpet",
         "path": "images/maps/Artist_Atelier___Art_Class/Artist Atelier - Art Class - Day - 14x16 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "14x16"
@@ -42,7 +42,7 @@
     {
         "title": "ArtistAtelier-ArtClass-Day-Loft-9x6-300DPI",
         "type": "map",
-        "Tags": "Artist Atelier",
+        "Tags": "Artist Atelier,pub, tavern, inn, fantasy, rustic, gaming, medieval, cozy, wooden, inviting",
         "path": "images/maps/Artist_Atelier___Art_Class/Artist Atelier - Art Class - Day - Loft - 9x6 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "9x6"
@@ -50,7 +50,7 @@
     {
         "title": "ArtistAtelier-ArtClass-Night-14x16-300DPI",
         "type": "map",
-        "Tags": "Artist Atelier",
+        "Tags": "Artist Atelier,Dnd dungeon, Board game setting, Miniature wargame scene, Tabletop roleplaying environment, Dungeon master screen, Game room, Adventure board game scene, Play area, Strategy game backdrop",
         "path": "images/maps/Artist_Atelier___Art_Class/Artist Atelier - Art Class - Night - 14x16 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "14x16"
@@ -58,7 +58,7 @@
     {
         "title": "ArtistAtelier-ArtClass-Night-Loft-9x6-300DPI",
         "type": "map",
-        "Tags": "Artist Atelier",
+        "Tags": "Artist Atelier,castle, fantasy, interior, kitchen, living room, tavern, game, board game, pixel art, tabletop games, medieval",
         "path": "images/maps/Artist_Atelier___Art_Class/Artist Atelier - Art Class - Night - Loft - 9x6 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "9x6"
@@ -66,7 +66,7 @@
     {
         "title": "BanditAmbush-Summer-Day-22x16-300DPI",
         "type": "map",
-        "Tags": "Bandit Ambush",
+        "Tags": "Bandit Ambush,forest, path, map, camping, nature, adventure, travel, hiking, outdoor, exploration, wilderness",
         "path": "images/maps/Bandit_Ambush___Summer/Bandit Ambush - Summer - Day - 22x16 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "22x16"
@@ -74,7 +74,7 @@
     {
         "title": "BanditAmbush-Summer-Night-22x16-300DPI",
         "type": "map",
-        "Tags": "Bandit Ambush",
+        "Tags": "Bandit Ambush,moonlit, forest, night, magical, fantasy, darkness, mystical, enchanted, eerie, ethereal",
         "path": "images/maps/Bandit_Ambush___Summer/Bandit Ambush - Summer - Night - 22x16 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "22x16"
@@ -82,7 +82,7 @@
     {
         "title": "Treetops-Summer-Day1-11x14-300DPI",
         "type": "map",
-        "Tags": "Bandit Ambush",
+        "Tags": "Bandit Ambush,medieval, forest, trees, foliage, verdant, natural, rural, landscape, cartography, fantasy, green, lush, wilderness, map",
         "path": "images/maps/Treetops___Summer/Treetops - Summer - Day 1 - 11x14 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "11x14"
@@ -90,7 +90,7 @@
     {
         "title": "Treetops-Summer-Day2-11x8-300DPI",
         "type": "map",
-        "Tags": "Bandit Ambush",
+        "Tags": "Bandit Ambush,forest, nature, tree, sky, clouds, landscape, tranquil, wildlife, camping, outdoor adventure, hiking, exploration",
         "path": "images/maps/Treetops___Summer/Treetops - Summer - Day 2 - 11x8 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "11x8"
@@ -98,7 +98,7 @@
     {
         "title": "Treetops-Summer-Day3-12x8-300DPI",
         "type": "map",
-        "Tags": "Bandit Ambush",
+        "Tags": "Bandit Ambush,map, forest, nature, landscape, colorful, vibrant, green, trees, wilderness",
         "path": "images/maps/Treetops___Summer/Treetops - Summer - Day 3 - 12x8 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "12x8"
@@ -106,7 +106,7 @@
     {
         "title": "Treetops-Summer-Night1-11x14-300DPI",
         "type": "map",
-        "Tags": "Bandit Ambush",
+        "Tags": "Bandit Ambush,dark, night, forest, shadowy, trees, canopy, leaves, moonlight, mysterious, eerie, fantasy, nighttime",
         "path": "images/maps/Treetops___Summer/Treetops - Summer - Night 1 - 11x14 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "11x14"
@@ -114,7 +114,7 @@
     {
         "title": "Treetops-Summer-Night3-11x8-300DPI",
         "type": "map",
-        "Tags": "Bandit Ambush",
+        "Tags": "Bandit Ambush,Darkness, Forest, Nighttime, Silhouette, Trees, Shadow, Tranquil, Solitude, Mystery",
         "path": "images/maps/Treetops___Summer/Treetops - Summer - Night 3 - 11x8 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "11x8"
@@ -122,7 +122,7 @@
     {
         "title": "Treetops-Summer-Night3-12x8-300DPI",
         "type": "map",
-        "Tags": "Bandit Ambush",
+        "Tags": "Bandit Ambush,swirls, abstract, pattern, dark, blue, night sky, galaxy, fractal, symmetrical",
         "path": "images/maps/Treetops___Summer/Treetops - Summer - Night 3 - 12x8 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "12x8"
@@ -130,7 +130,7 @@
     {
         "title": "BuriedTemple-Light-Active-32x44-300DPI",
         "type": "map",
-        "Tags": "Buried Temple",
+        "Tags": "Buried Temple,dungeon, maze, puzzle, challenge, mystery, exploration, medieval, castle, underground, labyrinth, adventurous, quest",
         "path": "images/maps/Buried_Temple/Buried Temple - Light - Active - 32x44 - 300 DPI.jpg",
         "variants": "Light",
         "size": "32x44"
@@ -138,7 +138,7 @@
     {
         "title": "BuriedTemple-Light-Inactive-32x44-300DPI",
         "type": "map",
-        "Tags": "Buried Temple",
+        "Tags": "Buried Temple,castle, floor plan, dungeon, medieval, labyrinth, ruins, architecture, gaming, maze, strategy, tower",
         "path": "images/maps/Buried_Temple/Buried Temple - Light - Inactive - 32x44 - 300 DPI.jpg",
         "variants": "Light",
         "size": "32x44"
@@ -146,7 +146,7 @@
     {
         "title": "CrystalCrypts-LichLight-32x22-300DPI",
         "type": "map",
-        "Tags": "Crystal Crypts",
+        "Tags": "labyrinth, blue, dungeon, pixel art, underground, dimly lit, architecture, medieval, abandoned, basement,map, floorplan, dungeon, layout, blueprint, architecture, maze, underground, design, plan, layout",
         "path": "images/maps/Crystal Crypts - Lich Light - 32x22 - 300 DPI.jpg",
         "variants": "Light",
         "size": "32x22"
@@ -154,7 +154,7 @@
     {
         "title": "FloodedRoom-LichLight1-11x6-300DPI",
         "type": "map",
-        "Tags": "Crystal Crypts",
+        "Tags": "Crystal Crypts,cave, mine, underground, tunnel, dungeon, exploration, adventure, spelunking, cavern, stone, brick",
         "path": "images/maps/Flooded Room - Lich Light 1 - 11x6 - 300 DPI.jpg",
         "variants": "Light",
         "size": "11x6"
@@ -162,7 +162,7 @@
     {
         "title": "FloodedRoom-LichLight2-16x9-300DPI",
         "type": "map",
-        "Tags": "Crystal Crypts",
+        "Tags": "Crystal Crypts,game, level design, dungeon, tile based layout, pixel art, pixelated, retro style, isometric view",
         "path": "images/maps/Flooded Room - Lich Light 2 - 16x9 - 300 DPI.jpg",
         "variants": "Light",
         "size": "16x9"
@@ -170,7 +170,7 @@
     {
         "title": "FloodedRoom-LichLight3-11x6-300DPI",
         "type": "map",
-        "Tags": "Crystal Crypts",
+        "Tags": "Crystal Crypts,crypt, dungeon, stone, brick, tunnel, light source, gaming, pixel art",
         "path": "images/maps/Flooded Room - Lich Light 3 - 11x6 - 300 DPI.jpg",
         "variants": "Light",
         "size": "11x6"
@@ -178,7 +178,7 @@
     {
         "title": "FloodedRoom-LichLight4-11x9-300DPI",
         "type": "map",
-        "Tags": "Crystal Crypts",
+        "Tags": "Crystal Crypts,- Dungeon, - Labyrinth, - Elevator, - Puzzle room, - Keyhole, - Entrance, - Platforms, - Stairs, - Trapdoor, - Light blue color scheme",
         "path": "images/maps/Flooded Room - Lich Light 4 - 11x9 - 300 DPI.jpg",
         "variants": "Light",
         "size": "11x9"
@@ -186,7 +186,7 @@
     {
         "title": "FloodedRoom-LichLight5-16x10-300DPI",
         "type": "map",
-        "Tags": "Crystal Crypts",
+        "Tags": "Crystal Crypts,dungeon, room, dark, floor, ceiling, architecture, stone, tiles, design, underground, eerie, cold, isolated, secluded, mystery",
         "path": "images/maps/Flooded Room - Lich Light 5 - 16x10 - 300 DPI.jpg",
         "variants": "Light",
         "size": "16x10"
@@ -194,7 +194,7 @@
     {
         "title": "DeluxeSuite1-Sunset-Dark-13x17-300DPI",
         "type": "map",
-        "Tags": "Deluxe Suites",
+        "Tags": "Deluxe Suites,map, dungeon, game, room, layout, board, design, interior, fantasy, planning",
         "path": "images/maps/Deluxe_Suite_1___Sunset/Deluxe Suite 1 - Sunset - Dark - 13x17 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "13x17"
@@ -202,7 +202,7 @@
     {
         "title": "DeluxeSuite1-Sunset-Light-13x17-300DPI",
         "type": "map",
-        "Tags": "Deluxe Suites",
+        "Tags": "Deluxe Suites,maze, dungeon, board game, medieval, tile floor, wooden table, chairs, carpeted, stone walls, open plan",
         "path": "images/maps/Deluxe_Suite_1___Sunset/Deluxe Suite 1 - Sunset - Light - 13x17 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "13x17"
@@ -210,7 +210,7 @@
     {
         "title": "DeluxeSuite2-Sunset-Dark-13x17-300DPI",
         "type": "map",
-        "Tags": "Deluxe Suites",
+        "Tags": "Deluxe Suites,floor plan, dark, indoor, open-air patio, furniture, stairs, doorways, rooms",
         "path": "images/maps/Deluxe_Suite_2___Sunset/Deluxe Suite 2 - Sunset - Dark - 13x17 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "13x17"
@@ -218,7 +218,7 @@
     {
         "title": "DeluxeSuite2-Sunset-Light-13x17-300DPI",
         "type": "map",
-        "Tags": "Deluxe Suites",
+        "Tags": "Deluxe Suites,courtyard, patio, garden, open air, cozy, inviting, rustic, charming, quaint",
         "path": "images/maps/Deluxe_Suite_2___Sunset/Deluxe Suite 2 - Sunset - Light - 13x17 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "13x17"
@@ -226,7 +226,7 @@
     {
         "title": "Demiplane-Stone1-Dark-10x10-300DPI",
         "type": "map",
-        "Tags": "Demiplanes",
+        "Tags": "Demiplanes,floor, wall, cage, stone, room, corner, bricks, concrete, solid, structure, dungeon, maze, grid",
         "path": "images/maps/Demiplane___Stone_1/Demiplane - Stone 1 - Dark - 10x10 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "10x10"
@@ -234,7 +234,7 @@
     {
         "title": "Demiplane-Stone1-Light-10x10-300DPI",
         "type": "map",
-        "Tags": "Demiplanes",
+        "Tags": "Demiplanes,dungeon, brick walls, stone tiles, underground, mysterious, adventure, fantasy, labyrinth, escape",
         "path": "images/maps/Demiplane___Stone_1/Demiplane - Stone 1 - Light - 10x10 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "10x10"
@@ -242,7 +242,7 @@
     {
         "title": "Demiplane-Stone2-Dark-10x10-300DPI",
         "type": "map",
-        "Tags": "Demiplanes",
+        "Tags": "Demiplanes,stone, brick, wall, masonry, architecture, texture, grayscale, tile, rugged, historical",
         "path": "images/maps/Demiplane___Stone_2/Demiplane - Stone 2 - Dark - 10x10 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "10x10"
@@ -250,7 +250,7 @@
     {
         "title": "Demiplane-Stone2-Light-10x10-300DPI",
         "type": "map",
-        "Tags": "Demiplanes",
+        "Tags": "Demiplanes,stone, brick, wall, room, windowless, dungeon, tile, basement, underground, cave, cellar, fortification",
         "path": "images/maps/Demiplane___Stone_2/Demiplane - Stone 2 - Light - 10x10 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "10x10"
@@ -258,7 +258,7 @@
     {
         "title": "Demiplane-Stone3-Dark-10x10-300DPI",
         "type": "map",
-        "Tags": "Demiplanes",
+        "Tags": "Demiplanes,crumbling, ruins, aged, debris, fragmented, shattered, decaying, dilapidated, stone",
         "path": "images/maps/Demiplane___Stone_3/Demiplane - Stone 3 - Dark - 10x10 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "10x10"
@@ -266,7 +266,7 @@
     {
         "title": "Demiplane-Stone3-Light-10x10-300DPI",
         "type": "map",
-        "Tags": "Demiplanes",
+        "Tags": "Demiplanes,cave, dungeon, ancient, brickwork, ruins, stone, underground, crumbling, abandoned, historical, explore, adventurer, journey",
         "path": "images/maps/Demiplane___Stone_3/Demiplane - Stone 3 - Light - 10x10 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "10x10"
@@ -274,7 +274,7 @@
     {
         "title": "Demiplane-Wood1-Dark-10x10-300DPI",
         "type": "map",
-        "Tags": "Demiplanes",
+        "Tags": "Demiplanes,wallpaper, patterned, textured, design",
         "path": "images/maps/Demiplane___Wood_1/Demiplane - Wood 1 - Dark - 10x10 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "10x10"
@@ -282,7 +282,7 @@
     {
         "title": "Demiplane-Wood1-Light-10x10-300DPI",
         "type": "map",
-        "Tags": "Demiplanes",
+        "Tags": "Demiplanes,brick, tile, patterned, wooden, texture, intricate, design, flooring, rustic, wall decor",
         "path": "images/maps/Demiplane___Wood_1/Demiplane - Wood 1 - Light - 10x10 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "10x10"
@@ -290,7 +290,7 @@
     {
         "title": "Demiplane-Wood2-Dark-10x10-300DPI",
         "type": "map",
-        "Tags": "Demiplanes",
+        "Tags": "Demiplanes,maze, dungeon, grid, stone, floor, walls, empty, square",
         "path": "images/maps/Demiplane___Wood_2/Demiplane - Wood 2 - Dark - 10x10 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "10x10"
@@ -298,7 +298,7 @@
     {
         "title": "Demiplane-Wood2-Light-10x10-300DPI",
         "type": "map",
-        "Tags": "Demiplanes",
+        "Tags": "Demiplanes,1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
         "path": "images/maps/Demiplane___Wood_2/Demiplane - Wood 2 - Light - 10x10 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "10x10"
@@ -306,7 +306,7 @@
     {
         "title": "Demiplane-Wood3-Dark-10x10-300DPI",
         "type": "map",
-        "Tags": "Demiplanes",
+        "Tags": "Demiplanes,tree, wood, bark, trunk, growth rings, nature, wilderness, forest, cut tree, timber, log",
         "path": "images/maps/Demiplane___Wood_3/Demiplane - Wood 3 - Dark - 10x10 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "10x10"
@@ -314,7 +314,7 @@
     {
         "title": "Demiplane-Wood3-Light-10x10-300DPI",
         "type": "map",
-        "Tags": "Demiplanes",
+        "Tags": "Demiplanes,tree stump, cross section, wood rings, natural structure, circular pattern, growth rings, environmental artifact, wooden sculpture",
         "path": "images/maps/Demiplane___Wood_3/Demiplane - Wood 3 - Light - 10x10 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "10x10"
@@ -322,7 +322,7 @@
     {
         "title": "Devil'sMill,Floor1",
         "type": "asset",
-        "Tags": "DevilsMill",
+        "Tags": "DevilsMill,artifact, archaeological site, broken, debris, disarray, history, ruin, stone, stones, abandoned, old, excavated",
         "path": "images/assets/floors/Devil's Mill, Floor 1 (6x6).png",
         "variants": "None",
         "size": "6x6"
@@ -330,7 +330,7 @@
     {
         "title": "Devil'sMill,Floor2",
         "type": "asset",
-        "Tags": "DevilsMill",
+        "Tags": "DevilsMill,wheel, cog, gears, clockwork, machinery, steampunk, vintage, antique, intricate, complex, mechanical, circular",
         "path": "images/assets/floors/Devil's Mill, Floor 2 (8x8).png",
         "variants": "None",
         "size": "8x8"
@@ -338,7 +338,7 @@
     {
         "title": "Devil'sMill,Floor3",
         "type": "asset",
-        "Tags": "DevilsMill",
+        "Tags": "DevilsMill,circle, pattern, artifact, fire, craft, ember, design, wood, rustic, circular",
         "path": "images/assets/floors/Devil's Mill, Floor 3 (6x6).png",
         "variants": "None",
         "size": "6x6"
@@ -346,7 +346,7 @@
     {
         "title": "Devil'sMill,Floor4",
         "type": "asset",
-        "Tags": "DevilsMill",
+        "Tags": "DevilsMill,gears, clockwork, machinery, intricate, mechanical, steampunk, complex, assembly, detailed, craftsmanship",
         "path": "images/assets/floors/Devil's Mill, Floor 4 (5x5).png",
         "variants": "None",
         "size": "5x5"
@@ -354,7 +354,7 @@
     {
         "title": "Devil'sMill,Roof",
         "type": "asset",
-        "Tags": "DevilsMill",
+        "Tags": "DevilsMill,\"Star Wars\", \"Death Star\", \"Movie poster\", \"Space\", \"Planet\", \"Earth\", \"Pictograph\", \"Humorous\"",
         "path": "images/assets/Devil's Mill, Roof (5x5).png",
         "variants": "None",
         "size": "5x5"
@@ -362,7 +362,7 @@
     {
         "title": "Devil'sMill,Turbine",
         "type": "asset",
-        "Tags": "DevilsMill",
+        "Tags": "DevilsMill,ship, space, technology, galaxy, sci-fi, red, light, dark",
         "path": "images/assets/Devil's Mill, Turbine (10x2).png",
         "variants": "None",
         "size": "10x2"
@@ -370,7 +370,7 @@
     {
         "title": "DriftwoodCove-Tropical-Day-44x32-300DPI",
         "type": "map",
-        "Tags": "Driftwood Cove",
+        "Tags": "Driftwood Cove,river, cave, stream, natural, water, rock, forest, plants, path, wilderness, serene, outdoor, environment",
         "path": "images/maps/Driftwood_Cove___Tropical/Driftwood Cove - Tropical - Day - 44x32 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "44x32"
@@ -378,7 +378,7 @@
     {
         "title": "DriftwoodCove-Tropical-Night-44x32-300DPI",
         "type": "map",
-        "Tags": "Driftwood Cove",
+        "Tags": "Driftwood Cove,Underwater cave, submerged ruins, underwater exploration, diving adventure, sunken temple, shipwreck, treasure hunt, oceanic life",
         "path": "images/maps/Driftwood_Cove___Tropical/Driftwood Cove - Tropical - Night - 44x32 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "44x32"
@@ -386,7 +386,7 @@
     {
         "title": "Acidcloud",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,blurry, smudge, moss, stain, mess, splatter, blob, dirty, distorted, obscure",
         "path": "images/tokens/Acid cloud (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -394,7 +394,7 @@
     {
         "title": "Acidmushroom",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,ball, dice, hexagon, shapes, game, colorful, cartoonish, playful, graphics, icon, virtual",
         "path": "images/tokens/Acid mushroom (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -402,7 +402,7 @@
     {
         "title": "Acidspray",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,color, art, green, explosion, yellow, splatter, paint, spray, effect, abstract",
         "path": "images/tokens/Acid spray (4x2).png",
         "variants": "None",
         "size": "4x2"
@@ -410,7 +410,7 @@
     {
         "title": "Ballbearings",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,black, white, newspaper, print, blank, page, grid, minimalist, absence, empty, monochrome",
         "path": "images/tokens/Ball bearings (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -418,7 +418,7 @@
     {
         "title": "Beartrap",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,blade, saw, sharp, edge, tool, rusty, dirty, broken, worn",
         "path": "images/tokens/Bear trap (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -426,7 +426,7 @@
     {
         "title": "Bomb",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,ball, sphere, object, circle, round, stone, gem, center, heart, focus, core, solid, dense, compact, small",
         "path": "images/tokens/Bomb (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -434,7 +434,7 @@
     {
         "title": "Boulder",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,Moon, Sky, Planet, Craters, Celestial, Night, Cosmic, Astronomy, Drawing, Paper, Paint",
         "path": "images/tokens/Boulder (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -442,7 +442,7 @@
     {
         "title": "Caltrops",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,black, white, stripes, abstract, minimalist, design, graphic, monochrome, art, negative space, modern",
         "path": "images/tokens/Caltrops (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -450,7 +450,7 @@
     {
         "title": "Cat",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,cat, feline, animal, stylized, cartoon",
         "path": "images/tokens/Cat (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -458,7 +458,7 @@
     {
         "title": "Ceilingfan",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,Fan, Rotor, Propeller, Aeroengine, Blade, Metal, Artwork, Anime, Animated",
         "path": "images/tokens/Ceiling fan (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -466,7 +466,7 @@
     {
         "title": "Crackedfloor",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,crack, mosaic, broken tiles, glass shards, pane, fragmented, broken pieces, tile pattern",
         "path": "images/tokens/Cracked floor (4x4).png",
         "variants": "None",
         "size": "4x4"
@@ -474,7 +474,7 @@
     {
         "title": "Dangerslit",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,The image is too small and blurry to discern any specific content or details that could be tagged with relevant, concise, single-word tags.",
         "path": "images/tokens/Danger slit (1x3).png",
         "variants": "None",
         "size": "1x3"
@@ -482,7 +482,7 @@
     {
         "title": "Dragonbust",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,,logo, emblem, goat, ram, animal, head, neck, horns, design, icon, symbol",
         "path": "images/tokens/Dragon bust (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -490,7 +490,7 @@
     {
         "title": "Electricityburst",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,black, white, fragmented, tile, graphic design, abstract, art, pattern",
         "path": "images/tokens/Electricity burst (3x2).png",
         "variants": "None",
         "size": "3x2"
@@ -498,7 +498,7 @@
     {
         "title": "Explosion",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,bomb, explosion, fire, destruction, danger, hazard, detonation, eruption, reaction, impact",
         "path": "images/tokens/Explosion (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -506,7 +506,7 @@
     {
         "title": "Eyeball",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,red, eye, fruit, blackberry, donut, hole, center, round",
         "path": "images/tokens/Eyeball (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -514,7 +514,7 @@
     {
         "title": "Eyeball,wall",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,eye, surveillance camera, security camera, observation, watchful, monitor, oversee, observe, scrutinize, inspect",
         "path": "images/tokens/Eyeball, wall (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -522,7 +522,7 @@
     {
         "title": "Fire",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,fire, flames, candle, warmth, heat, danger, burning, orange, red, yellow, green, cool, summer, winter",
         "path": "images/tokens/Fire (4x4).png",
         "variants": "None",
         "size": "4x4"
@@ -530,7 +530,7 @@
     {
         "title": "Firegout",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,fire, smoke, explosion, orange, yellow, red, black, pixelation, digital art,",
         "path": "images/tokens/Fire gout (3x2).png",
         "variants": "None",
         "size": "3x2"
@@ -538,7 +538,7 @@
     {
         "title": "Floorflesh",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,flower, rose, petals, stem, leaves, thorns, purple, black, white, cartoon",
         "path": "images/tokens/Floor flesh (3x3).png",
         "variants": "None",
         "size": "3x3"
@@ -546,7 +546,7 @@
     {
         "title": "Handwarmer",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,skull, horror, grim, fantasy, gothic, creepy, monstrous, terror, ominous, foreboding",
         "path": "images/tokens/Hand warmer (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -554,7 +554,7 @@
     {
         "title": "IronBoulder",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,moon, celestial body, night sky, cratered, outer space, natural phenomenon, waxing crescent",
         "path": "images/tokens/Iron Boulder (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -562,7 +562,7 @@
     {
         "title": "Log,rolling,swinging",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,wall, stone, texture, pattern, surface, corner, brickwork, mortar, architecture, construction, old",
         "path": "images/tokens/Log, rolling, swinging (1x3).png",
         "variants": "None",
         "size": "1x3"
@@ -570,7 +570,7 @@
     {
         "title": "Mysterysack",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,bottle, container, liquid, drink, beverage, cup, vessel, material, shape, design, logo, label",
         "path": "images/tokens/Mystery sack (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -578,7 +578,7 @@
     {
         "title": "Obviouspressurepad",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,walls, bricks, corner, grout, mortar, construction, foundation, frame, plaster, texture, craftsman, artisan, brickwork, masonry",
         "path": "images/tokens/Obvious pressure pad (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -586,7 +586,7 @@
     {
         "title": "Pit",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,window, wall, door, dungeon, cellar, stone, castle, dark",
         "path": "images/tokens/Pit (4x4).png",
         "variants": "None",
         "size": "4x4"
@@ -594,7 +594,7 @@
     {
         "title": "Pitacid",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,coloring book, map, cartoon, outline, green, line drawing, simple shapes, black outline, no coloring",
         "path": "images/tokens/Pit acid (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -602,7 +602,7 @@
     {
         "title": "Pitlava",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,fire, heart, puzzle piece, drawing, scribbles, doodle, art, handmade",
         "path": "images/tokens/Pit lava (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -610,7 +610,7 @@
     {
         "title": "Pitspikes",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,flower, petals, design, pattern, circular, botanical, illustration, abstract, hand-drawn, doodle, craft",
         "path": "images/tokens/Pit spikes (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -618,7 +618,7 @@
     {
         "title": "Pitwater",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,island, map, blank, terrain, topography, landmass, layout, outline, grid, paper",
         "path": "images/tokens/Pit water (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -626,7 +626,7 @@
     {
         "title": "Pit,collapsed",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,cave, dungeon, rock, fragmented, broken, shattered, hole, opening, earth, natural, outdoors",
         "path": "images/tokens/Pit, collapsed (4x4).png",
         "variants": "None",
         "size": "4x4"
@@ -634,7 +634,7 @@
     {
         "title": "Rollingpinofdoom",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,toothbrush, bristles, oral care, dental health, hygiene, product, invention, design, spiky",
         "path": "images/tokens/Rolling pin of doom (3x4).png",
         "variants": "None",
         "size": "3x4"
@@ -642,7 +642,7 @@
     {
         "title": "Scythe",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,axe, mining pickaxe, miner's tool, equipment, cartoon, illustrated, black and white",
         "path": "images/tokens/Scythe (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -650,7 +650,7 @@
     {
         "title": "Slidingspikes",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,candle, mage, magic, spell, mystic, sorcerer, arcane, wizard, dungeon",
         "path": "images/tokens/Sliding spikes (3x2).png",
         "variants": "None",
         "size": "3x2"
@@ -658,7 +658,7 @@
     {
         "title": "Spiderweb",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,spider web, black and white, drawing, simple design, Halloween, eight legged creature, arachnid, cobweb",
         "path": "images/tokens/Spider web (2x3).png",
         "variants": "None",
         "size": "2x3"
@@ -666,7 +666,7 @@
     {
         "title": "Suitofarmor",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,armor, knight, character, figure, gaming, fantasy, medieval, pixel art, stylized",
         "path": "images/tokens/Suit of armor (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -674,7 +674,7 @@
     {
         "title": "Swingingblade",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,5-10 relevant, concise, single-word tags for this image:\n\ndentistry, dental implants, dental crowns, teeth cleaning, oral hygiene",
         "path": "images/tokens/Swinging blade (1x3).png",
         "variants": "None",
         "size": "1x3"
@@ -682,7 +682,7 @@
     {
         "title": "Swingingblade,floor",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,5-10 word tags:\n\n1. Phone\n2. Keyboard\n3. Text\n4. Screen\n5. App icon\n6. Icons\n7. Display\n8. Buttons\n9. Touchscreen\n10. Electronics",
         "path": "images/tokens/Swinging blade, floor (1x3).png",
         "variants": "None",
         "size": "1x3"
@@ -690,7 +690,7 @@
     {
         "title": "Tiltingfloor",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,stone, maze, tile, dungeon, wall, grout, floor, pattern, texture, design, puzzle, labyrinth, tessellation",
         "path": "images/tokens/Tilting floor (4x4).png",
         "variants": "None",
         "size": "4x4"
@@ -698,7 +698,7 @@
     {
         "title": "Tripwire",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,5-10 word tags:\n\ncrop, blur, black and white, distorted, checkered pattern, pixelation, digital art, computer glitch, abstract design, geometric shapes, minimalistic style, monochrome.",
         "path": "images/tokens/Trip wire (1x2).png",
         "variants": "None",
         "size": "1x2"
@@ -706,7 +706,7 @@
     {
         "title": "Unskilledspider'sweb",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,image, art, graphic, design, creative, visual, composition, style, aesthetic, digital, abstract, geometric, shapes",
         "path": "images/tokens/Unskilled spider's web (2x3).png",
         "variants": "None",
         "size": "2x3"
@@ -714,7 +714,7 @@
     {
         "title": "Wallbuzzsaw",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,sun, pie, pastry, dessert, doughnut, donut, food, baked good, bakery",
         "path": "images/tokens/Wall buzzsaw (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -722,7 +722,7 @@
     {
         "title": "Wallchomper",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,sun, moon, tree, forest, nature, wildlife, logo, graphic, emblem, crest, heraldry, design",
         "path": "images/tokens/Wall chomper (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -730,7 +730,7 @@
     {
         "title": "Wallcrystal",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,crystal, gemstone, magic, fantasy, light, blue, diamond, sparkle, treasure, enchantment, mystic, supernatural, power",
         "path": "images/tokens/Wall crystal (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -738,7 +738,7 @@
     {
         "title": "Wallcutter",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,wallpaper, door, window, mirror, reflection, frame, photo, room, hallway, picture",
         "path": "images/tokens/Wall cutter (2x1).png",
         "variants": "None",
         "size": "2x1"
@@ -746,7 +746,7 @@
     {
         "title": "Wallflesh",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,cave, lava, fire, rock, volcano, danger, earth science, geology, heat",
         "path": "images/tokens/Wall flesh (1x2).png",
         "variants": "None",
         "size": "1x2"
@@ -754,7 +754,7 @@
     {
         "title": "Wallhatch",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,food, cookie, baked goods, dessert, treat, pastry",
         "path": "images/tokens/Wall hatch (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -762,7 +762,7 @@
     {
         "title": "Wallhatch,open",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,moon, celestial body, sphere, night sky, satellite, orbit, astronomical object, lunar surface",
         "path": "images/tokens/Wall hatch, open (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -770,7 +770,7 @@
     {
         "title": "Wallholes",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,The image is too small and blurry to be described with clarity. Please provide a clearer image for accurate tagging.",
         "path": "images/tokens/Wall holes (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -778,7 +778,7 @@
     {
         "title": "Wallspikes",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,black, white, candle, light, wax, holder, wick, flame",
         "path": "images/tokens/Wall spikes (1x2).png",
         "variants": "None",
         "size": "1x2"
@@ -786,7 +786,7 @@
     {
         "title": "Wallvent",
         "type": "enemy",
-        "Tags": "DungeonTrapTokens",
+        "Tags": "DungeonTrapTokens,oven, grill, brick, fireplace, hearth, construction, architecture, stone, bricks, building materials",
         "path": "images/tokens/Wall vent (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -794,7 +794,7 @@
     {
         "title": "DwarvenBurrow-Abandoned-Dark-14x14-300DPI",
         "type": "map",
-        "Tags": "Dwarven Burrow",
+        "Tags": "Dwarven Burrow,medieval, fantasy, tavern, dungeon, stone, floor, moss, cobwebs, fireplace, alembic",
         "path": "images/maps/Dwarven_Burrow___Abandoned/Dwarven Burrow - Abandoned - Dark - 14x14 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "14x14"
@@ -802,7 +802,7 @@
     {
         "title": "DwarvenBurrow-Abandoned-Light-14x14-300DPI",
         "type": "map",
-        "Tags": "Dwarven Burrow",
+        "Tags": "Dwarven Burrow,medieval, round, castle, fantasy, interior, lighting, stone, furniture, floor, artifact, green",
         "path": "images/maps/Dwarven_Burrow___Abandoned/Dwarven Burrow - Abandoned - Light - 14x14 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "14x14"
@@ -810,7 +810,7 @@
     {
         "title": "DwarvenBurrow-Bachelor-Dark-14x14-300DPI",
         "type": "map",
-        "Tags": "Dwarven Burrow",
+        "Tags": "Dwarven Burrow,castle, interior, medieval, fantasy, room, architecture, brick, fire, torch, candle, furnishings, design",
         "path": "images/maps/Dwarven_Burrow___Bachelor/Dwarven Burrow - Bachelor - Dark - 14x14 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "14x14"
@@ -818,7 +818,7 @@
     {
         "title": "DwarvenBurrow-Bachelor-Dark-Unlit-14x14-300DPI",
         "type": "map",
-        "Tags": "Dwarven Burrow",
+        "Tags": "Dwarven Burrow,medieval, fantasy, dungeon, war room, strategy, roleplaying, board game, map, underground, stone, dark, castle, siege, battle, troop deployment, tactical, campaign, rpg",
         "path": "images/maps/Dwarven_Burrow___Bachelor/Dwarven Burrow - Bachelor - Dark - Unlit - 14x14 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "14x14"
@@ -826,7 +826,7 @@
     {
         "title": "DwarvenBurrow-Bachelor-Light-14x14-300DPI",
         "type": "map",
-        "Tags": "Dwarven Burrow",
+        "Tags": "Dwarven Burrow,board game, fantasy, roleplaying, tile laying, strategy, medieval, hexagonal, tabletop game, dice tower",
         "path": "images/maps/Dwarven_Burrow___Bachelor/Dwarven Burrow - Bachelor - Light - 14x14 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "14x14"
@@ -834,7 +834,7 @@
     {
         "title": "DwarvenBurrow-Bachelor-Light-Unlit-14x14-300DPI",
         "type": "map",
-        "Tags": "Dwarven Burrow",
+        "Tags": "Dwarven Burrow,medieval, castle, fantasy, boardgame, game, design, intricate, detailed, colorful, pixelated, pixelart",
         "path": "images/maps/Dwarven_Burrow___Bachelor/Dwarven Burrow - Bachelor - Light - Unlit - 14x14 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "14x14"
@@ -842,7 +842,7 @@
     {
         "title": "DwarvenRanch-Spring-Day-44x32-300DPI",
         "type": "map",
-        "Tags": "Dwarven Ranch",
+        "Tags": "Dwarven Ranch,medieval, fantasy, tower, moat, bridge, trees, waterfall, countryside, castle, architectural",
         "path": "images/maps/Dwarven_Ranch___Spring/Dwarven Ranch - Spring - Day - 44x32 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "44x32"
@@ -850,7 +850,7 @@
     {
         "title": "DwarvenRanch-Spring-Night-44x32-300DPI",
         "type": "map",
-        "Tags": "Dwarven Ranch",
+        "Tags": "Dwarven Ranch,moon circle, constellation, celestial, night sky, stars, galaxy, space, planet",
         "path": "images/maps/Dwarven_Ranch___Spring/Dwarven Ranch - Spring - Night - 44x32 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "44x32"
@@ -858,7 +858,7 @@
     {
         "title": "FightingPit-Muddy-Dark-16x22-300DPI",
         "type": "map",
-        "Tags": "Fighting Pit",
+        "Tags": "Fighting Pit,court, map, field, structure, stone, dirt, bench, lamp, boundary, goal, stadium, game, competition, scoreboard",
         "path": "images/maps/Fighting_Pit___Muddy/Fighting Pit - Muddy - Dark - 16x22 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "16x22"
@@ -866,7 +866,7 @@
     {
         "title": "FightingPit-Muddy-Light-16x22-300DPI",
         "type": "map",
-        "Tags": "Fighting Pit",
+        "Tags": "Fighting Pit,castle, medieval, defense, arena, battlements, walls, flags, tower, fortress, village",
         "path": "images/maps/Fighting_Pit___Muddy/Fighting Pit - Muddy - Light - 16x22 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "16x22"
@@ -874,7 +874,7 @@
     {
         "title": "ForestCamp-Dark-Occupied-44x32",
         "type": "map",
-        "Tags": "Forest Camp",
+        "Tags": "Forest Camp,Forest, Houses, Path, Trees, Landscape, Scenery, Nature, Campsite, Rural, Serene, Wilderness",
         "path": "images/maps/Forest_Camp/Forest Camp - Dark - Occupied - 44x32.jpg",
         "variants": "Dark",
         "size": "44x32"
@@ -882,7 +882,7 @@
     {
         "title": "ForestCamp-Dark-Vacant-44x32",
         "type": "map",
-        "Tags": "Forest Camp",
+        "Tags": "Forest Camp,river, forest, map, cartography, exploration, natural, water, geographic",
         "path": "images/maps/Forest_Camp/Forest Camp - Dark - Vacant - 44x32.jpg",
         "variants": "Dark",
         "size": "44x32"
@@ -890,7 +890,7 @@
     {
         "title": "GoblinCamp-Base-Day16x22-300DPI",
         "type": "map",
-        "Tags": "Goblin Camp",
+        "Tags": "Goblin Camp,cowboy, saloon, mining camp, wild west, frontier, rustic, wooden buildings, dirt roads, desert setting, abandoned town",
         "path": "images/maps/Goblin_Camp___Base/Goblin Camp - Base - Day 16x22 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "16x22"
@@ -898,7 +898,7 @@
     {
         "title": "GoblinCamp-Base-Night16x22-300DPI",
         "type": "map",
-        "Tags": "Goblin Camp",
+        "Tags": "Goblin Camp,castle, ruins, dungeon, adventure, medieval, map, exploration, strategy, fantasy, board game, tabletop game, card game, roleplaying game, D&D",
         "path": "images/maps/Goblin_Camp___Base/Goblin Camp - Base - Night 16x22 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "16x22"
@@ -906,7 +906,7 @@
     {
         "title": "goblinconductor1",
         "type": "enemy",
-        "Tags": "Goblin Camp",
+        "Tags": "Goblin Camp,Monster, Alien, Mutant, Undead, Goblin, Minion, Creepy, Cartoon, Humorous",
         "path": "images/tokens/goblin conductor 1 (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -914,7 +914,7 @@
     {
         "title": "goblinconductor2",
         "type": "enemy",
-        "Tags": "Goblin Camp",
+        "Tags": "Goblin Camp,monster, cartoon, green, slime, creature, fantasy, scaly, character, digital art, colorful, vibrant, cute, playful",
         "path": "images/tokens/goblin conductor 2 (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -922,7 +922,7 @@
     {
         "title": "goblinconductor3",
         "type": "enemy",
-        "Tags": "Goblin Camp",
+        "Tags": "Goblin Camp,ogre, gnome, fantasy, character design, stylized",
         "path": "images/tokens/goblin conductor 3 (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -938,7 +938,7 @@
     {
         "title": "GrandMageTower-Base-Bedroom-Day-16x16",
         "type": "map",
-        "Tags": "Grand Mage Tower",
+        "Tags": "Grand Mage Tower,fantasy room, round floor plan, medieval interior design, cozy living space, circular layout, traditional furniture, wooden floors, fireplace, chandelier",
         "path": "images/maps/Grand_Mage_Tower___Base___Bedroom/Grand Mage Tower - Base - Bedroom - Day - 16x16.jpg",
         "variants": "Day, Night",
         "size": "16x16"
@@ -946,7 +946,7 @@
     {
         "title": "GrandMageTower-Base-Bedroom-Night-16x16",
         "type": "map",
-        "Tags": "Grand Mage Tower",
+        "Tags": "Grand Mage Tower,round room, bedroom, living area, circular floor plan, layout, furniture arrangement, interior design, fantasy setting, game room, 360 view, open space, large room, cozy atmosphere",
         "path": "images/maps/Grand_Mage_Tower___Base___Bedroom/Grand Mage Tower - Base - Bedroom - Night - 16x16.jpg",
         "variants": "Day, Night",
         "size": "16x16"
@@ -954,7 +954,7 @@
     {
         "title": "GrandMageTower-Base-Empty-Day-16x16",
         "type": "map",
-        "Tags": "Grand Mage Tower",
+        "Tags": "Grand Mage Tower,round, astrology, circle, wizard, fantasy, table, benches, circular, mystical, magical",
         "path": "images/maps/Grand_Mage_Tower___Base___Empty/Grand Mage Tower - Base - Empty - Day - 16x16.jpg",
         "variants": "Day, Night",
         "size": "16x16"
@@ -962,7 +962,7 @@
     {
         "title": "GrandMageTower-Base-Empty-Night-16x16",
         "type": "map",
-        "Tags": "Grand Mage Tower",
+        "Tags": "Grand Mage Tower,circle, round table, compass rose, dungeon, mystical, blue, stone, circular structure, centerpiece",
         "path": "images/maps/Grand_Mage_Tower___Base___Empty/Grand Mage Tower - Base - Empty - Night - 16x16.jpg",
         "variants": "Day, Night",
         "size": "16x16"
@@ -970,7 +970,7 @@
     {
         "title": "GrandMageTower-Base-Library-Day-16x16",
         "type": "map",
-        "Tags": "Grand Mage Tower",
+        "Tags": "Grand Mage Tower,round room, astrological chart, circular seating, meeting space, zodiac signs, celestial theme, underground chamber, sacred space, unique design",
         "path": "images/maps/Grand_Mage_Tower___Base___Library/Grand Mage Tower - Base - Library - Day - 16x16.jpg",
         "variants": "Day, Night",
         "size": "16x16"
@@ -978,7 +978,7 @@
     {
         "title": "GrandMageTower-Base-Library-Night-16x16",
         "type": "map",
-        "Tags": "Grand Mage Tower",
+        "Tags": "Grand Mage Tower,medieval hall, astrology, round table, parlor, old building, mystical, celestial, occult, magical, esoteric, alchemist, alchemy",
         "path": "images/maps/Grand_Mage_Tower___Base___Library/Grand Mage Tower - Base - Library - Night - 16x16.jpg",
         "variants": "Day, Night",
         "size": "16x16"
@@ -986,7 +986,7 @@
     {
         "title": "GrandMageTower-Base-Observatory-Day-16x16",
         "type": "map",
-        "Tags": "Grand Mage Tower",
+        "Tags": "Grand Mage Tower,fantasy, dungeon, round table, celestial map, compass rose, fantasy roleplaying game, D&D, wizard, magic, adventure, fantasy setting, medieval, underground,",
         "path": "images/maps/Grand_Mage_Tower___Base___Observatory/Grand Mage Tower - Base - Observatory - Day - 16x16.jpg",
         "variants": "Day, Night",
         "size": "16x16"
@@ -994,7 +994,7 @@
     {
         "title": "GrandMageTower-Base-Observatory-Night-16x16",
         "type": "map",
-        "Tags": "Grand Mage Tower",
+        "Tags": "Grand Mage Tower,fantasy, medieval, tavern, alembic, astrological, magic, wizard, seating, pub, round room",
         "path": "images/maps/Grand_Mage_Tower___Base___Observatory/Grand Mage Tower - Base - Observatory - Night - 16x16.jpg",
         "variants": "Day, Night",
         "size": "16x16"
@@ -1002,7 +1002,7 @@
     {
         "title": "Minotaur",
         "type": "enemy",
-        "Tags": "Hedge Maze",
+        "Tags": "Hedge Maze,Bull, Minotaur, Beast, Monster, Fantasy, Cartoon, Angry, Muscular, Brown, Horns",
         "path": "images/tokens/Minotaur.png",
         "variants": "None",
         "size": ""
@@ -1010,7 +1010,7 @@
     {
         "title": "Mooseotaur",
         "type": "enemy",
-        "Tags": "Hedge Maze",
+        "Tags": "Hedge Maze,creature, animal, mythical, buffalo, antler, bull, muscular, cartoon, illustration, aggressive, powerful, wild",
         "path": "images/tokens/Mooseotaur.png",
         "variants": "None",
         "size": ""
@@ -1018,7 +1018,7 @@
     {
         "title": "swinotaur",
         "type": "enemy",
-        "Tags": "Hedge Maze",
+        "Tags": "Hedge Maze,boar, fantasy, animal, creature, armor, furry, warg, warrior, character",
         "path": "images/tokens/swinotaur (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -1026,7 +1026,7 @@
     {
         "title": "1",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,axe, helmet, sword, shield, fantasy, armor",
         "path": "images/tokens/hero/1.png",
         "variants": "None",
         "size": ""
@@ -1034,7 +1034,7 @@
     {
         "title": "10",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,warrior, armor, fantasy, sword, adventure, medieval, hero",
         "path": "images/tokens/hero/10.png",
         "variants": "None",
         "size": ""
@@ -1042,7 +1042,7 @@
     {
         "title": "11",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,sword, d&d, fantasy, video game, board game, character design, card game, magic, role playing, medieval, knight",
         "path": "images/tokens/hero/11.png",
         "variants": "None",
         "size": ""
@@ -1050,7 +1050,7 @@
     {
         "title": "12",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,knight, armor, fantasy, character, pixel art, hand-drawn, simple line drawing, warrior, medieval, role playing game, digital illustration",
         "path": "images/tokens/hero/12.png",
         "variants": "None",
         "size": ""
@@ -1058,7 +1058,7 @@
     {
         "title": "13",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,fantasy, character, cartoon, pixel art, dungeon crawler, mystical, wizard, hero",
         "path": "images/tokens/hero/13.png",
         "variants": "None",
         "size": ""
@@ -1066,7 +1066,7 @@
     {
         "title": "14",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,\"dice\", \"rolling\", \"five sides\", \"polyhedral dice\", \"rpg\", \"tabletop gaming\", \"board game\", \"game board\", \"d6\", \"random number\"",
         "path": "images/tokens/hero/14.png",
         "variants": "None",
         "size": ""
@@ -1074,7 +1074,7 @@
     {
         "title": "15",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,bow and arrow, archery, medieval weaponry, hunting, outdoors, nature, historical, warrior, quiver,",
         "path": "images/tokens/hero/15.png",
         "variants": "None",
         "size": ""
@@ -1082,7 +1082,7 @@
     {
         "title": "16",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,action, adventurous, cartoon, character, combat, fantasy, hero, sword, armor, quest, medieval",
         "path": "images/tokens/hero/16.png",
         "variants": "None",
         "size": ""
@@ -1090,7 +1090,7 @@
     {
         "title": "17",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,robot, character, video game, handgun, illustration, comic book, science fiction, fantasy, animation",
         "path": "images/tokens/hero/17.png",
         "variants": "None",
         "size": ""
@@ -1098,7 +1098,7 @@
     {
         "title": "18",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,fantasy, character, armor, pixel art, video game, dwarf, adventurer, cartoon, medieval, hero",
         "path": "images/tokens/hero/18.png",
         "variants": "None",
         "size": ""
@@ -1106,7 +1106,7 @@
     {
         "title": "19",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,warrior, fantasy, pixel art, character, sword, armor, adventure, role playing game, medieval, knight",
         "path": "images/tokens/hero/19.png",
         "variants": "None",
         "size": ""
@@ -1114,7 +1114,7 @@
     {
         "title": "2",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,sword, fantasy, cartoon, armor, knight, pixel art, medieval, digital art, line drawing, hand drawn",
         "path": "images/tokens/hero/2.png",
         "variants": "None",
         "size": ""
@@ -1122,7 +1122,7 @@
     {
         "title": "20",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,knight, cartoon, sword, shield, horse, armor, medieval, fantasy, warrior, hero, pixel art, simple line drawing",
         "path": "images/tokens/hero/20.png",
         "variants": "None",
         "size": ""
@@ -1130,7 +1130,7 @@
     {
         "title": "21",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,\"character, candle, adventurer, cartoon, fantasy, firelight, storytelling\"",
         "path": "images/tokens/hero/21.png",
         "variants": "None",
         "size": ""
@@ -1138,7 +1138,7 @@
     {
         "title": "22",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,campfire, character, cartoon, art style, fire, outdoors, adventurer, camping, game, avatar, hero, flame",
         "path": "images/tokens/hero/22.png",
         "variants": "None",
         "size": ""
@@ -1146,7 +1146,7 @@
     {
         "title": "23",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,shell, rock, stone, egg, artifact, fossil, fantasy, creature, armor, treasure, cave",
         "path": "images/tokens/hero/23.png",
         "variants": "None",
         "size": ""
@@ -1154,7 +1154,7 @@
     {
         "title": "24",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,knight, armor, fantasy, role-playing, warrior, shield, sword, drawing, digital art",
         "path": "images/tokens/hero/24.png",
         "variants": "None",
         "size": ""
@@ -1162,7 +1162,7 @@
     {
         "title": "25",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,coat, paperbag, hat, gift, bag, scissors, wrapping, present, box",
         "path": "images/tokens/hero/25.png",
         "variants": "None",
         "size": ""
@@ -1170,7 +1170,7 @@
     {
         "title": "26",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,Keychain, Charm, Figurine, Character, Drawing, Illustration, Sketch, Cartoon, Animation, Fantasy, Adventure, Magic",
         "path": "images/tokens/hero/26.png",
         "variants": "None",
         "size": ""
@@ -1178,7 +1178,7 @@
     {
         "title": "27",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,Drawing, Character, Hero, Fantasy, Artwork, Illustration, Cartoon, Sketch, Animation, Comics",
         "path": "images/tokens/hero/27.png",
         "variants": "None",
         "size": ""
@@ -1186,7 +1186,7 @@
     {
         "title": "28",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,- Cartoon, - Character, - Hand-drawn, - Artwork, - Avatar, - Anime,",
         "path": "images/tokens/hero/28.png",
         "variants": "None",
         "size": ""
@@ -1194,7 +1194,7 @@
     {
         "title": "29",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,Fighter, Sword, Armor, Character, Adventure, Dungeon, RPG, Fantasy, Hero",
         "path": "images/tokens/hero/29.png",
         "variants": "None",
         "size": ""
@@ -1202,7 +1202,7 @@
     {
         "title": "3",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,sword, banana, hand, knife, sticker, logo, emoji",
         "path": "images/tokens/hero/3.png",
         "variants": "None",
         "size": ""
@@ -1210,7 +1210,7 @@
     {
         "title": "30",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,abstract, art, cartoon, character, digital, drawing, graphic, illustration, manga, modern, noir",
         "path": "images/tokens/hero/30.png",
         "variants": "None",
         "size": ""
@@ -1218,7 +1218,7 @@
     {
         "title": "31",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,hero, superman, comic book, masked identity, vigilante, power figure, cape crusader, dark knight",
         "path": "images/tokens/hero/31.png",
         "variants": "None",
         "size": ""
@@ -1226,7 +1226,7 @@
     {
         "title": "32",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,Role-playing game, Character, Animation, Pixel art, Adventure, Viking helmet, Cartoon, Gaming",
         "path": "images/tokens/hero/32.png",
         "variants": "None",
         "size": ""
@@ -1234,7 +1234,7 @@
     {
         "title": "4",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,Wand, stick figure, cartoon, pixel art, fantasy, magic, rogue, character, handheld, simple line drawing",
         "path": "images/tokens/hero/4.png",
         "variants": "None",
         "size": ""
@@ -1242,7 +1242,7 @@
     {
         "title": "5",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,firebolt, magic, light, spell, flying, character, wizard, fantasy, adventure",
         "path": "images/tokens/hero/5.png",
         "variants": "None",
         "size": ""
@@ -1250,7 +1250,7 @@
     {
         "title": "6",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,black, white, hand drawn, pixelated, stylized, cartoonish, simplistic, abstract, graphic",
         "path": "images/tokens/hero/6.png",
         "variants": "None",
         "size": ""
@@ -1258,7 +1258,7 @@
     {
         "title": "7",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,abstract, creepy, drawing, figure, monochrome, hand drawn, art, surreal, unidentifiable",
         "path": "images/tokens/hero/7.png",
         "variants": "None",
         "size": ""
@@ -1266,7 +1266,7 @@
     {
         "title": "8",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,fantasy, warrior, armor, hero, sword, video game, pixel art, adventurer, medieval, roleplaying, rpg",
         "path": "images/tokens/hero/8.png",
         "variants": "None",
         "size": ""
@@ -1274,7 +1274,7 @@
     {
         "title": "9",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,sky, cloud, whale, tail, ocean, creature, animal, heart, art, drawing, illustration, cartoon, humorous",
         "path": "images/tokens/hero/9.png",
         "variants": "None",
         "size": ""
@@ -1282,7 +1282,7 @@
     {
         "title": "Border1",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,Sword, Shield, Artwork, Fantasy, Character, Design, Sketch",
         "path": "images/tokens/hero/Border 1.png",
         "variants": "None",
         "size": ""
@@ -1290,7 +1290,7 @@
     {
         "title": "Border10",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,warrior, sticker, fantasy, pixel art, video game, character, loot drop, hand-drawn, adventurer",
         "path": "images/tokens/hero/Border 10.png",
         "variants": "None",
         "size": ""
@@ -1298,7 +1298,7 @@
     {
         "title": "Border11",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,Roleplaying, Card, Character, Game, Fantasy, Comics, Dice, Magic, Adventure, Storytelling",
         "path": "images/tokens/hero/Border 11.png",
         "variants": "None",
         "size": ""
@@ -1306,7 +1306,7 @@
     {
         "title": "Border12",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,knight, armor, shield, cartoon, sticker, video game, pixel art, fantasy, drawing, sketch",
         "path": "images/tokens/hero/Border 12.png",
         "variants": "None",
         "size": ""
@@ -1314,7 +1314,7 @@
     {
         "title": "Border13",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,fantasy, character, sticker, purple, staff, medieval, warrior, pixel art, cartoon, creature",
         "path": "images/tokens/hero/Border 13.png",
         "variants": "None",
         "size": ""
@@ -1322,7 +1322,7 @@
     {
         "title": "Border14",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,Arrow, D&D, Fantasy, Monster, Bow, Hunting, Medieval, Artwork, Hand-drawn",
         "path": "images/tokens/hero/Border 14.png",
         "variants": "None",
         "size": ""
@@ -1330,7 +1330,7 @@
     {
         "title": "Border15",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,sword, stick figure, cartoon, pixel art, drawing, medieval, character",
         "path": "images/tokens/hero/Border 15.png",
         "variants": "None",
         "size": ""
@@ -1338,7 +1338,7 @@
     {
         "title": "Border16",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,Warrior, Character, Armor, Knife, Sticker, Drawing, Video Game, Humor, Cartoon",
         "path": "images/tokens/hero/Border 16.png",
         "variants": "None",
         "size": ""
@@ -1346,7 +1346,7 @@
     {
         "title": "Border17",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,character, comic, art style, cartoon, digital drawing, fantasy, pixelated",
         "path": "images/tokens/hero/Border 17.png",
         "variants": "None",
         "size": ""
@@ -1354,7 +1354,7 @@
     {
         "title": "Border18",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,dnd, character, hand drawn, cartoon, medieval, armor, fantasy, stick figure, role playing game, rpg",
         "path": "images/tokens/hero/Border 18.png",
         "variants": "None",
         "size": ""
@@ -1362,7 +1362,7 @@
     {
         "title": "Border19",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,character design, fantasy art, pixel art, stick figure, hand drawn, cartoon style, video game icon, medieval theme",
         "path": "images/tokens/hero/Border 19.png",
         "variants": "None",
         "size": ""
@@ -1370,7 +1370,7 @@
     {
         "title": "Border2",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,fantasy, gaming, medieval, armor, sticker, comic, handdrawn, pixel art, crafting, hobby, dnd",
         "path": "images/tokens/hero/Border 2.png",
         "variants": "None",
         "size": ""
@@ -1378,7 +1378,7 @@
     {
         "title": "Border20",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,drawing, cartoon, sticker, pixel art, character, monochrome, sketch, illustration, hero, villain, action, adventure",
         "path": "images/tokens/hero/Border 20.png",
         "variants": "None",
         "size": ""
@@ -1386,7 +1386,7 @@
     {
         "title": "Border21",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,fire, torch, character, fantasy, adventure, pixel art, sticker, drawing, cartoon",
         "path": "images/tokens/hero/Border 21.png",
         "variants": "None",
         "size": ""
@@ -1394,7 +1394,7 @@
     {
         "title": "Border22",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,sketch, character, sticker, pixelated, adventurer, cartoon, drawing, stylized, flame, hand-drawn",
         "path": "images/tokens/hero/Border 22.png",
         "variants": "None",
         "size": ""
@@ -1402,7 +1402,7 @@
     {
         "title": "Border23",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,mushroom, artifact, sci-fi, fantasy, creature, alien, cartoon, whimsical, hand-drawn",
         "path": "images/tokens/hero/Border 23.png",
         "variants": "None",
         "size": ""
@@ -1410,7 +1410,7 @@
     {
         "title": "Border24",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,medieval character, knight, armor, sword, fantasy, hero, sticker, pixel art, dungeon and dragons",
         "path": "images/tokens/hero/Border 24.png",
         "variants": "None",
         "size": ""
@@ -1418,7 +1418,7 @@
     {
         "title": "Border25",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,gift, box, present, unwrapped, drawing, hand-drawn, black and white, monochrome",
         "path": "images/tokens/hero/Border 25.png",
         "variants": "None",
         "size": ""
@@ -1426,7 +1426,7 @@
     {
         "title": "Border26",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,dog, sticker, cartoon, drawing, monochrome, hand-drawn, fantasy, character, animal, whimsical, graphic design, medieval",
         "path": "images/tokens/hero/Border 26.png",
         "variants": "None",
         "size": ""
@@ -1434,7 +1434,7 @@
     {
         "title": "Border27",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,Hand, Skill, Character, RPG, Drawing, Illustration, Cartoon, Figure, Artwork, Design",
         "path": "images/tokens/hero/Border 27.png",
         "variants": "None",
         "size": ""
@@ -1442,7 +1442,7 @@
     {
         "title": "Border28",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,Sticker, Drawing, Cartoon, Character, Monster, Fantasy, Hero, Game, Hand-drawn",
         "path": "images/tokens/hero/Border 28.png",
         "variants": "None",
         "size": ""
@@ -1450,7 +1450,7 @@
     {
         "title": "Border29",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,d&d character, sketch art, pixel art, fantasy warrior, hand-drawn illustration, gaming icon, medieval armor, hero profile",
         "path": "images/tokens/hero/Border 29.png",
         "variants": "None",
         "size": ""
@@ -1458,7 +1458,7 @@
     {
         "title": "Border3",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,shield, sword, character, sticker, cartoon, action figure, pop culture, fantasy, art style",
         "path": "images/tokens/hero/Border 3.png",
         "variants": "None",
         "size": ""
@@ -1466,7 +1466,7 @@
     {
         "title": "Border30",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,archer, fantasy, character, cartoon, bow, arrow, pixel art, stickman, adventure, warrior, colorful",
         "path": "images/tokens/hero/Border 30.png",
         "variants": "None",
         "size": ""
@@ -1474,7 +1474,7 @@
     {
         "title": "Border31",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,monk, warrior, armor, stick, cartoon, hand drawn, ink, fantasy, shield, helmet, adventure, role playing game, knight",
         "path": "images/tokens/hero/Border 31.png",
         "variants": "None",
         "size": ""
@@ -1482,7 +1482,7 @@
     {
         "title": "Border32",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,archery, cartoon, drawing, pixel art, fantasy, stick figure, medieval, bow and arrow, character, hand drawn",
         "path": "images/tokens/hero/Border 32.png",
         "variants": "None",
         "size": ""
@@ -1490,7 +1490,7 @@
     {
         "title": "Border4",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,witch, staff, magic, character, fantasy, sticker, drawing",
         "path": "images/tokens/hero/Border 4.png",
         "variants": "None",
         "size": ""
@@ -1498,7 +1498,7 @@
     {
         "title": "Border5",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,fantasy, cartoon, action figure, comic book, illustrated character, superhero, graphic novel, anime style, digital art",
         "path": "images/tokens/hero/Border 5.png",
         "variants": "None",
         "size": ""
@@ -1506,7 +1506,7 @@
     {
         "title": "Border6",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,1. Sticker\n\n2. Drawing\n3. Character\n4. Cat\n5. Mask\n6. Puppet\n7. Cartoon\n8. Animation\n9. Villain\n10. Costume",
         "path": "images/tokens/hero/Border 6.png",
         "variants": "None",
         "size": ""
@@ -1514,7 +1514,7 @@
     {
         "title": "Border7",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,Drawing, Monster, Artwork, Sketch, Illustration, Character, Cartoon, Abstract, Handmade",
         "path": "images/tokens/hero/Border 7.png",
         "variants": "None",
         "size": ""
@@ -1522,7 +1522,7 @@
     {
         "title": "Border8",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,dungeons and dragons, medieval, fantasy, adventurous, role playing game, sword, shield, knight, armor, cartoon",
         "path": "images/tokens/hero/Border 8.png",
         "variants": "None",
         "size": ""
@@ -1530,7 +1530,7 @@
     {
         "title": "Border9",
         "type": "player",
-        "Tags": "HeroTokens",
+        "Tags": "HeroTokens,helicopter, drawing, sketch, sticker, coloring, crafts, paper, black and white, doodle, cartoon, airplane, drawing material",
         "path": "images/tokens/hero/Border 9.png",
         "variants": "None",
         "size": ""
@@ -1538,7 +1538,7 @@
     {
         "title": "HiddenPool-Blooming-Day-16x22-300DPI",
         "type": "map",
-        "Tags": "Hidden Pool",
+        "Tags": "Hidden Pool,island, river, forest, stone bridge, boat, sign, pathway, grass, rock, tree, waterfall, adventure",
         "path": "images/maps/Hidden_Pool___Blooming/Hidden Pool - Blooming - Day - 16x22 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "16x22"
@@ -1546,7 +1546,7 @@
     {
         "title": "HiddenPool-Blooming-Night-16x22-300DPI",
         "type": "map",
-        "Tags": "Hidden Pool",
+        "Tags": "Hidden Pool,underwater, ocean, island, volcano, forest, fantasy, map, compass",
         "path": "images/maps/Hidden_Pool___Blooming/Hidden Pool - Blooming - Night - 16x22 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "16x22"
@@ -1554,7 +1554,7 @@
     {
         "title": "Lighthouse,floor1",
         "type": "asset",
-        "Tags": "Lighthouse",
+        "Tags": "Lighthouse,wheel, compass, maze, map, clock, center, core, heart, design, circular, intricate, decorative",
         "path": "images/assets/floors/Lighthouse, floor 1 (10x11).png",
         "variants": "None",
         "size": "10x11"
@@ -1562,7 +1562,7 @@
     {
         "title": "Lighthouse,floor2",
         "type": "asset",
-        "Tags": "Lighthouse",
+        "Tags": "Lighthouse,wheel, compass, steering wheel, wooden compass, compass rose, game of chance, board game, roleplaying, fantasy, strategy game, card game",
         "path": "images/assets/floors/Lighthouse, floor 2 (10x11).png",
         "variants": "None",
         "size": "10x11"
@@ -1570,7 +1570,7 @@
     {
         "title": "Lighthouse,floor3",
         "type": "asset",
-        "Tags": "Lighthouse",
+        "Tags": "Lighthouse,dungeon, floor plan, hexagonal layout, tile design, interior architecture, medieval style, stone bricks, strategic gameplay",
         "path": "images/assets/floors/Lighthouse, floor 3 (10x10).png",
         "variants": "None",
         "size": "10x10"
@@ -1578,7 +1578,7 @@
     {
         "title": "Lighthouse,roof",
         "type": "asset",
-        "Tags": "Lighthouse",
+        "Tags": "Lighthouse,brick, hexagon, map, compass, cartography, grid, dungeon, maze, treasure hunt, fantasy",
         "path": "images/assets/Lighthouse, roof (8x8).png",
         "variants": "None",
         "size": "8x8"
@@ -1586,7 +1586,7 @@
     {
         "title": "Beacon,magical",
         "type": "asset",
-        "Tags": "Lighthouse",
+        "Tags": "Lighthouse,sky, blue, light, glow, bright, colorful, clear, calm, peaceful, serene, vibrant",
         "path": "images/assets/Beacon, magical (6x6).png",
         "variants": "None",
         "size": "6x6"
@@ -1594,7 +1594,7 @@
     {
         "title": "Connector1",
         "type": "asset",
-        "Tags": "Lighthouse",
+        "Tags": "Lighthouse,brownstone, black and white, architecture, building, urban, cityscape, nighttime, street",
         "path": "images/assets/Connector 1 (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -1602,7 +1602,7 @@
     {
         "title": "Connector2",
         "type": "asset",
-        "Tags": "Lighthouse",
+        "Tags": "Lighthouse,lamp, lightbulb, light source, power bulb, illumination, globe, round, circle, shape, icon",
         "path": "images/assets/Connector 2 (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -1610,7 +1610,7 @@
     {
         "title": "Lens1",
         "type": "asset",
-        "Tags": "Lighthouse",
+        "Tags": "Lighthouse,circle, oval, blue, white, outline, object, design, graphic, simple, abstract, art",
         "path": "images/assets/Lens 1 (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -1618,7 +1618,7 @@
     {
         "title": "Lens2",
         "type": "asset",
-        "Tags": "Lighthouse",
+        "Tags": "Lighthouse,ball, egg, sphere, round, smooth, white, gray, sci-fi, cartoon, simple, hand-drawn",
         "path": "images/assets/Lens 2 (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -1626,7 +1626,7 @@
     {
         "title": "Lens3",
         "type": "asset",
-        "Tags": "Lighthouse",
+        "Tags": "Lighthouse,bubble, cartoon, minimalist, simple lines, sketch, balloon, black and white, monochrome, line drawing, iconic",
         "path": "images/assets/Lens 3 (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -1634,7 +1634,7 @@
     {
         "title": "Lens4",
         "type": "asset",
-        "Tags": "Lighthouse",
+        "Tags": "Lighthouse,knife, weapon, blade, stealthy, sharp, pointy, sleek, dark, icon",
         "path": "images/assets/Lens 4 (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -1642,7 +1642,7 @@
     {
         "title": "Lens5",
         "type": "asset",
-        "Tags": "Lighthouse",
+        "Tags": "Lighthouse,knife, crescent moon, tool, weapon, sharp object, cutting device, edge, metallic, pointed, silver",
         "path": "images/assets/Lens 5 (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -1650,7 +1650,7 @@
     {
         "title": "Lens6",
         "type": "asset",
-        "Tags": "Lighthouse",
+        "Tags": "Lighthouse,moon, crescent, celestial, space, night sky, astronomy, satellite, GPS, technology, navigation",
         "path": "images/assets/Lens 6 (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -1658,7 +1658,7 @@
     {
         "title": "Lens7",
         "type": "asset",
-        "Tags": "Lighthouse",
+        "Tags": "Lighthouse,dagger, weapon, fantasy, sword, gaming, roleplaying, pointy, fantasy element, blade, silverware",
         "path": "images/assets/Lens 7 (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -1666,7 +1666,7 @@
     {
         "title": "Lens8",
         "type": "asset",
-        "Tags": "Lighthouse",
+        "Tags": "Lighthouse,banana, peel, food, waste, environment, edible, organic, biodegradable, natural, plant, monkey, primate, fruit, produce, agricultural, nutrition, health",
         "path": "images/assets/Lens 8 (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -1674,7 +1674,7 @@
     {
         "title": "Lens9",
         "type": "asset",
-        "Tags": "Lighthouse",
+        "Tags": "Lighthouse,banana, fruit, peel, peeled, curved, handheld, cartoon, minimalist, food",
         "path": "images/assets/Lens 9 (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -1682,7 +1682,7 @@
     {
         "title": "MegafloraGrotto-Verdant-Day-32x22-300DPI",
         "type": "map",
-        "Tags": "Megaflora Grotto",
+        "Tags": "Megaflora Grotto,forest, pond, swamp, nature, tranquility, wilderness, landscape, fantasy, ecosystem, lilypads",
         "path": "images/maps/Megaflora_Grotto___Verdant/Megaflora Grotto - Verdant - Day - 32x22 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "32x22"
@@ -1690,7 +1690,7 @@
     {
         "title": "MegafloraGrotto-Verdant-Night-32x22-300DPI",
         "type": "map",
-        "Tags": "Megaflora Grotto",
+        "Tags": "Megaflora Grotto,lagoon, pond, tranquil, nighttime, jungle, foliage, stylized",
         "path": "images/maps/Megaflora_Grotto___Verdant/Megaflora Grotto - Verdant - Night - 32x22 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "32x22"
@@ -1698,7 +1698,7 @@
     {
         "title": "MetalsmithsWorkshop-Base-Day-22x16-300DPI",
         "type": "map",
-        "Tags": "Metalsmiths Workshop",
+        "Tags": "Metalsmiths Workshop,map, floor plan, layout, game, design, furniture",
         "path": "images/maps/Metalsmiths_Workshop___Base/Metalsmiths Workshop - Base - Day - 22x16 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "22x16"
@@ -1706,7 +1706,7 @@
     {
         "title": "MetalsmithsWorkshop-Base-Night-22x16-300DPI",
         "type": "map",
-        "Tags": "Metalsmiths Workshop",
+        "Tags": "Metalsmiths Workshop,\"Fantasy home\", \"Living room\", \"Kitchen\", \"Game room\", \"Bedroom\", \"Puzzle room\"",
         "path": "images/maps/Metalsmiths_Workshop___Base/Metalsmiths Workshop - Base - Night - 22x16 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "22x16"
@@ -1714,7 +1714,7 @@
     {
         "title": "MoonlitCathedral-Night-Pews-26x52",
         "type": "map",
-        "Tags": "Moonlit Cathedral",
+        "Tags": "Moonlit Cathedral,keyhole, entrance, arch, pillars, gothic, ornate, architecture, design, intricate, decorative, medieval, grandeur, dark, ominous",
         "path": "images/maps/Moonlit_Cathedral/Moonlit Cathedral - Night - Pews - 26x52.jpg",
         "variants": "Night",
         "size": "26x52"
@@ -1722,7 +1722,7 @@
     {
         "title": "MoonlitCathedral-Night-Rafters-26x52",
         "type": "map",
-        "Tags": "Moonlit Cathedral",
+        "Tags": "Moonlit Cathedral,dark, gothic, cathedral, interior, tunnel, intricate, spooky, shadowy, medieval, architecture, night",
         "path": "images/maps/Moonlit_Cathedral/Moonlit Cathedral - Night - Rafters - 26x52.jpg",
         "variants": "Night",
         "size": "26x52"
@@ -1730,7 +1730,7 @@
     {
         "title": "MushroomVillage-Forest-Day-43x29-300DPI",
         "type": "map",
-        "Tags": "Mushroom Village",
+        "Tags": "Mushroom Village,mushrooms, fantasy, stream, forest, island, adventure, fairy tale, waterfall, ecosystem, nature, colorful, cartoon",
         "path": "images/maps/Mushroom_Village___Forest/Mushroom Village - Forest - Day - 43x29 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "43x29"
@@ -1738,7 +1738,7 @@
     {
         "title": "MushroomVillage-Forest-Day-EmptyPen-6x9-300DPI",
         "type": "map",
-        "Tags": "Mushroom Village",
+        "Tags": "Mushroom Village,path, forest, trail, journey, hiking, wilderness, adventure, exploration, nature, woods, outdoors",
         "path": "images/maps/Mushroom_Village___Forest/Mushroom Village - Forest - Day - Empty Pen - 6x9 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "6x9"
@@ -1746,7 +1746,7 @@
     {
         "title": "MushroomVillage-Forest-Night-43x29-300DPI",
         "type": "map",
-        "Tags": "Mushroom Village",
+        "Tags": "Mushroom Village,caves, underground, rocky, dark, mushrooms, fantasy, cavern, dungeon, earthy, mysterious",
         "path": "images/maps/Mushroom_Village___Forest/Mushroom Village - Forest - Night - 43x29 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "43x29"
@@ -1754,7 +1754,7 @@
     {
         "title": "Brightcapsizedrowboat",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,- Boat\n\n- Sailboat\n\n- Fishing line\n\n- Lure\n\n- Reel\n\n- Ocean\n\n- Fishing rod\n\n- Angler",
         "path": "images/assets/Bright capsized rowboat (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -1762,7 +1762,7 @@
     {
         "title": "Brightcargo,barrel",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,eggplant, roll, food, object, simple, illustration, minimalist, comic, cartoon, hand-drawn, art, monochrome, unpeeled",
         "path": "images/assets/Bright cargo, barrel (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -1770,7 +1770,7 @@
     {
         "title": "Brightcargo,crate1",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,brown, square, object, drawing, sketch, icon, logo, box, symbol, color, shape",
         "path": "images/assets/Bright cargo, crate (1x1) 1.png",
         "variants": "None",
         "size": "1x1"
@@ -1778,7 +1778,7 @@
     {
         "title": "Brightcargo,crate2",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,puzzle, symbol, grid, shape, pattern, art, design, drawing",
         "path": "images/assets/Bright cargo, crate (1x1) 2.png",
         "variants": "None",
         "size": "1x1"
@@ -1786,7 +1786,7 @@
     {
         "title": "Brightcargo,crate3",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,book, paper, object, flat, blue, shape, rectangular, color, design, texture, page, content, space, surface",
         "path": "images/assets/Bright cargo, crate (1x1) 3.png",
         "variants": "None",
         "size": "1x1"
@@ -1794,7 +1794,7 @@
     {
         "title": "Brightcasualty1",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,racer, cartoon, character, mascot, logo, speedster, turtle, turtle shell, turtle racing, fast, motion blur",
         "path": "images/assets/Bright casualty (1x1) 1.png",
         "variants": "None",
         "size": "1x1"
@@ -1802,7 +1802,7 @@
     {
         "title": "Brightcasualty2",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,slapstick, cartoon, person falling, stumble, comic book art, superhero, acrobatic pose, action figure",
         "path": "images/assets/Bright casualty (1x1) 2.png",
         "variants": "None",
         "size": "1x1"
@@ -1810,7 +1810,7 @@
     {
         "title": "Brightcasualty",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,nightstand, bedroom, bedtime, sleep, illustrated, cartoon, graphic, minimalism",
         "path": "images/assets/Bright casualty (1x2).png",
         "variants": "None",
         "size": "1x2"
@@ -1818,7 +1818,7 @@
     {
         "title": "Brightcasualty",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,man, woman, child, adult, cartoon, person, stick figure, character, coloring book, simple, flat, drawing, vector illustration, stylized",
         "path": "images/assets/Bright casualty (2x1).png",
         "variants": "None",
         "size": "2x1"
@@ -1826,7 +1826,7 @@
     {
         "title": "Brightcreature,shark",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,shark, whale, sea creature, aquatic, marine life, blue, gray, sharp teeth, ocean, predator, nighttime",
         "path": "images/assets/Bright creature, shark (2x3).png",
         "variants": "None",
         "size": "2x3"
@@ -1834,7 +1834,7 @@
     {
         "title": "Brightcreature,shark,hammerhead",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,whale, shark, marine life, ocean, tail, fin, mammal, marine mammal, deep sea, blue, logo",
         "path": "images/assets/Bright creature, shark, hammerhead (2x3).png",
         "variants": "None",
         "size": "2x3"
@@ -1842,7 +1842,7 @@
     {
         "title": "Brightcreature,turtle",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,turtle, sea turtle, marine life, blue, ocean, shell, endangered species, protected animal, aquatic, reptile",
         "path": "images/assets/Bright creature, turtle (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -1850,7 +1850,7 @@
     {
         "title": "Brightdoomedship",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,ship, sailboat, watercraft, wooden boat, wooden ship, maritime, boat model, illustration, nautical, craft",
         "path": "images/assets/Bright doomed ship (8x6).png",
         "variants": "None",
         "size": "8x6"
@@ -1858,7 +1858,7 @@
     {
         "title": "Brightdriftingtrunk",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,wood, branch, nature, outdoor, forest, green, organic, natural",
         "path": "images/assets/Bright drifting trunk (8x2).png",
         "variants": "None",
         "size": "8x2"
@@ -1866,7 +1866,7 @@
     {
         "title": "Brightdriftwood1",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,\"wood,\" \"vertical bars,\" \"rectangle,\" \"dark color,\" \"light color\"",
         "path": "images/assets/Bright driftwood (1x2) 1.png",
         "variants": "None",
         "size": "1x2"
@@ -1874,7 +1874,7 @@
     {
         "title": "Brightdriftwood2",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,- Logo\n\n- Branding\n\n- Color Scheme\n\n- Design Elements\n\n- Symbolism\n\n- Corporate Identity",
         "path": "images/assets/Bright driftwood (1x2) 2.png",
         "variants": "None",
         "size": "1x2"
@@ -1882,7 +1882,7 @@
     {
         "title": "Brightdriftwood1",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,ball, trophy, sports, award, ribbon, stickers, paper, crafts, DIY, art",
         "path": "images/assets/Bright driftwood (2x2) 1.png",
         "variants": "None",
         "size": "2x2"
@@ -1890,7 +1890,7 @@
     {
         "title": "Brightdriftwood2",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,sticker, paper, logo, iconography, digital art, flat lay, illustration, graphic design, branding, vector",
         "path": "images/assets/Bright driftwood (2x2) 2.png",
         "variants": "None",
         "size": "2x2"
@@ -1898,7 +1898,7 @@
     {
         "title": "Brightdriftwood",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,wood, planks, logs, lumber, construction, craft, DIY, boards, slats, rustic, natural",
         "path": "images/assets/Bright driftwood (3x3).png",
         "variants": "None",
         "size": "3x3"
@@ -1906,7 +1906,7 @@
     {
         "title": "Brightfish",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,raindrop, water droplet, liquid drop, teardrop, droplet, raindrop shape, teardrop shape,",
         "path": "images/assets/Bright fish (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -1914,7 +1914,7 @@
     {
         "title": "Brightfishschool",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,rain, drops, waterfall, droplet, precipitation, mist",
         "path": "images/assets/Bright fish school (2x4).png",
         "variants": "None",
         "size": "2x4"
@@ -1922,7 +1922,7 @@
     {
         "title": "Brightislet,barren",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,desert island, topographical map, satellite imagery, land mass, coastline, oceanic island, remote location, unexplored terrain, unknown resources, untouched ecosystem",
         "path": "images/assets/Bright islet, barren (7x6).png",
         "variants": "None",
         "size": "7x6"
@@ -1930,7 +1930,7 @@
     {
         "title": "Brightislet,palmtree",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,pineapple, leafy, tropical fruit, food illustration, watermelon slice, summer drink, sweet treat, party snack, art style",
         "path": "images/assets/Bright islet, palm tree (8x6).png",
         "variants": "None",
         "size": "8x6"
@@ -1938,7 +1938,7 @@
     {
         "title": "Brightraft",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,boat, canoe, primitive, outdoor, hand-drawn",
         "path": "images/assets/Bright raft (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -1946,7 +1946,7 @@
     {
         "title": "Brightreef",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,blue, green, brown, watermark, white, black, pixelated, abstract, design, art",
         "path": "images/assets/Bright reef (10x3).png",
         "variants": "None",
         "size": "10x3"
@@ -1954,7 +1954,7 @@
     {
         "title": "Brightreef1",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,gray, blue, cloudy, misty, raindrops, pattern, wallpaper, digital art, abstract design",
         "path": "images/assets/Bright reef (6x3) 1.png",
         "variants": "None",
         "size": "6x3"
@@ -1962,7 +1962,7 @@
     {
         "title": "Brightreef2",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,The image provided is of low resolution and does not contain any clearly distinguishable objects or elements that can be tagged in this format. Please provide an image with better resolution for accurate tagging.",
         "path": "images/assets/Bright reef (6x3) 2.png",
         "variants": "None",
         "size": "6x3"
@@ -1970,7 +1970,7 @@
     {
         "title": "Brightrockpillar",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,1,2,3,4,5,6,7,8,9,10",
         "path": "images/assets/Bright rock pillar (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -1978,7 +1978,7 @@
     {
         "title": "Brightrockpillar",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,rose, petals, blossom, floral, art style, impressionistic, watercolor, brushwork, color palette, hand-drawn, illustration",
         "path": "images/assets/Bright rock pillar (3x3).png",
         "variants": "None",
         "size": "3x3"
@@ -1986,7 +1986,7 @@
     {
         "title": "Brightrockpillar1",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,ice cream cone, watercolor art, digital painting, soft focus, pastel colors, hand drawn illustration, simple composition, minimalist artwork, calming scene",
         "path": "images/assets/Bright rock pillar (3x4) 1.png",
         "variants": "None",
         "size": "3x4"
@@ -1994,7 +1994,7 @@
     {
         "title": "Brightrockpillar2",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,cone, tower, spire, sculpture, handmade, artisan, craftsmanship, waterfront, seaside, nautical, shell, beach",
         "path": "images/assets/Bright rock pillar (3x4) 2.png",
         "variants": "None",
         "size": "3x4"
@@ -2002,7 +2002,7 @@
     {
         "title": "Brightrocks",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,stone, rock, mineral, crystal, formation, natural, geology",
         "path": "images/assets/Bright rocks (2x5).png",
         "variants": "None",
         "size": "2x5"
@@ -2010,7 +2010,7 @@
     {
         "title": "Brightrocks",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,balloon, balloon animal, blown up balloon, party balloon, inflatable balloon, festive balloon",
         "path": "images/assets/Bright rocks (4x10).png",
         "variants": "None",
         "size": "4x10"
@@ -2018,7 +2018,7 @@
     {
         "title": "Brightrocks",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,ice cream cone, rocky mountain, abstract art, coloring page, illustration, handmade, watercolor, children's book",
         "path": "images/assets/Bright rocks (5x10).png",
         "variants": "None",
         "size": "5x10"
@@ -2026,7 +2026,7 @@
     {
         "title": "Brightrocks",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,rock, cracked, shards, map, broken, rough, jagged, texture, uneven, irregular, pattern",
         "path": "images/assets/Bright rocks (6x9).png",
         "variants": "None",
         "size": "6x9"
@@ -2034,7 +2034,7 @@
     {
         "title": "Brightsubmergedflag",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,arrow, quill, scroll, ink, writing, handwriting, pen, parchment, script, paper",
         "path": "images/assets/Bright submerged flag (4x4).png",
         "variants": "None",
         "size": "4x4"
@@ -2042,7 +2042,7 @@
     {
         "title": "Brightwave",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,ocean, waves, water, pattern, design, artistic, digital art, abstract, minimalist, monochrome, black and white, seascape, horizon, graphic",
         "path": "images/assets/Bright wave (8x4).png",
         "variants": "None",
         "size": "8x4"
@@ -2050,7 +2050,7 @@
     {
         "title": "Brightwhirlpool",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,blue, flower, abstract art, doodle, watercolor, whimsical, swirls, design",
         "path": "images/assets/Bright whirlpool (4x4).png",
         "variants": "None",
         "size": "4x4"
@@ -2058,7 +2058,7 @@
     {
         "title": "Darkcapsizedrowboat",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,boat, canoe, crafts, woodworking, handmade, DIY, watercraft, wooden, rowboat, pencil, sketch, line drawing",
         "path": "images/assets/Dark capsized rowboat (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -2066,7 +2066,7 @@
     {
         "title": "Darkcargo,barrel",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,ball, egg, protein, nutritious, food, healthy",
         "path": "images/assets/Dark cargo, barrel (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -2074,7 +2074,7 @@
     {
         "title": "Darkcargo,crate1",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,square, blue, brown, box, cube, simple, outline, stylized, vector, icon",
         "path": "images/assets/Dark cargo, crate (1x1) 1.png",
         "variants": "None",
         "size": "1x1"
@@ -2082,7 +2082,7 @@
     {
         "title": "Darkcargo,crate2",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,map, square, compass, grid, cartography, orient",
         "path": "images/assets/Dark cargo, crate (1x1) 2.png",
         "variants": "None",
         "size": "1x1"
@@ -2090,7 +2090,7 @@
     {
         "title": "Darkcargo,crate3",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,dark, abstract, contrast, geometric, monochrome, negative space, digital art, blue and white.",
         "path": "images/assets/Dark cargo, crate (1x1) 3.png",
         "variants": "None",
         "size": "1x1"
@@ -2098,7 +2098,7 @@
     {
         "title": "Darkcasualty1",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,night, darkness, comic, character, face, female, artistic, graphic design, monochrome",
         "path": "images/assets/Dark casualty (1x1) 1.png",
         "variants": "None",
         "size": "1x1"
@@ -2106,7 +2106,7 @@
     {
         "title": "Darkcasualty2",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,black, white, lines, shapes, negative space, minimalist, graphic design, abstract art, geometric patterns, simple, clean",
         "path": "images/assets/Dark casualty (1x1) 2.png",
         "variants": "None",
         "size": "1x1"
@@ -2114,7 +2114,7 @@
     {
         "title": "Darkcasualty",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,book, woman, art, illustration, cartoon, story, character, door, handbag, window",
         "path": "images/assets/Dark casualty (1x2).png",
         "variants": "None",
         "size": "1x2"
@@ -2122,7 +2122,7 @@
     {
         "title": "Darkcasualty",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,swim, pool, dive, sport, action, athletic, man, water, game",
         "path": "images/assets/Dark casualty (2x1).png",
         "variants": "None",
         "size": "2x1"
@@ -2130,7 +2130,7 @@
     {
         "title": "Darkcreature,shark",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,dark, square, black, white, striped, rectangle, flat, still, simple, minimalistic",
         "path": "images/assets/Dark creature, shark (2x3).png",
         "variants": "None",
         "size": "2x3"
@@ -2138,7 +2138,7 @@
     {
         "title": "Darkcreature,shark,hammerhead",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,black, white, square, 90 degrees, straight, minimalist, monochrome, simple, graphic, modern",
         "path": "images/assets/Dark creature, shark, hammerhead (2x3).png",
         "variants": "None",
         "size": "2x3"
@@ -2146,7 +2146,7 @@
     {
         "title": "Darkcreature,turtle",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,dark, square, graphic, placeholder, design, monochrome, minimalism, iconic, modern, sleek",
         "path": "images/assets/Dark creature, turtle (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -2154,7 +2154,7 @@
     {
         "title": "Darkdoomedship",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,ship, boat, ocean, storm, weather, sinking, debris, fantasy, illustration, graphic design, cartoon",
         "path": "images/assets/Dark doomed ship (8x6).png",
         "variants": "None",
         "size": "8x6"
@@ -2162,7 +2162,7 @@
     {
         "title": "Darkdriftingtrunk",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,swords, fantasy, weapon, medieval, armor, battle",
         "path": "images/assets/Dark drifting trunk (8x2).png",
         "variants": "None",
         "size": "8x2"
@@ -2170,7 +2170,7 @@
     {
         "title": "Darkdriftwood1",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,image, pixelated, abstract, minimalism, art, square, vertical, modern, digital, graphic, pattern, monochrome, no text",
         "path": "images/assets/Dark driftwood (1x2) 1.png",
         "variants": "None",
         "size": "1x2"
@@ -2178,7 +2178,7 @@
     {
         "title": "Darkdriftwood2",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,This is an image of a black and white photo, likely taken from an angle where the focus is not on the person's face or upper body. The subject is partially cropped out, leaving only their lower legs visible. There are no recognizable landmarks or distinguishable features in this photograph that would suggest a specific location. Due to the image's content and the lack of any clear context, it is difficult to provide relevant single-word tags.",
         "path": "images/assets/Dark driftwood (1x2) 2.png",
         "variants": "None",
         "size": "1x2"
@@ -2186,7 +2186,7 @@
     {
         "title": "Darkdriftwood1",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,crafts, DIY, art supply, paper, tape",
         "path": "images/assets/Dark driftwood (2x2) 1.png",
         "variants": "None",
         "size": "2x2"
@@ -2194,7 +2194,7 @@
     {
         "title": "Darkdriftwood2",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,stick, log, timber, nature, forest, outdoor, rustic, brown",
         "path": "images/assets/Dark driftwood (2x2) 2.png",
         "variants": "None",
         "size": "2x2"
@@ -2202,7 +2202,7 @@
     {
         "title": "Darkdriftwood",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,\"wooden pallet\", \"materials\", \"construction\", \"recycling\", \"rustic\", \"DIY\", \"farmhouse\", \"organic\", \"industrial\", \"simple\"",
         "path": "images/assets/Dark driftwood (3x3).png",
         "variants": "None",
         "size": "3x3"
@@ -2210,7 +2210,7 @@
     {
         "title": "Darkfish",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,box, black, graphic, minimalist, abstract, design, square, monochrome",
         "path": "images/assets/Dark fish (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -2218,7 +2218,7 @@
     {
         "title": "Darkfishschool",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,image, graphic, blue, grey, pixelated, small, square, digital art, simplistic, low resolution, minimalist",
         "path": "images/assets/Dark fish school (2x4).png",
         "variants": "None",
         "size": "2x4"
@@ -2226,7 +2226,7 @@
     {
         "title": "Darkislet,barren",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,island, ocean, horizon, sunset, tranquility, loneliness, seabirds, remote, landscape",
         "path": "images/assets/Dark islet, barren (7x6).png",
         "variants": "None",
         "size": "7x6"
@@ -2234,7 +2234,7 @@
     {
         "title": "Darkislet,palmtree",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,mushroom, plant, leaf, nature, wilderness, forest, flora, fauna, ecosystem, underwater",
         "path": "images/assets/Dark islet, palm tree (8x6).png",
         "variants": "None",
         "size": "8x6"
@@ -2242,7 +2242,7 @@
     {
         "title": "Darkraft",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,- Axes\n\n- Wooden structure\n- Tribal artifact\n- Crafting tools\n- Weaponry",
         "path": "images/assets/Dark raft (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -2250,7 +2250,7 @@
     {
         "title": "Darkreef",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,This is an image of a digital illustration featuring a rectangular border with the background appearing as if it's glowing or has some sort of textured pattern within it. The foreground shows what looks like a black and white, pixelated-style design element.",
         "path": "images/assets/Dark reef (10x3).png",
         "variants": "None",
         "size": "10x3"
@@ -2258,7 +2258,7 @@
     {
         "title": "Darkreef1",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,watermark, logo, abstract art, paint splatter, digital art, graphic design, pattern",
         "path": "images/assets/Dark reef (6x3) 1.png",
         "variants": "None",
         "size": "6x3"
@@ -2266,7 +2266,7 @@
     {
         "title": "Darkreef2",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,The image provided appears to be a graphic design with text overlaying it. It has a dark background with various shapes and lines of different colors scattered throughout. Since I am an AI visual assistant, I am unable to directly interpret or describe the content of an image. However, if you have specific questions about this image, such as color schemes, layout design, or anything else, feel free to ask!",
         "path": "images/assets/Dark reef (6x3) 2.png",
         "variants": "None",
         "size": "6x3"
@@ -2274,7 +2274,7 @@
     {
         "title": "Darkrockpillar",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,crystal, gem, precious stone, faceted, polished, cut, sparkle, shine, treasure, jewelry, valuable",
         "path": "images/assets/Dark rock pillar (2x2).png",
         "variants": "None",
         "size": "2x2"
@@ -2282,7 +2282,7 @@
     {
         "title": "Darkrockpillar",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,rose, flower, petals, watercolor, illustration, art, hand drawn, floral, abstract, blue, purple",
         "path": "images/assets/Dark rock pillar (3x3).png",
         "variants": "None",
         "size": "3x3"
@@ -2290,7 +2290,7 @@
     {
         "title": "Darkrockpillar1",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,ice cream cone, ice cream cone logo, ice cream cone branding, ice cream cone graphic, ice cream cone cartoon, ice cream cone design",
         "path": "images/assets/Dark rock pillar (3x4) 1.png",
         "variants": "None",
         "size": "3x4"
@@ -2298,7 +2298,7 @@
     {
         "title": "Darkrockpillar2",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,ice cream cone, tower of cones, artisan ice cream, sundae, cone stack, game, toy, drawing, stylized, hand-drawn",
         "path": "images/assets/Dark rock pillar (3x4) 2.png",
         "variants": "None",
         "size": "3x4"
@@ -2306,7 +2306,7 @@
     {
         "title": "Darkrocks",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,Brain, Cerebrum, Neocortex, Medulla Oblongata, Cerebellum",
         "path": "images/assets/Dark rocks (2x5).png",
         "variants": "None",
         "size": "2x5"
@@ -2314,7 +2314,7 @@
     {
         "title": "Darkrocks",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,cloud, sky, rock, water, island, cartoon, blue, gray, art, graphic, fantasy, adventure",
         "path": "images/assets/Dark rocks (4x10).png",
         "variants": "None",
         "size": "4x10"
@@ -2322,7 +2322,7 @@
     {
         "title": "Darkrocks",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,Island, Ocean, Cartography, Mapping, Chart, Map, Drawing, Artwork, Digital Art, Fantasy, Imaginary Landscape, Creative Concept",
         "path": "images/assets/Dark rocks (5x10).png",
         "variants": "None",
         "size": "5x10"
@@ -2330,7 +2330,7 @@
     {
         "title": "Darkrocks",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,broken, jagged, cracked, maze, rocky, shattered, stone",
         "path": "images/assets/Dark rocks (6x9).png",
         "variants": "None",
         "size": "6x9"
@@ -2338,7 +2338,7 @@
     {
         "title": "Darksubmergedflag",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,compass, map, navigation, guidance, exploration, adventure, fantasy, quest, explorers, direction, travel, journey",
         "path": "images/assets/Dark submerged flag (4x4).png",
         "variants": "None",
         "size": "4x4"
@@ -2346,7 +2346,7 @@
     {
         "title": "Darkwave",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,abstract, watercolor, dreamlike, surreal, oceanic, clouds, sky, motion blur",
         "path": "images/assets/Dark wave (8x4).png",
         "variants": "None",
         "size": "8x4"
@@ -2354,7 +2354,7 @@
     {
         "title": "Darkwhirlpool",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets",
+        "Tags": "OceanSurfaceAssets,flower, rose, bloom, design, art, graphic, illustration, blue, symbol, abstract, swirl",
         "path": "images/assets/Dark whirlpool (4x4).png",
         "variants": "None",
         "size": "4x4"
@@ -2362,7 +2362,7 @@
     {
         "title": "PaintedTundra-Autumn-Day-22x16-300DPI",
         "type": "map",
-        "Tags": "Painted Tundra",
+        "Tags": "Painted Tundra,forest, autumn, nature, wilderness, flora, map, water, rock",
         "path": "images/maps/Painted_Tundra___Autumn/Painted Tundra - Autumn - Day - 22x16 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "22x16"
@@ -2370,7 +2370,7 @@
     {
         "title": "PaintedTundra-Autumn-Night-22x16-300DPI",
         "type": "map",
-        "Tags": "Painted Tundra",
+        "Tags": "Painted Tundra,space, galaxies, colorful, vibrant, intricate, detailed, cosmic, starry sky, nebula, alien world",
         "path": "images/maps/Painted_Tundra___Autumn/Painted Tundra - Autumn - Night - 22x16 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "22x16"
@@ -2378,7 +2378,7 @@
     {
         "title": "PalatialPortal-Marble-Day-25x18-300DPI",
         "type": "map",
-        "Tags": "Palatial Portal",
+        "Tags": "Palatial Portal,ancient, dungeon, underground, medieval, stone, archway, door, corridor, room, cold, musty",
         "path": "images/maps/Palatial_Portal___Marble/Palatial Portal - Marble - Day - 25x18 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "25x18"
@@ -2386,7 +2386,7 @@
     {
         "title": "PalatialPortal-Marble-Night-25x18-300DPI",
         "type": "map",
-        "Tags": "Palatial Portal",
+        "Tags": "Palatial Portal,dungeon, labyrinth, map, crypt, basement, underground, ruins, tomb, gothic, medieval, castle, fantasy",
         "path": "images/maps/Palatial_Portal___Marble/Palatial Portal - Marble - Night - 25x18 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "25x18"
@@ -2394,7 +2394,7 @@
     {
         "title": "PalatialThrone-Marble-Day-32x46-300DPI",
         "type": "map",
-        "Tags": "Palatial Throne",
+        "Tags": "Palatial Throne,maze, labyrinth, floorplan, map, architecture, design, pattern, symmetry, dungeon, underground, fantasy, riddle, game",
         "path": "images/maps/Palatial_Throne___Marble/Palatial Throne - Marble - Day - 32x46 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "32x46"
@@ -2402,7 +2402,7 @@
     {
         "title": "PalatialThrone-Marble-Night-32x46-300DPI",
         "type": "map",
-        "Tags": "Palatial Throne",
+        "Tags": "Palatial Throne,labyrinth, dungeon, maze, castle, map, crypt, tower, medieval, architectural, design, layout, strategy, pattern",
         "path": "images/maps/Palatial_Throne___Marble/Palatial Throne - Marble - Night - 32x46 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "32x46"
@@ -2410,7 +2410,7 @@
     {
         "title": "RicketyRopeBridge-Clouds-16x22-300DPI",
         "type": "map",
-        "Tags": "Rickety Rope Bridge",
+        "Tags": "Rickety Rope Bridge,bridge, skywalk, waterfall, escape tunnel, catwalk, water slide, underground passage, aquafer, construction site, underwater tunnel",
         "path": "images/maps/Rickety Rope Bridge - Clouds - 16x22 - 300 DPI.jpg",
         "variants": "None",
         "size": "16x22"
@@ -2418,7 +2418,7 @@
     {
         "title": "RicketyRopeBridge-Day-16x22-300DPI",
         "type": "map",
-        "Tags": "Rickety Rope Bridge",
+        "Tags": "Rickety Rope Bridge,bridge, train tracks, trees, clouds, railroad, crossing, nature, outdoors, sky, tracks, water, forest, cloudy, tranquil, wooden",
         "path": "images/maps/Rickety_Rope_Bridge/Rickety Rope Bridge - Day - 16x22 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "16x22"
@@ -2426,7 +2426,7 @@
     {
         "title": "RicketyRopeBridge-Night-16x22-300DPI",
         "type": "map",
-        "Tags": "Rickety Rope Bridge",
+        "Tags": "Rickety Rope Bridge,bridge, sky, train, tracks, nature, forest, clouds, tranquility, escape",
         "path": "images/maps/Rickety_Rope_Bridge/Rickety Rope Bridge - Night - 16x22 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "16x22"
@@ -2434,7 +2434,7 @@
     {
         "title": "RockyDesert-BaseMap-Day-32x22",
         "type": "map",
-        "Tags": "Rocky Desert",
+        "Tags": "Rocky Desert,island, map, sandy, desert, exploration, cartography, adventure, treasure hunt, fantasy, paper, drawn, illustrated",
         "path": "images/maps/Rocky_Desert___Base_Map/Rocky Desert - Base Map - Day - 32x22.jpg",
         "variants": "Day, Night",
         "size": "32x22"
@@ -2442,7 +2442,7 @@
     {
         "title": "RockyDesert-BaseMap-Night-32x22",
         "type": "map",
-        "Tags": "Rocky Desert",
+        "Tags": "Rocky Desert,Underwater cave, subterranean ocean, undersea cenote, abyssal cave, sunken cavern",
         "path": "images/maps/Rocky_Desert___Base_Map/Rocky Desert - Base Map - Night - 32x22.jpg",
         "variants": "Day, Night",
         "size": "32x22"
@@ -2450,7 +2450,7 @@
     {
         "title": "RockyFissures-Desert-Day-22x16",
         "type": "map",
-        "Tags": "Rocky Fissures",
+        "Tags": "Rocky Fissures,cave, desert, map, rocky, ruins, old, ancient, exploration, adventure, underground, mystery, abandoned",
         "path": "images/maps/Rocky_Fissures___Desert/Rocky Fissures - Desert - Day - 22x16.jpg",
         "variants": "Day, Night",
         "size": "22x16"
@@ -2458,7 +2458,7 @@
     {
         "title": "RockyFissures-Desert-Night-22x16",
         "type": "map",
-        "Tags": "Rocky Fissures",
+        "Tags": "Rocky Fissures,caves, caverns, rocks, stalactites, stalagmites, underground, cave system, natural wonder",
         "path": "images/maps/Rocky_Fissures___Desert/Rocky Fissures - Desert - Night - 22x16.jpg",
         "variants": "Day, Night",
         "size": "22x16"
@@ -2466,7 +2466,7 @@
     {
         "title": "RoundTable-Valiant-Dark-26x18-300DPI",
         "type": "map",
-        "Tags": "Round Table",
+        "Tags": "Round Table,dungeon map, gaming room setup, immersive environment, roleplaying board, game piece, fantasy layout, underground lair",
         "path": "images/maps/Round_Table___Valiant/Round Table - Valiant - Dark - 26x18 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "26x18"
@@ -2474,7 +2474,7 @@
     {
         "title": "RoundTable-Valiant-Light-26x18-300DPI",
         "type": "map",
-        "Tags": "Round Table",
+        "Tags": "Round Table,labyrinth, puzzle, map, maze, intricate, detailed, architectural, fantasy, medieval, stone",
         "path": "images/maps/Round_Table___Valiant/Round Table - Valiant - Light - 26x18 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "26x18"
@@ -2482,7 +2482,7 @@
     {
         "title": "RoyalBank-Vaults-Dark-32x23-300DPI",
         "type": "map",
-        "Tags": "Royal Bank",
+        "Tags": "Royal Bank,Castle, Strategy, Game, Boardgame, Dungeon, Gameboard, Medieval, Design, Intricate, Colorful, Detailed",
         "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Dark - 32x23 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "32x23"
@@ -2490,7 +2490,7 @@
     {
         "title": "RoyalBank-Vaults-Light-32x23-300DPI",
         "type": "map",
-        "Tags": "Royal Bank",
+        "Tags": "Royal Bank,castle, labyrinth, dungeon, tower, wall, architecture, design, fortress, medieval, structure, brick, stone",
         "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Light - 32x23 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "32x23"
@@ -2498,7 +2498,7 @@
     {
         "title": "RoyalBank-Vaults-Dark-Door1Alt-4x4-300DPI",
         "type": "map",
-        "Tags": "Royal Bank",
+        "Tags": "Royal Bank,medieval, weapons, castle, armory, fantasy, dark, night, architecture, stone",
         "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Dark - Door 1 Alt - 4x4 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "4x4"
@@ -2506,7 +2506,7 @@
     {
         "title": "RoyalBank-Vaults-Dark-Door2Alt-2x6-300DPI",
         "type": "map",
-        "Tags": "Royal Bank",
+        "Tags": "Royal Bank,glitch, corrupted file, error, pixelation, digital art, photo manipulation, broken computer screen, abstract, chaos, noise, disordered, chaotic order, visual confusion, unconventional, surreal, distorted, warped, fractal, geometric shapes",
         "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Dark - Door 2 Alt - 2x6 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "2x6"
@@ -2514,7 +2514,7 @@
     {
         "title": "RoyalBank-Vaults-Dark-Door3Alt-3x4-300DPI",
         "type": "map",
-        "Tags": "Royal Bank",
+        "Tags": "Royal Bank,Drawn, Cartoon, Fantasy, Castle, Darkness, Courtyard, Tiles, Floor, Rusty, Trash, Cards, Game, Board, Room",
         "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Dark - Door 3 Alt - 3x4 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "3x4"
@@ -2522,7 +2522,7 @@
     {
         "title": "RoyalBank-Vaults-Light-Door1Alt-4x4-300DPI",
         "type": "map",
-        "Tags": "Royal Bank",
+        "Tags": "Royal Bank,medieval architecture, underground ruins, rustic stonework, crumbling walls, dungeon interior, ancient catacombs, old sewer system",
         "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Light - Door 1 Alt - 4x4 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "4x4"
@@ -2530,7 +2530,7 @@
     {
         "title": "RoyalBank-Vaults-Light-Door2Alt-2x6-300DPI",
         "type": "map",
-        "Tags": "Royal Bank",
+        "Tags": "Royal Bank,\"artwork,\" \"illustration,\" \"digital,\" \"fantasy,\" \"dice,\" \"character,\" \"RPG,\" \"board game,\" \"strategy game,\" \"card game,\"",
         "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Light - Door 2 Alt - 2x6 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "2x6"
@@ -2538,7 +2538,7 @@
     {
         "title": "RoyalBank-Vaults-Light-Door3Alt-3x4-300DPI",
         "type": "map",
-        "Tags": "Royal Bank",
+        "Tags": "Royal Bank,\"gaming\", \"pixel art\", \"virtual reality\", \"fantasy\", \"board game\", \"card game\", \"dungeons and dragons\", \"tabletop gaming\", \"cryptocurrency\", \"mining\", \"blockchain\", \"NFTs",
         "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Light - Door 3 Alt - 3x4 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "3x4"
@@ -2546,7 +2546,7 @@
     {
         "title": "LionStatue1",
         "type": "map",
-        "Tags": "Royal Bank",
+        "Tags": "Royal Bank,dog, puppy, illustration, cartoon, colorful, animal, pet, cute, drawing, stylized",
         "path": "images/maps/Lion Statue 1.png",
         "variants": "None",
         "size": ""
@@ -2554,7 +2554,7 @@
     {
         "title": "LionStatue2",
         "type": "map",
-        "Tags": "Royal Bank",
+        "Tags": "Royal Bank,Fantasy, Monster, Artwork, Lion, Drawing, Character, Design, Creature, Meme, Mythical, Fiction",
         "path": "images/maps/Lion Statue 2.png",
         "variants": "None",
         "size": ""
@@ -2562,7 +2562,7 @@
     {
         "title": "RoyalOverlook-City-Day-16x22-300DPI",
         "type": "map",
-        "Tags": "Royal Overlook",
+        "Tags": "Royal Overlook,court, stairs, potted plant, statue, patio, shadow, archway, candles, floor tiles, balcony",
         "path": "images/maps/Royal_Overlook___City/Royal Overlook - City - Day - 16x22 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "16x22"
@@ -2570,7 +2570,7 @@
     {
         "title": "RoyalOverlook-City-Night-16x22-300DPI",
         "type": "map",
-        "Tags": "Royal Overlook",
+        "Tags": "Royal Overlook,dark, night, castle, medieval, fantasy, courtyard, building, architecture, ambiance, spooky",
         "path": "images/maps/Royal_Overlook___City/Royal Overlook - City - Night - 16x22 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "16x22"
@@ -2578,7 +2578,7 @@
     {
         "title": "Block",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,5-10 word tags:\n\n1. Lego,\n2. Bricks,\n3. Building blocks,\n4. Game piece,\n5. Toys,\n6. Construction set,\n7. Children's toy,\n8. Building blocks toys,\n9. Educational toy,\n10. Blocks and pieces.",
         "path": "images/assets/Block (2x1).png",
         "variants": "None",
         "size": "2x1"
@@ -2586,7 +2586,7 @@
     {
         "title": "Block",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,wood, planks, brown, grey, colorful, art, design, handcrafted, creative, craftsman, hobby, DIY, skill",
         "path": "images/assets/Block (3x1).png",
         "variants": "None",
         "size": "3x1"
@@ -2594,7 +2594,7 @@
     {
         "title": "Block,large",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,circle, shadow, monochrome, black and white, contrast, shape, simple, graphic",
         "path": "images/assets/Block, large (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -2602,7 +2602,7 @@
     {
         "title": "Block,medium",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,small, brown, circular object in corner of white space.",
         "path": "images/assets/Block, medium (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -2610,7 +2610,7 @@
     {
         "title": "Block,small",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,tag",
         "path": "images/assets/Block, small (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -2618,7 +2618,7 @@
     {
         "title": "Exteriordeck",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,cinderblock wall, patterned brickwork, textured wallpaper, brown wall tiles, brick wall design",
         "path": "images/assets/Exterior deck (8x8).png",
         "variants": "None",
         "size": "8x8"
@@ -2626,7 +2626,7 @@
     {
         "title": "Exteriorhatch,large",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,window, pane, grid, structure, shape, pattern, design, frame, interior",
         "path": "images/assets/Exterior hatch, large (4x4).png",
         "variants": "None",
         "size": "4x4"
@@ -2634,7 +2634,7 @@
     {
         "title": "Exteriorhatch,medium",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,elevator, brown, door, apartment building, cartoon, black and white, pixel art, simple lines, basic shapes",
         "path": "images/assets/Exterior hatch, medium (3x4).png",
         "variants": "None",
         "size": "3x4"
@@ -2642,7 +2642,7 @@
     {
         "title": "Exteriorhatch,small",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,square, door, simple, minimalistic, cartoon, illustration, black and white, flat, graphic, icon",
         "path": "images/assets/Exterior hatch, small (3x3).png",
         "variants": "None",
         "size": "3x3"
@@ -2650,7 +2650,7 @@
     {
         "title": "Exteriorstairs",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,board, black and white, minimalist, graphic, flat design, simple shapes, uncolored",
         "path": "images/assets/Exterior stairs (3x3).png",
         "variants": "None",
         "size": "3x3"
@@ -2658,7 +2658,7 @@
     {
         "title": "Exteriorstairs",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,wall, tiles, patterned, black and white, art, home decor, interior design",
         "path": "images/assets/Exterior stairs (3x4).png",
         "variants": "None",
         "size": "3x4"
@@ -2666,7 +2666,7 @@
     {
         "title": "Exteriorstructuralplank",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,cat, dog, bird, fish, elephant, zebra, horse, cow, sheep, pig, chicken, duck, goose, rooster, squirrel, rabbit, snake, lizard, frog, toad, bear, wolf, fox, badger, bat, seagull, magpie, pelican, stork, crane, heron, eagle, vulture, crow, raven, parrot, toucan, hummingbird, woodpecker, owl",
         "path": "images/assets/Exterior structural plank (3x2).png",
         "variants": "None",
         "size": "3x2"
@@ -2674,7 +2674,7 @@
     {
         "title": "Exteriorstructuralplank",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,face, emoji, sticker, pixelated, gray, cartoon",
         "path": "images/assets/Exterior structural plank (4x2).png",
         "variants": "None",
         "size": "4x2"
@@ -2682,7 +2682,7 @@
     {
         "title": "Exteriorstructuralplank",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,\"pixelated,\" \"gray,\" \"rectangular,\" \"small,\" \"low resolution\"",
         "path": "images/assets/Exterior structural plank (5x2).png",
         "variants": "None",
         "size": "5x2"
@@ -2690,7 +2690,7 @@
     {
         "title": "Exteriorstructuralplank",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,wallpaper, monitor, desktop, screen, graphic, digital, image, print, photo, art, graphics, computer, monitor",
         "path": "images/assets/Exterior structural plank (6x2).png",
         "variants": "None",
         "size": "6x2"
@@ -2698,7 +2698,7 @@
     {
         "title": "Exteriortrapdoor",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,box, puzzle, room, game, piece, shape, dark, mystery, strategy, challenge, solve, level, difficulty, color",
         "path": "images/assets/Exterior trapdoor (3x3).png",
         "variants": "None",
         "size": "3x3"
@@ -2706,7 +2706,7 @@
     {
         "title": "Interiordeck",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,brick, wooden plank, texture, geometric, patterned, flooring, construction, rustic, earthy",
         "path": "images/assets/Interior deck (8x8).png",
         "variants": "None",
         "size": "8x8"
@@ -2714,7 +2714,7 @@
     {
         "title": "Interiorhatch,large",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,drainage grate, grate, sewer grate, sewage grate, metal grate, rusty grate, basement window well",
         "path": "images/assets/Interior hatch, large (4x4).png",
         "variants": "None",
         "size": "4x4"
@@ -2722,7 +2722,7 @@
     {
         "title": "Interiorhatch,medium",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,elevator, door, apartment building, architectural drawing, black and white, stairwell, old",
         "path": "images/assets/Interior hatch, medium (3x4).png",
         "variants": "None",
         "size": "3x4"
@@ -2730,7 +2730,7 @@
     {
         "title": "Interiorhatch,small",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,black, white, square, rectangle, block, box, color, graphic",
         "path": "images/assets/Interior hatch, small (3x3).png",
         "variants": "None",
         "size": "3x3"
@@ -2738,7 +2738,7 @@
     {
         "title": "Interiorstairs",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,- Puzzle",
         "path": "images/assets/Interior stairs (3x3).png",
         "variants": "None",
         "size": "3x3"
@@ -2746,7 +2746,7 @@
     {
         "title": "Interiorstairs",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,black and white, comic art, stairway, perspective, shadows, vertical lines, horizontal lines, geometric shapes, minimalism, no color",
         "path": "images/assets/Interior stairs (3x4).png",
         "variants": "None",
         "size": "3x4"
@@ -2754,7 +2754,7 @@
     {
         "title": "Interiorstructuralplank",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,tag",
         "path": "images/assets/Interior structural plank (3x2).png",
         "variants": "None",
         "size": "3x2"
@@ -2762,7 +2762,7 @@
     {
         "title": "Interiorstructuralplank",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,face, pixelated, ugly, distorted, gray, square, digital art, glitch, error, corrupted",
         "path": "images/assets/Interior structural plank (4x2).png",
         "variants": "None",
         "size": "4x2"
@@ -2770,7 +2770,7 @@
     {
         "title": "Interiorstructuralplank",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,phone, screen, wallpaper, monitor, pixelation, digital display, flat surface, smartphone, touchscreen, display screen",
         "path": "images/assets/Interior structural plank (5x2).png",
         "variants": "None",
         "size": "5x2"
@@ -2778,7 +2778,7 @@
     {
         "title": "Interiorstructuralplank",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,cat, toy, mouse, play, chew",
         "path": "images/assets/Interior structural plank (6x2).png",
         "variants": "None",
         "size": "6x2"
@@ -2786,7 +2786,7 @@
     {
         "title": "Interiortrapdoor",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,Darkness, Cartoon, Building Blocks, Square, Room, Door, No People, Solid Color Background, Bottom Right Corner",
         "path": "images/assets/Interior trapdoor (3x3).png",
         "variants": "None",
         "size": "3x3"
@@ -2794,7 +2794,7 @@
     {
         "title": "Mast",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,- Ikea\n\n- Furniture\n\n- Couch\n\n- Sofa\n\n- Home decor\n\n- Interior design",
         "path": "images/assets/Mast (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -2802,7 +2802,7 @@
     {
         "title": "Railing,long",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,gray, minimalistic, dark",
         "path": "images/assets/Railing, long (10x2).png",
         "variants": "None",
         "size": "10x2"
@@ -2810,7 +2810,7 @@
     {
         "title": "Railing,long",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,brown, gray, rectangle, floor, line, shadow, object",
         "path": "images/assets/Railing, long (14x3).png",
         "variants": "None",
         "size": "14x3"
@@ -2818,7 +2818,7 @@
     {
         "title": "Railing,long",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,gray, cloudy, street sign, brown trim, nighttime, overcast, horizontal lines, rectangular shape, outdoor lighting",
         "path": "images/assets/Railing, long (17x3).png",
         "variants": "None",
         "size": "17x3"
@@ -2826,7 +2826,7 @@
     {
         "title": "Railing,long",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,5-10 tagged image: coffee cup, hot beverage, caffeine, afternoon break, workplace culture, office vending machine, modern kitchen appliance, quick snack, productivity, work environment.",
         "path": "images/assets/Railing, long (22x4).png",
         "variants": "None",
         "size": "22x4"
@@ -2834,7 +2834,7 @@
     {
         "title": "Railing,straight",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,wood, crafts, carpentry, furniture, DIY, hobby, home decor, handmade, homemade, wooden plank",
         "path": "images/assets/Railing, straight (3x2).png",
         "variants": "None",
         "size": "3x2"
@@ -2842,7 +2842,7 @@
     {
         "title": "Railing,straight",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,, , , , , , , , ,",
         "path": "images/assets/Railing, straight (4x2).png",
         "variants": "None",
         "size": "4x2"
@@ -2850,7 +2850,7 @@
     {
         "title": "Railing,straight",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,grey, blurred, low-resolution, pixelated, black and white, rectangular object, simple design, minimalistic.",
         "path": "images/assets/Railing, straight (5x2).png",
         "variants": "None",
         "size": "5x2"
@@ -2858,7 +2858,7 @@
     {
         "title": "Railing,straight",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,table, chair, food, tray, napkin",
         "path": "images/assets/Railing, straight (6x2).png",
         "variants": "None",
         "size": "6x2"
@@ -2866,7 +2866,7 @@
     {
         "title": "Railing,wide",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,The image appears to be too small and blurry to discern any specific content accurately. To provide relevant tags, I would need more information or a clearer image to describe it.",
         "path": "images/assets/Railing, wide (10x3).png",
         "variants": "None",
         "size": "10x3"
@@ -2874,7 +2874,7 @@
     {
         "title": "Railing,wide",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,The image you've provided appears to be a low-resolution graphic with some text that is partially obscured. Due to the resolution and the angle of the photograph, it's difficult to discern clear details for tagging. If you have a specific question about the image or if you need help with a different task, feel free to ask!",
         "path": "images/assets/Railing, wide (14x3).png",
         "variants": "None",
         "size": "14x3"
@@ -2882,7 +2882,7 @@
     {
         "title": "Railing,wide",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,gray, shadow, arch, bridge, wall",
         "path": "images/assets/Railing, wide (17x4).png",
         "variants": "None",
         "size": "17x4"
@@ -2890,7 +2890,7 @@
     {
         "title": "Railing,wide",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,\"night\", \"car\", \"road\", \"moonlit\", \"window\", \"reflection\", \"interior\", \"lighting\"",
         "path": "images/assets/Railing, wide (22x5).png",
         "variants": "None",
         "size": "22x5"
@@ -2898,7 +2898,7 @@
     {
         "title": "Ship'swheel",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,5-10 relevant single-word tags:\n\nsandwich, burger, hot dog, fries, soda, chips, fast food, junk food, restaurant, menu, dine in, takeout, delivery, meal, food, snack, treat, indulge, casual dining, comfort food, convenient, quick, easy, affordable",
         "path": "images/assets/Ship's wheel (2x1).png",
         "variants": "None",
         "size": "2x1"
@@ -2906,7 +2906,7 @@
     {
         "title": "Wall,door",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,bed, furniture, simple, flat, drawing, brown",
         "path": "images/assets/Wall, door (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -2914,7 +2914,7 @@
     {
         "title": "Wall,door,double",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,brick, stone, gray, block, architecture, urban, structure, industrial, construction, building",
         "path": "images/assets/Wall, door, double (2x1).png",
         "variants": "None",
         "size": "2x1"
@@ -2922,7 +2922,7 @@
     {
         "title": "Wall,long",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,- Tile\n\n- Wall\n\n- Paint\n\n- Patterned\n\n- Art\n\n- Colorful",
         "path": "images/assets/Wall, long (10x2).png",
         "variants": "None",
         "size": "10x2"
@@ -2930,7 +2930,7 @@
     {
         "title": "Wall,long",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,grey, concrete, rectangular, minimalist, urban, architecture, monochromatic, neutral, modern, structure",
         "path": "images/assets/Wall, long (14x3).png",
         "variants": "None",
         "size": "14x3"
@@ -2938,7 +2938,7 @@
     {
         "title": "Wall,long",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,brown, gray, white, blurred, background, watermark",
         "path": "images/assets/Wall, long (17x3).png",
         "variants": "None",
         "size": "17x3"
@@ -2946,7 +2946,7 @@
     {
         "title": "Wall,long",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,ship, sea, horizon, boat, ocean",
         "path": "images/assets/Wall, long (22x4).png",
         "variants": "None",
         "size": "22x4"
@@ -2954,7 +2954,7 @@
     {
         "title": "Wall,straight",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,chair, table, sofa, wall, floor, carpet, light, dark",
         "path": "images/assets/Wall, straight (3x2).png",
         "variants": "None",
         "size": "3x2"
@@ -2962,7 +2962,7 @@
     {
         "title": "Wall,straight",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,black, white, logo, symbol, design, abstract, modern, sleek, corporate, minimalist, square",
         "path": "images/assets/Wall, straight (4x2).png",
         "variants": "None",
         "size": "4x2"
@@ -2970,7 +2970,7 @@
     {
         "title": "Wall,straight",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,5-10 relevant, concise, single-word tags:\n\n1. Phone\n2. Keyboard\n3. Glasses\n4. Eyewear\n5. Camera\n6. Lens\n7. Case\n8. Bag\n9. Computer\n10. Technology",
         "path": "images/assets/Wall, straight (5x2).png",
         "variants": "None",
         "size": "5x2"
@@ -2978,7 +2978,7 @@
     {
         "title": "Wall,straight",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,gray, blurry, textured",
         "path": "images/assets/Wall, straight (6x2).png",
         "variants": "None",
         "size": "6x2"
@@ -2986,7 +2986,7 @@
     {
         "title": "Wall,wide",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,dungeons, dragons, tabletop, board game, hobby, fantasy, roleplaying",
         "path": "images/assets/Wall, wide (10x3).png",
         "variants": "None",
         "size": "10x3"
@@ -2994,7 +2994,7 @@
     {
         "title": "Wall,wide",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,gray, concrete, shadow, structure, building, urban, architecture",
         "path": "images/assets/Wall, wide (14x3).png",
         "variants": "None",
         "size": "14x3"
@@ -3002,7 +3002,7 @@
     {
         "title": "Wall,wide",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,text, logo, design, abstract, letters, modern",
         "path": "images/assets/Wall, wide (17x4).png",
         "variants": "None",
         "size": "17x4"
@@ -3010,7 +3010,7 @@
     {
         "title": "Wall,wide",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,-Grey\n grey concrete wall- -No people visible- -Squared pattern on wall- -Possible shadows from light- -Cement wall with squares- -No text visible-",
         "path": "images/assets/Wall, wide (22x5).png",
         "variants": "None",
         "size": "22x5"
@@ -3018,7 +3018,7 @@
     {
         "title": "Wall,window",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,cat, kitten, animal, pet, cute, small, fur, whiskers, tail, happy, smile, joy, indoor, domestic",
         "path": "images/assets/Wall, window (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -3026,7 +3026,7 @@
     {
         "title": "Wall,window,porthole",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,pizza, cheese, toppings, food, sandwich, bread",
         "path": "images/assets/Wall, window, porthole (1x1).png",
         "variants": "None",
         "size": "1x1"
@@ -3034,7 +3034,7 @@
     {
         "title": "_Example,bottom",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,boat, ship, structure, interior, design, floor plan, layout, wooden",
         "path": "images/assets/_Example, bottom (10x5).png",
         "variants": "None",
         "size": "10x5"
@@ -3042,7 +3042,7 @@
     {
         "title": "_Example,top",
         "type": "asset",
-        "Tags": "Sailing Ship Assets",
+        "Tags": "Sailing Ship Assets,ship, boat, cabin, windows, captain's quarters, interior, wooden, plank, floorboards, door, steering wheel, helm",
         "path": "images/assets/_Example, top(10x5).png",
         "variants": "None",
         "size": "10x5"
@@ -3050,7 +3050,7 @@
     {
         "title": "SeasideBar-Tropical-Day-22x16-300DPI",
         "type": "map",
-        "Tags": "Seaside Bar",
+        "Tags": "Seaside Bar,boat, island, shack, furniture, water, rustic, beach, abandoned, empty, desolate",
         "path": "images/maps/Seaside_Bar___Tropical/Seaside Bar - Tropical - Day - 22x16 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "22x16"
@@ -3058,7 +3058,7 @@
     {
         "title": "SeasideBar-Tropical-Night-22x16-300DPI",
         "type": "map",
-        "Tags": "Seaside Bar",
+        "Tags": "Seaside Bar,boat, pier, water, shack, dock, fishing, island, wooden",
         "path": "images/maps/Seaside_Bar___Tropical/Seaside Bar - Tropical - Night - 22x16 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "22x16"
@@ -3066,7 +3066,7 @@
     {
         "title": "SewerHideout-Basic-Day-22x16",
         "type": "map",
-        "Tags": "Sewer Hideout",
+        "Tags": "Sewer Hideout,medieval, fantasy, dungeon, castle, labyrinth, map, underground, treasure",
         "path": "images/maps/Sewer_Hideout___Basic/Sewer Hideout - Basic - Day - 22x16.jpg",
         "variants": "Day, Night",
         "size": "22x16"
@@ -3074,7 +3074,7 @@
     {
         "title": "SewerHideout-Basic-Night-22x16",
         "type": "map",
-        "Tags": "Sewer Hideout",
+        "Tags": "Sewer Hideout,dungeon, map, underground, maze, fantasy, dark, stone, architecture, layout, basement, crypt",
         "path": "images/maps/Sewer_Hideout___Basic/Sewer Hideout - Basic - Night - 22x16.jpg",
         "variants": "Day, Night",
         "size": "22x16"
@@ -3082,7 +3082,7 @@
     {
         "title": "ShatteredStronghold-AstralSea-BlueStar-22x16-300DPI",
         "type": "map",
-        "Tags": "Shattered Stronghold",
+        "Tags": "Shattered Stronghold,space, fantasy, map, celestial, nebula, adventure, otherworldly, galactic, interstellar, exploration",
         "path": "images/maps/Shattered Stronghold - Astral Sea - Blue Star - 22x16 - 300 DPI.jpg",
         "variants": "None",
         "size": "22x16"
@@ -3090,7 +3090,7 @@
     {
         "title": "ShatteredStronghold-AstralSea-RedStar-22x16-300DPI",
         "type": "map",
-        "Tags": "Shattered Stronghold",
+        "Tags": "Shattered Stronghold,\"space\", \"alien\", \"futuristic\", \"artificial\", \"destroyed\", \"planetary\", \"battleship\", \"dystopian\", \"sci-fi\"",
         "path": "images/maps/Shattered Stronghold - Astral Sea - Red Star - 22x16 - 300 DPI.jpg",
         "variants": "None",
         "size": "22x16"
@@ -3098,7 +3098,7 @@
     {
         "title": "ShiftingSwamp-Jungle-23x16",
         "type": "map",
-        "Tags": "ShiftingSwamp",
+        "Tags": "ShiftingSwamp,medieval, ruins, forest, ancient, architecture, trees, stone, shadow",
         "path": "images/maps/Shifting Swamp - Jungle - 23x16.jpg",
         "variants": "None",
         "size": "23x16"
@@ -3106,7 +3106,7 @@
     {
         "title": "ShipyardWarehouse-Day-Floor1-23x32",
         "type": "map",
-        "Tags": "Shipyard Warehouse",
+        "Tags": "Shipyard Warehouse,building, water, dock, warehouse, unfinished, construction, stone, boat, paddle, lake, island, sand, beach",
         "path": "images/maps/Shipyard_Warehouse/Shipyard Warehouse - Day - Floor 1 - 23x32.jpg",
         "variants": "Day, Night",
         "size": "23x32"
@@ -3114,7 +3114,7 @@
     {
         "title": "ShipyardWarehouse-Day-Floor2-21x12",
         "type": "map",
-        "Tags": "Shipyard Warehouse",
+        "Tags": "Shipyard Warehouse,cellar, basement, wooden, brick, items, clutter, unfinished, empty, no furniture, storage, unpainted, raw materials",
         "path": "images/maps/Shipyard_Warehouse/Shipyard Warehouse - Day - Floor 2 - 21x12.jpg",
         "variants": "Day, Night",
         "size": "21x12"
@@ -3122,7 +3122,7 @@
     {
         "title": "ShipyardWarehouse-Night-Floor1-23x32",
         "type": "map",
-        "Tags": "Shipyard Warehouse",
+        "Tags": "Shipyard Warehouse,dock, ship, harbor, waterfront, building, warehouse, storage, boat, cargo, shipping, bay, construction, city, urban, architecture",
         "path": "images/maps/Shipyard_Warehouse/Shipyard Warehouse - Night - Floor 1 - 23x32.jpg",
         "variants": "Day, Night",
         "size": "23x32"
@@ -3130,7 +3130,7 @@
     {
         "title": "ShipyardWarehouse-Night-Floor2-21x12",
         "type": "map",
-        "Tags": "Shipyard Warehouse",
+        "Tags": "Shipyard Warehouse,boat, ship, water, dock, timber, crafting, workstation, storage, tools, planks, deck",
         "path": "images/maps/Shipyard_Warehouse/Shipyard Warehouse - Night - Floor 2 - 21x12.jpg",
         "variants": "Day, Night",
         "size": "21x12"
@@ -3138,7 +3138,7 @@
     {
         "title": "SinisterCabin-Occupied-Dark-Basement1-6x8",
         "type": "map",
-        "Tags": "Sinister Cabin",
+        "Tags": "Sinister Cabin,dark, stone, room, basement, rustic, dirty, abandoned, dungeon, old, dusty, cluttered",
         "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Dark - Basement 1 - 6x8.png",
         "variants": "Dark, Light",
         "size": "6x8"
@@ -3146,7 +3146,7 @@
     {
         "title": "SinisterCabin-Occupied-Dark-Basement2-5x7",
         "type": "map",
-        "Tags": "Sinister Cabin",
+        "Tags": "Sinister Cabin,dungeon, crypt, brick wall, stone archway, underground chamber, adventurers await, spelunkers ready, treasure chest",
         "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Dark - Basement 2 - 5x7.png",
         "variants": "Dark, Light",
         "size": "5x7"
@@ -3154,7 +3154,7 @@
     {
         "title": "SinisterCabin-Occupied-Dark-GroundFloor-11x8",
         "type": "map",
-        "Tags": "Sinister Cabin",
+        "Tags": "Sinister Cabin,dungeon, basement, game room, board game, tabletop game, miniatures, gaming room, fantasy, medieval, stone wall, candlelight",
         "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Dark - Ground Floor - 11x8.png",
         "variants": "Dark, Light",
         "size": "11x8"
@@ -3162,7 +3162,7 @@
     {
         "title": "SinisterCabin-Occupied-Dark-Roof-12x9",
         "type": "map",
-        "Tags": "Sinister Cabin",
+        "Tags": "Sinister Cabin,map, paper, ink, grid, symbols, game, adventure, storytelling, roleplaying, dungeon",
         "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Dark - Roof - 12x9.png",
         "variants": "Dark, Light",
         "size": "12x9"
@@ -3170,7 +3170,7 @@
     {
         "title": "SinisterCabin-Occupied-Light-Basement1-6x8",
         "type": "map",
-        "Tags": "Sinister Cabin",
+        "Tags": "Sinister Cabin,\"ruin\", \"dungeon\", \"games\", \"video game\", \"pixel art\", \"fantasy\", \"cellar\", \"abandoned\", \"dice\", \"RPG\", \"crypt\"",
         "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Light - Basement 1 - 6x8.png",
         "variants": "Dark, Light",
         "size": "6x8"
@@ -3178,7 +3178,7 @@
     {
         "title": "SinisterCabin-Occupied-Light-Basement2-5x7",
         "type": "map",
-        "Tags": "Sinister Cabin",
+        "Tags": "Sinister Cabin,Dusty, Brick, Cobweb, Crypt, Dark, Skeletons, Rusty",
         "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Light - Basement 2 - 5x7.png",
         "variants": "Dark, Light",
         "size": "5x7"
@@ -3186,7 +3186,7 @@
     {
         "title": "SinisterCabin-Occupied-Light-GroundFloor-11x8",
         "type": "map",
-        "Tags": "Sinister Cabin",
+        "Tags": "Sinister Cabin,small room, fantasy interior, cozy, dim lighting, rustic, warm tones, stone floor, fireplace, wooden furniture",
         "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Light - Ground Floor - 11x8.png",
         "variants": "Dark, Light",
         "size": "11x8"
@@ -3194,7 +3194,7 @@
     {
         "title": "SinisterCabin-Occupied-Light-Roof-12x9",
         "type": "map",
-        "Tags": "Sinister Cabin",
+        "Tags": "Sinister Cabin,sign, parchment, scroll, document, papyrus, ancient, manuscript, writing, ink",
         "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Light - Roof - 12x9.png",
         "variants": "Dark, Light",
         "size": "12x9"
@@ -3202,7 +3202,7 @@
     {
         "title": "SwampTrail-Gloomy-Day-44x32-300DPI",
         "type": "map",
-        "Tags": "Swamp Trail",
+        "Tags": "Swamp Trail,decay, forest, mushroom, overgrown, underworld, ruins, spore, growth",
         "path": "images/maps/Swamp_Trail___Gloomy/Swamp Trail - Gloomy - Day - 44x32 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "44x32"
@@ -3210,7 +3210,7 @@
     {
         "title": "SwampTrail-Gloomy-Night-44x32-300DPI",
         "type": "map",
-        "Tags": "Swamp Trail",
+        "Tags": "Swamp Trail,moonlit, celestial, outer space, dark side of the moon, cratered terrain, meteorite, lunar landscape",
         "path": "images/maps/Swamp_Trail___Gloomy/Swamp Trail - Gloomy - Night - 44x32 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "44x32"
@@ -3218,7 +3218,7 @@
     {
         "title": "Arena",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,fan, art, colorful, cartoon, whimsical, decorative, home accessory",
         "path": "images/assets/Arena.png",
         "variants": "None",
         "size": ""
@@ -3226,7 +3226,7 @@
     {
         "title": "Banner1",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,flag, car, black, red, white, banner, pole, flagpole, flagpole top",
         "path": "images/assets/Banner 1.png",
         "variants": "None",
         "size": ""
@@ -3234,7 +3234,7 @@
     {
         "title": "Banner2",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,image, gray, red, black, line, wallpaper, screen, background",
         "path": "images/assets/Banner 2.png",
         "variants": "None",
         "size": ""
@@ -3242,7 +3242,7 @@
     {
         "title": "Banner3",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,dog, collar, tag, bone, treat, play, fun, tail, nose, eye, fur, carpet, house, pet, love, family, happy",
         "path": "images/assets/Banner 3.png",
         "variants": "None",
         "size": ""
@@ -3250,7 +3250,7 @@
     {
         "title": "Bridge,stone",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,bridge, railing, metal structure, design, architecture, elevated pathway, urban environment, modern, cityscape, industrial",
         "path": "images/assets/Bridge, stone.png",
         "variants": "None",
         "size": ""
@@ -3258,7 +3258,7 @@
     {
         "title": "Bridge,wooden,small",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,cream, color, palette, hues, tones, shades",
         "path": "images/assets/Bridge, wooden, small.png",
         "variants": "None",
         "size": ""
@@ -3266,7 +3266,7 @@
     {
         "title": "Bridge,wooden",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,door, bookcase, library, shelves, cabinet, furniture, interior, home decor, reading area",
         "path": "images/assets/Bridge, wooden.png",
         "variants": "None",
         "size": ""
@@ -3274,7 +3274,7 @@
     {
         "title": "Building,ampitheatre",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,black and white image, geometric shapes, no people, no text, minimalism, optical illusion, simple line drawing, graphic design",
         "path": "images/assets/Building, ampitheatre.png",
         "variants": "None",
         "size": ""
@@ -3282,7 +3282,7 @@
     {
         "title": "Building,cathedral",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,building, window, blue, night, sky, cartoon, stained glass, illustration, architectural detail, pattern",
         "path": "images/assets/Building, cathedral.png",
         "variants": "None",
         "size": ""
@@ -3290,7 +3290,7 @@
     {
         "title": "Building,church",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,elevator, machine, room, blue, vertical, abstract",
         "path": "images/assets/Building, church.png",
         "variants": "None",
         "size": ""
@@ -3298,7 +3298,7 @@
     {
         "title": "Building,circle",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,shell, snail, mollusk, aquatic, oceanic, marine, spiral, shells, nature",
         "path": "images/assets/Building, circle.png",
         "variants": "None",
         "size": ""
@@ -3306,7 +3306,7 @@
     {
         "title": "Building,fishingwharf",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,drawing, art, handmade, craft, illustration, stylized, abstract",
         "path": "images/assets/Building, fishing wharf.png",
         "variants": "None",
         "size": ""
@@ -3314,7 +3314,7 @@
     {
         "title": "Building,foundry",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,\"artwork\", \"comic strip\", \"hand drawn\", \"simple\", \"low detail\", \"cartoonish\", \"black and white\", \"stylized\", \"not realistic\", \"monochromatic\".",
         "path": "images/assets/Building, foundry.png",
         "variants": "None",
         "size": ""
@@ -3322,7 +3322,7 @@
     {
         "title": "Building,guildhall",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,futuristic, building, floor plan, space, empty, blue, glass, window, stairs, light, dark, room, structure, design",
         "path": "images/assets/Building, guild hall.png",
         "variants": "None",
         "size": ""
@@ -3330,7 +3330,7 @@
     {
         "title": "Building,L-house",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,letter, envelope, paper, corner, crease, postage stamp, address, design, digital art, illustration, graphic, stylized",
         "path": "images/assets/Building, L-house.png",
         "variants": "None",
         "size": ""
@@ -3338,7 +3338,7 @@
     {
         "title": "Building,library",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,fan, blade, ceiling, building, ventilation, structure, machine",
         "path": "images/assets/Building, library.png",
         "variants": "None",
         "size": ""
@@ -3346,7 +3346,7 @@
     {
         "title": "Building,lumbermill",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,image, colorful, graphic, abstract, art, illustration, design, modern, space, satellite, missile",
         "path": "images/assets/Building, lumber mill.png",
         "variants": "None",
         "size": ""
@@ -3354,7 +3354,7 @@
     {
         "title": "Building,smith,exterior",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,robot, technology, scissors, tools, hand, parts, machine, assembly, components",
         "path": "images/assets/Building, smith, exterior.png",
         "variants": "None",
         "size": ""
@@ -3362,7 +3362,7 @@
     {
         "title": "Building,smith",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,night scene, art style, cartoon, dark, bright, indoors, window, cloudy sky",
         "path": "images/assets/Building, smith.png",
         "variants": "None",
         "size": ""
@@ -3370,7 +3370,7 @@
     {
         "title": "Building,straw1",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,, hand-drawn, stylized art, abstract representation, minimalist design, simple drawing, graphic illustration",
         "path": "images/assets/Building, straw 1.png",
         "variants": "None",
         "size": ""
@@ -3378,7 +3378,7 @@
     {
         "title": "Building,straw2",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,building, columns, architecture, yellow, urban, city, structure, window, brick, corner, doorway, wall, roof, residential",
         "path": "images/assets/Building, straw 2.png",
         "variants": "None",
         "size": ""
@@ -3386,7 +3386,7 @@
     {
         "title": "Building,straw3",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,hand-drawn sketch, simple lines, abstract art, brown on white background, yellow coloring, ink drawing, doodle",
         "path": "images/assets/Building, straw 3.png",
         "variants": "None",
         "size": ""
@@ -3394,7 +3394,7 @@
     {
         "title": "Building,straw4",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,box, yellow, brown, cardboard, paper, package, delivery, shipping, unpack, contents",
         "path": "images/assets/Building, straw 4.png",
         "variants": "None",
         "size": ""
@@ -3402,7 +3402,7 @@
     {
         "title": "Building,straw5",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,yellow, cardboard, abstract art, hand drawn, low resolution, minimalistic, graphic design, geometric shapes, simple form, monochromatic color scheme, modern art",
         "path": "images/assets/Building, straw 5.png",
         "variants": "None",
         "size": ""
@@ -3410,7 +3410,7 @@
     {
         "title": "Building,tower,circle",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,wheel, tire, vehicle, car, round, blue, white, object, design, tire pressure gauge, automobile, center of wheel",
         "path": "images/assets/Building, tower, circle.png",
         "variants": "None",
         "size": ""
@@ -3418,7 +3418,7 @@
     {
         "title": "Building,tower,square,small",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,dice, polygon, shapes, number, count, total, quantity, amount, blue, black, white, paper",
         "path": "images/assets/Building, tower, square, small.png",
         "variants": "None",
         "size": ""
@@ -3426,7 +3426,7 @@
     {
         "title": "Building,tower,square",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,black and white, hand drawn, blue cross, abstract art, simple lines, low resolution, no details.",
         "path": "images/assets/Building, tower, square.png",
         "variants": "None",
         "size": ""
@@ -3434,7 +3434,7 @@
     {
         "title": "Building,watermill",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,abstract, art, bookcase, digital art, graphic design, illustration, monochromatic, minimalism, modern art",
         "path": "images/assets/Building, water mill.png",
         "variants": "None",
         "size": ""
@@ -3442,7 +3442,7 @@
     {
         "title": "Building,windmill",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,compass, map, globe, astronomy, constellation, navigation, maritime, cartography",
         "path": "images/assets/Building, windmill.png",
         "variants": "None",
         "size": ""
@@ -3450,7 +3450,7 @@
     {
         "title": "Canal,bend",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,whale, blue, cartoon, underwater, ocean, marine, aquatic, sea monster, stylized",
         "path": "images/assets/Canal, bend.png",
         "variants": "None",
         "size": ""
@@ -3458,7 +3458,7 @@
     {
         "title": "Canal,corner",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,blue, water, container, design, stylized, line art, simple, black and white, graphic design, colorful, minimalism, architectural, clean lines",
         "path": "images/assets/Canal, corner.png",
         "variants": "None",
         "size": ""
@@ -3466,7 +3466,7 @@
     {
         "title": "Canal,intersection",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,crosswalk, blue, street sign, pedestrian crossing, road safety, zebra crossing, urban infrastructure, city planning, traffic control",
         "path": "images/assets/Canal, intersection.png",
         "variants": "None",
         "size": ""
@@ -3474,7 +3474,7 @@
     {
         "title": "Canal,junction",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,sky, bridge, clouds, blue, night, road, cars",
         "path": "images/assets/Canal, junction.png",
         "variants": "None",
         "size": ""
@@ -3482,7 +3482,7 @@
     {
         "title": "Canal,straight",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,Bridge, blue, river, street, travel, vacation, holiday, tourism, journey, leisure, landscape, architecture",
         "path": "images/assets/Canal, straight.png",
         "variants": "None",
         "size": ""
@@ -3490,7 +3490,7 @@
     {
         "title": "Chimney1",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,map, road, highway, travel, navigation, location, directions, journey, distance, driving",
         "path": "images/assets/Chimney 1.png",
         "variants": "None",
         "size": ""
@@ -3498,7 +3498,7 @@
     {
         "title": "Chimney2",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,black and white image, abstract art, geometric shapes, optical illusion, negative space, high contrast, minimalism, graphic design, urban art",
         "path": "images/assets/Chimney 2.png",
         "variants": "None",
         "size": ""
@@ -3506,7 +3506,7 @@
     {
         "title": "Chimney3",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,river, winding, curve, flow, waterway, natural path, watercourse, sinuous, looped, bend",
         "path": "images/assets/Chimney 3.png",
         "variants": "None",
         "size": ""
@@ -3514,7 +3514,7 @@
     {
         "title": "Cliff,caveentrance",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,fire hydrant, street sign, silhouette, black and white, urban, night, cityscape, stylized",
         "path": "images/assets/Cliff, cave entrance.png",
         "variants": "None",
         "size": ""
@@ -3522,7 +3522,7 @@
     {
         "title": "Cliff,short,bend,gentle",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,handmade, crafted, hand drawn, cardboard, paper, artistic, creative, personalized, homemade, individual design",
         "path": "images/assets/Cliff, short, bend, gentle.png",
         "variants": "None",
         "size": ""
@@ -3530,7 +3530,7 @@
     {
         "title": "Cliff,short,bend",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,scythe, harvest, agriculture, autumn, reaping",
         "path": "images/assets/Cliff, short, bend.png",
         "variants": "None",
         "size": ""
@@ -3538,7 +3538,7 @@
     {
         "title": "Cliff,short,straight",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,furniture, chairs, room, abstract, modern, monochrome, minimalism, graphic design, art",
         "path": "images/assets/Cliff, short, straight.png",
         "variants": "None",
         "size": ""
@@ -3546,7 +3546,7 @@
     {
         "title": "Cliff,tall,bend,gentle",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,character, illustration, cartoon, art, comic book, coloring book, drawing, style",
         "path": "images/assets/Cliff, tall, bend, gentle.png",
         "variants": "None",
         "size": ""
@@ -3554,7 +3554,7 @@
     {
         "title": "Cliff,tall,bend",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,black and white, comic book, graphic novel, hand drawn, ink, paper, pencil sketch, cartoon, art, line drawing, monochromatic",
         "path": "images/assets/Cliff, tall, bend.png",
         "variants": "None",
         "size": ""
@@ -3562,7 +3562,7 @@
     {
         "title": "Cliff,tall,straight",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,monochrome, abstract, distorted, low resolution, glitch art, pixelated, corrupted file, digital art, screenshot error, internet meme",
         "path": "images/assets/Cliff, tall, straight.png",
         "variants": "None",
         "size": ""
@@ -3570,7 +3570,7 @@
     {
         "title": "Minetracks,bend",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,target, archery, bow, arrow, shooting, precision, accuracy, sport, competition, outdoor, recreation, equipment",
         "path": "images/assets/Mine tracks, bend.png",
         "variants": "None",
         "size": ""
@@ -3578,7 +3578,7 @@
     {
         "title": "Minetracks,straight",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,black, white, gray, digital, graphic design, technology, modern, nighttime, abstract art, contrasting colors",
         "path": "images/assets/Mine tracks, straight.png",
         "variants": "None",
         "size": ""
@@ -3586,7 +3586,7 @@
     {
         "title": "Mine",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,blue, tower, skyscraper, flag, design, building, symbol, architecture, cityscape, night, silhouette",
         "path": "images/assets/Mine.png",
         "variants": "None",
         "size": ""
@@ -3594,7 +3594,7 @@
     {
         "title": "Monument",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,This appears to be an abstract or stylized drawing of what could be interpreted as a face or mask with a simple geometric structure, possibly resembling a piece of fruit or an object. It's difficult to give precise tags without more context or information about the intent behind the image. However, here are some general terms that could be used:\n\n* Abstract\n* Geometric\n* Pattern\n* Drawing\n* Artwork\n* Graphic\n* Stylized\n* Modern\n* Design\n* Minimalism",
         "path": "images/assets/Monument.png",
         "variants": "None",
         "size": ""
@@ -3602,7 +3602,7 @@
     {
         "title": "Palisadegate",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,candles, candelabra, mantle, candlelight, interior decor, chiaroscuro, warm light, dim room",
         "path": "images/assets/Palisade gate.png",
         "variants": "None",
         "size": ""
@@ -3610,7 +3610,7 @@
     {
         "title": "Palisadetower",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,candle, pencil, crayon, coloring, art supply, creative, handmade",
         "path": "images/assets/Palisade tower.png",
         "variants": "None",
         "size": ""
@@ -3618,7 +3618,7 @@
     {
         "title": "Palisade,long",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,Voting booths, Election, Political, Democracy, Ballot box, Public service, Polling station, Civic duty, Election day",
         "path": "images/assets/Palisade, long.png",
         "variants": "None",
         "size": ""
@@ -3626,7 +3626,7 @@
     {
         "title": "Palisade,short",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,hat, person, row, hats, people, group, colorful, variety, display",
         "path": "images/assets/Palisade, short.png",
         "variants": "None",
         "size": ""
@@ -3634,7 +3634,7 @@
     {
         "title": "Park,garden",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,black, white, green, trees, forest, frame, pattern, artistic, illustration",
         "path": "images/assets/Park, garden.png",
         "variants": "None",
         "size": ""
@@ -3642,7 +3642,7 @@
     {
         "title": "Quarry",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,Dungeon, cave, tunnel, exploration, adventure, game, level, strategy, treasure, quest, map, monster, character, fantasy",
         "path": "images/assets/Quarry.png",
         "variants": "None",
         "size": ""
@@ -3650,7 +3650,7 @@
     {
         "title": "Ship,large",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,tagging, photography, still life, food art, culinary, artistic, surreal, sculpture",
         "path": "images/assets/Ship, large.png",
         "variants": "None",
         "size": ""
@@ -3658,7 +3658,7 @@
     {
         "title": "Ship,small",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,tag1,tag2,tag3,tag4,tag5",
         "path": "images/assets/Ship, small.png",
         "variants": "None",
         "size": ""
@@ -3666,7 +3666,7 @@
     {
         "title": "Staircase,narrow",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,floor, stairs, black and white, textured, geometric pattern, tile design, handrail",
         "path": "images/assets/Staircase, narrow.png",
         "variants": "None",
         "size": ""
@@ -3674,7 +3674,7 @@
     {
         "title": "Staircase,staggered",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,- Pizza",
         "path": "images/assets/Staircase, staggered.png",
         "variants": "None",
         "size": ""
@@ -3682,7 +3682,7 @@
     {
         "title": "Staircase,wide",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,keyboard, piano, typewriter, keys, musical instrument, office equipment, home appliance, electronic device, music, entertainment",
         "path": "images/assets/Staircase, wide.png",
         "variants": "None",
         "size": ""
@@ -3690,7 +3690,7 @@
     {
         "title": "Tents,large",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,red, black, white, furniture, chair, sofa, cushion, simple, minimalistic, line drawing, abstract, modern art, cartoon",
         "path": "images/assets/Tents, large.png",
         "variants": "None",
         "size": ""
@@ -3698,7 +3698,7 @@
     {
         "title": "Tents,market,small",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,flags, pillow, boxes, symbols, fabric, objects, colorful, square, decoration, political, patriotism",
         "path": "images/assets/Tents, market, small.png",
         "variants": "None",
         "size": ""
@@ -3706,7 +3706,7 @@
     {
         "title": "Tents,market",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,red, white, blue, flag, flags, patriotic, unity, diversity, international",
         "path": "images/assets/Tents, market.png",
         "variants": "None",
         "size": ""
@@ -3714,7 +3714,7 @@
     {
         "title": "Tents",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,black and white poster, flag design, graphic art, flag colors, color scheme, flag iconography, poster board, art print, symbolic meaning",
         "path": "images/assets/Tents.png",
         "variants": "None",
         "size": ""
@@ -3722,7 +3722,7 @@
     {
         "title": "Trees,grove",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,evergreen, christmas tree, decoration, holiday, festive, pine, needle, forest",
         "path": "images/assets/Trees, grove.png",
         "variants": "None",
         "size": ""
@@ -3730,7 +3730,7 @@
     {
         "title": "Trees,scattered",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,Christmas tree, evergreen, winter, decoration, festive, holiday, pine tree, home decoration, seasonal",
         "path": "images/assets/Trees, scattered.png",
         "variants": "None",
         "size": ""
@@ -3738,7 +3738,7 @@
     {
         "title": "Trees,single,large",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,christmas tree, evergreen, green pine tree, forest, needle, conifer, holiday, tree, pine tree",
         "path": "images/assets/Trees, single, large.png",
         "variants": "None",
         "size": ""
@@ -3746,7 +3746,7 @@
     {
         "title": "Trees,single,small",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,greenhouse, planting, gardening, backyard, outdoor, plants",
         "path": "images/assets/Trees, single, small.png",
         "variants": "None",
         "size": ""
@@ -3754,7 +3754,7 @@
     {
         "title": "Trees,trio1",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,Christmas tree, evergreen, holiday, festive, decoration, pine tree, home decor, artificial tree, green and white",
         "path": "images/assets/Trees, trio 1.png",
         "variants": "None",
         "size": ""
@@ -3762,7 +3762,7 @@
     {
         "title": "Trees,trio2",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,axe, weapon, tree, nature, forest",
         "path": "images/assets/Trees, trio 2.png",
         "variants": "None",
         "size": ""
@@ -3770,7 +3770,7 @@
     {
         "title": "Wagon",
         "type": "asset",
-        "Tags": "Town and City Assets 3",
+        "Tags": "Town and City Assets 3,logo, design, mascot, branding, sports team, symbol, icon, emblem, corporate identity, company logo, athletic logo",
         "path": "images/assets/Wagon.png",
         "variants": "None",
         "size": ""
@@ -3778,7 +3778,7 @@
     {
         "title": "TradingPost-Occupied-Dark-14x14-300DPI",
         "type": "map",
-        "Tags": "Trading Post",
+        "Tags": "Trading Post,map, fantasy, interior, rooms, loot, treasure, game, open world",
         "path": "images/maps/Trading_Post___Occupied/Trading Post - Occupied - Dark - 14x14 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "14x14"
@@ -3786,7 +3786,7 @@
     {
         "title": "TradingPost-Occupied-Light-14x14-300DPI",
         "type": "map",
-        "Tags": "Trading Post",
+        "Tags": "Trading Post,house, map, floor plan, interior design, medieval, fantasy, kitchen, living room, bedroom, bathroom, rug, furniture",
         "path": "images/maps/Trading_Post___Occupied/Trading Post - Occupied - Light - 14x14 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "14x14"
@@ -3794,7 +3794,7 @@
     {
         "title": "TwilightTavern-Everyday-Dark-Cellar-22x16",
         "type": "map",
-        "Tags": "Twilight Tavern",
+        "Tags": "Twilight Tavern,map, dungeon, isometric, tile-based, top-down view",
         "path": "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Dark - Cellar - 22x16.jpg",
         "variants": "Dark, Day, Light",
         "size": "22x16"
@@ -3802,7 +3802,7 @@
     {
         "title": "TwilightTavern-Everyday-Dark-Floor1-22x16",
         "type": "map",
-        "Tags": "Twilight Tavern",
+        "Tags": "Twilight Tavern,brown, tile, rug, lamp, ceiling, wall, door, window, table, chair, sofa, TV, book, clock, vase, mirror, floor, carpet, couch, person",
         "path": "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Dark - Floor 1 - 22x16.jpg",
         "variants": "Dark, Day, Light",
         "size": "22x16"
@@ -3810,7 +3810,7 @@
     {
         "title": "TwilightTavern-Everyday-Dark-Floor2-22x16",
         "type": "map",
-        "Tags": "Twilight Tavern",
+        "Tags": "Twilight Tavern,house, mansion, interior, floorplan, architectural, design, furniture, layout, colorful",
         "path": "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Dark - Floor 2 - 22x16.jpg",
         "variants": "Dark, Day, Light",
         "size": "22x16"
@@ -3818,7 +3818,7 @@
     {
         "title": "TwilightTavern-Everyday-Light-Cellar-22x16",
         "type": "map",
-        "Tags": "Twilight Tavern",
+        "Tags": "Twilight Tavern,dungeon, level, floor, tiles, graphic design, pixelated, digital art, game environment, basement",
         "path": "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Light - Cellar - 22x16.jpg",
         "variants": "Dark, Day, Light",
         "size": "22x16"
@@ -3826,7 +3826,7 @@
     {
         "title": "TwilightTavern-Everyday-Light-Floor1-22x16",
         "type": "map",
-        "Tags": "Twilight Tavern",
+        "Tags": "Twilight Tavern,dungeon, labyrinth, basement, gaming room, fantasy, spooky, dimly lit, underground, tabletop, board game, maze, adventurous",
         "path": "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Light - Floor 1 - 22x16.jpg",
         "variants": "Dark, Day, Light",
         "size": "22x16"
@@ -3834,7 +3834,7 @@
     {
         "title": "TwilightTavern-Everyday-Light-Floor2-22x16",
         "type": "map",
-        "Tags": "Twilight Tavern",
+        "Tags": "Twilight Tavern,dungeons, rooms, lit, map, layout, underground, fantasy, board game, strategy, tabletop game",
         "path": "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Light - Floor 2 - 22x16.jpg",
         "variants": "Dark, Day, Light",
         "size": "22x16"
@@ -3842,7 +3842,7 @@
     {
         "title": "UndergroundOutpost-Everyday-Dark-22x16",
         "type": "map",
-        "Tags": "Underground Outpost",
+        "Tags": "Underground Outpost,castle, underground, dungeon, strategy game, board game, war room, medieval, dark, blueprints, fantasy, intricate, complex, detailed",
         "path": "images/maps/Underground_Outpost___Everyday/Underground Outpost - Everyday - Dark - 22x16.jpg",
         "variants": "Dark, Day, Light",
         "size": "22x16"
@@ -3850,7 +3850,7 @@
     {
         "title": "UndergroundOutpost-Everyday-Light-22x16",
         "type": "map",
-        "Tags": "Underground Outpost",
+        "Tags": "Underground Outpost,dungeon, maze, architecture, underground, labyrinth, exploration, dark fantasy, stone, mystery",
         "path": "images/maps/Underground_Outpost___Everyday/Underground Outpost - Everyday - Light - 22x16.jpg",
         "variants": "Dark, Day, Light",
         "size": "22x16"
@@ -3858,7 +3858,7 @@
     {
         "title": "UndergroundSanctuary-Inviting-Dark-44x32",
         "type": "map",
-        "Tags": "Underground Sanctuary",
+        "Tags": "Underground Sanctuary,dungeon, map, layout, floor plan, structure, design, game, fantasy, underground, labyrinth, strategy, medieval, architecture, 3d rendering, tileable, digital art, base, ceiling, rooms, corridors",
         "path": "images/maps/Underground_Sanctuary___Inviting/Underground Sanctuary - Inviting - Dark - 44x32.jpg",
         "variants": "Dark, Light",
         "size": "44x32"
@@ -3866,7 +3866,7 @@
     {
         "title": "UndergroundSanctuary-Inviting-Light-44x32",
         "type": "map",
-        "Tags": "Underground Sanctuary",
+        "Tags": "Underground Sanctuary,dungeon, floor plan, labyrinth, underground, maze, strategy game, grid layout, rooms, doors, corridors, levels",
         "path": "images/maps/Underground_Sanctuary___Inviting/Underground Sanctuary - Inviting - Light - 44x32.jpg",
         "variants": "Dark, Light",
         "size": "44x32"
@@ -3874,7 +3874,7 @@
     {
         "title": "WildWestHighStreet-Everyday-Day-22x16",
         "type": "map",
-        "Tags": "Wild West High Street",
+        "Tags": "Wild West High Street,medieval, village, farm, cartoon, dirt road, wooden house, rural life, fantasy setting, colorful, animated",
         "path": "images/maps/Wild_West_High_Street___Everyday/Wild West High Street - Everyday - Day - 22x16.jpg",
         "variants": "Day, Night",
         "size": "22x16"
@@ -3882,7 +3882,7 @@
     {
         "title": "WildWestHighStreet-Everyday-Night-22x16",
         "type": "map",
-        "Tags": "Wild West High Street",
+        "Tags": "Wild West High Street,rural, village, nighttime, quiet, street lights, empty, abandoned, cartoon art style, fantasy, gaming",
         "path": "images/maps/Wild_West_High_Street___Everyday/Wild West High Street - Everyday - Night - 22x16.jpg",
         "variants": "Day, Night",
         "size": "22x16"
@@ -3890,7 +3890,7 @@
     {
         "title": "WildWestHighStreet-Everyday-Interior-Day-22x16",
         "type": "map",
-        "Tags": "Wild West High Street",
+        "Tags": "Wild West High Street,desert, sandy, buildings, dirt road, desolate, abandoned, cartoon art style, village, old western town, dirt, dust",
         "path": "images/maps/Wild_West_High_Street___Everyday___Interior/Wild West High Street - Everyday - Interior - Day - 22x16.jpg",
         "variants": "Day, Night",
         "size": "22x16"
@@ -3898,7 +3898,7 @@
     {
         "title": "WildWestHighStreet-Everyday-Interior-Night-22x16",
         "type": "map",
-        "Tags": "Wild West High Street",
+        "Tags": "Wild West High Street,village, street, houses, cartoon, map, fantasy, stylized, road, buildings, nighttime, no people",
         "path": "images/maps/Wild_West_High_Street___Everyday___Interior/Wild West High Street - Everyday - Interior - Night - 22x16.jpg",
         "variants": "Day, Night",
         "size": "22x16"
@@ -3906,7 +3906,7 @@
     {
         "title": "WildWestSheriff'sOffice-Everyday-ExteriorOverlay-Day-10x15-300DPI",
         "type": "map",
-        "Tags": "Wild West Sheriffs Office",
+        "Tags": "Wild West Sheriffs Office,Pub, Tavern, Board Game, Tabletop Game, RPG, Board Game Night, Game Store, Role Playing, Comic Book Store, Pen and Paper Game",
         "path": "images/maps/Wild_West_Sheriff_s_Office___Everyday___Exterior_Overlay/Wild West Sheriff's Office - Everyday - Exterior Overlay - Day - 10x15 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "10x15"
@@ -3914,7 +3914,7 @@
     {
         "title": "WildWestSheriff'sOffice-Everyday-ExteriorOverlay-Night-10x15-300DPI",
         "type": "map",
-        "Tags": "Wild West Sheriffs Office",
+        "Tags": "Wild West Sheriffs Office,small, building, night, cartoon, roof, windows, light, exterior",
         "path": "images/maps/Wild_West_Sheriff_s_Office___Everyday___Exterior_Overlay/Wild West Sheriff's Office - Everyday - Exterior Overlay - Night - 10x15 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "10x15"
@@ -3922,7 +3922,7 @@
     {
         "title": "WildWestSheriff'sOffice-Everyday-Interior-Day-22x20-300DPI",
         "type": "map",
-        "Tags": "Wild West Sheriffs Office",
+        "Tags": "Wild West Sheriffs Office,house, barn, abandoned, rural, neglected, farmhouse, dilapidated, ruins, overgrown, empty",
         "path": "images/maps/Wild_West_Sheriff_s_Office___Everyday___Interior/Wild West Sheriff's Office - Everyday - Interior - Day - 22x20 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "22x20"
@@ -3930,7 +3930,7 @@
     {
         "title": "WildWestSheriff'sOffice-Everyday-Interior-Night-22x20-300DPI",
         "type": "map",
-        "Tags": "Wild West Sheriffs Office",
+        "Tags": "Wild West Sheriffs Office,abandoned, house, rural, nighttime, unoccupied, neglected, overgrown, desolate, empty",
         "path": "images/maps/Wild_West_Sheriff_s_Office___Everyday___Interior/Wild West Sheriff's Office - Everyday - Interior - Night - 22x20 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "22x20"
@@ -3938,7 +3938,7 @@
     {
         "title": "WizardingSchoolGreatHall-RadiantDragon-Day-32x44",
         "type": "map",
-        "Tags": "Wizarding School Great Hall",
+        "Tags": "Wizarding School Great Hall,church, pews, cathedral, ceiling, lighting, chandelier, altar, architecture, grand, gothic",
         "path": "images/maps/Wizarding_School_Great_Hall___Radiant_Dragon/Wizarding School Great Hall - Radiant Dragon - Day - 32x44.jpg",
         "variants": "Day, Night",
         "size": "32x44"
@@ -3946,7 +3946,7 @@
     {
         "title": "WizardingSchoolGreatHall-RadiantDragon-Night-32x44",
         "type": "map",
-        "Tags": "Wizarding School Great Hall",
+        "Tags": "Wizarding School Great Hall,- interior architecture, - room with rows of seating, - red and blue lighting, - dark ambiance, - intricate ceiling design",
         "path": "images/maps/Wizarding_School_Great_Hall___Radiant_Dragon/Wizarding School Great Hall - Radiant Dragon - Night - 32x44.jpg",
         "variants": "Day, Night",
         "size": "32x44"

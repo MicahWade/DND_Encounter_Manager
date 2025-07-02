@@ -1,86 +1,75 @@
 import json
-import os
-from PIL import Image
-import torch
-import deepdanbooru as dd
-import numpy as np
+from pathlib import Path
+import ollama
+from PIL import Image  # Add this import
 
-# Setup
-device = "cuda" if torch.cuda.is_available() else "cpu"
+# Set your base directory relative to the script
+BASE_DIR = (Path(__file__).parent / "../static").resolve()
 
-defultWordList = ["location", 'map', "dungeon"]
+# Load assets from JSON
+with open('assets.json', 'r') as f:
+    assets = json.load(f)
 
-# Simulated tag generation function
-def generate_tags(image_path, min_tags=5, max_tags=15):
+# User selection: one or many
+choice = input("Process (o)ne asset or (a)ll? [o/a]: ").strip().lower()
+if choice == 'o':
+    for idx, asset in enumerate(assets):
+        print(f"{idx}: {asset['title']}")
+    idx = int(input("Enter index of asset to process: "))
+    assets_to_process = [assets[idx]]
+else:
+    assets_to_process = assets
 
-
-    # Path to your DeepDanbooru model directory
-    model_path = 'deepdanbooru-v4-20200814-sgd-e30/model-resnet_custom_v4.h5'
-
-    # Load model
-    model = dd.project.load_model_from_project(model_path, compile_model=True)
-
-    # Load tags
-    with open(os.path.join(model_path, 'tags.txt'), 'r', encoding='utf-8') as f:
-        tags = [tag.strip() for tag in f.readlines()]
-
-    # Load and preprocess image
-    image = Image.open(image_path).convert('RGB')
-    image = image.resize((512, 512))
-    image_array = np.array(image).astype(np.float32) / 255.0
-    image_array = np.expand_dims(image_array, 0)
-
-    # Predict
-    predictions = model.predict(image_array)[0]
-
-    # Get top tags
-    tag_confidence = list(zip(tags, predictions))
-    tag_confidence.sort(key=lambda x: x[1], reverse=True)
-    selected_tags = [tag for tag, conf in tag_confidence if conf > 0.5][:max_tags]
-
-    return selected_tags
-
-# Function to process images
-def process_images(assets, process_all=True, index=0):
-    results = []
-    parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../static'))
-    if process_all:
-        for asset in assets:
+def ensure_supported_image(image_path):
+    """Convert .webp images to .png for compatibility with Ollama."""
+    if image_path.suffix.lower() == ".webp":
+        png_path = image_path.with_suffix(".png")
+        if not png_path.exists():
             try:
-                image_path = os.path.join(parent_dir, asset['path'])
-                with Image.open(image_path) as img:
-                    img.verify()  # Verify that the file is a valid image
+                with Image.open(image_path) as im:
+                    im.save(png_path)
+                print(f"Converted {image_path} to {png_path}")
             except Exception as e:
-                print(f"Error opening image {image_path}: {e}")
-                continue
-            new_tags = generate_tags(image_path)
-            results.append({'title': asset['title'], 'new_tags': new_tags})
+                print(f"Failed to convert {image_path}: {e}")
+                return image_path  # fallback to original
+        return png_path
+    return image_path
+
+def generate_tags(image_path, model='llava'):
+    # Use the Ollama Python library to send the image and prompt
+    prompt = "List 5-10 relevant, concise, single-word tags for this image, separated by commas. Do not provide a description or use D&D-specific terms."
+    try:
+        response = ollama.chat(
+            model=model,
+            messages=[
+                {
+                    'role': 'user',
+                    'content': prompt,
+                    'images': [str(image_path)]
+                }
+            ]
+        )
+        # Extract the response content
+        return response['message']['content']
+    except Exception as e:
+        print(f"Error processing {image_path}: {e}")
+        return ""
+
+for asset in assets_to_process:
+    image_path = (BASE_DIR / asset['path']).resolve()
+    image_path = ensure_supported_image(image_path)
+    print(f"Processing: {asset['title']} ({image_path})")
+    tags_caption = generate_tags(image_path)
+    print(tags_caption)
+    # Append new tags to the existing Tags field
+    if tags_caption:
+        # Remove leading/trailing whitespace and ensure comma separation
+        asset['Tags'] = f"{asset['Tags'].strip()},{tags_caption.strip()}"
     else:
-        asset = assets[index]
-        try:
-            image_path = os.path.join(parent_dir, asset['path'])
-            with Image.open(image_path) as img:
-                img.verify()
-        except Exception as e:
-            print(f"Error opening image {image_path}: {e}")
-            return []
-        new_tags = generate_tags(image_path)
-        results.append({'title': asset['title'], 'new_tags': new_tags})
-    return results
+        # If no tags generated, keep the original
+        asset['Tags'] = asset['Tags'].strip()
 
-# Main script
-if __name__ == "__main__":
-    # Load assets.json
-    with open('assets.json', 'r') as file:
-        assets = json.load(file)
-
-    # Toggle: set process_all to True for all images, False for one image (by index)
-    process_all = False  # Set to False to process a single image
-    index = 0           # Index of the image to process if process_all is False
-
-
-    results = process_images(assets, process_all=process_all, index=index)
-    for result in results:
-        print(f"Title: {result['title']}")
-        print(f"Generated Tags: {result['new_tags']}")
-        print()
+# Save updated assets.json
+with open('assets.json', 'w') as f:
+    json.dump(assets, f, indent=4)
+print("Done.")

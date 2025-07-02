@@ -40,7 +40,6 @@ def removeEnemy(name):
 
 @app.route("/search/enemy/<term>", methods=["GET"])
 def searchEnemys(term):
-    print(term)
     server = Database.Database(False)
     results = server.searchEnemys(term)
     return jsonify({'enemys': results})
@@ -178,6 +177,12 @@ def encounterCreate():
     if 'userid' not in session:
         return redirect(url_for('login'))
     return render_template("encounterCreate.html")
+
+@app.route("/map/search/<term>", methods=["GET"])
+def searchMap(term):
+    server = Database.Database(False)
+    results = server.searchMap(term)
+    return results
 
 @app.route("/settings")
 def settings():

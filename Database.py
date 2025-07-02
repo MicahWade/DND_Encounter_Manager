@@ -68,6 +68,7 @@ class Database():
             Size TEXT
         )
         ''')
+        cursor.execute('''CREATE INDEX IF NOT EXISTS MapsTitle ON Maps (Title);''')
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS PlayerTag (
             PlayerID INTEGER,
@@ -108,9 +109,7 @@ class Database():
             Tag TEXT,
             FOREIGN KEY (AssetID) REFERENCES Asset(AssetID))
         ''')
-        cursor.execute('''
-        CREATE INDEX IF NOT EXISTS AssetTagsIndex ON AssetTag (Tag);
-        ''')
+        cursor.execute('''CREATE INDEX IF NOT EXISTS AssetTagsIndex ON AssetTag (Tag);''')
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS Asset (
             AssetID INTEGER PRIMARY KEY,
@@ -346,6 +345,11 @@ class Database():
         except Exception as e:
             print(e)
             return []
+        
+    def searchMap(self, term):
+        searchterm = f"{term}%"
+        mapdb = self.server.execute(f"SELECT DISTINCT map.Title, map.Path, map.Size FROM Maps map LEFT JOIN MapTags tag ON map.MapID = tag.MapID WHERE map.Title LIKE ? OR tag.Tag LIKE ? LIMIT 10", (searchterm, searchterm)).fetchall()
+        print(mapdb)
 
     #endregion
 

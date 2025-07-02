@@ -10,7 +10,7 @@
     {
         "title": "AlchemyShop-Herbalist-Dark-Floor2-14x15-300DPI",
         "type": "map",
-        "Tags": "Dungeon, map, fantasy, roleplaying game, grid, top down, tiles, board, game, dice roll, character, party, exploration,fantasy, map, interior, layout, design, labyrinth, puzzle, adventure, exploration, escape room, virtual tour,\"map\", \"room\", \"fantasy\", \"video game\", \"layout\", \"isometric\", \"furniture\", \"decoration\", \"level\", \"architecture\"",
+        "Tags": "Dungeon, map, fantasy, roleplaying game, grid, top down, tiles, board, game, dice roll, character, party, exploration,fantasy, map, interior, layout, design, labyrinth, puzzle, adventure, exploration, escape room, virtual tour,map, room, fantasy, video game, layout, isometric, furniture, decoration, level, architecture",
         "path": "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Dark - Floor 2 - 14x15 - 300 DPI.webp",
         "variants": "Dark, Light",
         "size": "14x15"
@@ -354,7 +354,7 @@
     {
         "title": "Devil'sMill,Roof",
         "type": "asset",
-        "Tags": "DevilsMill,\"Star Wars\", \"Death Star\", \"Movie poster\", \"Space\", \"Planet\", \"Earth\", \"Pictograph\", \"Humorous\"",
+        "Tags": "DevilsMill,Star Wars, Death Star, Movie poster, Space, Planet, Earth, Pictograph, Humorous",
         "path": "images/assets/Devil's Mill, Roof (5x5).png",
         "variants": "None",
         "size": "5x5"
@@ -1066,7 +1066,7 @@
     {
         "title": "14",
         "type": "player",
-        "Tags": "HeroTokens,\"dice\", \"rolling\", \"five sides\", \"polyhedral dice\", \"rpg\", \"tabletop gaming\", \"board game\", \"game board\", \"d6\", \"random number\"",
+        "Tags": "HeroTokens,dice, rolling, five sides, polyhedral dice, rpg, tabletop gaming, board game, game board, d6, random number",
         "path": "images/tokens/hero/14.png",
         "variants": "None",
         "size": ""
@@ -1130,7 +1130,7 @@
     {
         "title": "21",
         "type": "player",
-        "Tags": "HeroTokens,\"character, candle, adventurer, cartoon, fantasy, firelight, storytelling\"",
+        "Tags": "HeroTokens,character, candle, adventurer, cartoon, fantasy, firelight, storytelling",
         "path": "images/tokens/hero/21.png",
         "variants": "None",
         "size": ""
@@ -1706,7 +1706,7 @@
     {
         "title": "MetalsmithsWorkshop-Base-Night-22x16-300DPI",
         "type": "map",
-        "Tags": "Metalsmiths Workshop,\"Fantasy home\", \"Living room\", \"Kitchen\", \"Game room\", \"Bedroom\", \"Puzzle room\"",
+        "Tags": "Metalsmiths Workshop,Fantasy home, Living room, Kitchen, Game room, Bedroom, Puzzle room",
         "path": "images/maps/Metalsmiths_Workshop___Base/Metalsmiths Workshop - Base - Night - 22x16 - 300 DPI.jpg",
         "variants": "Day, Night",
         "size": "22x16"
@@ -1866,7 +1866,7 @@
     {
         "title": "Brightdriftwood1",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets,\"wood,\" \"vertical bars,\" \"rectangle,\" \"dark color,\" \"light color\"",
+        "Tags": "OceanSurfaceAssets,wood, vertical bars, rectangle, dark color, light color",
         "path": "images/assets/Bright driftwood (1x2) 1.png",
         "variants": "None",
         "size": "1x2"
@@ -2202,7 +2202,7 @@
     {
         "title": "Darkdriftwood",
         "type": "asset",
-        "Tags": "OceanSurfaceAssets,\"wooden pallet\", \"materials\", \"construction\", \"recycling\", \"rustic\", \"DIY\", \"farmhouse\", \"organic\", \"industrial\", \"simple\"",
+        "Tags": "OceanSurfaceAssets,wooden pallet, materials, construction, recycling, rustic, DIY, farmhouse, organic, industrial, simple",
         "path": "images/assets/Dark driftwood (3x3).png",
         "variants": "None",
         "size": "3x3"
@@ -2530,7 +2530,7 @@
     {
         "title": "RoyalBank-Vaults-Light-Door2Alt-2x6-300DPI",
         "type": "map",
-        "Tags": "Royal Bank,\"artwork,\" \"illustration,\" \"digital,\" \"fantasy,\" \"dice,\" \"character,\" \"RPG,\" \"board game,\" \"strategy game,\" \"card game,\"",
+        "Tags": "Royal Bank,artwork, illustration, digital, fantasy, dice, character, RPG, board game, strategy game, card game,",
         "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Light - Door 2 Alt - 2x6 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "2x6"
@@ -2538,7 +2538,7 @@
     {
         "title": "RoyalBank-Vaults-Light-Door3Alt-3x4-300DPI",
         "type": "map",
-        "Tags": "Royal Bank,\"gaming\", \"pixel art\", \"virtual reality\", \"fantasy\", \"board game\", \"card game\", \"dungeons and dragons\", \"tabletop gaming\", \"cryptocurrency\", \"mining\", \"blockchain\", \"NFTs",
+        "Tags": "Royal Bank,gaming, pixel art, virtual reality, fantasy, board game, card game, dungeons and dragons, tabletop gaming, cryptocurrency, mining, blockchain, NFTs",
         "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Light - Door 3 Alt - 3x4 - 300 DPI.jpg",
         "variants": "Dark, Light",
         "size": "3x4"
@@ -2682,7 +2682,7 @@
     {
         "title": "Exteriorstructuralplank",
         "type": "asset",
-        "Tags": "Sailing Ship Assets,\"pixelated,\" \"gray,\" \"rectangular,\" \"small,\" \"low resolution\"",
+        "Tags": "Sailing Ship Assets,pixelated, gray, rectangular, small, low resolution",
         "path": "images/assets/Exterior structural plank (5x2).png",
         "variants": "None",
         "size": "5x2"
@@ -2890,7 +2890,7 @@
     {
         "title": "Railing,wide",
         "type": "asset",
-        "Tags": "Sailing Ship Assets,\"night\", \"car\", \"road\", \"moonlit\", \"window\", \"reflection\", \"interior\", \"lighting\"",
+        "Tags": "Sailing Ship Assets,night, car, road, moonlit, window, reflection, interior, lighting",
         "path": "images/assets/Railing, wide (22x5).png",
         "variants": "None",
         "size": "22x5"
@@ -3090,7 +3090,7 @@
     {
         "title": "ShatteredStronghold-AstralSea-RedStar-22x16-300DPI",
         "type": "map",
-        "Tags": "Shattered Stronghold,\"space\", \"alien\", \"futuristic\", \"artificial\", \"destroyed\", \"planetary\", \"battleship\", \"dystopian\", \"sci-fi\"",
+        "Tags": "Shattered Stronghold,space, alien, futuristic, artificial, destroyed, planetary, battleship, dystopian, sci-fi",
         "path": "images/maps/Shattered Stronghold - Astral Sea - Red Star - 22x16 - 300 DPI.jpg",
         "variants": "None",
         "size": "22x16"
@@ -3170,7 +3170,7 @@
     {
         "title": "SinisterCabin-Occupied-Light-Basement1-6x8",
         "type": "map",
-        "Tags": "Sinister Cabin,\"ruin\", \"dungeon\", \"games\", \"video game\", \"pixel art\", \"fantasy\", \"cellar\", \"abandoned\", \"dice\", \"RPG\", \"crypt\"",
+        "Tags": "Sinister Cabin,ruin, dungeon, games, video game, pixel art, fantasy, cellar, abandoned, dice, RPG, crypt",
         "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Light - Basement 1 - 6x8.png",
         "variants": "Dark, Light",
         "size": "6x8"
@@ -3314,7 +3314,7 @@
     {
         "title": "Building,foundry",
         "type": "asset",
-        "Tags": "Town and City Assets 3,\"artwork\", \"comic strip\", \"hand drawn\", \"simple\", \"low detail\", \"cartoonish\", \"black and white\", \"stylized\", \"not realistic\", \"monochromatic\".",
+        "Tags": "Town and City Assets 3,artwork, comic strip, hand drawn, simple, low detail, cartoonish, black and white, stylized, not realistic, monochromatic.",
         "path": "images/assets/Building, foundry.png",
         "variants": "None",
         "size": ""

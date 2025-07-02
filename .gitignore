@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+deepdanbooru-v4-20200814-sgd-e30
+
 # C extensions
 *.so
 

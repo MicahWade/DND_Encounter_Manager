@@ -171,6 +171,13 @@ def encounter():
     if 'userid' not in session:
         return redirect(url_for('login'))
     return render_template("encounter.html")
+
+@app.route("/encounter/create")
+def encounterCreate():
+    if 'userid' not in session:
+        return redirect(url_for('login'))
+    return render_template("encounterCreate.html")
+
 @app.route("/settings")
 def settings():
     if 'userid' not in session:

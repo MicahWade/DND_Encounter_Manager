@@ -322,9 +322,7 @@ class Database():
         return None
     
     def GetMap(self, title):
-        print(title)
         mapDB = self.server.execute('''SELECT Path, Variants, Size FROM Maps WHERE Title = ?''', (title,)).fetchone()
-        print(type(mapDB))
         return mapDB
 
     def GetEnemys(self):

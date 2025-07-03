@@ -56,7 +56,7 @@ def create_default_enemys():
                 speed = int(match.group(1))
         CR = monster.get("challenge_rating", 0)
         try:
-            CR = float(CR)
+            CR = float(sum(CR(s) for s in '1 2/3'.split()))
         except Exception:
             CR = 0
         STR = monster.get("strength", 0)

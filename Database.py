@@ -8,9 +8,19 @@ class Database():
     wasfirst = False
     
     def __SetupTables(self):
+
         if self.server == "Temp __server":
             raise Exception("__server Not Setup yet")
         cursor = self.server.cursor()
+        
+        # Execute the COUNT(*) query
+        cursor.execute("SELECT COUNT(*) FROM Maps")
+
+        # Fetch the result
+        row_count = cursor.fetchone()
+
+        # Print the number of rows
+        print("Number of rows:", row_count)
 
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS Encounters (

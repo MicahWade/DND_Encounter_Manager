@@ -14,6 +14,7 @@ function rollDice(amount, dice, modifier){
         roll = Math.floor(Math.random() * dice) + 1
         total += roll
     }
+    total + modifier
     modifierText = (modifier > 0 ? "+"+modifier : modifier)
     const DiceInfo = document.getElementById('DiceInfo');
     if(amount == 1 && dice == 20){

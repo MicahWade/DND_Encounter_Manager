@@ -39,10 +39,10 @@ function searchEnemy() {
                     const div = document.createElement('div');
                     div.className = "px-6 py-3";
                     div.innerHTML = `
-                        <button class="w-full" onclick="getEnemy(${item[2]})">
+                        <button class="w-full" onclick="getEnemy(${item[0]})">
                             <div class="justify-between items-center w-full grid grid-cols-2">
-                                <span class="text-left text-gray-900 hover:text-sky-300 text-left">${item[0]}</span>
-                                <span class="text-left text-gray-900 text-right">${item[1]}</span>
+                                <span class="text-left text-gray-900 hover:text-sky-300 text-left">${item[1]}</span>
+                                <span class="text-left text-gray-900 text-right">${item[2]}</span>
                             </div>
                         </button>
                     `;

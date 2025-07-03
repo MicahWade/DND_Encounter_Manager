@@ -23,8 +23,6 @@ def enemy(id):
     if 'userid' not in session:
         return redirect(url_for('login'))
     server = Database.Database(False)
-
-
     enemy = server.GetEnemy(id)
     if enemy is None:
         return "Bad Enemy Id", 404

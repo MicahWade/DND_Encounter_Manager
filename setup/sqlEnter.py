@@ -1,5 +1,5 @@
 import json
-import os
+import re
 
 def insert_assets_from_json(db, json_path="setup/assets.json"):
     # Check if all relevant tables are empty
@@ -34,6 +34,16 @@ def insert_assets_from_json(db, json_path="setup/assets.json"):
                 (title, path, variants, size)
             )
             map_id = cursor.lastrowid
+            # Extract floor number from path if present (e.g., "Floor2" or "floor3")
+            floor_match = re.search(r"[Ff]loor\s*(\d+)", path)
+            if floor_match:
+                floor_number = int(floor_match.group(1))
+                db.server.execute(
+                    "INSERT INTO Floor (FloorNumber, MapID) VALUES (?, ?)",
+                    (floor_number, map_id)
+                )
+                if "floor" not in [t.lower() for t in tag_list]:
+                    tag_list.append("floor")
             for tag in tag_list:
                 db.server.execute(
                     "INSERT INTO MapTags (MapID, Tag) VALUES (?, ?)",

@@ -68,6 +68,13 @@ class Database():
             Size TEXT
         )
         ''')
+        cursor.execute('''
+        CREATE TABLE IF NOT EXISTS Floor (
+            FloorNumber INTEGER,
+            MapID INTEGER,
+            FOREIGN KEY (MapID) REFERENCES Maps(MapID))
+        ''')
+        cursor.execute('''CREATE INDEX IF NOT EXISTS FloorMapID ON Floor (MapID)''')
         cursor.execute('''CREATE INDEX IF NOT EXISTS MapsTitle ON Maps (Title);''')
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS PlayerTag (
@@ -265,6 +272,22 @@ class Database():
         for encounter in encountersDB:
             encounters.append([encounter[0], encounter[1]])
         return encounters
+    def GetFloors(self, path):
+        print(path)
+        term = path.split("Floor")[0]
+        print(f"term {term}")
+        # Join Maps and Floor to get all floors for maps matching the path term
+        floors = self.server.execute(
+            """
+            SELECT f.FloorNumber, m.Path, m.Size
+            FROM Maps m
+            JOIN Floor f ON m.MapID = f.MapID
+            WHERE m.Path LIKE ?
+            """,
+            (f"{term}%",)
+        ).fetchall()
+        return floors
+
 
     def GetEnemyName(self, EnemyName):
         # Use JOIN to get enemy and their weapons in one go
@@ -322,8 +345,17 @@ class Database():
         return None
     
     def GetMap(self, title):
-        mapDB = self.server.execute('''SELECT Path, Variants, Size FROM Maps WHERE Title = ?''', (title,)).fetchone()
-        return mapDB
+        mapDB = self.server.execute(
+            '''SELECT MapID, Path, Variants, Size FROM Maps WHERE Title = ?''', (title,)
+        ).fetchone()
+        if not mapDB:
+            return None
+        map_id, path, variants, size = mapDB
+        floor = self.server.execute(
+            '''SELECT FloorNumber FROM Floor WHERE MapID = ?''', (map_id,)
+        ).fetchone()
+        floor_number = floor[0] if floor else 0
+        return (path, variants, size, floor_number)
 
     def GetEnemys(self):
         try:

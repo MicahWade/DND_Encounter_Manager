@@ -44,6 +44,14 @@ def searchEnemys(term):
     results = server.searchEnemys(term)
     return jsonify({'enemys': results})
 
+@app.route("/map/floor/get/<path:path>")
+def getFloor(path):
+    print(path)
+    server = Database.Database(False)
+    results = server.GetFloors(path)
+    print(results)
+    return jsonify(results)
+
 @app.route("/enemys")
 def enemys():
     if 'userid' not in session:
@@ -194,7 +202,8 @@ def getMap(title):
     return jsonify({
         "image_path": result[0],
         "variants": result[1],
-        "size": result[2]
+        "size": result[2],
+        "floor": result[3]
     })
 
 @app.route("/settings")

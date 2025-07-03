@@ -75,8 +75,10 @@ arrowDown.addEventListener('click', (e) => {
 
 // Fill input when clicking a dropdown item
 mapDropdown.addEventListener('click', async (e) => {
-    if (e.target && e.target.matches('div')) {
-        const title = e.target.textContent;
+    // Find the closest dropdown item div
+    const itemDiv = e.target.closest('div.p-2');
+    if (itemDiv && mapDropdown.contains(itemDiv)) {
+        const title = itemDiv.querySelector('span').textContent;
         mapSearch.value = title;
         mapDropdown.classList.add('hidden');
         currentMapTitle = title;
@@ -86,21 +88,17 @@ mapDropdown.addEventListener('click', async (e) => {
             const response = await fetch(`/map/get/${encodeURIComponent(title)}`);
             if (response.ok) {
                 const mapInfo = await response.json();
-                console.log(mapInfo)
                 mainMapPath = mapInfo.image_path;
                 if (mainMapPath) {
-                    // Find the image element in the content-center div
                     const img = document.querySelector('.content-center img');
                     if (img) {
                         img.src = `../static/${mainMapPath}`;
                         img.alt = title;
                     }
-                    // Load floors and show arrows if needed
                     if (mapInfo.floor != 0){
                         await loadFloorsForMap();
                         setMapImageByFloor(currentFloorIndex);
                     } else {
-                        // Clear floor data and hide arrows if no floors
                         currentFloors = [];
                         currentFloorIndex = 0;
                         arrowUp.classList.add('hidden');
@@ -109,7 +107,6 @@ mapDropdown.addEventListener('click', async (e) => {
                 }
             }
         } catch (err) {
-            // Optionally handle error
             console.error('Failed to fetch map info:', err);
         }
     }
@@ -135,9 +132,15 @@ mapSearch.addEventListener('input', () => {
             // Accepts either array or object with 'maps' key
             const maps = Array.isArray(results) ? results : results.maps || [];
             if (maps.length > 0) {
-                mapDropdown.innerHTML = maps.map(name =>
-                    `<div class="p-2 hover:bg-slate-200 cursor-pointer">${name}</div>`
-                ).join('');
+                mapDropdown.innerHTML = maps.map(map => {
+                    const thumbPath = `../static/${map[1].replace("images", "thumbnails") .split(".")[0] + ".webp"}`;
+                    return `
+                        <div class="p-2 hover:bg-slate-200 cursor-pointer flex items-center justify-between">
+                            <span>${map[0]}</span>
+                            <img src="${thumbPath}" alt="thumbnail" class="h-6 w-auto ml-2 rounded shadow" style="max-height:1.5em;">
+                        </div>
+                    `;
+                }).join('');
                 mapDropdown.classList.remove('hidden');
             } else {
                 mapDropdown.innerHTML = '';

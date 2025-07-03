@@ -1,6 +1,6 @@
 [
     {
-        "title": "AlchemyShop-Herbalist-Dark-Floor1-14x15-300DPI",
+        "title": "Herbalist Dark Chamber",
         "type": "map",
         "Tags": "Alchemy Shop,fantasy, board game, castle, medieval, interior, labyrinth, escape room, puzzle, immersive, tabletop",
         "path": "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Dark - Floor 1 - 14x15 - 300 DPI.webp",
@@ -8,7 +8,7 @@
         "size": "14x15"
     },
     {
-        "title": "AlchemyShop-Herbalist-Dark-Floor2-14x15-300DPI",
+        "title": "Mysterious Herbal Apothecary",
         "type": "map",
         "Tags": "Dungeon, map, fantasy, roleplaying game, grid, top down, tiles, board, game, dice roll, character, party, exploration,fantasy, map, interior, layout, design, labyrinth, puzzle, adventure, exploration, escape room, virtual tour,map, room, fantasy, video game, layout, isometric, furniture, decoration, level, architecture",
         "path": "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Dark - Floor 2 - 14x15 - 300 DPI.webp",
@@ -16,7 +16,7 @@
         "size": "14x15"
     },
     {
-        "title": "AlchemyShop-Herbalist-Light-Floor1-14x15-300DPI",
+        "title": "Herbalist's Light Room",
         "type": "map",
         "Tags": "Alchemy Shop,board game, medieval, map, rooms, furniture, characters, dice, tokens, strategy game, handcrafted, immersive, artisanal",
         "path": "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Light - Floor 1 - 14x15 - 300 DPI.webp",
@@ -24,7 +24,7 @@
         "size": "14x15"
     },
     {
-        "title": "AlchemyShop-Herbalist-Light-Floor2-14x15-300DPI",
+        "title": "Herbalist's Alchemy Shop",
         "type": "map",
         "Tags": "Alchemy Shop,mansion, floor plan, interior design, architecture, layout, 3d rendering, interior decoration, furniture, room, home theater, spacious living room, kitchen area, dining table, windows, lighting fixtures, door, entryway, stairs, bedroom, bathroom, outdoor space, patio, garden, pool, hot tub, gazebo, pergola, fountain, water feature, landscaping, wall decor, art, carpet, flooring, curtains, blinds, ceiling fan, chandelier",
         "path": "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Light - Floor 2 - 14x15 - 300 DPI.webp",
@@ -32,7 +32,7 @@
         "size": "14x15"
     },
     {
-        "title": "ArtistAtelier-ArtClass-Day-14x16-300DPI",
+        "title": "Artist's Studio Session",
         "type": "map",
         "Tags": "room, attic, cluttered, messy, fantasy, loft, junk, haphazard, disorganized, medieval, game,floor, wall, room, furniture, game, board, table, chair, toy, decoration, carpet",
         "path": "images/maps/Artist_Atelier___Art_Class/Artist Atelier - Art Class - Day - 14x16 - 300 DPI.jpg",
@@ -40,7 +40,7 @@
         "size": "14x16"
     },
     {
-        "title": "ArtistAtelier-ArtClass-Day-Loft-9x6-300DPI",
+        "title": "Art Class in Loft",
         "type": "map",
         "Tags": "Artist Atelier,pub, tavern, inn, fantasy, rustic, gaming, medieval, cozy, wooden, inviting",
         "path": "images/maps/Artist_Atelier___Art_Class/Artist Atelier - Art Class - Day - Loft - 9x6 - 300 DPI.jpg",
@@ -48,7 +48,7 @@
         "size": "9x6"
     },
     {
-        "title": "ArtistAtelier-ArtClass-Night-14x16-300DPI",
+        "title": "Art Class at Night",
         "type": "map",
         "Tags": "Artist Atelier,Dnd dungeon, Board game setting, Miniature wargame scene, Tabletop roleplaying environment, Dungeon master screen, Game room, Adventure board game scene, Play area, Strategy game backdrop",
         "path": "images/maps/Artist_Atelier___Art_Class/Artist Atelier - Art Class - Night - 14x16 - 300 DPI.jpg",
@@ -56,7 +56,7 @@
         "size": "14x16"
     },
     {
-        "title": "ArtistAtelier-ArtClass-Night-Loft-9x6-300DPI",
+        "title": "Art Class at Night",
         "type": "map",
         "Tags": "Artist Atelier,castle, fantasy, interior, kitchen, living room, tavern, game, board game, pixel art, tabletop games, medieval",
         "path": "images/maps/Artist_Atelier___Art_Class/Artist Atelier - Art Class - Night - Loft - 9x6 - 300 DPI.jpg",
@@ -64,7 +64,7 @@
         "size": "9x6"
     },
     {
-        "title": "BanditAmbush-Summer-Day-22x16-300DPI",
+        "title": "Summer Day Ambush",
         "type": "map",
         "Tags": "Bandit Ambush,forest, path, map, camping, nature, adventure, travel, hiking, outdoor, exploration, wilderness",
         "path": "images/maps/Bandit_Ambush___Summer/Bandit Ambush - Summer - Day - 22x16 - 300 DPI.jpg",
@@ -72,7 +72,7 @@
         "size": "22x16"
     },
     {
-        "title": "BanditAmbush-Summer-Night-22x16-300DPI",
+        "title": "Summer Night Ambush",
         "type": "map",
         "Tags": "Bandit Ambush,moonlit, forest, night, magical, fantasy, darkness, mystical, enchanted, eerie, ethereal",
         "path": "images/maps/Bandit_Ambush___Summer/Bandit Ambush - Summer - Night - 22x16 - 300 DPI.jpg",
@@ -80,7 +80,7 @@
         "size": "22x16"
     },
     {
-        "title": "Treetops-Summer-Day1-11x14-300DPI",
+        "title": "Summer Treetop Scene",
         "type": "map",
         "Tags": "Bandit Ambush,medieval, forest, trees, foliage, verdant, natural, rural, landscape, cartography, fantasy, green, lush, wilderness, map",
         "path": "images/maps/Treetops___Summer/Treetops - Summer - Day 1 - 11x14 - 300 DPI.jpg",
@@ -88,7 +88,7 @@
         "size": "11x14"
     },
     {
-        "title": "Treetops-Summer-Day2-11x8-300DPI",
+        "title": "Treetop Summer Scenes",
         "type": "map",
         "Tags": "Bandit Ambush,forest, nature, tree, sky, clouds, landscape, tranquil, wildlife, camping, outdoor adventure, hiking, exploration",
         "path": "images/maps/Treetops___Summer/Treetops - Summer - Day 2 - 11x8 - 300 DPI.jpg",
@@ -96,7 +96,7 @@
         "size": "11x8"
     },
     {
-        "title": "Treetops-Summer-Day3-12x8-300DPI",
+        "title": "Treetop Summer Scene",
         "type": "map",
         "Tags": "Bandit Ambush,map, forest, nature, landscape, colorful, vibrant, green, trees, wilderness",
         "path": "images/maps/Treetops___Summer/Treetops - Summer - Day 3 - 12x8 - 300 DPI.jpg",
@@ -104,7 +104,7 @@
         "size": "12x8"
     },
     {
-        "title": "Treetops-Summer-Night1-11x14-300DPI",
+        "title": "Summer Night Treetops",
         "type": "map",
         "Tags": "Bandit Ambush,dark, night, forest, shadowy, trees, canopy, leaves, moonlight, mysterious, eerie, fantasy, nighttime",
         "path": "images/maps/Treetops___Summer/Treetops - Summer - Night 1 - 11x14 - 300 DPI.jpg",
@@ -112,7 +112,7 @@
         "size": "11x14"
     },
     {
-        "title": "Treetops-Summer-Night3-11x8-300DPI",
+        "title": "Summer Night Skyline",
         "type": "map",
         "Tags": "Bandit Ambush,Darkness, Forest, Nighttime, Silhouette, Trees, Shadow, Tranquil, Solitude, Mystery",
         "path": "images/maps/Treetops___Summer/Treetops - Summer - Night 3 - 11x8 - 300 DPI.jpg",
@@ -120,7 +120,7 @@
         "size": "11x8"
     },
     {
-        "title": "Treetops-Summer-Night3-12x8-300DPI",
+        "title": "Summer Night Treetops",
         "type": "map",
         "Tags": "Bandit Ambush,swirls, abstract, pattern, dark, blue, night sky, galaxy, fractal, symmetrical",
         "path": "images/maps/Treetops___Summer/Treetops - Summer - Night 3 - 12x8 - 300 DPI.jpg",
@@ -128,7 +128,7 @@
         "size": "12x8"
     },
     {
-        "title": "BuriedTemple-Light-Active-32x44-300DPI",
+        "title": "Ancient Temple Ruins",
         "type": "map",
         "Tags": "Buried Temple,dungeon, maze, puzzle, challenge, mystery, exploration, medieval, castle, underground, labyrinth, adventurous, quest",
         "path": "images/maps/Buried_Temple/Buried Temple - Light - Active - 32x44 - 300 DPI.jpg",
@@ -136,7 +136,7 @@
         "size": "32x44"
     },
     {
-        "title": "BuriedTemple-Light-Inactive-32x44-300DPI",
+        "title": "Ancient Temple Ruins",
         "type": "map",
         "Tags": "Buried Temple,castle, floor plan, dungeon, medieval, labyrinth, ruins, architecture, gaming, maze, strategy, tower",
         "path": "images/maps/Buried_Temple/Buried Temple - Light - Inactive - 32x44 - 300 DPI.jpg",
@@ -144,7 +144,7 @@
         "size": "32x44"
     },
     {
-        "title": "CrystalCrypts-LichLight-32x22-300DPI",
+        "title": "Lich Crypt Illustration",
         "type": "map",
         "Tags": "labyrinth, blue, dungeon, pixel art, underground, dimly lit, architecture, medieval, abandoned, basement,map, floorplan, dungeon, layout, blueprint, architecture, maze, underground, design, plan, layout",
         "path": "images/maps/Crystal Crypts - Lich Light - 32x22 - 300 DPI.jpg",
@@ -152,7 +152,7 @@
         "size": "32x22"
     },
     {
-        "title": "FloodedRoom-LichLight1-11x6-300DPI",
+        "title": "Floodlit Dark Lich Lair",
         "type": "map",
         "Tags": "Crystal Crypts,cave, mine, underground, tunnel, dungeon, exploration, adventure, spelunking, cavern, stone, brick",
         "path": "images/maps/Flooded Room - Lich Light 1 - 11x6 - 300 DPI.jpg",
@@ -160,7 +160,7 @@
         "size": "11x6"
     },
     {
-        "title": "FloodedRoom-LichLight2-16x9-300DPI",
+        "title": "Floodlit Lich Scene",
         "type": "map",
         "Tags": "Crystal Crypts,game, level design, dungeon, tile based layout, pixel art, pixelated, retro style, isometric view",
         "path": "images/maps/Flooded Room - Lich Light 2 - 16x9 - 300 DPI.jpg",
@@ -168,7 +168,7 @@
         "size": "16x9"
     },
     {
-        "title": "FloodedRoom-LichLight3-11x6-300DPI",
+        "title": "Darkness Illuminates Ruins",
         "type": "map",
         "Tags": "Crystal Crypts,crypt, dungeon, stone, brick, tunnel, light source, gaming, pixel art",
         "path": "images/maps/Flooded Room - Lich Light 3 - 11x6 - 300 DPI.jpg",
@@ -176,7 +176,7 @@
         "size": "11x6"
     },
     {
-        "title": "FloodedRoom-LichLight4-11x9-300DPI",
+        "title": "Floodlit Dungeon Chamber",
         "type": "map",
         "Tags": "Crystal Crypts,- Dungeon, - Labyrinth, - Elevator, - Puzzle room, - Keyhole, - Entrance, - Platforms, - Stairs, - Trapdoor, - Light blue color scheme",
         "path": "images/maps/Flooded Room - Lich Light 4 - 11x9 - 300 DPI.jpg",
@@ -184,7 +184,7 @@
         "size": "11x9"
     },
     {
-        "title": "FloodedRoom-LichLight5-16x10-300DPI",
+        "title": "Floodlit Dark Lich Lair",
         "type": "map",
         "Tags": "Crystal Crypts,dungeon, room, dark, floor, ceiling, architecture, stone, tiles, design, underground, eerie, cold, isolated, secluded, mystery",
         "path": "images/maps/Flooded Room - Lich Light 5 - 16x10 - 300 DPI.jpg",
@@ -192,7 +192,7 @@
         "size": "16x10"
     },
     {
-        "title": "DeluxeSuite1-Sunset-Dark-13x17-300DPI",
+        "title": "Sunset Darkened Landscape",
         "type": "map",
         "Tags": "Deluxe Suites,map, dungeon, game, room, layout, board, design, interior, fantasy, planning",
         "path": "images/maps/Deluxe_Suite_1___Sunset/Deluxe Suite 1 - Sunset - Dark - 13x17 - 300 DPI.jpg",
@@ -200,7 +200,7 @@
         "size": "13x17"
     },
     {
-        "title": "DeluxeSuite1-Sunset-Light-13x17-300DPI",
+        "title": "Sunset Digital Artwork",
         "type": "map",
         "Tags": "Deluxe Suites,maze, dungeon, board game, medieval, tile floor, wooden table, chairs, carpeted, stone walls, open plan",
         "path": "images/maps/Deluxe_Suite_1___Sunset/Deluxe Suite 1 - Sunset - Light - 13x17 - 300 DPI.jpg",
@@ -208,7 +208,7 @@
         "size": "13x17"
     },
     {
-        "title": "DeluxeSuite2-Sunset-Dark-13x17-300DPI",
+        "title": "Dark Sunset Landscape",
         "type": "map",
         "Tags": "Deluxe Suites,floor plan, dark, indoor, open-air patio, furniture, stairs, doorways, rooms",
         "path": "images/maps/Deluxe_Suite_2___Sunset/Deluxe Suite 2 - Sunset - Dark - 13x17 - 300 DPI.jpg",
@@ -216,7 +216,7 @@
         "size": "13x17"
     },
     {
-        "title": "DeluxeSuite2-Sunset-Light-13x17-300DPI",
+        "title": "Sunset Light Suite",
         "type": "map",
         "Tags": "Deluxe Suites,courtyard, patio, garden, open air, cozy, inviting, rustic, charming, quaint",
         "path": "images/maps/Deluxe_Suite_2___Sunset/Deluxe Suite 2 - Sunset - Light - 13x17 - 300 DPI.jpg",
@@ -224,7 +224,7 @@
         "size": "13x17"
     },
     {
-        "title": "Demiplane-Stone1-Dark-10x10-300DPI",
+        "title": "Dark Stone Landscape",
         "type": "map",
         "Tags": "Demiplanes,floor, wall, cage, stone, room, corner, bricks, concrete, solid, structure, dungeon, maze, grid",
         "path": "images/maps/Demiplane___Stone_1/Demiplane - Stone 1 - Dark - 10x10 - 300 DPI.jpg",
@@ -232,7 +232,7 @@
         "size": "10x10"
     },
     {
-        "title": "Demiplane-Stone1-Light-10x10-300DPI",
+        "title": "Map of Ancient City",
         "type": "map",
         "Tags": "Demiplanes,dungeon, brick walls, stone tiles, underground, mysterious, adventure, fantasy, labyrinth, escape",
         "path": "images/maps/Demiplane___Stone_1/Demiplane - Stone 1 - Light - 10x10 - 300 DPI.jpg",
@@ -240,7 +240,7 @@
         "size": "10x10"
     },
     {
-        "title": "Demiplane-Stone2-Dark-10x10-300DPI",
+        "title": "Fantasy Stone Landscape",
         "type": "map",
         "Tags": "Demiplanes,stone, brick, wall, masonry, architecture, texture, grayscale, tile, rugged, historical",
         "path": "images/maps/Demiplane___Stone_2/Demiplane - Stone 2 - Dark - 10x10 - 300 DPI.jpg",
@@ -248,7 +248,7 @@
         "size": "10x10"
     },
     {
-        "title": "Demiplane-Stone2-Light-10x10-300DPI",
+        "title": "Stone Light Map",
         "type": "map",
         "Tags": "Demiplanes,stone, brick, wall, room, windowless, dungeon, tile, basement, underground, cave, cellar, fortification",
         "path": "images/maps/Demiplane___Stone_2/Demiplane - Stone 2 - Light - 10x10 - 300 DPI.jpg",
@@ -256,7 +256,7 @@
         "size": "10x10"
     },
     {
-        "title": "Demiplane-Stone3-Dark-10x10-300DPI",
+        "title": "Stone Demiplane Map",
         "type": "map",
         "Tags": "Demiplanes,crumbling, ruins, aged, debris, fragmented, shattered, decaying, dilapidated, stone",
         "path": "images/maps/Demiplane___Stone_3/Demiplane - Stone 3 - Dark - 10x10 - 300 DPI.jpg",
@@ -264,7 +264,7 @@
         "size": "10x10"
     },
     {
-        "title": "Demiplane-Stone3-Light-10x10-300DPI",
+        "title": "Fantasy Map Fragment",
         "type": "map",
         "Tags": "Demiplanes,cave, dungeon, ancient, brickwork, ruins, stone, underground, crumbling, abandoned, historical, explore, adventurer, journey",
         "path": "images/maps/Demiplane___Stone_3/Demiplane - Stone 3 - Light - 10x10 - 300 DPI.jpg",
@@ -272,7 +272,7 @@
         "size": "10x10"
     },
     {
-        "title": "Demiplane-Wood1-Dark-10x10-300DPI",
+        "title": "Dark Fantasy Landscape",
         "type": "map",
         "Tags": "Demiplanes,wallpaper, patterned, textured, design",
         "path": "images/maps/Demiplane___Wood_1/Demiplane - Wood 1 - Dark - 10x10 - 300 DPI.jpg",
@@ -280,7 +280,7 @@
         "size": "10x10"
     },
     {
-        "title": "Demiplane-Wood1-Light-10x10-300DPI",
+        "title": "Fantasy World Landscape",
         "type": "map",
         "Tags": "Demiplanes,brick, tile, patterned, wooden, texture, intricate, design, flooring, rustic, wall decor",
         "path": "images/maps/Demiplane___Wood_1/Demiplane - Wood 1 - Light - 10x10 - 300 DPI.jpg",
@@ -288,7 +288,7 @@
         "size": "10x10"
     },
     {
-        "title": "Demiplane-Wood2-Dark-10x10-300DPI",
+        "title": "Fantasy Wood Landscape",
         "type": "map",
         "Tags": "Demiplanes,maze, dungeon, grid, stone, floor, walls, empty, square",
         "path": "images/maps/Demiplane___Wood_2/Demiplane - Wood 2 - Dark - 10x10 - 300 DPI.jpg",
@@ -296,7 +296,7 @@
         "size": "10x10"
     },
     {
-        "title": "Demiplane-Wood2-Light-10x10-300DPI",
+        "title": "Wooden Demiplane Map",
         "type": "map",
         "Tags": "Demiplanes,1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
         "path": "images/maps/Demiplane___Wood_2/Demiplane - Wood 2 - Light - 10x10 - 300 DPI.jpg",
@@ -304,7 +304,7 @@
         "size": "10x10"
     },
     {
-        "title": "Demiplane-Wood3-Dark-10x10-300DPI",
+        "title": "Fantasy Dungeon Landscape",
         "type": "map",
         "Tags": "Demiplanes,tree, wood, bark, trunk, growth rings, nature, wilderness, forest, cut tree, timber, log",
         "path": "images/maps/Demiplane___Wood_3/Demiplane - Wood 3 - Dark - 10x10 - 300 DPI.jpg",
@@ -312,7 +312,7 @@
         "size": "10x10"
     },
     {
-        "title": "Demiplane-Wood3-Light-10x10-300DPI",
+        "title": "Fantasy Realm Landscape",
         "type": "map",
         "Tags": "Demiplanes,tree stump, cross section, wood rings, natural structure, circular pattern, growth rings, environmental artifact, wooden sculpture",
         "path": "images/maps/Demiplane___Wood_3/Demiplane - Wood 3 - Light - 10x10 - 300 DPI.jpg",
@@ -368,7 +368,7 @@
         "size": "10x2"
     },
     {
-        "title": "DriftwoodCove-Tropical-Day-44x32-300DPI",
+        "title": "Tropical Beachscape Illustration",
         "type": "map",
         "Tags": "Driftwood Cove,river, cave, stream, natural, water, rock, forest, plants, path, wilderness, serene, outdoor, environment",
         "path": "images/maps/Driftwood_Cove___Tropical/Driftwood Cove - Tropical - Day - 44x32 - 300 DPI.jpg",
@@ -376,7 +376,7 @@
         "size": "44x32"
     },
     {
-        "title": "DriftwoodCove-Tropical-Night-44x32-300DPI",
+        "title": "Tropical Night Seascape",
         "type": "map",
         "Tags": "Driftwood Cove,Underwater cave, submerged ruins, underwater exploration, diving adventure, sunken temple, shipwreck, treasure hunt, oceanic life",
         "path": "images/maps/Driftwood_Cove___Tropical/Driftwood Cove - Tropical - Night - 44x32 - 300 DPI.jpg",
@@ -792,7 +792,7 @@
         "size": "1x1"
     },
     {
-        "title": "DwarvenBurrow-Abandoned-Dark-14x14-300DPI",
+        "title": "Dark Dwarf Hideout",
         "type": "map",
         "Tags": "Dwarven Burrow,medieval, fantasy, tavern, dungeon, stone, floor, moss, cobwebs, fireplace, alembic",
         "path": "images/maps/Dwarven_Burrow___Abandoned/Dwarven Burrow - Abandoned - Dark - 14x14 - 300 DPI.jpg",
@@ -800,7 +800,7 @@
         "size": "14x14"
     },
     {
-        "title": "DwarvenBurrow-Abandoned-Light-14x14-300DPI",
+        "title": "Abandoned Dwarf Ruins",
         "type": "map",
         "Tags": "Dwarven Burrow,medieval, round, castle, fantasy, interior, lighting, stone, furniture, floor, artifact, green",
         "path": "images/maps/Dwarven_Burrow___Abandoned/Dwarven Burrow - Abandoned - Light - 14x14 - 300 DPI.jpg",
@@ -808,7 +808,7 @@
         "size": "14x14"
     },
     {
-        "title": "DwarvenBurrow-Bachelor-Dark-14x14-300DPI",
+        "title": "Dwarven Dark Depths",
         "type": "map",
         "Tags": "Dwarven Burrow,castle, interior, medieval, fantasy, room, architecture, brick, fire, torch, candle, furnishings, design",
         "path": "images/maps/Dwarven_Burrow___Bachelor/Dwarven Burrow - Bachelor - Dark - 14x14 - 300 DPI.jpg",
@@ -816,7 +816,7 @@
         "size": "14x14"
     },
     {
-        "title": "DwarvenBurrow-Bachelor-Dark-Unlit-14x14-300DPI",
+        "title": "Dark Dwarf Burrow Map",
         "type": "map",
         "Tags": "Dwarven Burrow,medieval, fantasy, dungeon, war room, strategy, roleplaying, board game, map, underground, stone, dark, castle, siege, battle, troop deployment, tactical, campaign, rpg",
         "path": "images/maps/Dwarven_Burrow___Bachelor/Dwarven Burrow - Bachelor - Dark - Unlit - 14x14 - 300 DPI.jpg",
@@ -824,7 +824,7 @@
         "size": "14x14"
     },
     {
-        "title": "DwarvenBurrow-Bachelor-Light-14x14-300DPI",
+        "title": "Dwarven Burrow Map",
         "type": "map",
         "Tags": "Dwarven Burrow,board game, fantasy, roleplaying, tile laying, strategy, medieval, hexagonal, tabletop game, dice tower",
         "path": "images/maps/Dwarven_Burrow___Bachelor/Dwarven Burrow - Bachelor - Light - 14x14 - 300 DPI.jpg",
@@ -832,7 +832,7 @@
         "size": "14x14"
     },
     {
-        "title": "DwarvenBurrow-Bachelor-Light-Unlit-14x14-300DPI",
+        "title": "Dwarven Burrow Map",
         "type": "map",
         "Tags": "Dwarven Burrow,medieval, castle, fantasy, boardgame, game, design, intricate, detailed, colorful, pixelated, pixelart",
         "path": "images/maps/Dwarven_Burrow___Bachelor/Dwarven Burrow - Bachelor - Light - Unlit - 14x14 - 300 DPI.jpg",
@@ -840,7 +840,7 @@
         "size": "14x14"
     },
     {
-        "title": "DwarvenRanch-Spring-Day-44x32-300DPI",
+        "title": "Dwarven Ranch Scene",
         "type": "map",
         "Tags": "Dwarven Ranch,medieval, fantasy, tower, moat, bridge, trees, waterfall, countryside, castle, architectural",
         "path": "images/maps/Dwarven_Ranch___Spring/Dwarven Ranch - Spring - Day - 44x32 - 300 DPI.jpg",
@@ -848,7 +848,7 @@
         "size": "44x32"
     },
     {
-        "title": "DwarvenRanch-Spring-Night-44x32-300DPI",
+        "title": "Dwarven Ranch Scene",
         "type": "map",
         "Tags": "Dwarven Ranch,moon circle, constellation, celestial, night sky, stars, galaxy, space, planet",
         "path": "images/maps/Dwarven_Ranch___Spring/Dwarven Ranch - Spring - Night - 44x32 - 300 DPI.jpg",
@@ -856,7 +856,7 @@
         "size": "44x32"
     },
     {
-        "title": "FightingPit-Muddy-Dark-16x22-300DPI",
+        "title": "Dark Muddy Battle Scene",
         "type": "map",
         "Tags": "Fighting Pit,court, map, field, structure, stone, dirt, bench, lamp, boundary, goal, stadium, game, competition, scoreboard",
         "path": "images/maps/Fighting_Pit___Muddy/Fighting Pit - Muddy - Dark - 16x22 - 300 DPI.jpg",
@@ -864,7 +864,7 @@
         "size": "16x22"
     },
     {
-        "title": "FightingPit-Muddy-Light-16x22-300DPI",
+        "title": "Muddy Battle Scene",
         "type": "map",
         "Tags": "Fighting Pit,castle, medieval, defense, arena, battlements, walls, flags, tower, fortress, village",
         "path": "images/maps/Fighting_Pit___Muddy/Fighting Pit - Muddy - Light - 16x22 - 300 DPI.jpg",
@@ -872,7 +872,7 @@
         "size": "16x22"
     },
     {
-        "title": "ForestCamp-Dark-Occupied-44x32",
+        "title": "Dark Forest Occupation Map",
         "type": "map",
         "Tags": "Forest Camp,Forest, Houses, Path, Trees, Landscape, Scenery, Nature, Campsite, Rural, Serene, Wilderness",
         "path": "images/maps/Forest_Camp/Forest Camp - Dark - Occupied - 44x32.jpg",
@@ -880,7 +880,7 @@
         "size": "44x32"
     },
     {
-        "title": "ForestCamp-Dark-Vacant-44x32",
+        "title": "Dark Forest Map",
         "type": "map",
         "Tags": "Forest Camp,river, forest, map, cartography, exploration, natural, water, geographic",
         "path": "images/maps/Forest_Camp/Forest Camp - Dark - Vacant - 44x32.jpg",
@@ -888,7 +888,7 @@
         "size": "44x32"
     },
     {
-        "title": "GoblinCamp-Base-Day16x22-300DPI",
+        "title": "Goblin Camp Map",
         "type": "map",
         "Tags": "Goblin Camp,cowboy, saloon, mining camp, wild west, frontier, rustic, wooden buildings, dirt roads, desert setting, abandoned town",
         "path": "images/maps/Goblin_Camp___Base/Goblin Camp - Base - Day 16x22 - 300 DPI.jpg",
@@ -896,7 +896,7 @@
         "size": "16x22"
     },
     {
-        "title": "GoblinCamp-Base-Night16x22-300DPI",
+        "title": "Goblin Night Encampment",
         "type": "map",
         "Tags": "Goblin Camp,castle, ruins, dungeon, adventure, medieval, map, exploration, strategy, fantasy, board game, tabletop game, card game, roleplaying game, D&D",
         "path": "images/maps/Goblin_Camp___Base/Goblin Camp - Base - Night 16x22 - 300 DPI.jpg",
@@ -936,7 +936,7 @@
         "size": ""
     },
     {
-        "title": "GrandMageTower-Base-Bedroom-Day-16x16",
+        "title": "Fantasy Tower Bedroom Map",
         "type": "map",
         "Tags": "Grand Mage Tower,fantasy room, round floor plan, medieval interior design, cozy living space, circular layout, traditional furniture, wooden floors, fireplace, chandelier",
         "path": "images/maps/Grand_Mage_Tower___Base___Bedroom/Grand Mage Tower - Base - Bedroom - Day - 16x16.jpg",
@@ -944,7 +944,7 @@
         "size": "16x16"
     },
     {
-        "title": "GrandMageTower-Base-Bedroom-Night-16x16",
+        "title": "Mystic Night Chamber",
         "type": "map",
         "Tags": "Grand Mage Tower,round room, bedroom, living area, circular floor plan, layout, furniture arrangement, interior design, fantasy setting, game room, 360 view, open space, large room, cozy atmosphere",
         "path": "images/maps/Grand_Mage_Tower___Base___Bedroom/Grand Mage Tower - Base - Bedroom - Night - 16x16.jpg",
@@ -952,7 +952,7 @@
         "size": "16x16"
     },
     {
-        "title": "GrandMageTower-Base-Empty-Day-16x16",
+        "title": "Mystic Tower Map",
         "type": "map",
         "Tags": "Grand Mage Tower,round, astrology, circle, wizard, fantasy, table, benches, circular, mystical, magical",
         "path": "images/maps/Grand_Mage_Tower___Base___Empty/Grand Mage Tower - Base - Empty - Day - 16x16.jpg",
@@ -960,7 +960,7 @@
         "size": "16x16"
     },
     {
-        "title": "GrandMageTower-Base-Empty-Night-16x16",
+        "title": "Mysterious Tower Ruins",
         "type": "map",
         "Tags": "Grand Mage Tower,circle, round table, compass rose, dungeon, mystical, blue, stone, circular structure, centerpiece",
         "path": "images/maps/Grand_Mage_Tower___Base___Empty/Grand Mage Tower - Base - Empty - Night - 16x16.jpg",
@@ -968,7 +968,7 @@
         "size": "16x16"
     },
     {
-        "title": "GrandMageTower-Base-Library-Day-16x16",
+        "title": "Magic Tower Library",
         "type": "map",
         "Tags": "Grand Mage Tower,round room, astrological chart, circular seating, meeting space, zodiac signs, celestial theme, underground chamber, sacred space, unique design",
         "path": "images/maps/Grand_Mage_Tower___Base___Library/Grand Mage Tower - Base - Library - Day - 16x16.jpg",
@@ -976,7 +976,7 @@
         "size": "16x16"
     },
     {
-        "title": "GrandMageTower-Base-Library-Night-16x16",
+        "title": "Nighttime Tower Library",
         "type": "map",
         "Tags": "Grand Mage Tower,medieval hall, astrology, round table, parlor, old building, mystical, celestial, occult, magical, esoteric, alchemist, alchemy",
         "path": "images/maps/Grand_Mage_Tower___Base___Library/Grand Mage Tower - Base - Library - Night - 16x16.jpg",
@@ -984,7 +984,7 @@
         "size": "16x16"
     },
     {
-        "title": "GrandMageTower-Base-Observatory-Day-16x16",
+        "title": "Mystic Watchtower",
         "type": "map",
         "Tags": "Grand Mage Tower,fantasy, dungeon, round table, celestial map, compass rose, fantasy roleplaying game, D&D, wizard, magic, adventure, fantasy setting, medieval, underground,",
         "path": "images/maps/Grand_Mage_Tower___Base___Observatory/Grand Mage Tower - Base - Observatory - Day - 16x16.jpg",
@@ -992,7 +992,7 @@
         "size": "16x16"
     },
     {
-        "title": "GrandMageTower-Base-Observatory-Night-16x16",
+        "title": "Moonlit Tower Observatory",
         "type": "map",
         "Tags": "Grand Mage Tower,fantasy, medieval, tavern, alembic, astrological, magic, wizard, seating, pub, round room",
         "path": "images/maps/Grand_Mage_Tower___Base___Observatory/Grand Mage Tower - Base - Observatory - Night - 16x16.jpg",
@@ -1536,7 +1536,7 @@
         "size": ""
     },
     {
-        "title": "HiddenPool-Blooming-Day-16x22-300DPI",
+        "title": "Blooming Secret Waterfall",
         "type": "map",
         "Tags": "Hidden Pool,island, river, forest, stone bridge, boat, sign, pathway, grass, rock, tree, waterfall, adventure",
         "path": "images/maps/Hidden_Pool___Blooming/Hidden Pool - Blooming - Day - 16x22 - 300 DPI.jpg",
@@ -1544,7 +1544,7 @@
         "size": "16x22"
     },
     {
-        "title": "HiddenPool-Blooming-Night-16x22-300DPI",
+        "title": "Blooming Night Pool",
         "type": "map",
         "Tags": "Hidden Pool,underwater, ocean, island, volcano, forest, fantasy, map, compass",
         "path": "images/maps/Hidden_Pool___Blooming/Hidden Pool - Blooming - Night - 16x22 - 300 DPI.jpg",
@@ -1680,7 +1680,7 @@
         "size": "1x1"
     },
     {
-        "title": "MegafloraGrotto-Verdant-Day-32x22-300DPI",
+        "title": "Verdant Underground Landscape",
         "type": "map",
         "Tags": "Megaflora Grotto,forest, pond, swamp, nature, tranquility, wilderness, landscape, fantasy, ecosystem, lilypads",
         "path": "images/maps/Megaflora_Grotto___Verdant/Megaflora Grotto - Verdant - Day - 32x22 - 300 DPI.jpg",
@@ -1688,7 +1688,7 @@
         "size": "32x22"
     },
     {
-        "title": "MegafloraGrotto-Verdant-Night-32x22-300DPI",
+        "title": "Verdant Night Landscape",
         "type": "map",
         "Tags": "Megaflora Grotto,lagoon, pond, tranquil, nighttime, jungle, foliage, stylized",
         "path": "images/maps/Megaflora_Grotto___Verdant/Megaflora Grotto - Verdant - Night - 32x22 - 300 DPI.jpg",
@@ -1696,7 +1696,7 @@
         "size": "32x22"
     },
     {
-        "title": "MetalsmithsWorkshop-Base-Day-22x16-300DPI",
+        "title": "Metalwork Artistry",
         "type": "map",
         "Tags": "Metalsmiths Workshop,map, floor plan, layout, game, design, furniture",
         "path": "images/maps/Metalsmiths_Workshop___Base/Metalsmiths Workshop - Base - Day - 22x16 - 300 DPI.jpg",
@@ -1704,7 +1704,7 @@
         "size": "22x16"
     },
     {
-        "title": "MetalsmithsWorkshop-Base-Night-22x16-300DPI",
+        "title": "Metalwork by Night",
         "type": "map",
         "Tags": "Metalsmiths Workshop,Fantasy home, Living room, Kitchen, Game room, Bedroom, Puzzle room",
         "path": "images/maps/Metalsmiths_Workshop___Base/Metalsmiths Workshop - Base - Night - 22x16 - 300 DPI.jpg",
@@ -1712,7 +1712,7 @@
         "size": "22x16"
     },
     {
-        "title": "MoonlitCathedral-Night-Pews-26x52",
+        "title": "Moonlit Cathedral Nave",
         "type": "map",
         "Tags": "Moonlit Cathedral,keyhole, entrance, arch, pillars, gothic, ornate, architecture, design, intricate, decorative, medieval, grandeur, dark, ominous",
         "path": "images/maps/Moonlit_Cathedral/Moonlit Cathedral - Night - Pews - 26x52.jpg",
@@ -1720,7 +1720,7 @@
         "size": "26x52"
     },
     {
-        "title": "MoonlitCathedral-Night-Rafters-26x52",
+        "title": "Moonlit Cathedral Scene",
         "type": "map",
         "Tags": "Moonlit Cathedral,dark, gothic, cathedral, interior, tunnel, intricate, spooky, shadowy, medieval, architecture, night",
         "path": "images/maps/Moonlit_Cathedral/Moonlit Cathedral - Night - Rafters - 26x52.jpg",
@@ -1728,7 +1728,7 @@
         "size": "26x52"
     },
     {
-        "title": "MushroomVillage-Forest-Day-43x29-300DPI",
+        "title": "Mushroom Forest Landscape",
         "type": "map",
         "Tags": "Mushroom Village,mushrooms, fantasy, stream, forest, island, adventure, fairy tale, waterfall, ecosystem, nature, colorful, cartoon",
         "path": "images/maps/Mushroom_Village___Forest/Mushroom Village - Forest - Day - 43x29 - 300 DPI.jpg",
@@ -1736,7 +1736,7 @@
         "size": "43x29"
     },
     {
-        "title": "MushroomVillage-Forest-Day-EmptyPen-6x9-300DPI",
+        "title": "Forest Village Scene",
         "type": "map",
         "Tags": "Mushroom Village,path, forest, trail, journey, hiking, wilderness, adventure, exploration, nature, woods, outdoors",
         "path": "images/maps/Mushroom_Village___Forest/Mushroom Village - Forest - Day - Empty Pen - 6x9 - 300 DPI.jpg",
@@ -1744,7 +1744,7 @@
         "size": "6x9"
     },
     {
-        "title": "MushroomVillage-Forest-Night-43x29-300DPI",
+        "title": "Night Forest Mushroom Village",
         "type": "map",
         "Tags": "Mushroom Village,caves, underground, rocky, dark, mushrooms, fantasy, cavern, dungeon, earthy, mysterious",
         "path": "images/maps/Mushroom_Village___Forest/Mushroom Village - Forest - Night - 43x29 - 300 DPI.jpg",
@@ -2360,7 +2360,7 @@
         "size": "4x4"
     },
     {
-        "title": "PaintedTundra-Autumn-Day-22x16-300DPI",
+        "title": "Autumn Tundra Landscape",
         "type": "map",
         "Tags": "Painted Tundra,forest, autumn, nature, wilderness, flora, map, water, rock",
         "path": "images/maps/Painted_Tundra___Autumn/Painted Tundra - Autumn - Day - 22x16 - 300 DPI.jpg",
@@ -2368,7 +2368,7 @@
         "size": "22x16"
     },
     {
-        "title": "PaintedTundra-Autumn-Night-22x16-300DPI",
+        "title": "Autumn Night Landscape",
         "type": "map",
         "Tags": "Painted Tundra,space, galaxies, colorful, vibrant, intricate, detailed, cosmic, starry sky, nebula, alien world",
         "path": "images/maps/Painted_Tundra___Autumn/Painted Tundra - Autumn - Night - 22x16 - 300 DPI.jpg",
@@ -2376,7 +2376,7 @@
         "size": "22x16"
     },
     {
-        "title": "PalatialPortal-Marble-Day-25x18-300DPI",
+        "title": "Palatial Portal Entrance",
         "type": "map",
         "Tags": "Palatial Portal,ancient, dungeon, underground, medieval, stone, archway, door, corridor, room, cold, musty",
         "path": "images/maps/Palatial_Portal___Marble/Palatial Portal - Marble - Day - 25x18 - 300 DPI.jpg",
@@ -2384,7 +2384,7 @@
         "size": "25x18"
     },
     {
-        "title": "PalatialPortal-Marble-Night-25x18-300DPI",
+        "title": "Palace Entrance at Night",
         "type": "map",
         "Tags": "Palatial Portal,dungeon, labyrinth, map, crypt, basement, underground, ruins, tomb, gothic, medieval, castle, fantasy",
         "path": "images/maps/Palatial_Portal___Marble/Palatial Portal - Marble - Night - 25x18 - 300 DPI.jpg",
@@ -2392,7 +2392,7 @@
         "size": "25x18"
     },
     {
-        "title": "PalatialThrone-Marble-Day-32x46-300DPI",
+        "title": "Marbled Imperial Throne",
         "type": "map",
         "Tags": "Palatial Throne,maze, labyrinth, floorplan, map, architecture, design, pattern, symmetry, dungeon, underground, fantasy, riddle, game",
         "path": "images/maps/Palatial_Throne___Marble/Palatial Throne - Marble - Day - 32x46 - 300 DPI.jpg",
@@ -2400,7 +2400,7 @@
         "size": "32x46"
     },
     {
-        "title": "PalatialThrone-Marble-Night-32x46-300DPI",
+        "title": "Marbled Palace Throne",
         "type": "map",
         "Tags": "Palatial Throne,labyrinth, dungeon, maze, castle, map, crypt, tower, medieval, architectural, design, layout, strategy, pattern",
         "path": "images/maps/Palatial_Throne___Marble/Palatial Throne - Marble - Night - 32x46 - 300 DPI.jpg",
@@ -2408,7 +2408,7 @@
         "size": "32x46"
     },
     {
-        "title": "RicketyRopeBridge-Clouds-16x22-300DPI",
+        "title": "Rickety Cloud Bridge",
         "type": "map",
         "Tags": "Rickety Rope Bridge,bridge, skywalk, waterfall, escape tunnel, catwalk, water slide, underground passage, aquafer, construction site, underwater tunnel",
         "path": "images/maps/Rickety Rope Bridge - Clouds - 16x22 - 300 DPI.jpg",
@@ -2416,7 +2416,7 @@
         "size": "16x22"
     },
     {
-        "title": "RicketyRopeBridge-Day-16x22-300DPI",
+        "title": "Rickety Rope Bridge",
         "type": "map",
         "Tags": "Rickety Rope Bridge,bridge, train tracks, trees, clouds, railroad, crossing, nature, outdoors, sky, tracks, water, forest, cloudy, tranquil, wooden",
         "path": "images/maps/Rickety_Rope_Bridge/Rickety Rope Bridge - Day - 16x22 - 300 DPI.jpg",
@@ -2424,7 +2424,7 @@
         "size": "16x22"
     },
     {
-        "title": "RicketyRopeBridge-Night-16x22-300DPI",
+        "title": "Rickety Rope Bridge",
         "type": "map",
         "Tags": "Rickety Rope Bridge,bridge, sky, train, tracks, nature, forest, clouds, tranquility, escape",
         "path": "images/maps/Rickety_Rope_Bridge/Rickety Rope Bridge - Night - 16x22 - 300 DPI.jpg",
@@ -2432,7 +2432,7 @@
         "size": "16x22"
     },
     {
-        "title": "RockyDesert-BaseMap-Day-32x22",
+        "title": "Rocky Desert Base Map",
         "type": "map",
         "Tags": "Rocky Desert,island, map, sandy, desert, exploration, cartography, adventure, treasure hunt, fantasy, paper, drawn, illustrated",
         "path": "images/maps/Rocky_Desert___Base_Map/Rocky Desert - Base Map - Day - 32x22.jpg",
@@ -2440,7 +2440,7 @@
         "size": "32x22"
     },
     {
-        "title": "RockyDesert-BaseMap-Night-32x22",
+        "title": "Rocky Desert Base Map",
         "type": "map",
         "Tags": "Rocky Desert,Underwater cave, subterranean ocean, undersea cenote, abyssal cave, sunken cavern",
         "path": "images/maps/Rocky_Desert___Base_Map/Rocky Desert - Base Map - Night - 32x22.jpg",
@@ -2448,7 +2448,7 @@
         "size": "32x22"
     },
     {
-        "title": "RockyFissures-Desert-Day-22x16",
+        "title": "Rocky Desert Landscape",
         "type": "map",
         "Tags": "Rocky Fissures,cave, desert, map, rocky, ruins, old, ancient, exploration, adventure, underground, mystery, abandoned",
         "path": "images/maps/Rocky_Fissures___Desert/Rocky Fissures - Desert - Day - 22x16.jpg",
@@ -2456,7 +2456,7 @@
         "size": "22x16"
     },
     {
-        "title": "RockyFissures-Desert-Night-22x16",
+        "title": "Rocky Desert Nightscape",
         "type": "map",
         "Tags": "Rocky Fissures,caves, caverns, rocks, stalactites, stalagmites, underground, cave system, natural wonder",
         "path": "images/maps/Rocky_Fissures___Desert/Rocky Fissures - Desert - Night - 22x16.jpg",
@@ -2464,7 +2464,7 @@
         "size": "22x16"
     },
     {
-        "title": "RoundTable-Valiant-Dark-26x18-300DPI",
+        "title": "Dark Fantasy Map",
         "type": "map",
         "Tags": "Round Table,dungeon map, gaming room setup, immersive environment, roleplaying board, game piece, fantasy layout, underground lair",
         "path": "images/maps/Round_Table___Valiant/Round Table - Valiant - Dark - 26x18 - 300 DPI.jpg",
@@ -2472,7 +2472,7 @@
         "size": "26x18"
     },
     {
-        "title": "RoundTable-Valiant-Light-26x18-300DPI",
+        "title": "Fantasy Battle Scene",
         "type": "map",
         "Tags": "Round Table,labyrinth, puzzle, map, maze, intricate, detailed, architectural, fantasy, medieval, stone",
         "path": "images/maps/Round_Table___Valiant/Round Table - Valiant - Light - 26x18 - 300 DPI.jpg",
@@ -2480,7 +2480,7 @@
         "size": "26x18"
     },
     {
-        "title": "RoyalBank-Vaults-Dark-32x23-300DPI",
+        "title": "Mysterious Vault Interiors",
         "type": "map",
         "Tags": "Royal Bank,Castle, Strategy, Game, Boardgame, Dungeon, Gameboard, Medieval, Design, Intricate, Colorful, Detailed",
         "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Dark - 32x23 - 300 DPI.jpg",
@@ -2488,7 +2488,7 @@
         "size": "32x23"
     },
     {
-        "title": "RoyalBank-Vaults-Light-32x23-300DPI",
+        "title": "Vaulted Treasury Illustrations",
         "type": "map",
         "Tags": "Royal Bank,castle, labyrinth, dungeon, tower, wall, architecture, design, fortress, medieval, structure, brick, stone",
         "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Light - 32x23 - 300 DPI.jpg",
@@ -2496,7 +2496,7 @@
         "size": "32x23"
     },
     {
-        "title": "RoyalBank-Vaults-Dark-Door1Alt-4x4-300DPI",
+        "title": "Mysterious Vault Entrance",
         "type": "map",
         "Tags": "Royal Bank,medieval, weapons, castle, armory, fantasy, dark, night, architecture, stone",
         "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Dark - Door 1 Alt - 4x4 - 300 DPI.jpg",
@@ -2504,7 +2504,7 @@
         "size": "4x4"
     },
     {
-        "title": "RoyalBank-Vaults-Dark-Door2Alt-2x6-300DPI",
+        "title": "Treacherous Vault Entrance",
         "type": "map",
         "Tags": "Royal Bank,glitch, corrupted file, error, pixelation, digital art, photo manipulation, broken computer screen, abstract, chaos, noise, disordered, chaotic order, visual confusion, unconventional, surreal, distorted, warped, fractal, geometric shapes",
         "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Dark - Door 2 Alt - 2x6 - 300 DPI.jpg",
@@ -2512,7 +2512,7 @@
         "size": "2x6"
     },
     {
-        "title": "RoyalBank-Vaults-Dark-Door3Alt-3x4-300DPI",
+        "title": "Vault of Shadows",
         "type": "map",
         "Tags": "Royal Bank,Drawn, Cartoon, Fantasy, Castle, Darkness, Courtyard, Tiles, Floor, Rusty, Trash, Cards, Game, Board, Room",
         "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Dark - Door 3 Alt - 3x4 - 300 DPI.jpg",
@@ -2520,7 +2520,7 @@
         "size": "3x4"
     },
     {
-        "title": "RoyalBank-Vaults-Light-Door1Alt-4x4-300DPI",
+        "title": "Vault Entrance Illuminated",
         "type": "map",
         "Tags": "Royal Bank,medieval architecture, underground ruins, rustic stonework, crumbling walls, dungeon interior, ancient catacombs, old sewer system",
         "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Light - Door 1 Alt - 4x4 - 300 DPI.jpg",
@@ -2528,7 +2528,7 @@
         "size": "4x4"
     },
     {
-        "title": "RoyalBank-Vaults-Light-Door2Alt-2x6-300DPI",
+        "title": "Vault Light Doorways",
         "type": "map",
         "Tags": "Royal Bank,artwork, illustration, digital, fantasy, dice, character, RPG, board game, strategy game, card game,",
         "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Light - Door 2 Alt - 2x6 - 300 DPI.jpg",
@@ -2536,7 +2536,7 @@
         "size": "2x6"
     },
     {
-        "title": "RoyalBank-Vaults-Light-Door3Alt-3x4-300DPI",
+        "title": "Vault Door Entrance",
         "type": "map",
         "Tags": "Royal Bank,gaming, pixel art, virtual reality, fantasy, board game, card game, dungeons and dragons, tabletop gaming, cryptocurrency, mining, blockchain, NFTs",
         "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Light - Door 3 Alt - 3x4 - 300 DPI.jpg",
@@ -2544,7 +2544,7 @@
         "size": "3x4"
     },
     {
-        "title": "LionStatue1",
+        "title": "Golden Regal Monument",
         "type": "map",
         "Tags": "Royal Bank,dog, puppy, illustration, cartoon, colorful, animal, pet, cute, drawing, stylized",
         "path": "images/maps/Lion Statue 1.png",
@@ -2552,7 +2552,7 @@
         "size": ""
     },
     {
-        "title": "LionStatue2",
+        "title": "Regal Bronze Statue",
         "type": "map",
         "Tags": "Royal Bank,Fantasy, Monster, Artwork, Lion, Drawing, Character, Design, Creature, Meme, Mythical, Fiction",
         "path": "images/maps/Lion Statue 2.png",
@@ -2560,7 +2560,7 @@
         "size": ""
     },
     {
-        "title": "RoyalOverlook-City-Day-16x22-300DPI",
+        "title": "City Royal Overlook",
         "type": "map",
         "Tags": "Royal Overlook,court, stairs, potted plant, statue, patio, shadow, archway, candles, floor tiles, balcony",
         "path": "images/maps/Royal_Overlook___City/Royal Overlook - City - Day - 16x22 - 300 DPI.jpg",
@@ -2568,7 +2568,7 @@
         "size": "16x22"
     },
     {
-        "title": "RoyalOverlook-City-Night-16x22-300DPI",
+        "title": "City Night Skyline",
         "type": "map",
         "Tags": "Royal Overlook,dark, night, castle, medieval, fantasy, courtyard, building, architecture, ambiance, spooky",
         "path": "images/maps/Royal_Overlook___City/Royal Overlook - City - Night - 16x22 - 300 DPI.jpg",
@@ -3048,7 +3048,7 @@
         "size": "10x5"
     },
     {
-        "title": "SeasideBar-Tropical-Day-22x16-300DPI",
+        "title": "Seaside Tropical Scene",
         "type": "map",
         "Tags": "Seaside Bar,boat, island, shack, furniture, water, rustic, beach, abandoned, empty, desolate",
         "path": "images/maps/Seaside_Bar___Tropical/Seaside Bar - Tropical - Day - 22x16 - 300 DPI.jpg",
@@ -3056,7 +3056,7 @@
         "size": "22x16"
     },
     {
-        "title": "SeasideBar-Tropical-Night-22x16-300DPI",
+        "title": "Seaside Tropical Night",
         "type": "map",
         "Tags": "Seaside Bar,boat, pier, water, shack, dock, fishing, island, wooden",
         "path": "images/maps/Seaside_Bar___Tropical/Seaside Bar - Tropical - Night - 22x16 - 300 DPI.jpg",
@@ -3064,7 +3064,7 @@
         "size": "22x16"
     },
     {
-        "title": "SewerHideout-Basic-Day-22x16",
+        "title": "Sewer Hideout Map",
         "type": "map",
         "Tags": "Sewer Hideout,medieval, fantasy, dungeon, castle, labyrinth, map, underground, treasure",
         "path": "images/maps/Sewer_Hideout___Basic/Sewer Hideout - Basic - Day - 22x16.jpg",
@@ -3072,7 +3072,7 @@
         "size": "22x16"
     },
     {
-        "title": "SewerHideout-Basic-Night-22x16",
+        "title": "Sewer Hideout Map",
         "type": "map",
         "Tags": "Sewer Hideout,dungeon, map, underground, maze, fantasy, dark, stone, architecture, layout, basement, crypt",
         "path": "images/maps/Sewer_Hideout___Basic/Sewer Hideout - Basic - Night - 22x16.jpg",
@@ -3080,7 +3080,7 @@
         "size": "22x16"
     },
     {
-        "title": "ShatteredStronghold-AstralSea-BlueStar-22x16-300DPI",
+        "title": "Astral Sea Blue Star",
         "type": "map",
         "Tags": "Shattered Stronghold,space, fantasy, map, celestial, nebula, adventure, otherworldly, galactic, interstellar, exploration",
         "path": "images/maps/Shattered Stronghold - Astral Sea - Blue Star - 22x16 - 300 DPI.jpg",
@@ -3088,7 +3088,7 @@
         "size": "22x16"
     },
     {
-        "title": "ShatteredStronghold-AstralSea-RedStar-22x16-300DPI",
+        "title": "Astral Sea Stronghold",
         "type": "map",
         "Tags": "Shattered Stronghold,space, alien, futuristic, artificial, destroyed, planetary, battleship, dystopian, sci-fi",
         "path": "images/maps/Shattered Stronghold - Astral Sea - Red Star - 22x16 - 300 DPI.jpg",
@@ -3096,7 +3096,7 @@
         "size": "22x16"
     },
     {
-        "title": "ShiftingSwamp-Jungle-23x16",
+        "title": "Fantasy Jungle Landscape",
         "type": "map",
         "Tags": "ShiftingSwamp,medieval, ruins, forest, ancient, architecture, trees, stone, shadow",
         "path": "images/maps/Shifting Swamp - Jungle - 23x16.jpg",
@@ -3104,7 +3104,7 @@
         "size": "23x16"
     },
     {
-        "title": "ShipyardWarehouse-Day-Floor1-23x32",
+        "title": "Shipyard Warehouse Layout",
         "type": "map",
         "Tags": "Shipyard Warehouse,building, water, dock, warehouse, unfinished, construction, stone, boat, paddle, lake, island, sand, beach",
         "path": "images/maps/Shipyard_Warehouse/Shipyard Warehouse - Day - Floor 1 - 23x32.jpg",
@@ -3112,7 +3112,7 @@
         "size": "23x32"
     },
     {
-        "title": "ShipyardWarehouse-Day-Floor2-21x12",
+        "title": "Shipyard Warehouse Floor",
         "type": "map",
         "Tags": "Shipyard Warehouse,cellar, basement, wooden, brick, items, clutter, unfinished, empty, no furniture, storage, unpainted, raw materials",
         "path": "images/maps/Shipyard_Warehouse/Shipyard Warehouse - Day - Floor 2 - 21x12.jpg",
@@ -3120,7 +3120,7 @@
         "size": "21x12"
     },
     {
-        "title": "ShipyardWarehouse-Night-Floor1-23x32",
+        "title": "Shipyard Storage Floor",
         "type": "map",
         "Tags": "Shipyard Warehouse,dock, ship, harbor, waterfront, building, warehouse, storage, boat, cargo, shipping, bay, construction, city, urban, architecture",
         "path": "images/maps/Shipyard_Warehouse/Shipyard Warehouse - Night - Floor 1 - 23x32.jpg",
@@ -3128,7 +3128,7 @@
         "size": "23x32"
     },
     {
-        "title": "ShipyardWarehouse-Night-Floor2-21x12",
+        "title": "Shipyard Warehouse Night Floor",
         "type": "map",
         "Tags": "Shipyard Warehouse,boat, ship, water, dock, timber, crafting, workstation, storage, tools, planks, deck",
         "path": "images/maps/Shipyard_Warehouse/Shipyard Warehouse - Night - Floor 2 - 21x12.jpg",
@@ -3136,7 +3136,7 @@
         "size": "21x12"
     },
     {
-        "title": "SinisterCabin-Occupied-Dark-Basement1-6x8",
+        "title": "Dark Cabin Secrets",
         "type": "map",
         "Tags": "Sinister Cabin,dark, stone, room, basement, rustic, dirty, abandoned, dungeon, old, dusty, cluttered",
         "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Dark - Basement 1 - 6x8.png",
@@ -3144,7 +3144,7 @@
         "size": "6x8"
     },
     {
-        "title": "SinisterCabin-Occupied-Dark-Basement2-5x7",
+        "title": "Dark Cabin Secrets",
         "type": "map",
         "Tags": "Sinister Cabin,dungeon, crypt, brick wall, stone archway, underground chamber, adventurers await, spelunkers ready, treasure chest",
         "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Dark - Basement 2 - 5x7.png",
@@ -3152,7 +3152,7 @@
         "size": "5x7"
     },
     {
-        "title": "SinisterCabin-Occupied-Dark-GroundFloor-11x8",
+        "title": "Dark Cabin Ground Floor",
         "type": "map",
         "Tags": "Sinister Cabin,dungeon, basement, game room, board game, tabletop game, miniatures, gaming room, fantasy, medieval, stone wall, candlelight",
         "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Dark - Ground Floor - 11x8.png",
@@ -3160,7 +3160,7 @@
         "size": "11x8"
     },
     {
-        "title": "SinisterCabin-Occupied-Dark-Roof-12x9",
+        "title": "Haunted Forest Cabin",
         "type": "map",
         "Tags": "Sinister Cabin,map, paper, ink, grid, symbols, game, adventure, storytelling, roleplaying, dungeon",
         "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Dark - Roof - 12x9.png",
@@ -3168,7 +3168,7 @@
         "size": "12x9"
     },
     {
-        "title": "SinisterCabin-Occupied-Light-Basement1-6x8",
+        "title": "Haunted Basement Dwelling",
         "type": "map",
         "Tags": "Sinister Cabin,ruin, dungeon, games, video game, pixel art, fantasy, cellar, abandoned, dice, RPG, crypt",
         "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Light - Basement 1 - 6x8.png",
@@ -3176,7 +3176,7 @@
         "size": "6x8"
     },
     {
-        "title": "SinisterCabin-Occupied-Light-Basement2-5x7",
+        "title": "Mysterious Dark Basement",
         "type": "map",
         "Tags": "Sinister Cabin,Dusty, Brick, Cobweb, Crypt, Dark, Skeletons, Rusty",
         "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Light - Basement 2 - 5x7.png",
@@ -3184,7 +3184,7 @@
         "size": "5x7"
     },
     {
-        "title": "SinisterCabin-Occupied-Light-GroundFloor-11x8",
+        "title": "Dark Cabin Interior",
         "type": "map",
         "Tags": "Sinister Cabin,small room, fantasy interior, cozy, dim lighting, rustic, warm tones, stone floor, fireplace, wooden furniture",
         "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Light - Ground Floor - 11x8.png",
@@ -3192,7 +3192,7 @@
         "size": "11x8"
     },
     {
-        "title": "SinisterCabin-Occupied-Light-Roof-12x9",
+        "title": "Creepy Cabin Retreat",
         "type": "map",
         "Tags": "Sinister Cabin,sign, parchment, scroll, document, papyrus, ancient, manuscript, writing, ink",
         "path": "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Light - Roof - 12x9.png",
@@ -3200,7 +3200,7 @@
         "size": "12x9"
     },
     {
-        "title": "SwampTrail-Gloomy-Day-44x32-300DPI",
+        "title": "Swampy Morning Atmosphere",
         "type": "map",
         "Tags": "Swamp Trail,decay, forest, mushroom, overgrown, underworld, ruins, spore, growth",
         "path": "images/maps/Swamp_Trail___Gloomy/Swamp Trail - Gloomy - Day - 44x32 - 300 DPI.jpg",
@@ -3208,7 +3208,7 @@
         "size": "44x32"
     },
     {
-        "title": "SwampTrail-Gloomy-Night-44x32-300DPI",
+        "title": "Swampy Night Landscape",
         "type": "map",
         "Tags": "Swamp Trail,moonlit, celestial, outer space, dark side of the moon, cratered terrain, meteorite, lunar landscape",
         "path": "images/maps/Swamp_Trail___Gloomy/Swamp Trail - Gloomy - Night - 44x32 - 300 DPI.jpg",
@@ -3776,7 +3776,7 @@
         "size": ""
     },
     {
-        "title": "TradingPost-Occupied-Dark-14x14-300DPI",
+        "title": "Dark Trading Post Map",
         "type": "map",
         "Tags": "Trading Post,map, fantasy, interior, rooms, loot, treasure, game, open world",
         "path": "images/maps/Trading_Post___Occupied/Trading Post - Occupied - Dark - 14x14 - 300 DPI.jpg",
@@ -3784,7 +3784,7 @@
         "size": "14x14"
     },
     {
-        "title": "TradingPost-Occupied-Light-14x14-300DPI",
+        "title": "Map of Trading Post",
         "type": "map",
         "Tags": "Trading Post,house, map, floor plan, interior design, medieval, fantasy, kitchen, living room, bedroom, bathroom, rug, furniture",
         "path": "images/maps/Trading_Post___Occupied/Trading Post - Occupied - Light - 14x14 - 300 DPI.jpg",
@@ -3792,7 +3792,7 @@
         "size": "14x14"
     },
     {
-        "title": "TwilightTavern-Everyday-Dark-Cellar-22x16",
+        "title": "Mysterious Cellar Scene",
         "type": "map",
         "Tags": "Twilight Tavern,map, dungeon, isometric, tile-based, top-down view",
         "path": "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Dark - Cellar - 22x16.jpg",
@@ -3800,7 +3800,7 @@
         "size": "22x16"
     },
     {
-        "title": "TwilightTavern-Everyday-Dark-Floor1-22x16",
+        "title": "Dark Tavern Scene",
         "type": "map",
         "Tags": "Twilight Tavern,brown, tile, rug, lamp, ceiling, wall, door, window, table, chair, sofa, TV, book, clock, vase, mirror, floor, carpet, couch, person",
         "path": "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Dark - Floor 1 - 22x16.jpg",
@@ -3808,7 +3808,7 @@
         "size": "22x16"
     },
     {
-        "title": "TwilightTavern-Everyday-Dark-Floor2-22x16",
+        "title": "Dark Floor Tavern",
         "type": "map",
         "Tags": "Twilight Tavern,house, mansion, interior, floorplan, architectural, design, furniture, layout, colorful",
         "path": "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Dark - Floor 2 - 22x16.jpg",
@@ -3816,7 +3816,7 @@
         "size": "22x16"
     },
     {
-        "title": "TwilightTavern-Everyday-Light-Cellar-22x16",
+        "title": "Cellar Scene Artwork",
         "type": "map",
         "Tags": "Twilight Tavern,dungeon, level, floor, tiles, graphic design, pixelated, digital art, game environment, basement",
         "path": "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Light - Cellar - 22x16.jpg",
@@ -3824,7 +3824,7 @@
         "size": "22x16"
     },
     {
-        "title": "TwilightTavern-Everyday-Light-Floor1-22x16",
+        "title": "Twilight Tavern Floorplan",
         "type": "map",
         "Tags": "Twilight Tavern,dungeon, labyrinth, basement, gaming room, fantasy, spooky, dimly lit, underground, tabletop, board game, maze, adventurous",
         "path": "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Light - Floor 1 - 22x16.jpg",
@@ -3832,7 +3832,7 @@
         "size": "22x16"
     },
     {
-        "title": "TwilightTavern-Everyday-Light-Floor2-22x16",
+        "title": "Fantasy Tavern Scene",
         "type": "map",
         "Tags": "Twilight Tavern,dungeons, rooms, lit, map, layout, underground, fantasy, board game, strategy, tabletop game",
         "path": "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Light - Floor 2 - 22x16.jpg",
@@ -3840,7 +3840,7 @@
         "size": "22x16"
     },
     {
-        "title": "UndergroundOutpost-Everyday-Dark-22x16",
+        "title": "Darkened Subterranean Outpost",
         "type": "map",
         "Tags": "Underground Outpost,castle, underground, dungeon, strategy game, board game, war room, medieval, dark, blueprints, fantasy, intricate, complex, detailed",
         "path": "images/maps/Underground_Outpost___Everyday/Underground Outpost - Everyday - Dark - 22x16.jpg",
@@ -3848,7 +3848,7 @@
         "size": "22x16"
     },
     {
-        "title": "UndergroundOutpost-Everyday-Light-22x16",
+        "title": "Mysterious Bunker Map",
         "type": "map",
         "Tags": "Underground Outpost,dungeon, maze, architecture, underground, labyrinth, exploration, dark fantasy, stone, mystery",
         "path": "images/maps/Underground_Outpost___Everyday/Underground Outpost - Everyday - Light - 22x16.jpg",
@@ -3856,7 +3856,7 @@
         "size": "22x16"
     },
     {
-        "title": "UndergroundSanctuary-Inviting-Dark-44x32",
+        "title": "Dark Underworld Shelter",
         "type": "map",
         "Tags": "Underground Sanctuary,dungeon, map, layout, floor plan, structure, design, game, fantasy, underground, labyrinth, strategy, medieval, architecture, 3d rendering, tileable, digital art, base, ceiling, rooms, corridors",
         "path": "images/maps/Underground_Sanctuary___Inviting/Underground Sanctuary - Inviting - Dark - 44x32.jpg",
@@ -3864,7 +3864,7 @@
         "size": "44x32"
     },
     {
-        "title": "UndergroundSanctuary-Inviting-Light-44x32",
+        "title": "Mystic Hidden Refuge",
         "type": "map",
         "Tags": "Underground Sanctuary,dungeon, floor plan, labyrinth, underground, maze, strategy game, grid layout, rooms, doors, corridors, levels",
         "path": "images/maps/Underground_Sanctuary___Inviting/Underground Sanctuary - Inviting - Light - 44x32.jpg",
@@ -3872,7 +3872,7 @@
         "size": "44x32"
     },
     {
-        "title": "WildWestHighStreet-Everyday-Day-22x16",
+        "title": "Wild West High Street",
         "type": "map",
         "Tags": "Wild West High Street,medieval, village, farm, cartoon, dirt road, wooden house, rural life, fantasy setting, colorful, animated",
         "path": "images/maps/Wild_West_High_Street___Everyday/Wild West High Street - Everyday - Day - 22x16.jpg",
@@ -3880,7 +3880,7 @@
         "size": "22x16"
     },
     {
-        "title": "WildWestHighStreet-Everyday-Night-22x16",
+        "title": "Western Cityscape Nightlife",
         "type": "map",
         "Tags": "Wild West High Street,rural, village, nighttime, quiet, street lights, empty, abandoned, cartoon art style, fantasy, gaming",
         "path": "images/maps/Wild_West_High_Street___Everyday/Wild West High Street - Everyday - Night - 22x16.jpg",
@@ -3888,7 +3888,7 @@
         "size": "22x16"
     },
     {
-        "title": "WildWestHighStreet-Everyday-Interior-Day-22x16",
+        "title": "Wild West Street Scene",
         "type": "map",
         "Tags": "Wild West High Street,desert, sandy, buildings, dirt road, desolate, abandoned, cartoon art style, village, old western town, dirt, dust",
         "path": "images/maps/Wild_West_High_Street___Everyday___Interior/Wild West High Street - Everyday - Interior - Day - 22x16.jpg",
@@ -3896,7 +3896,7 @@
         "size": "22x16"
     },
     {
-        "title": "WildWestHighStreet-Everyday-Interior-Night-22x16",
+        "title": "Nighttime Cityscape",
         "type": "map",
         "Tags": "Wild West High Street,village, street, houses, cartoon, map, fantasy, stylized, road, buildings, nighttime, no people",
         "path": "images/maps/Wild_West_High_Street___Everyday___Interior/Wild West High Street - Everyday - Interior - Night - 22x16.jpg",
@@ -3904,7 +3904,7 @@
         "size": "22x16"
     },
     {
-        "title": "WildWestSheriff'sOffice-Everyday-ExteriorOverlay-Day-10x15-300DPI",
+        "title": "Western Town Exterior",
         "type": "map",
         "Tags": "Wild West Sheriffs Office,Pub, Tavern, Board Game, Tabletop Game, RPG, Board Game Night, Game Store, Role Playing, Comic Book Store, Pen and Paper Game",
         "path": "images/maps/Wild_West_Sheriff_s_Office___Everyday___Exterior_Overlay/Wild West Sheriff's Office - Everyday - Exterior Overlay - Day - 10x15 - 300 DPI.jpg",
@@ -3912,7 +3912,7 @@
         "size": "10x15"
     },
     {
-        "title": "WildWestSheriff'sOffice-Everyday-ExteriorOverlay-Night-10x15-300DPI",
+        "title": "Midnight Town Patrol",
         "type": "map",
         "Tags": "Wild West Sheriffs Office,small, building, night, cartoon, roof, windows, light, exterior",
         "path": "images/maps/Wild_West_Sheriff_s_Office___Everyday___Exterior_Overlay/Wild West Sheriff's Office - Everyday - Exterior Overlay - Night - 10x15 - 300 DPI.jpg",
@@ -3920,7 +3920,7 @@
         "size": "10x15"
     },
     {
-        "title": "WildWestSheriff'sOffice-Everyday-Interior-Day-22x20-300DPI",
+        "title": "Wild West Sheriff's Office",
         "type": "map",
         "Tags": "Wild West Sheriffs Office,house, barn, abandoned, rural, neglected, farmhouse, dilapidated, ruins, overgrown, empty",
         "path": "images/maps/Wild_West_Sheriff_s_Office___Everyday___Interior/Wild West Sheriff's Office - Everyday - Interior - Day - 22x20 - 300 DPI.jpg",
@@ -3928,7 +3928,7 @@
         "size": "22x20"
     },
     {
-        "title": "WildWestSheriff'sOffice-Everyday-Interior-Night-22x20-300DPI",
+        "title": "Nighttime Sheriff's Station",
         "type": "map",
         "Tags": "Wild West Sheriffs Office,abandoned, house, rural, nighttime, unoccupied, neglected, overgrown, desolate, empty",
         "path": "images/maps/Wild_West_Sheriff_s_Office___Everyday___Interior/Wild West Sheriff's Office - Everyday - Interior - Night - 22x20 - 300 DPI.jpg",
@@ -3936,7 +3936,7 @@
         "size": "22x20"
     },
     {
-        "title": "WizardingSchoolGreatHall-RadiantDragon-Day-32x44",
+        "title": "Radiant Dragon Hall",
         "type": "map",
         "Tags": "Wizarding School Great Hall,church, pews, cathedral, ceiling, lighting, chandelier, altar, architecture, grand, gothic",
         "path": "images/maps/Wizarding_School_Great_Hall___Radiant_Dragon/Wizarding School Great Hall - Radiant Dragon - Day - 32x44.jpg",
@@ -3944,7 +3944,7 @@
         "size": "32x44"
     },
     {
-        "title": "WizardingSchoolGreatHall-RadiantDragon-Night-32x44",
+        "title": "Radiant Dragon Night",
         "type": "map",
         "Tags": "Wizarding School Great Hall,- interior architecture, - room with rows of seating, - red and blue lighting, - dark ambiance, - intricate ceiling design",
         "path": "images/maps/Wizarding_School_Great_Hall___Radiant_Dragon/Wizarding School Great Hall - Radiant Dragon - Night - 32x44.jpg",

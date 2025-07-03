@@ -3,9 +3,18 @@
 {% block content %}
 <div class="max-w-4xl mx-auto">
     <div class="bg-slate-400/100 shadow w-full min-h-96 rounded-b-lg p-4 text-slate-50 grid grid-cols-1">
-        <div class="rounded-t-lg w-full h-24 p-4 bg-slate-400 center text-black text-3xl">
-            <input class="h-full w-full" type="text" id="mapSearch" placeholder="Map name...">
-        </div>
+        <span>
+            <div class="rounded-t-lg w-full h-24 p-4 bg-slate-400 center text-black text-3xl relative">
+                <input class="h-full w-full" type="text" id="mapSearch" placeholder="Map name...">
+                <div id="mapDropdown" class="absolute left-0 right-0 bg-white text-black rounded-b-lg shadow z-10 hidden"></div>
+            </div>
+        </span>
+        <span>
+            <div class="content-center">
+                <img class="min-w-96 min-h-96 center">
+            </div>
+        </span>
     </div>
 </div>
+<script src="{{ url_for('static', filename='js/encounterCreate.js') }}"></script>
 {% endblock %}

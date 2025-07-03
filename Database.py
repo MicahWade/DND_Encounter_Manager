@@ -320,6 +320,13 @@ class Database():
         if encounterRow:
             return Encounter.Encounter(encounterRow[0], enemys, encounterRow[1])
         return None
+    
+    def GetMap(self, title):
+        print(title)
+        mapDB = self.server.execute('''SELECT Path, Variants, Size FROM Maps WHERE Title = ?''', (title,)).fetchone()
+        print(type(mapDB))
+        return mapDB
+
     def GetEnemys(self):
         try:
             enemysDB = self.server.execute(f"SELECT EnemyID, Name, CR FROM Enemys ORDER BY RANDOM() LIMIT 20")
@@ -337,10 +344,7 @@ class Database():
     #region Search
     def searchEnemys(self, term):
         try:
-            enemysDB = self.server.execute(f"SELECT EnemyID, Name, CR FROM Enemys WHERE LOWER(Name) LIKE ? ORDER BY Name LIMIT 20", (f"%{term}%",))
-            enemyList = []
-            for enemyDB in enemysDB:
-                enemyList.append([enemyDB[1], enemyDB[2], enemyDB[0]])
+            enemyList = self.server.execute(f"SELECT EnemyID, Name, CR FROM Enemys WHERE LOWER(Name) LIKE ? ORDER BY Name LIMIT 20", (f"%{term}%",)).fetchall()
             return enemyList
         except Exception as e:
             print(e)
@@ -348,8 +352,9 @@ class Database():
         
     def searchMap(self, term):
         searchterm = f"{term}%"
-        mapdb = self.server.execute(f"SELECT DISTINCT map.Title, map.Path, map.Size FROM Maps map LEFT JOIN MapTags tag ON map.MapID = tag.MapID WHERE map.Title LIKE ? OR tag.Tag LIKE ? LIMIT 10", (searchterm, searchterm)).fetchall()
-        print(mapdb)
+        titleTerm = f"%{term}%"
+        mapdb = self.server.execute(f"SELECT DISTINCT map.Title FROM Maps map LEFT JOIN MapTags tag ON map.MapID = tag.MapID WHERE map.Title LIKE ? OR tag.Tag LIKE ? LIMIT 10", (titleTerm, searchterm)).fetchall()
+        return mapdb
 
     #endregion
 

@@ -184,6 +184,19 @@ def searchMap(term):
     results = server.searchMap(term)
     return results
 
+@app.route("/map/get/<title>")
+def getMap(title):
+    server = Database.Database(False)
+    result = server.GetMap(title)
+    if result is None:
+        return jsonify({"error": "Map not found"}), 404
+    # result is (Path, Variants, Size)
+    return jsonify({
+        "image_path": result[0],
+        "variants": result[1],
+        "size": result[2]
+    })
+
 @app.route("/settings")
 def settings():
     if 'userid' not in session:

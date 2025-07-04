@@ -26,7 +26,7 @@ async function loadFloorsForMap() {
     updateFloorArrows();
 }
 
-function rotateImageIfNeeded(img) {
+function rotateImageIfNeeded(img, size) {
     if (!img) return;
     img.style.transform = '';
     img.style.maxWidth = '';
@@ -41,16 +41,60 @@ function rotateImageIfNeeded(img) {
             img.style.transform = 'translate(-50%, -50%) rotate(90deg)';
             img.style.maxWidth = `${parentRect.height}px`;
             img.style.maxHeight = `${parentRect.width}px`;
+            addGridOverlay(img, size, [parentRect.width, parentRect.height], true)
         } else {
             img.style.transform = 'translate(-50%, -50%)';
             img.style.maxWidth = `${parentRect.width}px`;
             img.style.maxHeight = `${parentRect.height}px`;
+            addGridOverlay(img, size, [parentRect.height, parentRect.width], false)
         }
         img.style.position = 'absolute';
         img.style.left = '50%';
         img.style.top = '50%';
     });
 }
+
+function addGridOverlay(img, size, imagesize, rotate = false) {
+    if (!img || !size) return;
+    var [cols, rows] = size.split('x').map(Number);
+    if (isNaN(cols) || isNaN(rows) || cols <= 0 || rows <= 0) {
+        console.error("Invalid grid size provided. Expected format 'WxH' (e.g., '10x8').");
+        return;
+    }
+    const parent = img.parentElement;
+    parent.style.position = 'relative'; // Ensure parent is positioned for absolute overlay
+    // Remove any existing grid overlay
+    const existingGrid = parent.querySelector('.grid-overlay');
+    if (existingGrid) {
+        existingGrid.remove();
+    }
+    const gridOverlay = document.createElement('div');
+    gridOverlay.className = 'grid-overlay absolute inset-0 pointer-events-none';
+    gridOverlay.style.display = 'grid';
+    gridOverlay.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
+    gridOverlay.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
+    gridOverlay.style.left ='50%';
+    gridOverlay.style.top ='50%';
+    if (rotate === true){
+        gridOverlay.style.transform = 'translate(-50%, -50%) rotate(90deg)';
+    } else {
+        gridOverlay.style.transform = 'translate(-50%, -50%)';
+    }
+    gridOverlay.style.height = imagesize[0] + 'px';
+    gridOverlay.style.width = imagesize[1] + 'px';
+    gridOverlay.style.zIndex = '10'; // Ensure it's above the image but below other UI elements
+    // Add grid lines
+    for (let i = 0; i < rows; i++) {
+        for (let j = 0; j < cols; j++) {
+            const cell = document.createElement('div');
+            cell.style.border = '1px solid rgba(0, 0, 0, 0.3)'; // Subtle black lines
+            cell.style.boxSizing = 'border-box'; // Include padding and border in the element's total width and height
+            gridOverlay.appendChild(cell);
+        }
+    }
+    parent.appendChild(gridOverlay);
+}
+
 
 function updateFloorArrows() {
     if (!currentFloors || currentFloors.length <= 1) {
@@ -121,7 +165,7 @@ mapDropdown.addEventListener('click', async (e) => {
                     if (img) {
                         img.src = `../static/${mainMapPath}`;
                         img.alt = title;
-                        rotateImageIfNeeded(img);
+                        rotateImageIfNeeded(img, mapInfo.size)
                     }
                     if (mapInfo.floor != 0){
                         await loadFloorsForMap();

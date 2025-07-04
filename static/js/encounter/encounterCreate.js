@@ -56,16 +56,7 @@ if (addTypeBtn && addTypeDropdown) {
                     // Add button as a list item
                     const addBtnLi = document.createElement('li');
                     const addElementSelector = createAddElementSelector((subType) => {
-                        const subLi = document.createElement('li');
-                        subLi.className = "flex items-center justify-between bg-slate-200 rounded px-2 py-1";
-                        subLi.innerHTML = `
-                            <span>${subType}</span>
-                            <button class="text-red-400 hover:text-red-600 ml-2" title="Remove" type="button">&times;</button>
-                        `;
-                        subLi.querySelector('button').addEventListener('click', () => {
-                            subLi.remove();
-                        });
-                        subList.insertBefore(subLi, addBtnLi);
+                        addSubEncounter(subList, subType);
                     });
                     addBtnLi.appendChild(addElementSelector);
                     subList.appendChild(addBtnLi);
@@ -80,16 +71,21 @@ if (addTypeBtn && addTypeDropdown) {
         }
 
     });
+
     function addSubEncounter(parentList, type) {
+        // Create the sub-list item
         const subLi = document.createElement('li');
         subLi.className = "bg-slate-100 rounded px-3 py-2 mb-2";
 
+        // Row for label and remove button
         const row = document.createElement('div');
         row.className = "flex items-center justify-between";
 
+        // Label
         const span = document.createElement('span');
         span.textContent = type;
 
+        // Remove button
         const removeBtn = document.createElement('button');
         removeBtn.className = "text-red-500 hover:text-red-700 ml-2";
         removeBtn.title = "Remove";
@@ -99,42 +95,43 @@ if (addTypeBtn && addTypeDropdown) {
             subLi.remove();
         });
 
+        // Assemble row
         row.appendChild(span);
         row.appendChild(removeBtn);
         subLi.appendChild(row);
 
+        // If this type can have children, add a nested UL and Add Encounter button
         if (["Battle", "Skill Check", "Change"].includes(type)) {
             const subList = document.createElement('ul');
             subList.className = "ml-8 mt-2 space-y-2";
 
+            // Add Encounter button (as a list item)
             const addBtnLi = document.createElement('li');
-            const typeSelector = createAddElementSelector((subType, selectorWrapper) => {
+            const typeSelector = createAddElementSelector((subType, wrapper) => {
                 addSubEncounter(subList, subType);
             });
             addBtnLi.appendChild(typeSelector);
-            subList.appendChild(addBtnLi);
+            subList.appendChild(addBtnLi); // Always keep this as the last <li>
 
             subLi.appendChild(subList);
         }
 
-        // Insert above the add button if it exists, otherwise append
-        const addBtn = parentList.querySelector('li > div > button.inline-flex.items-center');
-        if (addBtn) {
-            parentList.insertBefore(subLi, addBtn.closest('li'));
+        // If the parent list already has an "Add Encounter" button as the last <li>, insert before it
+        // Otherwise, just append (should only happen at initial creation)
+        if (
+            parentList.lastElementChild &&
+            parentList.lastElementChild.querySelector &&
+            parentList.lastElementChild.querySelector('button')
+        ) {
+            parentList.insertBefore(subLi, parentList.lastElementChild);
         } else {
             parentList.appendChild(subLi);
         }
     }
-
-    // Hide dropdown when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!addTypeBtn.contains(e.target) && !addTypeDropdown.contains(e.target)) {
-            addTypeDropdown.classList.add('hidden');
-        }
-    });
 }
 
 function createAddElementSelector(onSelect) {
+    console.log("element")
     const wrapper = document.createElement('div');
     wrapper.className = "relative inline-block";
 
@@ -161,6 +158,8 @@ function createAddElementSelector(onSelect) {
 
     dropdown.addEventListener('click', (e) => {
         const btn = e.target.closest('button[data-type]');
+        e.stopPropagation();
+
         if (btn) {
             const type = btn.getAttribute('data-type');
             onSelect(type, wrapper);

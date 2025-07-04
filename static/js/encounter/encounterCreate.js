@@ -5,6 +5,73 @@ const addTypeListItem = document.getElementById('addTypeListItem');
 const addTypeBtn = document.getElementById('addTypeBtn');
 const addTypeDropdown = document.getElementById('addTypeDropdown');
 
+
+function addDescription(li) {
+    // Main row (flex for parent)
+    const row = document.createElement('div');
+    row.className = "flex items-center justify-between w-full";
+
+    const span = document.createElement('span');
+    span.textContent = "Description";
+
+    const removeBtn = document.createElement('button');
+    removeBtn.className = "text-red-500 hover:text-red-700 ml-2";
+    removeBtn.title = "Remove";
+    removeBtn.type = "button";
+    removeBtn.innerHTML = "&times;";
+    removeBtn.addEventListener('click', () => {
+        li.remove();
+        if (encounterElementsList.querySelectorAll('li:not(#addTypeListItem)').length === 0 && encounterElementsPlaceholder) {
+            encounterElementsPlaceholder.style.display = '';
+        }
+    });
+
+    row.appendChild(span);
+    row.appendChild(removeBtn);
+    li.appendChild(row);
+
+    const descriptionContainer = document.createElement('div');
+    descriptionContainer.className = 'ml-4 mt-2 p-2 border-l-2 border-slate-300';
+
+    const textarea = document.createElement('textarea');
+    textarea.className = 'w-full p-2 border border-slate-400 rounded-md text-sm';
+    textarea.rows = 4;
+    textarea.placeholder = 'Enter description here...';
+
+    descriptionContainer.appendChild(textarea);
+    li.appendChild(descriptionContainer);
+}
+
+function addBattle(subLi) {
+    const row = document.createElement('div');
+    row.className = "flex items-center justify-between";
+    // Label
+    const span = document.createElement('span');
+    span.textContent = "Battle";
+    // Remove button
+    const removeBtn = document.createElement('button');
+    removeBtn.className = "text-red-500 hover:text-red-700 ml-2";
+    removeBtn.title = "Remove";
+    removeBtn.type = "button";
+    removeBtn.innerHTML = "&times;";
+    removeBtn.addEventListener('click', () => {
+        subLi.remove();
+    });
+    // Assemble row
+    row.appendChild(span);
+    row.appendChild(removeBtn);
+    subLi.appendChild(row);
+    // If this type can have children, add a nested UL and Add Encounter button
+    const subList = document.createElement('ul');
+    subList.className = "ml-8 mt-2 space-y-2";
+    // Add Encounter button (as a list item)
+    const addBtnLi = document.createElement('li');
+    const typeSelector = createAddElementSelector();
+    addBtnLi.appendChild(typeSelector);
+    subList.appendChild(addBtnLi); // Always keep this as the last <li>
+    subLi.appendChild(subList);
+}
+
 function addSkillCheck(li) {
     li.className = "bg-slate-200/30 border border-slate-300 rounded px-3 py-2 mb-2";
 
@@ -98,42 +165,38 @@ function addSkillCheck(li) {
     li.appendChild(skillCheckContainer);
 }
 
-function addDescription(li) {
-    // Main row (flex for parent)
+function addChange(subLi) {
+    // Row for label and remove button
     const row = document.createElement('div');
-    row.className = "flex items-center justify-between w-full";
-
+    row.className = "flex items-center justify-between";
+    // Label
     const span = document.createElement('span');
-    span.textContent = "Description";
-
+    span.textContent = "Change";
+    // Remove button
     const removeBtn = document.createElement('button');
     removeBtn.className = "text-red-500 hover:text-red-700 ml-2";
     removeBtn.title = "Remove";
     removeBtn.type = "button";
     removeBtn.innerHTML = "&times;";
     removeBtn.addEventListener('click', () => {
-        li.remove();
-        if (encounterElementsList.querySelectorAll('li:not(#addTypeListItem)').length === 0 && encounterElementsPlaceholder) {
-            encounterElementsPlaceholder.style.display = '';
-        }
+        subLi.remove();
     });
-
+    // Assemble row
     row.appendChild(span);
     row.appendChild(removeBtn);
-    li.appendChild(row);
+    subLi.appendChild(row);
 
     const descriptionContainer = document.createElement('div');
-    descriptionContainer.className = 'ml-4 mt-2 p-2 border-l-2 border-slate-300';
+    descriptionContainer.className = 'ml-2 mt-2 p-2 border-l-2 border-slate-300 max-h-16';
 
     const textarea = document.createElement('textarea');
-    textarea.className = 'w-full p-2 border border-slate-400 rounded-md text-sm';
+    textarea.className = 'w-full p-1 border border-slate-400 rounded-md text-sm max-h-14 ';
     textarea.rows = 4;
     textarea.placeholder = 'Enter description here...';
 
     descriptionContainer.appendChild(textarea);
-    li.appendChild(descriptionContainer);
+    subLi.appendChild(descriptionContainer);
 }
-
 
 addTypeBtn.addEventListener('click', (e) => {
     e.stopPropagation();
@@ -149,47 +212,7 @@ addTypeDropdown.addEventListener('click', (e) => {
             encounterElementsPlaceholder.style.display = 'none';
         }
         if (encounterElementsList) {
-            const li = document.createElement('li');
-            li.className = "bg-slate-200/30 border border-slate-300 rounded px-3 py-2 mb-2";
-            // Main row (flex for parent)
-            const row = document.createElement('div');
-            row.className = "flex items-center justify-between";
-            if (type !== "Skill Check") {
-                const span = document.createElement('span');
-                span.textContent = type;
-
-                const removeBtn = document.createElement('button');
-                removeBtn.className = "text-red-500 hover:text-red-700 ml-2";
-                removeBtn.title = "Remove";
-                removeBtn.type = "button";
-                removeBtn.innerHTML = "&times;";
-                removeBtn.addEventListener('click', () => {
-                    li.remove();
-                    if (encounterElementsList.querySelectorAll('li:not(#addTypeListItem)').length === 0 && encounterElementsPlaceholder) {
-                        encounterElementsPlaceholder.style.display = '';
-                    }
-                });
-
-                row.appendChild(span);
-                row.appendChild(removeBtn);
-            }
-            li.appendChild(row);
-            // For types with sub-encounters
-            if (["Battle", "Change"].includes(type)) {
-                // Nested UL for Battle or Change
-                const subList = document.createElement('ul');
-                subList.className = "ml-8 mt-2 space-y-2"; // Indent and spacing
-                // Add button as a list item
-                const addBtnLi = document.createElement('li');
-                const addElementSelector = createAddElementSelector();
-                addBtnLi.appendChild(addElementSelector);
-                subList.appendChild(addBtnLi);
-                li.appendChild(subList);
-            } else if (type === "Skill Check") {
-                addSkillCheck(li);
-            }
-            // Insert above the Add to Encounter button
-            encounterElementsList.insertBefore(li, addTypeListItem);
+            addSubEncounter(encounterElementsList, type);
         }
         addTypeDropdown.classList.add('hidden');
     }
@@ -206,6 +229,14 @@ function addSubEncounter(parentList, type) {
             addDescription(subLi);
             break;    
                 
+        case "Battle":
+            addBattle(subLi);
+            break;
+
+        case "Change":
+            addChange(subLi);
+            break;
+
         default:
             // Row for label and remove button
             const row = document.createElement('div');
@@ -225,8 +256,9 @@ function addSubEncounter(parentList, type) {
             // Assemble row
             row.appendChild(span);
             row.appendChild(removeBtn);
+            subLi.appendChild(row);
             // If this type can have children, add a nested UL and Add Encounter button
-            if (["Battle", "Skill Check", "Change"].includes(type)) {
+            if (["",].includes(type)) {
                 const subList = document.createElement('ul');
                 subList.className = "ml-8 mt-2 space-y-2";
                 // Add Encounter button (as a list item)
@@ -236,7 +268,6 @@ function addSubEncounter(parentList, type) {
                 subList.appendChild(addBtnLi); // Always keep this as the last <li>
                 subLi.appendChild(subList);
             }
-            subLi.appendChild(row);
         break;
     }
     console.log(parentList.children)
@@ -249,13 +280,13 @@ function addSubEncounter(parentList, type) {
 
 function createAddElementSelector() {
     const wrapper = document.createElement('div');
-    wrapper.className = "";
     const buttonWrapper = document.createElement('div');
+    buttonWrapper.className = "relative"
 
     const selectBtn = document.createElement('button');
-    selectBtn.className = "inline-flex items-center px-3 py-1 bg-slate-300 text-slate-800 rounded hover:bg-slate-400 text-sm";
+    selectBtn.className = "inline-flex justify-center items-center px-3 py-1 bg-slate-300 text-slate-800 rounded hover:bg-slate-400 text-sm";
     selectBtn.type = "button";
-    selectBtn.textContent = "Add Encounter";
+    selectBtn.textContent = "Add Element";
 
     
     const dropdown = document.createElement('div');

@@ -315,8 +315,8 @@ def not_found(error):
 
 if __name__ == "__main__":
     server = Database.Database(True)
-    insert_assets_from_json(server)
     if server.wasfirst:
+        insert_assets_from_json(server)
         create_default_enemys()
         create_default_weapons()
     app.run(debug=True, port=3333)

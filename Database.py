@@ -1,6 +1,5 @@
 import sqlite3
 import os
-import json
 import Encounter
 
 class Database():
@@ -12,15 +11,6 @@ class Database():
         if self.server == "Temp __server":
             raise Exception("__server Not Setup yet")
         cursor = self.server.cursor()
-        
-        # Execute the COUNT(*) query
-        cursor.execute("SELECT COUNT(*) FROM Maps")
-
-        # Fetch the result
-        row_count = cursor.fetchone()
-
-        # Print the number of rows
-        print("Number of rows:", row_count)
 
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS Encounters (
@@ -178,10 +168,10 @@ class Database():
             os.makedirs(path)
         try:
             self.server = sqlite3.connect(f"{path}/Encounter.db")
-            if first:
-                self.__SetupTables()
         except Exception as e:
             print(f"Could Not Connect to __server This is the Issue {e}")
+        if first:
+            self.__SetupTables()
 
 
 

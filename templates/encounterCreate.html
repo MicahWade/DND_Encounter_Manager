@@ -1,24 +1,55 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="max-w-4xl mx-auto">
-    <div class="bg-slate-400/100 shadow w-full min-h-96 rounded-b-lg p-4 text-slate-50 grid grid-cols-1">
-        <span>
+<div class="max-w-4xl mx-auto pb-16 mb-16">
+    <div class="bg-slate-400/100 shadow w-full min-h-96 rounded-b-lg pb-16 p-4 text-slate-50 grid grid-cols-1">
+        <div>
             <div class="rounded-t-lg w-full h-24 p-4 bg-slate-400 center text-black text-3xl relative">
                 <input class="h-full w-full text-left" type="text" id="mapSearch" placeholder="Map name...">
                 <div id="mapDropdown" class="absolute left-0 right-0 bg-white text-black rounded-b-lg shadow z-10 hidden"></div>
             </div>
-        </span>
-        <span>
-            <div class="content-center relative">
+        </div>
+        <div>
+            <div class="content-center relative" style="min-height: 24rem; height: 32rem;">
                 <div id="floorArrows" class="absolute left-0 right-0 top-0 flex justify-between items-center px-4 z-20" style="pointer-events: none;">
                     <button id="arrowUp" class="bg-slate-700/80 text-white rounded-full p-2 m-2 shadow hidden" style="pointer-events: auto;">&#9650;</button>
                     <button id="arrowDown" class="bg-slate-700/80 text-white rounded-full p-2 m-2 shadow hidden" style="pointer-events: auto;">&#9660;</button>
                 </div>
-                <img class="max-h-3xl min-h-32 center">
+                <img class="absolute left-1/2 top-1/2" style="transform: translate(-50%, -50%);" />
             </div>
-        </span>
+        </div>
+        <div class="flex justify-center mt-8 flex-col items-center w-full">
+            <h2 class="text-3xl font-semibold mb-4 border-b border-slate-300 w-full text-black text-center">Encounter Elements</h2>
+            <div class="w-4/5 ">
+                <!-- Encounter Elements Box -->
+                <div id="encounterElementsBox" class="bg-white rounded-lg shadow p-4 min-h-24 text-black">
+                    <p class="text-gray-500" id="encounterElementsPlaceholder">No elements added yet.</p>
+                    <ul id="encounterElementsList" class="space-y-2">
+                        <!-- Add to Encounter button as a list item at the bottom -->
+                        <li id="addTypeListItem" class="flex justify-center mt-4">
+                            <div class="relative inline-block text-left w-full">
+                                <button id="addTypeBtn" type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-slate-700 text-sm font-medium text-white hover:bg-slate-800 focus:outline-none" aria-haspopup="true" aria-expanded="true">
+                                    Add to Encounter
+                                    <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7l3-3 3 3m0 6l-3 3-3-3" />
+                                    </svg>
+                                </button>
+                                <div id="addTypeDropdown" class="origin-top-right absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden z-40">
+                                    <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="addTypeBtn">
+                                        <button class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-slate-100" role="menuitem" data-type="Description">Description</button>
+                                        <button class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-slate-100" role="menuitem" data-type="Battle">Battle</button>
+                                        <button class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-slate-100" role="menuitem" data-type="Skill Check">Skill Check</button>
+                                        <button class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-slate-100" role="menuitem" data-type="Change">Change</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-<script src="{{ url_for('static', filename='js/encounterCreate.js') }}"></script>
+<script src="{{ url_for('static', filename='js/encounter/encounterCreate.js') }}"></script>
+<script src="{{ url_for('static', filename='js/encounter/map.js') }}"></script>
 {% endblock %}

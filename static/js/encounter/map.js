@@ -26,6 +26,32 @@ async function loadFloorsForMap() {
     updateFloorArrows();
 }
 
+function rotateImageIfNeeded(img) {
+    if (!img) return;
+    img.style.transform = '';
+    img.style.maxWidth = '';
+    img.style.maxHeight = '';
+    img.style.width = '';
+    img.style.height = '';
+    img.addEventListener('load', function handler() {
+        img.removeEventListener('load', handler);
+        const parent = img.parentElement;
+        const parentRect = parent.getBoundingClientRect();
+        if (img.naturalHeight > img.naturalWidth) {
+            img.style.transform = 'translate(-50%, -50%) rotate(90deg)';
+            img.style.maxWidth = `${parentRect.height}px`;
+            img.style.maxHeight = `${parentRect.width}px`;
+        } else {
+            img.style.transform = 'translate(-50%, -50%)';
+            img.style.maxWidth = `${parentRect.width}px`;
+            img.style.maxHeight = `${parentRect.height}px`;
+        }
+        img.style.position = 'absolute';
+        img.style.left = '50%';
+        img.style.top = '50%';
+    });
+}
+
 function updateFloorArrows() {
     if (!currentFloors || currentFloors.length <= 1) {
         arrowUp.classList.add('hidden');
@@ -51,8 +77,9 @@ function setMapImageByFloor(idx) {
     const [floorNumber, path] = currentFloors[idx];
     const img = document.querySelector('.content-center img');
     if (img) {
-        img.src = `../static/${path}`;
+        img.src = `../static/${mainMapPath}`;
         img.alt = currentMapTitle || '';
+        rotateImageIfNeeded(img);
     }
 }
 
@@ -94,6 +121,7 @@ mapDropdown.addEventListener('click', async (e) => {
                     if (img) {
                         img.src = `../static/${mainMapPath}`;
                         img.alt = title;
+                        rotateImageIfNeeded(img);
                     }
                     if (mapInfo.floor != 0){
                         await loadFloorsForMap();

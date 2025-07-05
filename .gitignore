@@ -5,6 +5,10 @@ __pycache__/
 
 deepdanbooru-v4-20200814-sgd-e30
 
+# AI Model 
+
+.continue
+
 # C extensions
 *.so
 

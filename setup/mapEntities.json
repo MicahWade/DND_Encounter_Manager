@@ -1,0 +1,28 @@
+{
+    "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Dark - Floor 1 - 14x15 - 300 DPI.webp": [
+        {
+            "x": 8,
+            "y": 10,
+            "type": "assets"
+        }
+    ],
+    "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Dark - Floor 2 - 14x15 - 300 DPI.webp": [
+        {
+            "x": 11,
+            "y": 5,
+            "type": "level down"
+        },
+        {
+            "x": 8,
+            "y": 11,
+            "type": "level down"
+        }
+    ],
+    "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Light - Floor 1 - 14x15 - 300 DPI.webp": [
+        {
+            "x": 8,
+            "y": 10,
+            "type": "assets"
+        }
+    ]
+}

@@ -1,28 +1,6798 @@
 {
     "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Dark - Floor 1 - 14x15 - 300 DPI.webp": [
         {
-            "x": 8,
-            "y": 10,
-            "type": "assets"
-        }
-    ],
-    "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Dark - Floor 2 - 14x15 - 300 DPI.webp": [
-        {
             "x": 11,
             "y": 5,
-            "type": "level down"
+            "type": "level up"
         },
         {
             "x": 8,
             "y": 11,
+            "type": "level up"
+        },
+        {
+            "x": 12,
+            "y": 9,
+            "type": "entity",
+            "faction": "shopkeeper"
+        }
+    ],
+    "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Dark - Floor 2 - 14x15 - 300 DPI.webp": [
+        {
+            "x": 8,
+            "y": 11,
+            "type": "level down"
+        },
+        {
+            "x": 11,
+            "y": 5,
             "type": "level down"
         }
     ],
     "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Light - Floor 1 - 14x15 - 300 DPI.webp": [
         {
+            "x": 11,
+            "y": 5,
+            "type": "level up"
+        },
+        {
             "x": 8,
+            "y": 11,
+            "type": "level up"
+        },
+        {
+            "x": 12,
+            "y": 9,
+            "type": "entity",
+            "faction": "shopkeeper"
+        }
+    ],
+    "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Light - Floor 2 - 14x15 - 300 DPI.webp": [
+        {
+            "x": 8,
+            "y": 11,
+            "type": "level down"
+        },
+        {
+            "x": 11,
+            "y": 5,
+            "type": "level down"
+        }
+    ],
+    "images/maps/Artist_Atelier___Art_Class/Artist Atelier - Art Class - Day - 14x16 - 300 DPI.webp": [
+        {
+            "x": 4,
+            "y": 9,
+            "type": "entry"
+        },
+        {
+            "x": 6,
+            "y": 12,
+            "type": "entity",
+            "faction": "owner"
+        },
+        {
+            "x": 10,
+            "y": 8,
+            "type": "entity",
+            "faction": "owner"
+        },
+        {
+            "x": 8,
+            "y": 5,
+            "type": "entity",
+            "faction": "owner"
+        },
+        {
+            "x": 5,
+            "y": 3,
+            "type": "level up"
+        }
+    ],
+    "images/maps/Artist_Atelier___Art_Class/Artist Atelier - Art Class - Day - Loft - 9x6 - 300 DPI.webp": [
+        {
+            "x": 4,
+            "y": 3,
+            "type": "level down"
+        },
+        {
+            "x": 7,
+            "y": 4,
+            "type": "entity",
+            "faction": "owner"
+        }
+    ],
+    "images/maps/Artist_Atelier___Art_Class/Artist Atelier - Art Class - Night - 14x16 - 300 DPI.webp": [
+        {
+            "x": 4,
+            "y": 9,
+            "type": "entry"
+        },
+        {
+            "x": 6,
+            "y": 12,
+            "type": "entity",
+            "faction": "owner"
+        },
+        {
+            "x": 10,
+            "y": 8,
+            "type": "entity",
+            "faction": "owner"
+        },
+        {
+            "x": 8,
+            "y": 5,
+            "type": "entity",
+            "faction": "owner"
+        },
+        {
+            "x": 5,
+            "y": 3,
+            "type": "level up"
+        }
+    ],
+    "images/maps/Artist_Atelier___Art_Class/Artist Atelier - Art Class - Night - Loft - 9x6 - 300 DPI.webp": [
+        {
+            "x": 4,
+            "y": 3,
+            "type": "level down"
+        },
+        {
+            "x": 7,
+            "y": 4,
+            "type": "entity",
+            "faction": "owner"
+        }
+    ],
+    "images/maps/Bandit_Ambush___Summer/Bandit Ambush - Summer - Day - 22x16 - 300 DPI.webp": [
+        {
+            "x": 1,
+            "y": 2,
+            "type": "hidden"
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "type": "hidden"
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "type": "hidden"
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "type": "hidden"
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "type": "hidden"
+        },
+        {
+            "x": 1,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 2,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 4,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 4,
+            "y": 15,
+            "type": "hidden"
+        },
+        {
+            "x": 5,
+            "y": 15,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 15,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 14,
+            "type": "hidden"
+        },
+        {
+            "x": 4,
+            "y": 14,
+            "type": "hidden"
+        },
+        {
+            "x": 5,
+            "y": 14,
+            "type": "hidden"
+        },
+        {
+            "x": 5,
+            "y": 13,
+            "type": "hidden"
+        },
+        {
+            "x": 4,
+            "y": 13,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 13,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 11,
+            "type": "hidden"
+        },
+        {
+            "x": 4,
+            "y": 11,
+            "type": "hidden"
+        },
+        {
+            "x": 5,
+            "y": 11,
+            "type": "hidden"
+        },
+        {
+            "x": 5,
+            "y": 10,
+            "type": "hidden"
+        },
+        {
+            "x": 4,
+            "y": 10,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 10,
+            "type": "hidden"
+        },
+        {
+            "x": 2,
+            "y": 10,
+            "type": "hidden"
+        },
+        {
+            "x": 1,
+            "y": 9,
+            "type": "hidden"
+        },
+        {
+            "x": 2,
+            "y": 9,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 9,
+            "type": "hidden"
+        },
+        {
+            "x": 4,
+            "y": 9,
+            "type": "hidden"
+        },
+        {
+            "x": 4,
+            "y": 8,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 8,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 7,
+            "type": "hidden"
+        },
+        {
+            "x": 4,
+            "y": 7,
+            "type": "hidden"
+        },
+        {
+            "x": 2,
+            "y": 8,
+            "type": "hidden"
+        },
+        {
+            "x": 9,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 10,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 11,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 11,
+            "y": 15,
+            "type": "hidden"
+        },
+        {
+            "x": 10,
+            "y": 15,
+            "type": "hidden"
+        },
+        {
+            "x": 9,
+            "y": 15,
+            "type": "hidden"
+        },
+        {
+            "x": 16,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 17,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 18,
+            "y": 11,
+            "type": "hidden"
+        },
+        {
+            "x": 17,
+            "y": 11,
+            "type": "hidden"
+        },
+        {
+            "x": 17,
+            "y": 10,
+            "type": "hidden"
+        },
+        {
+            "x": 18,
+            "y": 10,
+            "type": "hidden"
+        },
+        {
+            "x": 16,
+            "y": 8,
+            "type": "hidden"
+        },
+        {
+            "x": 16,
+            "y": 9,
+            "type": "hidden"
+        },
+        {
+            "x": 17,
+            "y": 9,
+            "type": "hidden"
+        },
+        {
+            "x": 17,
+            "y": 8,
+            "type": "hidden"
+        },
+        {
+            "x": 22,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 21,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 21,
+            "y": 15,
+            "type": "hidden"
+        },
+        {
+            "x": 22,
+            "y": 15,
+            "type": "hidden"
+        },
+        {
+            "x": 13,
+            "y": 12,
+            "type": "hidden"
+        },
+        {
+            "x": 13,
+            "y": 11,
+            "type": "hidden"
+        },
+        {
+            "x": 13,
+            "y": 9,
+            "type": "hidden"
+        },
+        {
+            "x": 22,
+            "y": 11,
+            "type": "hidden"
+        },
+        {
+            "x": 21,
+            "y": 11,
+            "type": "hidden"
+        },
+        {
+            "x": 17,
+            "y": 5,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 19,
+            "y": 6,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 4,
+            "y": 8,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 9,
+            "y": 15,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 19,
+            "y": 13,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 22,
+            "y": 16,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 17,
+            "y": 9,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 15,
+            "y": 6,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 21,
+            "y": 5,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 20,
+            "y": 8,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 18,
+            "y": 3,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 13,
+            "y": 5,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 9,
+            "y": 9,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 3,
+            "y": 10,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "type": "entry"
+        },
+        {
+            "x": 22,
+            "y": 14,
+            "type": "entry"
+        },
+        {
+            "x": 18,
+            "y": 5,
+            "type": "assets"
+        },
+        {
+            "x": 11,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 21,
+            "y": 7,
+            "type": "assets"
+        }
+    ],
+    "images/maps/Bandit_Ambush___Summer/Bandit Ambush - Summer - Night - 22x16 - 300 DPI.webp": [
+        {
+            "x": 1,
+            "y": 2,
+            "type": "hidden"
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "type": "hidden"
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "type": "hidden"
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "type": "hidden"
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "type": "hidden"
+        },
+        {
+            "x": 1,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 2,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 4,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 4,
+            "y": 15,
+            "type": "hidden"
+        },
+        {
+            "x": 5,
+            "y": 15,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 15,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 14,
+            "type": "hidden"
+        },
+        {
+            "x": 4,
+            "y": 14,
+            "type": "hidden"
+        },
+        {
+            "x": 5,
+            "y": 14,
+            "type": "hidden"
+        },
+        {
+            "x": 5,
+            "y": 13,
+            "type": "hidden"
+        },
+        {
+            "x": 4,
+            "y": 13,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 13,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 11,
+            "type": "hidden"
+        },
+        {
+            "x": 4,
+            "y": 11,
+            "type": "hidden"
+        },
+        {
+            "x": 5,
+            "y": 11,
+            "type": "hidden"
+        },
+        {
+            "x": 5,
+            "y": 10,
+            "type": "hidden"
+        },
+        {
+            "x": 4,
+            "y": 10,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 10,
+            "type": "hidden"
+        },
+        {
+            "x": 2,
+            "y": 10,
+            "type": "hidden"
+        },
+        {
+            "x": 1,
+            "y": 9,
+            "type": "hidden"
+        },
+        {
+            "x": 2,
+            "y": 9,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 9,
+            "type": "hidden"
+        },
+        {
+            "x": 4,
+            "y": 9,
+            "type": "hidden"
+        },
+        {
+            "x": 4,
+            "y": 8,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 8,
+            "type": "hidden"
+        },
+        {
+            "x": 3,
+            "y": 7,
+            "type": "hidden"
+        },
+        {
+            "x": 4,
+            "y": 7,
+            "type": "hidden"
+        },
+        {
+            "x": 2,
+            "y": 8,
+            "type": "hidden"
+        },
+        {
+            "x": 9,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 10,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 11,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 11,
+            "y": 15,
+            "type": "hidden"
+        },
+        {
+            "x": 10,
+            "y": 15,
+            "type": "hidden"
+        },
+        {
+            "x": 9,
+            "y": 15,
+            "type": "hidden"
+        },
+        {
+            "x": 16,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 17,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 18,
+            "y": 11,
+            "type": "hidden"
+        },
+        {
+            "x": 17,
+            "y": 11,
+            "type": "hidden"
+        },
+        {
+            "x": 17,
+            "y": 10,
+            "type": "hidden"
+        },
+        {
+            "x": 18,
+            "y": 10,
+            "type": "hidden"
+        },
+        {
+            "x": 16,
+            "y": 8,
+            "type": "hidden"
+        },
+        {
+            "x": 16,
+            "y": 9,
+            "type": "hidden"
+        },
+        {
+            "x": 17,
+            "y": 9,
+            "type": "hidden"
+        },
+        {
+            "x": 17,
+            "y": 8,
+            "type": "hidden"
+        },
+        {
+            "x": 22,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 21,
+            "y": 16,
+            "type": "hidden"
+        },
+        {
+            "x": 21,
+            "y": 15,
+            "type": "hidden"
+        },
+        {
+            "x": 22,
+            "y": 15,
+            "type": "hidden"
+        },
+        {
+            "x": 13,
+            "y": 12,
+            "type": "hidden"
+        },
+        {
+            "x": 13,
+            "y": 11,
+            "type": "hidden"
+        },
+        {
+            "x": 13,
+            "y": 9,
+            "type": "hidden"
+        },
+        {
+            "x": 22,
+            "y": 11,
+            "type": "hidden"
+        },
+        {
+            "x": 21,
+            "y": 11,
+            "type": "hidden"
+        },
+        {
+            "x": 17,
+            "y": 5,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 19,
+            "y": 6,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 4,
+            "y": 8,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 9,
+            "y": 15,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 19,
+            "y": 13,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 22,
+            "y": 16,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 17,
+            "y": 9,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 15,
+            "y": 6,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 21,
+            "y": 5,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 20,
+            "y": 8,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 18,
+            "y": 3,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 13,
+            "y": 5,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 9,
+            "y": 9,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 3,
+            "y": 10,
+            "type": "entity",
+            "faction": "ambushers"
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "type": "entry"
+        },
+        {
+            "x": 22,
+            "y": 14,
+            "type": "entry"
+        },
+        {
+            "x": 18,
+            "y": 5,
+            "type": "assets"
+        },
+        {
+            "x": 11,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 21,
+            "y": 7,
+            "type": "assets"
+        }
+    ],
+    "images/maps/Buried_Temple/Buried Temple - Light - Active - 32x44 - 300 DPI.webp": [
+        {
+            "x": 10,
+            "y": 38,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 19,
+            "y": 38,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 16,
+            "y": 40,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 13,
+            "y": 36,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 23,
+            "y": 35,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 25,
+            "y": 38,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 16,
+            "y": 17,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 14,
+            "y": 14,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 15,
+            "y": 10,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 21,
+            "y": 11,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 18,
+            "y": 15,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 23,
+            "y": 7,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 12,
+            "y": 8,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 11,
+            "y": 5,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 16,
+            "y": 5,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 16,
+            "y": 37,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 25,
+            "y": 41,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 19,
+            "y": 18,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 19,
+            "y": 7,
+            "type": "entity",
+            "faction": "undead"
+        }
+    ],
+    "images/maps/Buried_Temple/Buried Temple - Light - Inactive - 32x44 - 300 DPI.webp": [
+        {
+            "x": 10,
+            "y": 38,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 19,
+            "y": 38,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 16,
+            "y": 40,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 13,
+            "y": 36,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 23,
+            "y": 35,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 25,
+            "y": 38,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 16,
+            "y": 17,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 14,
+            "y": 14,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 15,
+            "y": 10,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 21,
+            "y": 11,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 18,
+            "y": 15,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 23,
+            "y": 7,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 12,
+            "y": 8,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 11,
+            "y": 5,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 16,
+            "y": 5,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 16,
+            "y": 37,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 25,
+            "y": 41,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 19,
+            "y": 18,
+            "type": "entity",
+            "faction": "undead"
+        },
+        {
+            "x": 19,
+            "y": 7,
+            "type": "entity",
+            "faction": "undead"
+        }
+    ],
+    "images/maps/Crystal Crypts - Lich Light - 32x22 - 300 DPI.webp": [
+        {
+            "x": 24,
+            "y": 12,
+            "type": "fall trap"
+        },
+        {
+            "x": 30,
+            "y": 12,
+            "type": "fall trap"
+        },
+        {
+            "x": 5,
+            "y": 8,
+            "type": "fall trap"
+        },
+        {
+            "x": 9,
+            "y": 8,
+            "type": "fall trap"
+        },
+        {
+            "x": 9,
+            "y": 12,
+            "type": "fall trap"
+        },
+        {
+            "x": 5,
+            "y": 12,
+            "type": "fall trap"
+        },
+        {
+            "x": 2,
+            "y": 13,
+            "type": "fall trap"
+        },
+        {
+            "x": 2,
+            "y": 7,
+            "type": "fall trap"
+        },
+        {
+            "x": 3,
+            "y": 16,
+            "type": "fall trap"
+        },
+        {
+            "x": 3,
+            "y": 20,
+            "type": "fall trap"
+        },
+        {
+            "x": 14,
+            "y": 20,
+            "type": "fall trap"
+        },
+        {
+            "x": 14,
+            "y": 16,
+            "type": "fall trap"
+        },
+        {
+            "x": 26,
+            "y": 5,
+            "type": "litch coffin"
+        },
+        {
+            "x": 27,
+            "y": 5,
+            "type": "litch coffin"
+        },
+        {
+            "x": 28,
+            "y": 5,
+            "type": "litch coffin"
+        },
+        {
+            "x": 19,
+            "y": 8,
+            "type": "assets"
+        },
+        {
+            "x": 21,
+            "y": 8,
+            "type": "assets"
+        },
+        {
+            "x": 23,
+            "y": 8,
+            "type": "assets"
+        },
+        {
+            "x": 19,
+            "y": 2,
+            "type": "assets"
+        },
+        {
+            "x": 21,
+            "y": 2,
+            "type": "assets"
+        },
+        {
+            "x": 23,
+            "y": 2,
+            "type": "assets"
+        },
+        {
+            "x": 29,
+            "y": 8,
+            "type": "assets"
+        },
+        {
+            "x": 31,
+            "y": 8,
+            "type": "assets"
+        },
+        {
+            "x": 31,
+            "y": 2,
+            "type": "assets"
+        },
+        {
+            "x": 29,
+            "y": 2,
+            "type": "assets"
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "type": "assets"
+        },
+        {
+            "x": 4,
+            "y": 2,
+            "type": "assets"
+        },
+        {
+            "x": 9,
+            "y": 2,
+            "type": "assets"
+        },
+        {
+            "x": 10,
+            "y": 2,
+            "type": "assets"
+        },
+        {
+            "x": 7,
+            "y": 2,
+            "type": "lever"
+        },
+        {
+            "x": 3,
+            "y": 18,
+            "type": "lever"
+        },
+        {
+            "x": 2,
+            "y": 10,
+            "type": "lever"
+        },
+        {
+            "x": 16,
+            "y": 18,
+            "type": "door"
+        },
+        {
+            "x": 19,
+            "y": 17,
+            "type": "door"
+        },
+        {
+            "x": 22,
+            "y": 18,
+            "type": "door"
+        },
+        {
+            "x": 22,
+            "y": 10,
+            "type": "door"
+        },
+        {
+            "x": 16,
+            "y": 10,
+            "type": "door"
+        },
+        {
+            "x": 27,
+            "y": 14,
+            "type": "door"
+        },
+        {
+            "x": 27,
+            "y": 9,
+            "type": "door"
+        },
+        {
+            "x": 18,
+            "y": 5,
+            "type": "door"
+        },
+        {
+            "x": 7,
+            "y": 6,
+            "type": "door"
+        },
+        {
+            "x": 3,
+            "y": 10,
+            "type": "door"
+        },
+        {
+            "x": 7,
+            "y": 14,
+            "type": "door"
+        },
+        {
+            "x": 11,
+            "y": 10,
+            "type": "door"
+        },
+        {
+            "x": 12,
+            "y": 14,
+            "type": "door"
+        }
+    ],
+    "images/maps/Deluxe_Suite_1___Sunset/Deluxe Suite 1 - Sunset - Dark - 13x17 - 300 DPI.webp": [
+        {
+            "x": 11,
+            "y": 3,
+            "type": "assets"
+        },
+        {
+            "x": 8,
+            "y": 15,
+            "type": "assets"
+        },
+        {
+            "x": 4,
+            "y": 7,
+            "type": "entity",
+            "faction": "occupant"
+        },
+        {
+            "x": 5,
+            "y": 15,
+            "type": "entry"
+        }
+    ],
+    "images/maps/Deluxe_Suite_1___Sunset/Deluxe Suite 1 - Sunset - Light - 13x17 - 300 DPI.webp": [
+        {
+            "x": 11,
+            "y": 3,
+            "type": "assets"
+        },
+        {
+            "x": 8,
+            "y": 15,
+            "type": "assets"
+        },
+        {
+            "x": 4,
+            "y": 7,
+            "type": "entity",
+            "faction": "occupant"
+        },
+        {
+            "x": 5,
+            "y": 15,
+            "type": "entry"
+        }
+    ],
+    "images/maps/Deluxe_Suite_2___Sunset/Deluxe Suite 2 - Sunset - Dark - 13x17 - 300 DPI.webp": [
+        {
+            "x": 3,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 3,
+            "y": 7,
+            "type": "assets"
+        },
+        {
+            "x": 11,
+            "y": 4,
+            "type": "assets"
+        },
+        {
+            "x": 10,
+            "y": 6,
+            "type": "entity",
+            "faction": "occupant"
+        },
+        {
+            "x": 11,
+            "y": 14,
+            "type": "entity",
+            "faction": "occupant"
+        }
+    ],
+    "images/maps/Deluxe_Suite_2___Sunset/Deluxe Suite 2 - Sunset - Light - 13x17 - 300 DPI.webp": [
+        {
+            "x": 3,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 3,
+            "y": 7,
+            "type": "assets"
+        },
+        {
+            "x": 11,
+            "y": 4,
+            "type": "assets"
+        },
+        {
+            "x": 10,
+            "y": 6,
+            "type": "entity",
+            "faction": "occupant"
+        },
+        {
+            "x": 11,
+            "y": 14,
+            "type": "entity",
+            "faction": "occupant"
+        }
+    ],
+    "images/maps/Driftwood_Cove___Tropical/Driftwood Cove - Tropical - Day - 44x32 - 300 DPI.webp": [
+        {
+            "x": 37,
+            "y": 4,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 39,
+            "y": 2,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 38,
+            "y": 17,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 31,
+            "y": 10,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 24,
+            "y": 10,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 2,
+            "y": 8,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 2,
+            "y": 24,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 2,
+            "y": 32,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 32,
+            "y": 22,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 22,
+            "y": 26,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 12,
+            "y": 13,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 6,
+            "y": 18,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 9,
+            "y": 14,
+            "type": "entity",
+            "faction": "any"
+        }
+    ],
+    "images/maps/Driftwood_Cove___Tropical/Driftwood Cove - Tropical - Night - 44x32 - 300 DPI.webp": [
+        {
+            "x": 37,
+            "y": 4,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 39,
+            "y": 2,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 38,
+            "y": 17,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 31,
+            "y": 10,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 24,
+            "y": 10,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 2,
+            "y": 8,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 2,
+            "y": 24,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 2,
+            "y": 32,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 32,
+            "y": 22,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 22,
+            "y": 26,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 12,
+            "y": 13,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 6,
+            "y": 18,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 9,
+            "y": 14,
+            "type": "entity",
+            "faction": "any"
+        }
+    ],
+    "images/maps/Dwarven_Burrow___Abandoned/Dwarven Burrow - Abandoned - Dark - 14x14 - 300 DPI.webp": [
+        {
+            "x": 6,
             "y": 10,
             "type": "assets"
+        },
+        {
+            "x": 10,
+            "y": 10,
+            "type": "assets"
+        },
+        {
+            "x": 11,
+            "y": 6,
+            "type": "assets"
+        }
+    ],
+    "images/maps/Dwarven_Burrow___Abandoned/Dwarven Burrow - Abandoned - Light - 14x14 - 300 DPI.webp": [
+        {
+            "x": 6,
+            "y": 10,
+            "type": "assets"
+        },
+        {
+            "x": 10,
+            "y": 10,
+            "type": "assets"
+        },
+        {
+            "x": 11,
+            "y": 6,
+            "type": "assets"
+        }
+    ],
+    "images/maps/Dwarven_Burrow___Bachelor/Dwarven Burrow - Bachelor - Dark - 14x14 - 300 DPI.webp": [
+        {
+            "x": 7,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 8,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 9,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 6,
+            "y": 11,
+            "type": "assets"
+        }
+    ],
+    "images/maps/Dwarven_Burrow___Bachelor/Dwarven Burrow - Bachelor - Dark - Unlit - 14x14 - 300 DPI.webp": [
+        {
+            "x": 6,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 7,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 8,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 9,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 5,
+            "y": 7,
+            "type": "entity",
+            "faction": "dwarf"
+        }
+    ],
+    "images/maps/Dwarven_Burrow___Bachelor/Dwarven Burrow - Bachelor - Light - 14x14 - 300 DPI.webp": [
+        {
+            "x": 7,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 8,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 9,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 6,
+            "y": 11,
+            "type": "assets"
+        }
+    ],
+    "images/maps/Dwarven_Burrow___Bachelor/Dwarven Burrow - Bachelor - Light - Unlit - 14x14 - 300 DPI.webp": [
+        {
+            "x": 6,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 7,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 8,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 9,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 5,
+            "y": 7,
+            "type": "entity",
+            "faction": "dwarf"
+        }
+    ],
+    "images/maps/Dwarven_Ranch___Spring/Dwarven Ranch - Spring - Day - 44x32 - 300 DPI.webp": [
+        {
+            "x": 3,
+            "y": 31,
+            "type": "entity",
+            "faction": "raiders"
+        },
+        {
+            "x": 25,
+            "y": 32,
+            "type": "entity",
+            "faction": "raiders"
+        },
+        {
+            "x": 40,
+            "y": 30,
+            "type": "entity",
+            "faction": "raiders"
+        },
+        {
+            "x": 41,
+            "y": 4,
+            "type": "entity",
+            "faction": "raiders"
+        },
+        {
+            "x": 29,
+            "y": 4,
+            "type": "entity",
+            "faction": "raiders"
+        },
+        {
+            "x": 13,
+            "y": 2,
+            "type": "entity",
+            "faction": "raiders"
+        },
+        {
+            "x": 4,
+            "y": 5,
+            "type": "entity",
+            "faction": "raiders"
+        }
+    ],
+    "images/maps/Dwarven_Ranch___Spring/Dwarven Ranch - Spring - Night - 44x32 - 300 DPI.webp": [
+        {
+            "x": 3,
+            "y": 31,
+            "type": "entity",
+            "faction": "raiders"
+        },
+        {
+            "x": 25,
+            "y": 32,
+            "type": "entity",
+            "faction": "raiders"
+        },
+        {
+            "x": 40,
+            "y": 30,
+            "type": "entity",
+            "faction": "raiders"
+        },
+        {
+            "x": 41,
+            "y": 4,
+            "type": "entity",
+            "faction": "raiders"
+        },
+        {
+            "x": 29,
+            "y": 4,
+            "type": "entity",
+            "faction": "raiders"
+        },
+        {
+            "x": 13,
+            "y": 2,
+            "type": "entity",
+            "faction": "raiders"
+        },
+        {
+            "x": 4,
+            "y": 5,
+            "type": "entity",
+            "faction": "raiders"
+        }
+    ],
+    "images/maps/Fighting_Pit___Muddy/Fighting Pit - Muddy - Dark - 16x22 - 300 DPI.webp": [
+        {
+            "x": 14,
+            "y": 6,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 14,
+            "y": 7,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 14,
+            "y": 8,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 14,
+            "y": 9,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 14,
+            "y": 10,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 14,
+            "y": 11,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 14,
+            "y": 14,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 14,
+            "y": 13,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 14,
+            "y": 15,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 14,
+            "y": 16,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 3,
+            "y": 6,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 3,
+            "y": 8,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 3,
+            "y": 7,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 3,
+            "y": 9,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 3,
+            "y": 10,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 3,
+            "y": 11,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 3,
+            "y": 15,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 3,
+            "y": 16,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 3,
+            "y": 17,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 4,
+            "y": 19,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 5,
+            "y": 19,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 6,
+            "y": 19,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 7,
+            "y": 19,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 11,
+            "y": 19,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 10,
+            "y": 19,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 13,
+            "y": 19,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 12,
+            "y": 19,
+            "type": "entity",
+            "faction": "spectators"
+        }
+    ],
+    "images/maps/Fighting_Pit___Muddy/Fighting Pit - Muddy - Light - 16x22 - 300 DPI.webp": [
+        {
+            "x": 14,
+            "y": 6,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 14,
+            "y": 7,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 14,
+            "y": 8,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 14,
+            "y": 9,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 14,
+            "y": 10,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 14,
+            "y": 11,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 14,
+            "y": 14,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 14,
+            "y": 13,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 14,
+            "y": 15,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 14,
+            "y": 16,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 3,
+            "y": 6,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 3,
+            "y": 8,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 3,
+            "y": 7,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 3,
+            "y": 9,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 3,
+            "y": 10,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 3,
+            "y": 11,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 3,
+            "y": 15,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 3,
+            "y": 16,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 3,
+            "y": 17,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 4,
+            "y": 19,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 5,
+            "y": 19,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 6,
+            "y": 19,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 7,
+            "y": 19,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 11,
+            "y": 19,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 10,
+            "y": 19,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 13,
+            "y": 19,
+            "type": "entity",
+            "faction": "spectators"
+        },
+        {
+            "x": 12,
+            "y": 19,
+            "type": "entity",
+            "faction": "spectators"
+        }
+    ],
+    "images/maps/Forest_Camp/Forest Camp - Dark - Occupied - 44x32.webp": [
+        {
+            "x": 16,
+            "y": 9,
+            "type": "assets"
+        },
+        {
+            "x": 15,
+            "y": 9,
+            "type": "assets"
+        },
+        {
+            "x": 15,
+            "y": 8,
+            "type": "assets"
+        },
+        {
+            "x": 16,
+            "y": 8,
+            "type": "assets"
+        },
+        {
+            "x": 23,
+            "y": 9,
+            "type": "entity",
+            "faction": "campers"
+        },
+        {
+            "x": 21,
+            "y": 10,
+            "type": "entity",
+            "faction": "campers"
+        },
+        {
+            "x": 27,
+            "y": 15,
+            "type": "entity",
+            "faction": "campers"
+        },
+        {
+            "x": 26,
+            "y": 17,
+            "type": "entity",
+            "faction": "campers"
+        },
+        {
+            "x": 25,
+            "y": 15,
+            "type": "entity",
+            "faction": "campers"
+        },
+        {
+            "x": 25,
+            "y": 16,
+            "type": "entity",
+            "faction": "campers"
+        },
+        {
+            "x": 17,
+            "y": 27,
+            "type": "entity",
+            "faction": "campers"
+        },
+        {
+            "x": 18,
+            "y": 28,
+            "type": "entity",
+            "faction": "campers"
+        },
+        {
+            "x": 20,
+            "y": 18,
+            "type": "entity",
+            "faction": "campers"
+        },
+        {
+            "x": 17,
+            "y": 13,
+            "type": "entity",
+            "faction": "campers"
+        },
+        {
+            "x": 16,
+            "y": 11,
+            "type": "entity",
+            "faction": "campers"
+        }
+    ],
+    "images/maps/Forest_Camp/Forest Camp - Dark - Vacant - 44x32.webp": [
+        {
+            "x": 16,
+            "y": 9,
+            "type": "assets"
+        },
+        {
+            "x": 15,
+            "y": 9,
+            "type": "assets"
+        },
+        {
+            "x": 15,
+            "y": 8,
+            "type": "assets"
+        },
+        {
+            "x": 16,
+            "y": 8,
+            "type": "assets"
+        },
+        {
+            "x": 23,
+            "y": 9,
+            "type": "entity",
+            "faction": "campers"
+        },
+        {
+            "x": 21,
+            "y": 10,
+            "type": "entity",
+            "faction": "campers"
+        },
+        {
+            "x": 27,
+            "y": 15,
+            "type": "entity",
+            "faction": "campers"
+        },
+        {
+            "x": 26,
+            "y": 17,
+            "type": "entity",
+            "faction": "campers"
+        },
+        {
+            "x": 25,
+            "y": 15,
+            "type": "entity",
+            "faction": "campers"
+        },
+        {
+            "x": 25,
+            "y": 16,
+            "type": "entity",
+            "faction": "campers"
+        },
+        {
+            "x": 17,
+            "y": 27,
+            "type": "entity",
+            "faction": "campers"
+        },
+        {
+            "x": 18,
+            "y": 28,
+            "type": "entity",
+            "faction": "campers"
+        },
+        {
+            "x": 20,
+            "y": 18,
+            "type": "entity",
+            "faction": "campers"
+        },
+        {
+            "x": 17,
+            "y": 13,
+            "type": "entity",
+            "faction": "campers"
+        },
+        {
+            "x": 16,
+            "y": 11,
+            "type": "entity",
+            "faction": "campers"
+        }
+    ],
+    "images/maps/Goblin_Camp___Base/Goblin Camp - Base - Day 16x22 - 300 DPI.webp": [
+        {
+            "x": 5,
+            "y": 10,
+            "type": "entity",
+            "faction": "golbins"
+        },
+        {
+            "x": 7,
+            "y": 20,
+            "type": "entity",
+            "faction": "golbins"
+        },
+        {
+            "x": 5,
+            "y": 17,
+            "type": "entity",
+            "faction": "golbins"
+        },
+        {
+            "x": 10,
+            "y": 17,
+            "type": "entity",
+            "faction": "golbins"
+        },
+        {
+            "x": 13,
+            "y": 14,
+            "type": "entity",
+            "faction": "golbins"
+        },
+        {
+            "x": 11,
+            "y": 11,
+            "type": "entity",
+            "faction": "golbins"
+        },
+        {
+            "x": 2,
+            "y": 13,
+            "type": "entity",
+            "faction": "golbins"
+        },
+        {
+            "x": 14,
+            "y": 19,
+            "type": "entity",
+            "faction": "golbins"
+        },
+        {
+            "x": 4,
+            "y": 12,
+            "type": "entity",
+            "faction": "golbins"
+        },
+        {
+            "x": 3,
+            "y": 17,
+            "type": "entity",
+            "faction": "goblins"
+        },
+        {
+            "x": 9,
+            "y": 22,
+            "type": "entry"
+        }
+    ],
+    "images/maps/Goblin_Camp___Base/Goblin Camp - Base - Night 16x22 - 300 DPI.webp": [
+        {
+            "x": 5,
+            "y": 10,
+            "type": "entity",
+            "faction": "golbins"
+        },
+        {
+            "x": 7,
+            "y": 20,
+            "type": "entity",
+            "faction": "golbins"
+        },
+        {
+            "x": 5,
+            "y": 17,
+            "type": "entity",
+            "faction": "golbins"
+        },
+        {
+            "x": 10,
+            "y": 17,
+            "type": "entity",
+            "faction": "golbins"
+        },
+        {
+            "x": 13,
+            "y": 14,
+            "type": "entity",
+            "faction": "golbins"
+        },
+        {
+            "x": 11,
+            "y": 11,
+            "type": "entity",
+            "faction": "golbins"
+        },
+        {
+            "x": 2,
+            "y": 13,
+            "type": "entity",
+            "faction": "golbins"
+        },
+        {
+            "x": 14,
+            "y": 19,
+            "type": "entity",
+            "faction": "golbins"
+        },
+        {
+            "x": 4,
+            "y": 12,
+            "type": "entity",
+            "faction": "golbins"
+        },
+        {
+            "x": 3,
+            "y": 17,
+            "type": "entity",
+            "faction": "goblins"
+        },
+        {
+            "x": 9,
+            "y": 22,
+            "type": "entry"
+        }
+    ],
+    "images/maps/Grand_Mage_Tower___Base___Bedroom/Grand Mage Tower - Base - Bedroom - Day - 16x16.webp": [
+        {
+            "x": 8,
+            "y": 8,
+            "type": "door"
+        },
+        {
+            "x": 9,
+            "y": 8,
+            "type": "door"
+        },
+        {
+            "x": 12,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 13,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 9,
+            "y": 7,
+            "type": "entity",
+            "faction": "mage"
+        }
+    ],
+    "images/maps/Grand_Mage_Tower___Base___Bedroom/Grand Mage Tower - Base - Bedroom - Night - 16x16.webp": [
+        {
+            "x": 8,
+            "y": 8,
+            "type": "door"
+        },
+        {
+            "x": 9,
+            "y": 8,
+            "type": "door"
+        },
+        {
+            "x": 12,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 13,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 9,
+            "y": 7,
+            "type": "entity",
+            "faction": "mage"
+        }
+    ],
+    "images/maps/Grand_Mage_Tower___Base___Empty/Grand Mage Tower - Base - Empty - Day - 16x16.webp": [
+        {
+            "x": 14,
+            "y": 9,
+            "type": "level up"
+        }
+    ],
+    "images/maps/Grand_Mage_Tower___Base___Empty/Grand Mage Tower - Base - Empty - Night - 16x16.webp": [
+        {
+            "x": 4,
+            "y": 9,
+            "type": "level down"
+        },
+        {
+            "x": 14,
+            "y": 9,
+            "type": "level up"
+        }
+    ],
+    "images/maps/Grand_Mage_Tower___Base___Library/Grand Mage Tower - Base - Library - Day - 16x16.webp": [
+        {
+            "x": 4,
+            "y": 9,
+            "type": "level down"
+        },
+        {
+            "x": 14,
+            "y": 9,
+            "type": "level up"
+        }
+    ],
+    "images/maps/Grand_Mage_Tower___Base___Library/Grand Mage Tower - Base - Library - Night - 16x16.webp": [
+        {
+            "x": 4,
+            "y": 9,
+            "type": "level down"
+        },
+        {
+            "x": 14,
+            "y": 9,
+            "type": "level up"
+        }
+    ],
+    "images/maps/Grand_Mage_Tower___Base___Observatory/Grand Mage Tower - Base - Observatory - Day - 16x16.webp": [
+        {
+            "x": 8,
+            "y": 4,
+            "type": "telescope"
+        },
+        {
+            "x": 9,
+            "y": 4,
+            "type": "telescope"
+        },
+        {
+            "x": 8,
+            "y": 3,
+            "type": "telescope"
+        },
+        {
+            "x": 9,
+            "y": 3,
+            "type": "telescope"
+        },
+        {
+            "x": 9,
+            "y": 2,
+            "type": "telescope"
+        },
+        {
+            "x": 8,
+            "y": 2,
+            "type": "telescope"
+        },
+        {
+            "x": 8,
+            "y": 1,
+            "type": "telescope"
+        },
+        {
+            "x": 9,
+            "y": 1,
+            "type": "telescope"
+        }
+    ],
+    "images/maps/Grand_Mage_Tower___Base___Observatory/Grand Mage Tower - Base - Observatory - Night - 16x16.webp": [
+        {
+            "x": 4,
+            "y": 9,
+            "type": "level down"
+        }
+    ],
+    "images/maps/Hidden_Pool___Blooming/Hidden Pool - Blooming - Day - 16x22 - 300 DPI.webp": [
+        {
+            "x": 12,
+            "y": 4,
+            "type": "portal"
+        }
+    ],
+    "images/maps/Hidden_Pool___Blooming/Hidden Pool - Blooming - Night - 16x22 - 300 DPI.webp": [
+        {
+            "x": 12,
+            "y": 4,
+            "type": "portal"
+        }
+    ],
+    "images/maps/Megaflora_Grotto___Verdant/Megaflora Grotto - Verdant - Day - 32x22 - 300 DPI.webp": [
+        {
+            "x": 5,
+            "y": 17,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 8,
+            "y": 19,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 4,
+            "y": 10,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 4,
+            "y": 11,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 15,
+            "y": 4,
+            "type": "entity",
+            "faction": "any"
+        }
+    ],
+    "images/maps/Megaflora_Grotto___Verdant/Megaflora Grotto - Verdant - Night - 32x22 - 300 DPI.webp": [
+        {
+            "x": 5,
+            "y": 17,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 8,
+            "y": 19,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 4,
+            "y": 10,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 4,
+            "y": 11,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 15,
+            "y": 4,
+            "type": "entity",
+            "faction": "any"
+        }
+    ],
+    "images/maps/Metalsmiths_Workshop___Base/Metalsmiths Workshop - Base - Day - 22x16 - 300 DPI.webp": [
+        {
+            "x": 14,
+            "y": 3,
+            "type": "door"
+        },
+        {
+            "x": 17,
+            "y": 4,
+            "type": "door"
+        },
+        {
+            "x": 16,
+            "y": 4,
+            "type": "door"
+        },
+        {
+            "x": 20,
+            "y": 3,
+            "type": "door"
+        },
+        {
+            "x": 5,
+            "y": 9,
+            "type": "door"
+        },
+        {
+            "x": 8,
+            "y": 13,
+            "type": "door"
+        },
+        {
+            "x": 4,
+            "y": 13,
+            "type": "door"
+        },
+        {
+            "x": 6,
+            "y": 10,
+            "type": "door"
+        },
+        {
+            "x": 11,
+            "y": 4,
+            "type": "entity",
+            "faction": "blacksmith"
+        }
+    ],
+    "images/maps/Metalsmiths_Workshop___Base/Metalsmiths Workshop - Base - Night - 22x16 - 300 DPI.webp": [
+        {
+            "x": 14,
+            "y": 3,
+            "type": "door"
+        },
+        {
+            "x": 17,
+            "y": 4,
+            "type": "door"
+        },
+        {
+            "x": 16,
+            "y": 4,
+            "type": "door"
+        },
+        {
+            "x": 20,
+            "y": 3,
+            "type": "door"
+        },
+        {
+            "x": 5,
+            "y": 9,
+            "type": "door"
+        },
+        {
+            "x": 8,
+            "y": 13,
+            "type": "door"
+        },
+        {
+            "x": 4,
+            "y": 13,
+            "type": "door"
+        },
+        {
+            "x": 6,
+            "y": 10,
+            "type": "door"
+        },
+        {
+            "x": 11,
+            "y": 4,
+            "type": "entity",
+            "faction": "blacksmith"
+        }
+    ],
+    "images/maps/Moonlit_Cathedral/Moonlit Cathedral - Night - Pews - 26x52.webp": [
+        {
+            "x": 7,
+            "y": 20,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 8,
+            "y": 18,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 12,
+            "y": 21,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 15,
+            "y": 21,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 19,
+            "y": 19,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 20,
+            "y": 21,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 16,
+            "y": 11,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 11,
+            "y": 11,
+            "type": "entity",
+            "faction": "any"
+        }
+    ],
+    "images/maps/Moonlit_Cathedral/Moonlit Cathedral - Night - Rafters - 26x52.webp": [
+        {
+            "x": 7,
+            "y": 20,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 8,
+            "y": 18,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 12,
+            "y": 21,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 15,
+            "y": 21,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 19,
+            "y": 19,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 20,
+            "y": 21,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 16,
+            "y": 11,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 11,
+            "y": 11,
+            "type": "entity",
+            "faction": "any"
+        }
+    ],
+    "images/maps/Mushroom_Village___Forest/Mushroom Village - Forest - Day - 43x29 - 300 DPI.webp": [
+        {
+            "x": 6,
+            "y": 21,
+            "type": "entity",
+            "faction": "town falk"
+        },
+        {
+            "x": 5,
+            "y": 11,
+            "type": "entity",
+            "faction": "town falk"
+        },
+        {
+            "x": 21,
+            "y": 4,
+            "type": "entity",
+            "faction": "town falk"
+        },
+        {
+            "x": 27,
+            "y": 3,
+            "type": "entity",
+            "faction": "town falk"
+        },
+        {
+            "x": 39,
+            "y": 13,
+            "type": "entity",
+            "faction": "town falk"
+        },
+        {
+            "x": 38,
+            "y": 25,
+            "type": "entity",
+            "faction": "town falk"
+        },
+        {
+            "x": 26,
+            "y": 23,
+            "type": "entity",
+            "faction": "town falk"
+        },
+        {
+            "x": 21,
+            "y": 22,
+            "type": "entity",
+            "faction": "town falk"
+        },
+        {
+            "x": 7,
+            "y": 4,
+            "type": "entity",
+            "faction": "town falk"
+        },
+        {
+            "x": 9,
+            "y": 26,
+            "type": "entity",
+            "faction": "town falk"
+        },
+        {
+            "x": 27,
+            "y": 3,
+            "type": "entry"
+        },
+        {
+            "x": 39,
+            "y": 13,
+            "type": "entry"
+        },
+        {
+            "x": 4,
+            "y": 2,
+            "type": "entry"
+        },
+        {
+            "x": 27,
+            "y": 4,
+            "type": "entry"
+        }
+    ],
+    "images/maps/Mushroom_Village___Forest/Mushroom Village - Forest - Night - 43x29 - 300 DPI.webp": [
+        {
+            "x": 6,
+            "y": 21,
+            "type": "entity",
+            "faction": "town falk"
+        },
+        {
+            "x": 5,
+            "y": 11,
+            "type": "entity",
+            "faction": "town falk"
+        },
+        {
+            "x": 21,
+            "y": 4,
+            "type": "entity",
+            "faction": "town falk"
+        },
+        {
+            "x": 27,
+            "y": 3,
+            "type": "entity",
+            "faction": "town falk"
+        },
+        {
+            "x": 39,
+            "y": 13,
+            "type": "entity",
+            "faction": "town falk"
+        },
+        {
+            "x": 38,
+            "y": 25,
+            "type": "entity",
+            "faction": "town falk"
+        },
+        {
+            "x": 26,
+            "y": 23,
+            "type": "entity",
+            "faction": "town falk"
+        },
+        {
+            "x": 21,
+            "y": 22,
+            "type": "entity",
+            "faction": "town falk"
+        },
+        {
+            "x": 7,
+            "y": 4,
+            "type": "entity",
+            "faction": "town falk"
+        },
+        {
+            "x": 9,
+            "y": 26,
+            "type": "entity",
+            "faction": "town falk"
+        },
+        {
+            "x": 27,
+            "y": 3,
+            "type": "entry"
+        },
+        {
+            "x": 39,
+            "y": 13,
+            "type": "entry"
+        },
+        {
+            "x": 4,
+            "y": 2,
+            "type": "entry"
+        },
+        {
+            "x": 27,
+            "y": 4,
+            "type": "entry"
+        }
+    ],
+    "images/maps/Painted_Tundra___Autumn/Painted Tundra - Autumn - Day - 22x16 - 300 DPI.webp": [
+        {
+            "x": 1,
+            "y": 16,
+            "type": "entry"
+        },
+        {
+            "x": 22,
+            "y": 11,
+            "type": "entry"
+        },
+        {
+            "x": 14,
+            "y": 5,
+            "type": "entity",
+            "faction": "any"
+        }
+    ],
+    "images/maps/Painted_Tundra___Autumn/Painted Tundra - Autumn - Night - 22x16 - 300 DPI.webp": [
+        {
+            "x": 1,
+            "y": 16,
+            "type": "entry"
+        },
+        {
+            "x": 22,
+            "y": 11,
+            "type": "entry"
+        },
+        {
+            "x": 14,
+            "y": 5,
+            "type": "entity",
+            "faction": "any"
+        }
+    ],
+    "images/maps/Palatial_Portal___Marble/Palatial Portal - Marble - Day - 25x18 - 300 DPI.webp": [
+        {
+            "x": 5,
+            "y": 8,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 5,
+            "y": 11,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 21,
+            "y": 11,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 21,
+            "y": 8,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 8,
+            "y": 7,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 17,
+            "y": 7,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 10,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 10,
+            "y": 7,
+            "type": "assets"
+        },
+        {
+            "x": 9,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 9,
+            "y": 7,
+            "type": "assets"
+        },
+        {
+            "x": 16,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 17,
+            "y": 7,
+            "type": "assets"
+        },
+        {
+            "x": 17,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 16,
+            "y": 7,
+            "type": "assets"
+        }
+    ],
+    "images/maps/Palatial_Portal___Marble/Palatial Portal - Marble - Night - 25x18 - 300 DPI.webp": [
+        {
+            "x": 5,
+            "y": 8,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 5,
+            "y": 11,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 21,
+            "y": 11,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 21,
+            "y": 8,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 8,
+            "y": 7,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 17,
+            "y": 7,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 10,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 10,
+            "y": 7,
+            "type": "assets"
+        },
+        {
+            "x": 9,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 9,
+            "y": 7,
+            "type": "assets"
+        },
+        {
+            "x": 16,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 17,
+            "y": 7,
+            "type": "assets"
+        },
+        {
+            "x": 17,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 16,
+            "y": 7,
+            "type": "assets"
+        }
+    ],
+    "images/maps/Palatial_Throne___Marble/Palatial Throne - Marble - Day - 32x46 - 300 DPI.webp": [
+        {
+            "x": 17,
+            "y": 41,
+            "type": "entry"
+        },
+        {
+            "x": 17,
+            "y": 3,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 17,
+            "y": 4,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 8,
+            "y": 28,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 9,
+            "y": 31,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 14,
+            "y": 31,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 12,
+            "y": 31,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 15,
+            "y": 32,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 14,
+            "y": 32,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 22,
+            "y": 33,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 26,
+            "y": 32,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 25,
+            "y": 29,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 15,
+            "y": 18,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 19,
+            "y": 19,
+            "type": "entity",
+            "faction": "Throne"
+        }
+    ],
+    "images/maps/Palatial_Throne___Marble/Palatial Throne - Marble - Night - 32x46 - 300 DPI.webp": [
+        {
+            "x": 17,
+            "y": 41,
+            "type": "entry"
+        },
+        {
+            "x": 17,
+            "y": 3,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 17,
+            "y": 4,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 8,
+            "y": 28,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 9,
+            "y": 31,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 14,
+            "y": 31,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 12,
+            "y": 31,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 15,
+            "y": 32,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 14,
+            "y": 32,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 22,
+            "y": 33,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 26,
+            "y": 32,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 25,
+            "y": 29,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 15,
+            "y": 18,
+            "type": "entity",
+            "faction": "Throne"
+        },
+        {
+            "x": 19,
+            "y": 19,
+            "type": "entity",
+            "faction": "Throne"
+        }
+    ],
+    "images/maps/Rickety Rope Bridge - Clouds - 16x22 - 300 DPI.webp": [
+        {
+            "x": 8,
+            "y": 21,
+            "type": "entry"
+        },
+        {
+            "x": 8,
+            "y": 1,
+            "type": "entry"
+        },
+        {
+            "x": 8,
+            "y": 17,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 19,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 18,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 16,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 15,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 14,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 13,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 12,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 11,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 10,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 9,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 8,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 7,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 5,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 6,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 4,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 3,
+            "type": "rickety bridge"
+        }
+    ],
+    "images/maps/Rickety_Rope_Bridge/Rickety Rope Bridge - Day - 16x22 - 300 DPI.webp": [
+        {
+            "x": 8,
+            "y": 19,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 18,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 17,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 16,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 15,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 14,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 13,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 12,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 11,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 10,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 9,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 8,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 7,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 5,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 6,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 4,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 3,
+            "type": "rickety bridge"
+        },
+        {
+            "x": 8,
+            "y": 1,
+            "type": "entry"
+        },
+        {
+            "x": 8,
+            "y": 21,
+            "type": "entry"
+        }
+    ],
+    "images/maps/Rocky_Desert___Base_Map/Rocky Desert - Base Map - Day - 32x22.webp": [
+        {
+            "x": 10,
+            "y": 13,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 12,
+            "y": 9,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 14,
+            "y": 7,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 27,
+            "y": 10,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 25,
+            "y": 11,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 28,
+            "y": 6,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 28,
+            "y": 16,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 25,
+            "y": 19,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 26,
+            "y": 21,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 31,
+            "y": 19,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "type": "entity",
+            "faction": "any"
+        }
+    ],
+    "images/maps/Rocky_Desert___Base_Map/Rocky Desert - Base Map - Night - 32x22.webp": [
+        {
+            "x": 10,
+            "y": 13,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 12,
+            "y": 9,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 14,
+            "y": 7,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 27,
+            "y": 10,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 25,
+            "y": 11,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 28,
+            "y": 6,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 28,
+            "y": 16,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 25,
+            "y": 19,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 26,
+            "y": 21,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 31,
+            "y": 19,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "type": "entity",
+            "faction": "any"
+        }
+    ],
+    "images/maps/Rocky_Fissures___Desert/Rocky Fissures - Desert - Day - 22x16.webp": [
+        {
+            "x": 1,
+            "y": 6,
+            "type": "entry"
+        },
+        {
+            "x": 18,
+            "y": 16,
+            "type": "entry"
+        },
+        {
+            "x": 22,
+            "y": 8,
+            "type": "entry"
+        },
+        {
+            "x": 18,
+            "y": 16,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 6,
+            "y": 4,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 9,
+            "y": 4,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 14,
+            "y": 8,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 13,
+            "y": 14,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 7,
+            "y": 13,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 4,
+            "y": 9,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 17,
+            "y": 4,
+            "type": "entity",
+            "faction": "any"
+        }
+    ],
+    "images/maps/Rocky_Fissures___Desert/Rocky Fissures - Desert - Night - 22x16.webp": [
+        {
+            "x": 1,
+            "y": 6,
+            "type": "entry"
+        },
+        {
+            "x": 18,
+            "y": 16,
+            "type": "entry"
+        },
+        {
+            "x": 22,
+            "y": 8,
+            "type": "entry"
+        },
+        {
+            "x": 18,
+            "y": 16,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 6,
+            "y": 4,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 9,
+            "y": 4,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 14,
+            "y": 8,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 13,
+            "y": 14,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 7,
+            "y": 13,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 4,
+            "y": 9,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 17,
+            "y": 4,
+            "type": "entity",
+            "faction": "any"
+        }
+    ],
+    "images/maps/Round_Table___Valiant/Round Table - Valiant - Dark - 26x18 - 300 DPI.webp": [
+        {
+            "x": 11,
+            "y": 6,
+            "type": "any"
+        },
+        {
+            "x": 14,
+            "y": 6,
+            "type": "any"
+        },
+        {
+            "x": 18,
+            "y": 9,
+            "type": "any"
+        },
+        {
+            "x": 15,
+            "y": 13,
+            "type": "any"
+        },
+        {
+            "x": 8,
+            "y": 12,
+            "type": "any"
+        },
+        {
+            "x": 8,
+            "y": 8,
+            "type": "any"
+        }
+    ],
+    "images/maps/Round_Table___Valiant/Round Table - Valiant - Light - 26x18 - 300 DPI.webp": [
+        {
+            "x": 11,
+            "y": 6,
+            "type": "any"
+        },
+        {
+            "x": 14,
+            "y": 6,
+            "type": "any"
+        },
+        {
+            "x": 18,
+            "y": 9,
+            "type": "any"
+        },
+        {
+            "x": 15,
+            "y": 13,
+            "type": "any"
+        },
+        {
+            "x": 8,
+            "y": 12,
+            "type": "any"
+        },
+        {
+            "x": 8,
+            "y": 8,
+            "type": "any"
+        }
+    ],
+    "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Dark - 32x23 - 300 DPI.webp": [
+        {
+            "x": 17,
+            "y": 9,
+            "type": "assets"
+        },
+        {
+            "x": 20,
+            "y": 10,
+            "type": "assets"
+        },
+        {
+            "x": 20,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 21,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 22,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 22,
+            "y": 12,
+            "type": "assets"
+        },
+        {
+            "x": 21,
+            "y": 12,
+            "type": "assets"
+        },
+        {
+            "x": 22,
+            "y": 13,
+            "type": "assets"
+        },
+        {
+            "x": 22,
+            "y": 14,
+            "type": "assets"
+        },
+        {
+            "x": 21,
+            "y": 14,
+            "type": "assets"
+        },
+        {
+            "x": 23,
+            "y": 14,
+            "type": "assets"
+        },
+        {
+            "x": 23,
+            "y": 13,
+            "type": "assets"
+        },
+        {
+            "x": 23,
+            "y": 12,
+            "type": "assets"
+        },
+        {
+            "x": 23,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 26,
+            "y": 7,
+            "type": "assets"
+        },
+        {
+            "x": 24,
+            "y": 7,
+            "type": "assets"
+        },
+        {
+            "x": 21,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 18,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 15,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 14,
+            "y": 8,
+            "type": "assets"
+        }
+    ],
+    "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Light - 32x23 - 300 DPI.webp": [
+        {
+            "x": 17,
+            "y": 9,
+            "type": "assets"
+        },
+        {
+            "x": 20,
+            "y": 10,
+            "type": "assets"
+        },
+        {
+            "x": 20,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 21,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 22,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 22,
+            "y": 12,
+            "type": "assets"
+        },
+        {
+            "x": 21,
+            "y": 12,
+            "type": "assets"
+        },
+        {
+            "x": 22,
+            "y": 13,
+            "type": "assets"
+        },
+        {
+            "x": 22,
+            "y": 14,
+            "type": "assets"
+        },
+        {
+            "x": 21,
+            "y": 14,
+            "type": "assets"
+        },
+        {
+            "x": 23,
+            "y": 14,
+            "type": "assets"
+        },
+        {
+            "x": 23,
+            "y": 13,
+            "type": "assets"
+        },
+        {
+            "x": 23,
+            "y": 12,
+            "type": "assets"
+        },
+        {
+            "x": 23,
+            "y": 11,
+            "type": "assets"
+        },
+        {
+            "x": 26,
+            "y": 7,
+            "type": "assets"
+        },
+        {
+            "x": 24,
+            "y": 7,
+            "type": "assets"
+        },
+        {
+            "x": 21,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 18,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 15,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 14,
+            "y": 8,
+            "type": "assets"
+        }
+    ],
+    "images/maps/Royal_Overlook___City/Royal Overlook - City - Day - 16x22 - 300 DPI.webp": [
+        {
+            "x": 3,
+            "y": 11,
+            "type": "entry"
+        },
+        {
+            "x": 15,
+            "y": 11,
+            "type": "entry"
+        },
+        {
+            "x": 15,
+            "y": 20,
+            "type": "entry"
+        },
+        {
+            "x": 9,
+            "y": 21,
+            "type": "entry"
+        },
+        {
+            "x": 8,
+            "y": 21,
+            "type": "entry"
+        },
+        {
+            "x": 2,
+            "y": 20,
+            "type": "entry"
+        },
+        {
+            "x": 6,
+            "y": 10,
+            "type": "entity",
+            "faction": "Royal"
+        },
+        {
+            "x": 11,
+            "y": 10,
+            "type": "entity",
+            "faction": "Royal"
+        },
+        {
+            "x": 6,
+            "y": 16,
+            "type": "entity",
+            "faction": "Royal"
+        },
+        {
+            "x": 11,
+            "y": 16,
+            "type": "entity",
+            "faction": "Royal"
+        },
+        {
+            "x": 7,
+            "y": 17,
+            "type": "entity",
+            "faction": "Royal"
+        },
+        {
+            "x": 10,
+            "y": 17,
+            "type": "entity",
+            "faction": "Royal"
+        },
+        {
+            "x": 6,
+            "y": 7,
+            "type": "entity",
+            "faction": "Royal"
+        },
+        {
+            "x": 11,
+            "y": 7,
+            "type": "entity",
+            "faction": "Royal"
+        }
+    ],
+    "images/maps/Royal_Overlook___City/Royal Overlook - City - Night - 16x22 - 300 DPI.webp": [
+        {
+            "x": 3,
+            "y": 11,
+            "type": "entry"
+        },
+        {
+            "x": 15,
+            "y": 11,
+            "type": "entry"
+        },
+        {
+            "x": 15,
+            "y": 20,
+            "type": "entry"
+        },
+        {
+            "x": 9,
+            "y": 21,
+            "type": "entry"
+        },
+        {
+            "x": 8,
+            "y": 21,
+            "type": "entry"
+        },
+        {
+            "x": 2,
+            "y": 20,
+            "type": "entry"
+        },
+        {
+            "x": 6,
+            "y": 10,
+            "type": "entity",
+            "faction": "Royal"
+        },
+        {
+            "x": 11,
+            "y": 10,
+            "type": "entity",
+            "faction": "Royal"
+        },
+        {
+            "x": 6,
+            "y": 16,
+            "type": "entity",
+            "faction": "Royal"
+        },
+        {
+            "x": 11,
+            "y": 16,
+            "type": "entity",
+            "faction": "Royal"
+        },
+        {
+            "x": 7,
+            "y": 17,
+            "type": "entity",
+            "faction": "Royal"
+        },
+        {
+            "x": 10,
+            "y": 17,
+            "type": "entity",
+            "faction": "Royal"
+        },
+        {
+            "x": 6,
+            "y": 7,
+            "type": "entity",
+            "faction": "Royal"
+        },
+        {
+            "x": 11,
+            "y": 7,
+            "type": "entity",
+            "faction": "Royal"
+        }
+    ],
+    "images/maps/Seaside_Bar___Tropical/Seaside Bar - Tropical - Day - 22x16 - 300 DPI.webp": [
+        {
+            "x": 22,
+            "y": 13,
+            "type": "entry"
+        },
+        {
+            "x": 13,
+            "y": 8,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 15,
+            "y": 5,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 15,
+            "y": 6,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 15,
+            "y": 4,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 15,
+            "y": 8,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 16,
+            "y": 9,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 19,
+            "y": 9,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 14,
+            "y": 11,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 13,
+            "y": 10,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 11,
+            "y": 14,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 12,
+            "y": 13,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 8,
+            "y": 9,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 10,
+            "y": 9,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 9,
+            "y": 6,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 4,
+            "y": 4,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 3,
+            "y": 6,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 6,
+            "y": 4,
+            "type": "entity",
+            "faction": "bar guests"
+        }
+    ],
+    "images/maps/Seaside_Bar___Tropical/Seaside Bar - Tropical - Night - 22x16 - 300 DPI.webp": [
+        {
+            "x": 22,
+            "y": 13,
+            "type": "entry"
+        },
+        {
+            "x": 13,
+            "y": 8,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 15,
+            "y": 5,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 15,
+            "y": 6,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 15,
+            "y": 4,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 15,
+            "y": 8,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 16,
+            "y": 9,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 19,
+            "y": 9,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 14,
+            "y": 11,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 13,
+            "y": 10,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 11,
+            "y": 14,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 12,
+            "y": 13,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 8,
+            "y": 9,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 10,
+            "y": 9,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 9,
+            "y": 6,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 4,
+            "y": 4,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 3,
+            "y": 6,
+            "type": "entity",
+            "faction": "bar guests"
+        },
+        {
+            "x": 6,
+            "y": 4,
+            "type": "entity",
+            "faction": "bar guests"
+        }
+    ],
+    "images/maps/Sewer_Hideout___Basic/Sewer Hideout - Basic - Day - 22x16.webp": [
+        {
+            "x": 13,
+            "y": 10,
+            "type": "entity",
+            "faction": "hideout people"
+        },
+        {
+            "x": 10,
+            "y": 12,
+            "type": "entity",
+            "faction": "hideout people"
+        },
+        {
+            "x": 5,
+            "y": 10,
+            "type": "entity",
+            "faction": "hideout people"
+        },
+        {
+            "x": 5,
+            "y": 5,
+            "type": "entity",
+            "faction": "hideout people"
+        },
+        {
+            "x": 10,
+            "y": 5,
+            "type": "entity",
+            "faction": "hideout people"
+        }
+    ],
+    "images/maps/Sewer_Hideout___Basic/Sewer Hideout - Basic - Night - 22x16.webp": [
+        {
+            "x": 13,
+            "y": 10,
+            "type": "entity",
+            "faction": "hideout people"
+        },
+        {
+            "x": 10,
+            "y": 12,
+            "type": "entity",
+            "faction": "hideout people"
+        },
+        {
+            "x": 5,
+            "y": 10,
+            "type": "entity",
+            "faction": "hideout people"
+        },
+        {
+            "x": 5,
+            "y": 5,
+            "type": "entity",
+            "faction": "hideout people"
+        },
+        {
+            "x": 10,
+            "y": 5,
+            "type": "entity",
+            "faction": "hideout people"
+        }
+    ],
+    "images/maps/Shattered Stronghold - Astral Sea - Blue Star - 22x16 - 300 DPI.webp": [
+        {
+            "x": 4,
+            "y": 8,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 5,
+            "y": 7,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 7,
+            "y": 13,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 10,
+            "y": 14,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 14,
+            "y": 9,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 13,
+            "y": 8,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 19,
+            "y": 9,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 18,
+            "y": 8,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 18,
+            "y": 3,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 17,
+            "y": 3,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 7,
+            "y": 3,
+            "type": "entity",
+            "faction": "any"
+        }
+    ],
+    "images/maps/Shattered Stronghold - Astral Sea - Red Star - 22x16 - 300 DPI.webp": [
+        {
+            "x": 4,
+            "y": 8,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 5,
+            "y": 7,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 7,
+            "y": 13,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 10,
+            "y": 14,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 14,
+            "y": 9,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 13,
+            "y": 8,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 19,
+            "y": 9,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 18,
+            "y": 8,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 18,
+            "y": 3,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 17,
+            "y": 3,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 7,
+            "y": 3,
+            "type": "entity",
+            "faction": "any"
+        }
+    ],
+    "images/maps/Shifting Swamp - Jungle - 23x16.webp": [
+        {
+            "x": 4,
+            "y": 16,
+            "type": "entry"
+        },
+        {
+            "x": 17,
+            "y": 16,
+            "type": "entry"
+        },
+        {
+            "x": 23,
+            "y": 14,
+            "type": "entry"
+        },
+        {
+            "x": 20,
+            "y": 1,
+            "type": "entry"
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "type": "entry"
+        },
+        {
+            "x": 5,
+            "y": 10,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 1,
+            "y": 15,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 6,
+            "y": 6,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 10,
+            "y": 4,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 19,
+            "y": 7,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 19,
+            "y": 11,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 10,
+            "y": 11,
+            "type": "entity",
+            "faction": "any"
+        }
+    ],
+    "images/maps/Shipyard_Warehouse/Shipyard Warehouse - Day - Floor 1 - 23x32.webp": [
+        {
+            "x": 21,
+            "y": 5,
+            "type": "entity",
+            "faction": "warehouse"
+        },
+        {
+            "x": 21,
+            "y": 8,
+            "type": "entity",
+            "faction": "warehouse"
+        },
+        {
+            "x": 15,
+            "y": 7,
+            "type": "entity",
+            "faction": "warehouse"
+        },
+        {
+            "x": 12,
+            "y": 10,
+            "type": "entity",
+            "faction": "warehouse"
+        },
+        {
+            "x": 6,
+            "y": 9,
+            "type": "entity",
+            "faction": "warehouse"
+        },
+        {
+            "x": 6,
+            "y": 3,
+            "type": "entity",
+            "faction": "warehouse"
+        },
+        {
+            "x": 23,
+            "y": 13,
+            "type": "entry"
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "type": "entry"
+        }
+    ],
+    "images/maps/Shipyard_Warehouse/Shipyard Warehouse - Day - Floor 2 - 21x12.webp": [
+        {
+            "x": 2,
+            "y": 9,
+            "type": "level down"
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "type": "level down"
+        },
+        {
+            "x": 5,
+            "y": 10,
+            "type": "entity",
+            "faction": "warehouse"
+        },
+        {
+            "x": 7,
+            "y": 3,
+            "type": "entity",
+            "faction": "warehouse"
+        },
+        {
+            "x": 13,
+            "y": 10,
+            "type": "entity",
+            "faction": "warehouse"
+        },
+        {
+            "x": 13,
+            "y": 5,
+            "type": "entity",
+            "faction": "warehouse"
+        }
+    ],
+    "images/maps/Shipyard_Warehouse/Shipyard Warehouse - Night - Floor 1 - 23x32.webp": [
+        {
+            "x": 21,
+            "y": 5,
+            "type": "entity",
+            "faction": "warehouse"
+        },
+        {
+            "x": 21,
+            "y": 8,
+            "type": "entity",
+            "faction": "warehouse"
+        },
+        {
+            "x": 15,
+            "y": 7,
+            "type": "entity",
+            "faction": "warehouse"
+        },
+        {
+            "x": 12,
+            "y": 10,
+            "type": "entity",
+            "faction": "warehouse"
+        },
+        {
+            "x": 6,
+            "y": 9,
+            "type": "entity",
+            "faction": "warehouse"
+        },
+        {
+            "x": 6,
+            "y": 3,
+            "type": "entity",
+            "faction": "warehouse"
+        },
+        {
+            "x": 23,
+            "y": 13,
+            "type": "entry"
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "type": "entry"
+        }
+    ],
+    "images/maps/Shipyard_Warehouse/Shipyard Warehouse - Night - Floor 2 - 21x12.webp": [
+        {
+            "x": 2,
+            "y": 9,
+            "type": "level down"
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "type": "level down"
+        },
+        {
+            "x": 5,
+            "y": 10,
+            "type": "entity",
+            "faction": "warehouse"
+        },
+        {
+            "x": 7,
+            "y": 3,
+            "type": "entity",
+            "faction": "warehouse"
+        },
+        {
+            "x": 13,
+            "y": 10,
+            "type": "entity",
+            "faction": "warehouse"
+        },
+        {
+            "x": 13,
+            "y": 5,
+            "type": "entity",
+            "faction": "warehouse"
+        }
+    ],
+    "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Dark - Basement 1 - 6x8.webp": [
+        {
+            "x": 5,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 5,
+            "y": 5,
+            "type": "assets"
+        },
+        {
+            "x": 5,
+            "y": 4,
+            "type": "assets"
+        }
+    ],
+    "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Dark - Basement 2 - 5x7.webp": [
+        {
+            "x": 3,
+            "y": 2,
+            "type": "level up"
+        }
+    ],
+    "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Dark - Ground Floor - 11x8.webp": [
+        {
+            "x": 5,
+            "y": 6,
+            "type": "entity",
+            "faction": "cabin owner"
+        }
+    ],
+    "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Light - Basement 1 - 6x8.webp": [
+        {
+            "x": 5,
+            "y": 6,
+            "type": "assets"
+        },
+        {
+            "x": 5,
+            "y": 5,
+            "type": "assets"
+        },
+        {
+            "x": 5,
+            "y": 4,
+            "type": "assets"
+        }
+    ],
+    "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Light - Basement 2 - 5x7.webp": [
+        {
+            "x": 3,
+            "y": 2,
+            "type": "level up"
+        }
+    ],
+    "images/maps/Sinister_Cabin___Occupied/Sinister Cabin - Occupied - Light - Ground Floor - 11x8.webp": [
+        {
+            "x": 5,
+            "y": 6,
+            "type": "entity",
+            "faction": "cabin owner"
+        }
+    ],
+    "images/maps/Swamp_Trail___Gloomy/Swamp Trail - Gloomy - Day - 44x32 - 300 DPI.webp": [
+        {
+            "x": 11,
+            "y": 23,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 16,
+            "y": 25,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 18,
+            "y": 28,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 21,
+            "y": 23,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 40,
+            "y": 29,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 43,
+            "y": 24,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 41,
+            "y": 16,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 32,
+            "y": 10,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 24,
+            "y": 14,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 23,
+            "y": 9,
+            "type": "entity",
+            "faction": "any"
+        }
+    ],
+    "images/maps/Swamp_Trail___Gloomy/Swamp Trail - Gloomy - Night - 44x32 - 300 DPI.webp": [
+        {
+            "x": 11,
+            "y": 23,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 16,
+            "y": 25,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 18,
+            "y": 28,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 21,
+            "y": 23,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 40,
+            "y": 29,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 43,
+            "y": 24,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 41,
+            "y": 16,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 32,
+            "y": 10,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 24,
+            "y": 14,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 23,
+            "y": 9,
+            "type": "entity",
+            "faction": "any"
+        }
+    ],
+    "images/maps/Trading_Post___Occupied/Trading Post - Occupied - Dark - 14x14 - 300 DPI.webp": [
+        {
+            "x": 10,
+            "y": 7,
+            "type": "entity",
+            "faction": "shopkeeper"
+        }
+    ],
+    "images/maps/Trading_Post___Occupied/Trading Post - Occupied - Light - 14x14 - 300 DPI.webp": [
+        {
+            "x": 10,
+            "y": 7,
+            "type": "entity",
+            "faction": "shopkeeper"
+        }
+    ],
+    "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Dark - Cellar - 22x16.webp": [
+        {
+            "x": 19,
+            "y": 15,
+            "type": "level up"
+        },
+        {
+            "x": 15,
+            "y": 8,
+            "type": "assets"
+        }
+    ],
+    "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Dark - Floor 1 - 22x16.webp": [
+        {
+            "x": 20,
+            "y": 4,
+            "type": "tavern staff"
+        },
+        {
+            "x": 20,
+            "y": 7,
+            "type": "tavern staff"
+        },
+        {
+            "x": 17,
+            "y": 13,
+            "type": "tavern staff"
+        },
+        {
+            "x": 19,
+            "y": 12,
+            "type": "tavern staff"
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 7,
+            "y": 13,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 8,
+            "y": 13,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 9,
+            "y": 13,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 6,
+            "y": 11,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 8,
+            "y": 11,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 7,
+            "y": 10,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 13,
+            "y": 10,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 13,
+            "y": 12,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 12,
+            "y": 11,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 14,
+            "y": 9,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 16,
+            "y": 9,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 15,
+            "y": 4,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 16,
+            "y": 4,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 16,
+            "y": 2,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 15,
+            "y": 2,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 14,
+            "y": 3,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 11,
+            "y": 2,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 11,
+            "y": 3,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 10,
+            "y": 4,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 9,
+            "y": 2,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 9,
+            "y": 3,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 7,
+            "y": 2,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 6,
+            "y": 2,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 6,
+            "y": 4,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 7,
+            "y": 4,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 3,
+            "y": 6,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 5,
+            "y": 6,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 7,
+            "y": 6,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 3,
+            "y": 13,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 4,
+            "y": 14,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 19,
+            "y": 2,
+            "type": "level up"
+        }
+    ],
+    "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Dark - Floor 2 - 22x16.webp": [
+        {
+            "x": 7,
+            "y": 4,
+            "type": "entity",
+            "faction": "taven sleep guests"
+        },
+        {
+            "x": 12,
+            "y": 3,
+            "type": "entity",
+            "faction": "taven sleep guests"
+        },
+        {
+            "x": 7,
+            "y": 9,
+            "type": "entity",
+            "faction": "taven sleep guests"
+        },
+        {
+            "x": 9,
+            "y": 8,
+            "type": "entity",
+            "faction": "taven sleep guests"
+        },
+        {
+            "x": 11,
+            "y": 9,
+            "type": "entity",
+            "faction": "taven sleep guests"
+        },
+        {
+            "x": 13,
+            "y": 9,
+            "type": "entity",
+            "faction": "taven sleep guests"
+        },
+        {
+            "x": 21,
+            "y": 9,
+            "type": "entity",
+            "faction": "taven sleep guests"
+        },
+        {
+            "x": 21,
+            "y": 6,
+            "type": "entity",
+            "faction": "taven sleep guests"
+        }
+    ],
+    "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Light - Cellar - 22x16.webp": [
+        {
+            "x": 19,
+            "y": 15,
+            "type": "level up"
+        },
+        {
+            "x": 15,
+            "y": 8,
+            "type": "assets"
+        }
+    ],
+    "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Light - Floor 1 - 22x16.webp": [
+        {
+            "x": 20,
+            "y": 4,
+            "type": "tavern staff"
+        },
+        {
+            "x": 20,
+            "y": 7,
+            "type": "tavern staff"
+        },
+        {
+            "x": 17,
+            "y": 13,
+            "type": "tavern staff"
+        },
+        {
+            "x": 19,
+            "y": 12,
+            "type": "tavern staff"
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 7,
+            "y": 13,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 8,
+            "y": 13,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 9,
+            "y": 13,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 6,
+            "y": 11,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 8,
+            "y": 11,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 7,
+            "y": 10,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 13,
+            "y": 10,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 13,
+            "y": 12,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 12,
+            "y": 11,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 14,
+            "y": 9,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 16,
+            "y": 9,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 15,
+            "y": 4,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 16,
+            "y": 4,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 16,
+            "y": 2,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 15,
+            "y": 2,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 14,
+            "y": 3,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 11,
+            "y": 2,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 11,
+            "y": 3,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 10,
+            "y": 4,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 9,
+            "y": 2,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 9,
+            "y": 3,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 7,
+            "y": 2,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 6,
+            "y": 2,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 6,
+            "y": 4,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 7,
+            "y": 4,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 3,
+            "y": 6,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 5,
+            "y": 6,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 7,
+            "y": 6,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 3,
+            "y": 13,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 4,
+            "y": 14,
+            "type": "entity",
+            "faction": "taven guests"
+        },
+        {
+            "x": 19,
+            "y": 2,
+            "type": "level up"
+        }
+    ],
+    "images/maps/Twilight_Tavern___Everyday/Twilight Tavern - Everyday - Light - Floor 2 - 22x16.webp": [
+        {
+            "x": 7,
+            "y": 4,
+            "type": "entity",
+            "faction": "taven sleep guests"
+        },
+        {
+            "x": 12,
+            "y": 3,
+            "type": "entity",
+            "faction": "taven sleep guests"
+        },
+        {
+            "x": 7,
+            "y": 9,
+            "type": "entity",
+            "faction": "taven sleep guests"
+        },
+        {
+            "x": 9,
+            "y": 8,
+            "type": "entity",
+            "faction": "taven sleep guests"
+        },
+        {
+            "x": 11,
+            "y": 9,
+            "type": "entity",
+            "faction": "taven sleep guests"
+        },
+        {
+            "x": 13,
+            "y": 9,
+            "type": "entity",
+            "faction": "taven sleep guests"
+        },
+        {
+            "x": 21,
+            "y": 9,
+            "type": "entity",
+            "faction": "taven sleep guests"
+        },
+        {
+            "x": 21,
+            "y": 6,
+            "type": "entity",
+            "faction": "taven sleep guests"
+        }
+    ],
+    "images/maps/Underground_Outpost___Everyday/Underground Outpost - Everyday - Dark - 22x16.webp": [
+        {
+            "x": 1,
+            "y": 9,
+            "type": "entry"
+        },
+        {
+            "x": 15,
+            "y": 15,
+            "type": "entry"
+        },
+        {
+            "x": 13,
+            "y": 12,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 3,
+            "y": 9,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 13,
+            "y": 9,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 19,
+            "y": 14,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 19,
+            "y": 9,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 19,
+            "y": 4,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 11,
+            "y": 5,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 7,
+            "y": 3,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "type": "entity",
+            "faction": "undergrounders"
+        }
+    ],
+    "images/maps/Underground_Outpost___Everyday/Underground Outpost - Everyday - Light - 22x16.webp": [
+        {
+            "x": 1,
+            "y": 9,
+            "type": "entry"
+        },
+        {
+            "x": 15,
+            "y": 15,
+            "type": "entry"
+        },
+        {
+            "x": 13,
+            "y": 12,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 3,
+            "y": 9,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 13,
+            "y": 9,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 19,
+            "y": 14,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 19,
+            "y": 9,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 19,
+            "y": 4,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 11,
+            "y": 5,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 7,
+            "y": 3,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "type": "entity",
+            "faction": "undergrounders"
+        }
+    ],
+    "images/maps/Underground_Sanctuary___Inviting/Underground Sanctuary - Inviting - Dark - 44x32.webp": [
+        {
+            "x": 12,
+            "y": 7,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 12,
+            "y": 6,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 24,
+            "y": 25,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 28,
+            "y": 26,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 35,
+            "y": 25,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 35,
+            "y": 23,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 37,
+            "y": 14,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 37,
+            "y": 9,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 25,
+            "y": 11,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 26,
+            "y": 16,
+            "type": "entity",
+            "faction": "undergrounders"
+        }
+    ],
+    "images/maps/Underground_Sanctuary___Inviting/Underground Sanctuary - Inviting - Light - 44x32.webp": [
+        {
+            "x": 12,
+            "y": 7,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 12,
+            "y": 6,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 24,
+            "y": 25,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 28,
+            "y": 26,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 35,
+            "y": 25,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 35,
+            "y": 23,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 37,
+            "y": 14,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 37,
+            "y": 9,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 25,
+            "y": 11,
+            "type": "entity",
+            "faction": "undergrounders"
+        },
+        {
+            "x": 26,
+            "y": 16,
+            "type": "entity",
+            "faction": "undergrounders"
+        }
+    ],
+    "images/maps/Wild_West_High_Street___Everyday/Wild West High Street - Everyday - Day - 22x16.webp": [
+        {
+            "x": 22,
+            "y": 9,
+            "type": "entry"
+        },
+        {
+            "x": 7,
+            "y": 1,
+            "type": "entry"
+        },
+        {
+            "x": 1,
+            "y": 8,
+            "type": "entry"
+        },
+        {
+            "x": 6,
+            "y": 16,
+            "type": "entry"
+        },
+        {
+            "x": 3,
+            "y": 13,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 18,
+            "y": 12,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 12,
+            "y": 5,
+            "type": "entity",
+            "faction": "any"
+        }
+    ],
+    "images/maps/Wild_West_High_Street___Everyday/Wild West High Street - Everyday - Night - 22x16.webp": [
+        {
+            "x": 22,
+            "y": 9,
+            "type": "entry"
+        },
+        {
+            "x": 7,
+            "y": 1,
+            "type": "entry"
+        },
+        {
+            "x": 1,
+            "y": 8,
+            "type": "entry"
+        },
+        {
+            "x": 6,
+            "y": 16,
+            "type": "entry"
+        },
+        {
+            "x": 3,
+            "y": 13,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 18,
+            "y": 12,
+            "type": "entity",
+            "faction": "any"
+        },
+        {
+            "x": 12,
+            "y": 5,
+            "type": "entity",
+            "faction": "any"
+        }
+    ],
+    "images/maps/Wizarding_School_Great_Hall___Radiant_Dragon/Wizarding School Great Hall - Radiant Dragon - Day - 32x44.webp": [
+        {
+            "x": 7,
+            "y": 30,
+            "type": "entity",
+            "faction": "wizard heads"
+        },
+        {
+            "x": 7,
+            "y": 36,
+            "type": "entity",
+            "faction": "wizard heads"
+        },
+        {
+            "x": 7,
+            "y": 33,
+            "type": "entity",
+            "faction": "wizard heads"
+        },
+        {
+            "x": 7,
+            "y": 16,
+            "type": "entity",
+            "faction": "wizard heads"
+        },
+        {
+            "x": 7,
+            "y": 13,
+            "type": "entity",
+            "faction": "wizard heads"
+        },
+        {
+            "x": 7,
+            "y": 10,
+            "type": "entity",
+            "faction": "wizard heads"
+        },
+        {
+            "x": 11,
+            "y": 34,
+            "type": "wizzard students"
+        },
+        {
+            "x": 12,
+            "y": 34,
+            "type": "wizzard students"
+        },
+        {
+            "x": 15,
+            "y": 34,
+            "type": "wizzard students"
+        },
+        {
+            "x": 16,
+            "y": 34,
+            "type": "wizzard students"
+        },
+        {
+            "x": 18,
+            "y": 34,
+            "type": "wizzard students"
+        },
+        {
+            "x": 17,
+            "y": 34,
+            "type": "wizzard students"
+        },
+        {
+            "x": 14,
+            "y": 34,
+            "type": "wizzard students"
+        },
+        {
+            "x": 13,
+            "y": 34,
+            "type": "wizzard students"
+        },
+        {
+            "x": 11,
+            "y": 36,
+            "type": "wizzard students"
+        },
+        {
+            "x": 12,
+            "y": 36,
+            "type": "wizzard students"
+        },
+        {
+            "x": 13,
+            "y": 36,
+            "type": "wizzard students"
+        },
+        {
+            "x": 15,
+            "y": 36,
+            "type": "wizzard students"
+        },
+        {
+            "x": 14,
+            "y": 36,
+            "type": "wizzard students"
+        },
+        {
+            "x": 16,
+            "y": 36,
+            "type": "wizzard students"
+        },
+        {
+            "x": 18,
+            "y": 36,
+            "type": "wizzard students"
+        },
+        {
+            "x": 17,
+            "y": 36,
+            "type": "wizzard students"
+        },
+        {
+            "x": 18,
+            "y": 32,
+            "type": "wizzard students"
+        },
+        {
+            "x": 17,
+            "y": 32,
+            "type": "wizzard students"
+        },
+        {
+            "x": 16,
+            "y": 32,
+            "type": "wizzard students"
+        },
+        {
+            "x": 13,
+            "y": 32,
+            "type": "wizzard students"
+        },
+        {
+            "x": 15,
+            "y": 32,
+            "type": "wizzard students"
+        },
+        {
+            "x": 14,
+            "y": 32,
+            "type": "wizzard students"
+        },
+        {
+            "x": 12,
+            "y": 32,
+            "type": "wizzard students"
+        },
+        {
+            "x": 12,
+            "y": 30,
+            "type": "wizzard students"
+        },
+        {
+            "x": 14,
+            "y": 30,
+            "type": "wizzard students"
+        },
+        {
+            "x": 17,
+            "y": 30,
+            "type": "wizzard students"
+        },
+        {
+            "x": 12,
+            "y": 16,
+            "type": "wizzard students"
+        },
+        {
+            "x": 16,
+            "y": 16,
+            "type": "wizzard students"
+        },
+        {
+            "x": 14,
+            "y": 16,
+            "type": "wizzard students"
+        },
+        {
+            "x": 14,
+            "y": 14,
+            "type": "wizzard students"
+        },
+        {
+            "x": 12,
+            "y": 14,
+            "type": "wizzard students"
+        },
+        {
+            "x": 17,
+            "y": 14,
+            "type": "wizzard students"
+        },
+        {
+            "x": 17,
+            "y": 10,
+            "type": "wizzard students"
+        },
+        {
+            "x": 16,
+            "y": 12,
+            "type": "wizzard students"
+        },
+        {
+            "x": 14,
+            "y": 10,
+            "type": "wizzard students"
+        },
+        {
+            "x": 12,
+            "y": 12,
+            "type": "wizzard students"
+        },
+        {
+            "x": 22,
+            "y": 10,
+            "type": "wizzard students"
+        },
+        {
+            "x": 22,
+            "y": 12,
+            "type": "wizzard students"
+        },
+        {
+            "x": 26,
+            "y": 12,
+            "type": "wizzard students"
+        },
+        {
+            "x": 26,
+            "y": 10,
+            "type": "wizzard students"
+        },
+        {
+            "x": 24,
+            "y": 12,
+            "type": "wizzard students"
+        },
+        {
+            "x": 22,
+            "y": 16,
+            "type": "wizzard students"
+        },
+        {
+            "x": 23,
+            "y": 14,
+            "type": "wizzard students"
+        },
+        {
+            "x": 25,
+            "y": 16,
+            "type": "wizzard students"
+        },
+        {
+            "x": 25,
+            "y": 14,
+            "type": "wizzard students"
+        },
+        {
+            "x": 27,
+            "y": 16,
+            "type": "wizzard students"
+        },
+        {
+            "x": 26,
+            "y": 30,
+            "type": "wizzard students"
+        },
+        {
+            "x": 25,
+            "y": 32,
+            "type": "wizzard students"
+        },
+        {
+            "x": 22,
+            "y": 30,
+            "type": "wizzard students"
+        },
+        {
+            "x": 22,
+            "y": 32,
+            "type": "wizzard students"
+        },
+        {
+            "x": 23,
+            "y": 36,
+            "type": "wizzard students"
+        },
+        {
+            "x": 25,
+            "y": 34,
+            "type": "wizzard students"
+        },
+        {
+            "x": 27,
+            "y": 36,
+            "type": "wizzard students"
+        }
+    ],
+    "images/maps/Wizarding_School_Great_Hall___Radiant_Dragon/Wizarding School Great Hall - Radiant Dragon - Night - 32x44.webp": [
+        {
+            "x": 7,
+            "y": 30,
+            "type": "entity",
+            "faction": "wizard heads"
+        },
+        {
+            "x": 7,
+            "y": 36,
+            "type": "entity",
+            "faction": "wizard heads"
+        },
+        {
+            "x": 7,
+            "y": 33,
+            "type": "entity",
+            "faction": "wizard heads"
+        },
+        {
+            "x": 7,
+            "y": 16,
+            "type": "entity",
+            "faction": "wizard heads"
+        },
+        {
+            "x": 7,
+            "y": 13,
+            "type": "entity",
+            "faction": "wizard heads"
+        },
+        {
+            "x": 7,
+            "y": 10,
+            "type": "entity",
+            "faction": "wizard heads"
+        },
+        {
+            "x": 11,
+            "y": 34,
+            "type": "wizzard students"
+        },
+        {
+            "x": 12,
+            "y": 34,
+            "type": "wizzard students"
+        },
+        {
+            "x": 15,
+            "y": 34,
+            "type": "wizzard students"
+        },
+        {
+            "x": 16,
+            "y": 34,
+            "type": "wizzard students"
+        },
+        {
+            "x": 18,
+            "y": 34,
+            "type": "wizzard students"
+        },
+        {
+            "x": 17,
+            "y": 34,
+            "type": "wizzard students"
+        },
+        {
+            "x": 14,
+            "y": 34,
+            "type": "wizzard students"
+        },
+        {
+            "x": 13,
+            "y": 34,
+            "type": "wizzard students"
+        },
+        {
+            "x": 11,
+            "y": 36,
+            "type": "wizzard students"
+        },
+        {
+            "x": 12,
+            "y": 36,
+            "type": "wizzard students"
+        },
+        {
+            "x": 13,
+            "y": 36,
+            "type": "wizzard students"
+        },
+        {
+            "x": 15,
+            "y": 36,
+            "type": "wizzard students"
+        },
+        {
+            "x": 14,
+            "y": 36,
+            "type": "wizzard students"
+        },
+        {
+            "x": 16,
+            "y": 36,
+            "type": "wizzard students"
+        },
+        {
+            "x": 18,
+            "y": 36,
+            "type": "wizzard students"
+        },
+        {
+            "x": 17,
+            "y": 36,
+            "type": "wizzard students"
+        },
+        {
+            "x": 18,
+            "y": 32,
+            "type": "wizzard students"
+        },
+        {
+            "x": 17,
+            "y": 32,
+            "type": "wizzard students"
+        },
+        {
+            "x": 16,
+            "y": 32,
+            "type": "wizzard students"
+        },
+        {
+            "x": 13,
+            "y": 32,
+            "type": "wizzard students"
+        },
+        {
+            "x": 15,
+            "y": 32,
+            "type": "wizzard students"
+        },
+        {
+            "x": 14,
+            "y": 32,
+            "type": "wizzard students"
+        },
+        {
+            "x": 12,
+            "y": 32,
+            "type": "wizzard students"
+        },
+        {
+            "x": 12,
+            "y": 30,
+            "type": "wizzard students"
+        },
+        {
+            "x": 14,
+            "y": 30,
+            "type": "wizzard students"
+        },
+        {
+            "x": 17,
+            "y": 30,
+            "type": "wizzard students"
+        },
+        {
+            "x": 12,
+            "y": 16,
+            "type": "wizzard students"
+        },
+        {
+            "x": 16,
+            "y": 16,
+            "type": "wizzard students"
+        },
+        {
+            "x": 14,
+            "y": 16,
+            "type": "wizzard students"
+        },
+        {
+            "x": 14,
+            "y": 14,
+            "type": "wizzard students"
+        },
+        {
+            "x": 12,
+            "y": 14,
+            "type": "wizzard students"
+        },
+        {
+            "x": 17,
+            "y": 14,
+            "type": "wizzard students"
+        },
+        {
+            "x": 17,
+            "y": 10,
+            "type": "wizzard students"
+        },
+        {
+            "x": 16,
+            "y": 12,
+            "type": "wizzard students"
+        },
+        {
+            "x": 14,
+            "y": 10,
+            "type": "wizzard students"
+        },
+        {
+            "x": 12,
+            "y": 12,
+            "type": "wizzard students"
+        },
+        {
+            "x": 22,
+            "y": 10,
+            "type": "wizzard students"
+        },
+        {
+            "x": 22,
+            "y": 12,
+            "type": "wizzard students"
+        },
+        {
+            "x": 26,
+            "y": 12,
+            "type": "wizzard students"
+        },
+        {
+            "x": 26,
+            "y": 10,
+            "type": "wizzard students"
+        },
+        {
+            "x": 24,
+            "y": 12,
+            "type": "wizzard students"
+        },
+        {
+            "x": 22,
+            "y": 16,
+            "type": "wizzard students"
+        },
+        {
+            "x": 23,
+            "y": 14,
+            "type": "wizzard students"
+        },
+        {
+            "x": 25,
+            "y": 16,
+            "type": "wizzard students"
+        },
+        {
+            "x": 25,
+            "y": 14,
+            "type": "wizzard students"
+        },
+        {
+            "x": 27,
+            "y": 16,
+            "type": "wizzard students"
+        },
+        {
+            "x": 26,
+            "y": 30,
+            "type": "wizzard students"
+        },
+        {
+            "x": 25,
+            "y": 32,
+            "type": "wizzard students"
+        },
+        {
+            "x": 22,
+            "y": 30,
+            "type": "wizzard students"
+        },
+        {
+            "x": 22,
+            "y": 32,
+            "type": "wizzard students"
+        },
+        {
+            "x": 23,
+            "y": 36,
+            "type": "wizzard students"
+        },
+        {
+            "x": 25,
+            "y": 34,
+            "type": "wizzard students"
+        },
+        {
+            "x": 27,
+            "y": 36,
+            "type": "wizzard students"
         }
     ]
 }

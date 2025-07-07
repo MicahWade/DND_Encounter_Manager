@@ -80,54 +80,6 @@
         "size": "22x16"
     },
     {
-        "title": "Summer Treetop Scene",
-        "type": "map",
-        "Tags": "Bandit Ambush,medieval, forest, trees, foliage, verdant, natural, rural, landscape, cartography, fantasy, green, lush, wilderness, map",
-        "path": "images/maps/Treetops___Summer/Treetops - Summer - Day 1 - 11x14 - 300 DPI.webp",
-        "variants": "Day, Night",
-        "size": "11x14"
-    },
-    {
-        "title": "Treetop Summer Scenes",
-        "type": "map",
-        "Tags": "Bandit Ambush,forest, nature, tree, sky, clouds, landscape, tranquil, wildlife, camping, outdoor adventure, hiking, exploration",
-        "path": "images/maps/Treetops___Summer/Treetops - Summer - Day 2 - 11x8 - 300 DPI.webp",
-        "variants": "Day, Night",
-        "size": "11x8"
-    },
-    {
-        "title": "Treetop Summer Scene",
-        "type": "map",
-        "Tags": "Bandit Ambush,map, forest, nature, landscape, colorful, vibrant, green, trees, wilderness",
-        "path": "images/maps/Treetops___Summer/Treetops - Summer - Day 3 - 12x8 - 300 DPI.webp",
-        "variants": "Day, Night",
-        "size": "12x8"
-    },
-    {
-        "title": "Summer Night Treetops",
-        "type": "map",
-        "Tags": "Bandit Ambush,dark, night, forest, shadowy, trees, canopy, leaves, moonlight, mysterious, eerie, fantasy, nighttime",
-        "path": "images/maps/Treetops___Summer/Treetops - Summer - Night 1 - 11x14 - 300 DPI.webp",
-        "variants": "Day, Night",
-        "size": "11x14"
-    },
-    {
-        "title": "Summer Night Skyline",
-        "type": "map",
-        "Tags": "Bandit Ambush,Darkness, Forest, Nighttime, Silhouette, Trees, Shadow, Tranquil, Solitude, Mystery",
-        "path": "images/maps/Treetops___Summer/Treetops - Summer - Night 3 - 11x8 - 300 DPI.webp",
-        "variants": "Day, Night",
-        "size": "11x8"
-    },
-    {
-        "title": "Summer Night Treetops",
-        "type": "map",
-        "Tags": "Bandit Ambush,swirls, abstract, pattern, dark, blue, night sky, galaxy, fractal, symmetrical",
-        "path": "images/maps/Treetops___Summer/Treetops - Summer - Night 3 - 12x8 - 300 DPI.webp",
-        "variants": "Day, Night",
-        "size": "12x8"
-    },
-    {
         "title": "Ancient Temple Ruins",
         "type": "map",
         "Tags": "Buried Temple,dungeon, maze, puzzle, challenge, mystery, exploration, medieval, castle, underground, labyrinth, adventurous, quest",
@@ -150,46 +102,6 @@
         "path": "images/maps/Crystal Crypts - Lich Light - 32x22 - 300 DPI.webp",
         "variants": "Light",
         "size": "32x22"
-    },
-    {
-        "title": "Floodlit Dark Lich Lair",
-        "type": "map",
-        "Tags": "Crystal Crypts,cave, mine, underground, tunnel, dungeon, exploration, adventure, spelunking, cavern, stone, brick",
-        "path": "images/maps/Flooded Room - Lich Light 1 - 11x6 - 300 DPI.webp",
-        "variants": "Light",
-        "size": "11x6"
-    },
-    {
-        "title": "Floodlit Lich Scene",
-        "type": "map",
-        "Tags": "Crystal Crypts,game, level design, dungeon, tile based layout, pixel art, pixelated, retro style, isometric view",
-        "path": "images/maps/Flooded Room - Lich Light 2 - 16x9 - 300 DPI.webp",
-        "variants": "Light",
-        "size": "16x9"
-    },
-    {
-        "title": "Darkness Illuminates Ruins",
-        "type": "map",
-        "Tags": "Crystal Crypts,crypt, dungeon, stone, brick, tunnel, light source, gaming, pixel art",
-        "path": "images/maps/Flooded Room - Lich Light 3 - 11x6 - 300 DPI.webp",
-        "variants": "Light",
-        "size": "11x6"
-    },
-    {
-        "title": "Floodlit Dungeon Chamber",
-        "type": "map",
-        "Tags": "Crystal Crypts,- Dungeon, - Labyrinth, - Elevator, - Puzzle room, - Keyhole, - Entrance, - Platforms, - Stairs, - Trapdoor, - Light blue color scheme",
-        "path": "images/maps/Flooded Room - Lich Light 4 - 11x9 - 300 DPI.webp",
-        "variants": "Light",
-        "size": "11x9"
-    },
-    {
-        "title": "Floodlit Dark Lich Lair",
-        "type": "map",
-        "Tags": "Crystal Crypts,dungeon, room, dark, floor, ceiling, architecture, stone, tiles, design, underground, eerie, cold, isolated, secluded, mystery",
-        "path": "images/maps/Flooded Room - Lich Light 5 - 16x10 - 300 DPI.webp",
-        "variants": "Light",
-        "size": "16x10"
     },
     {
         "title": "Sunset Darkened Landscape",
@@ -222,102 +134,6 @@
         "path": "images/maps/Deluxe_Suite_2___Sunset/Deluxe Suite 2 - Sunset - Light - 13x17 - 300 DPI.webp",
         "variants": "Dark, Light",
         "size": "13x17"
-    },
-    {
-        "title": "Dark Stone Landscape",
-        "type": "map",
-        "Tags": "Demiplanes,floor, wall, cage, stone, room, corner, bricks, concrete, solid, structure, dungeon, maze, grid",
-        "path": "images/maps/Demiplane___Stone_1/Demiplane - Stone 1 - Dark - 10x10 - 300 DPI.webp",
-        "variants": "Dark, Light",
-        "size": "10x10"
-    },
-    {
-        "title": "Map of Ancient City",
-        "type": "map",
-        "Tags": "Demiplanes,dungeon, brick walls, stone tiles, underground, mysterious, adventure, fantasy, labyrinth, escape",
-        "path": "images/maps/Demiplane___Stone_1/Demiplane - Stone 1 - Light - 10x10 - 300 DPI.webp",
-        "variants": "Dark, Light",
-        "size": "10x10"
-    },
-    {
-        "title": "Fantasy Stone Landscape",
-        "type": "map",
-        "Tags": "Demiplanes,stone, brick, wall, masonry, architecture, texture, grayscale, tile, rugged, historical",
-        "path": "images/maps/Demiplane___Stone_2/Demiplane - Stone 2 - Dark - 10x10 - 300 DPI.webp",
-        "variants": "Dark, Light",
-        "size": "10x10"
-    },
-    {
-        "title": "Stone Light Map",
-        "type": "map",
-        "Tags": "Demiplanes,stone, brick, wall, room, windowless, dungeon, tile, basement, underground, cave, cellar, fortification",
-        "path": "images/maps/Demiplane___Stone_2/Demiplane - Stone 2 - Light - 10x10 - 300 DPI.webp",
-        "variants": "Dark, Light",
-        "size": "10x10"
-    },
-    {
-        "title": "Stone Demiplane Map",
-        "type": "map",
-        "Tags": "Demiplanes,crumbling, ruins, aged, debris, fragmented, shattered, decaying, dilapidated, stone",
-        "path": "images/maps/Demiplane___Stone_3/Demiplane - Stone 3 - Dark - 10x10 - 300 DPI.webp",
-        "variants": "Dark, Light",
-        "size": "10x10"
-    },
-    {
-        "title": "Fantasy Map Fragment",
-        "type": "map",
-        "Tags": "Demiplanes,cave, dungeon, ancient, brickwork, ruins, stone, underground, crumbling, abandoned, historical, explore, adventurer, journey",
-        "path": "images/maps/Demiplane___Stone_3/Demiplane - Stone 3 - Light - 10x10 - 300 DPI.webp",
-        "variants": "Dark, Light",
-        "size": "10x10"
-    },
-    {
-        "title": "Dark Fantasy Landscape",
-        "type": "map",
-        "Tags": "Demiplanes,wallpaper, patterned, textured, design",
-        "path": "images/maps/Demiplane___Wood_1/Demiplane - Wood 1 - Dark - 10x10 - 300 DPI.webp",
-        "variants": "Dark, Light",
-        "size": "10x10"
-    },
-    {
-        "title": "Fantasy World Landscape",
-        "type": "map",
-        "Tags": "Demiplanes,brick, tile, patterned, wooden, texture, intricate, design, flooring, rustic, wall decor",
-        "path": "images/maps/Demiplane___Wood_1/Demiplane - Wood 1 - Light - 10x10 - 300 DPI.webp",
-        "variants": "Dark, Light",
-        "size": "10x10"
-    },
-    {
-        "title": "Fantasy Wood Landscape",
-        "type": "map",
-        "Tags": "Demiplanes,maze, dungeon, grid, stone, floor, walls, empty, square",
-        "path": "images/maps/Demiplane___Wood_2/Demiplane - Wood 2 - Dark - 10x10 - 300 DPI.webp",
-        "variants": "Dark, Light",
-        "size": "10x10"
-    },
-    {
-        "title": "Wooden Demiplane Map",
-        "type": "map",
-        "Tags": "Demiplanes,1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
-        "path": "images/maps/Demiplane___Wood_2/Demiplane - Wood 2 - Light - 10x10 - 300 DPI.webp",
-        "variants": "Dark, Light",
-        "size": "10x10"
-    },
-    {
-        "title": "Fantasy Dungeon Landscape",
-        "type": "map",
-        "Tags": "Demiplanes,tree, wood, bark, trunk, growth rings, nature, wilderness, forest, cut tree, timber, log",
-        "path": "images/maps/Demiplane___Wood_3/Demiplane - Wood 3 - Dark - 10x10 - 300 DPI.webp",
-        "variants": "Dark, Light",
-        "size": "10x10"
-    },
-    {
-        "title": "Fantasy Realm Landscape",
-        "type": "map",
-        "Tags": "Demiplanes,tree stump, cross section, wood rings, natural structure, circular pattern, growth rings, environmental artifact, wooden sculpture",
-        "path": "images/maps/Demiplane___Wood_3/Demiplane - Wood 3 - Light - 10x10 - 300 DPI.webp",
-        "variants": "Dark, Light",
-        "size": "10x10"
     },
     {
         "title": "Devil'sMill,Floor1",
@@ -1736,14 +1552,6 @@
         "size": "43x29"
     },
     {
-        "title": "Forest Village Scene",
-        "type": "map",
-        "Tags": "Mushroom Village,path, forest, trail, journey, hiking, wilderness, adventure, exploration, nature, woods, outdoors",
-        "path": "images/maps/Mushroom_Village___Forest/Mushroom Village - Forest - Day - Empty Pen - 6x9 - 300 DPI.webp",
-        "variants": "Day, Night",
-        "size": "6x9"
-    },
-    {
         "title": "Night Forest Mushroom Village",
         "type": "map",
         "Tags": "Mushroom Village,caves, underground, rocky, dark, mushrooms, fantasy, cavern, dungeon, earthy, mysterious",
@@ -2424,14 +2232,6 @@
         "size": "16x22"
     },
     {
-        "title": "Rickety Rope Bridge",
-        "type": "map",
-        "Tags": "Rickety Rope Bridge,bridge, sky, train, tracks, nature, forest, clouds, tranquility, escape",
-        "path": "images/maps/Rickety_Rope_Bridge/Rickety Rope Bridge - Night - 16x22 - 300 DPI.webp",
-        "variants": "Day, Night",
-        "size": "16x22"
-    },
-    {
         "title": "Rocky Desert Base Map",
         "type": "map",
         "Tags": "Rocky Desert,island, map, sandy, desert, exploration, cartography, adventure, treasure hunt, fantasy, paper, drawn, illustrated",
@@ -2494,54 +2294,6 @@
         "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Light - 32x23 - 300 DPI.webp",
         "variants": "Dark, Light",
         "size": "32x23"
-    },
-    {
-        "title": "Mysterious Vault Entrance",
-        "type": "map",
-        "Tags": "Royal Bank,medieval, weapons, castle, armory, fantasy, dark, night, architecture, stone",
-        "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Dark - Door 1 Alt - 4x4 - 300 DPI.webp",
-        "variants": "Dark, Light",
-        "size": "4x4"
-    },
-    {
-        "title": "Treacherous Vault Entrance",
-        "type": "map",
-        "Tags": "Royal Bank,glitch, corrupted file, error, pixelation, digital art, photo manipulation, broken computer screen, abstract, chaos, noise, disordered, chaotic order, visual confusion, unconventional, surreal, distorted, warped, fractal, geometric shapes",
-        "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Dark - Door 2 Alt - 2x6 - 300 DPI.webp",
-        "variants": "Dark, Light",
-        "size": "2x6"
-    },
-    {
-        "title": "Vault of Shadows",
-        "type": "map",
-        "Tags": "Royal Bank,Drawn, Cartoon, Fantasy, Castle, Darkness, Courtyard, Tiles, Floor, Rusty, Trash, Cards, Game, Board, Room",
-        "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Dark - Door 3 Alt - 3x4 - 300 DPI.webp",
-        "variants": "Dark, Light",
-        "size": "3x4"
-    },
-    {
-        "title": "Vault Entrance Illuminated",
-        "type": "map",
-        "Tags": "Royal Bank,medieval architecture, underground ruins, rustic stonework, crumbling walls, dungeon interior, ancient catacombs, old sewer system",
-        "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Light - Door 1 Alt - 4x4 - 300 DPI.webp",
-        "variants": "Dark, Light",
-        "size": "4x4"
-    },
-    {
-        "title": "Vault Light Doorways",
-        "type": "map",
-        "Tags": "Royal Bank,artwork, illustration, digital, fantasy, dice, character, RPG, board game, strategy game, card game,",
-        "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Light - Door 2 Alt - 2x6 - 300 DPI.webp",
-        "variants": "Dark, Light",
-        "size": "2x6"
-    },
-    {
-        "title": "Vault Door Entrance",
-        "type": "map",
-        "Tags": "Royal Bank,gaming, pixel art, virtual reality, fantasy, board game, card game, dungeons and dragons, tabletop gaming, cryptocurrency, mining, blockchain, NFTs",
-        "path": "images/maps/Royal_Bank___Vaults/Royal Bank - Vaults - Light - Door 3 Alt - 3x4 - 300 DPI.webp",
-        "variants": "Dark, Light",
-        "size": "3x4"
     },
     {
         "title": "City Royal Overlook",
@@ -3886,38 +3638,6 @@
         "path": "images/maps/Wild_West_High_Street___Everyday___Interior/Wild West High Street - Everyday - Interior - Night - 22x16.webp",
         "variants": "Day, Night",
         "size": "22x16"
-    },
-    {
-        "title": "Western Town Exterior",
-        "type": "map",
-        "Tags": "Wild West Sheriffs Office,Pub, Tavern, Board Game, Tabletop Game, RPG, Board Game Night, Game Store, Role Playing, Comic Book Store, Pen and Paper Game",
-        "path": "images/maps/Wild_West_Sheriff_s_Office___Everyday___Exterior_Overlay/Wild West Sheriff's Office - Everyday - Exterior Overlay - Day - 10x15 - 300 DPI.webp",
-        "variants": "Day, Night",
-        "size": "10x15"
-    },
-    {
-        "title": "Midnight Town Patrol",
-        "type": "map",
-        "Tags": "Wild West Sheriffs Office,small, building, night, cartoon, roof, windows, light, exterior",
-        "path": "images/maps/Wild_West_Sheriff_s_Office___Everyday___Exterior_Overlay/Wild West Sheriff's Office - Everyday - Exterior Overlay - Night - 10x15 - 300 DPI.webp",
-        "variants": "Day, Night",
-        "size": "10x15"
-    },
-    {
-        "title": "Wild West Sheriff's Office",
-        "type": "map",
-        "Tags": "Wild West Sheriffs Office,house, barn, abandoned, rural, neglected, farmhouse, dilapidated, ruins, overgrown, empty",
-        "path": "images/maps/Wild_West_Sheriff_s_Office___Everyday___Interior/Wild West Sheriff's Office - Everyday - Interior - Day - 22x20 - 300 DPI.webp",
-        "variants": "Day, Night",
-        "size": "22x20"
-    },
-    {
-        "title": "Nighttime Sheriff's Station",
-        "type": "map",
-        "Tags": "Wild West Sheriffs Office,abandoned, house, rural, nighttime, unoccupied, neglected, overgrown, desolate, empty",
-        "path": "images/maps/Wild_West_Sheriff_s_Office___Everyday___Interior/Wild West Sheriff's Office - Everyday - Interior - Night - 22x20 - 300 DPI.webp",
-        "variants": "Day, Night",
-        "size": "22x20"
     },
     {
         "title": "Radiant Dragon Hall",

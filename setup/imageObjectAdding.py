@@ -20,14 +20,18 @@ def save_asset_json(file_path: str, data: dict):
         json.dump(data, file, indent=4)
 
 def get_user_input():
-    print("What would you like to add?")
-    print("Options: assets, entity, player entry, level down, level up (or type 'exit' to finish)")
+    print("What would you like to add? (or type 'remove' to delete an entity) or 'trap'")
+    print("Options: assets, entity, entry, level down, level up (or type 'exit' to finish) or 'remove' or 'trap'")
     user_input = input().strip().lower()
 
     if user_input == 'entity':
         faction = input("Enter the faction for the entity (e.g., red team): ")
         return {'type': 'entity', 'faction': faction}
-    elif user_input in ['assets', 'player entry', 'level down', 'level up']:
+    elif user_input == 'remove':
+        return {'type': 'remove'}
+    elif user_input == 'trap':
+        return {'type': 'trap'}  # New option for fall trap
+    elif user_input in ['assets', 'entry', 'level down', 'level up']:
         return {'type': user_input}
     elif user_input == 'exit':
         return None
@@ -45,7 +49,6 @@ def display_image_with_grid(image_path: str, map_data: dict):
 
     line_width = 5
     grid_color = (0, 0, 0, int(255 * 0.75))
-    text_color = (204, 204, 204, int(255 * 0.75))
 
     for i in range(width + 1):
         line_x = i * (background.width // width)
@@ -55,32 +58,40 @@ def display_image_with_grid(image_path: str, map_data: dict):
         line_y = i * (background.height // height)
         draw_overlay.line([(0, line_y), (background.width, line_y)], fill=grid_color, width=line_width)
 
-    font_size = 50
-    font = ImageFont.truetype('arial.ttf', font_size)
-
-    for x in range(width):
-        for y in range(height):
-            cell_width = background.width // width
-            cell_height = background.height // height
-            text = f"{y * width + x}"
-            text_bbox = draw_overlay.textbbox((0, 0), text, font=font)
-            text_width = text_bbox[2] - text_bbox[0]
-            text_height = text_bbox[3] - text_bbox[1]
-
-            text_x = x * cell_width + (cell_width - text_width) // 2
-            text_y = y * cell_height + (cell_height - text_height) // 2
-
-            draw_overlay.text((text_x, text_y), text, fill=text_color, font=font)
-
     result_image = Image.alpha_composite(background.convert('RGBA'), overlay)
     return result_image, width, height, map_data
 
-def on_canvas_click(event, canvas, cell_width, cell_height, width, map_data):
+def draw_grid_and_text(canvas, cell_width, cell_height, width, height):
+    # Removed canvas.delete("all") to prevent deleting the image
+    for i in range(width + 1):
+        x1, y1, x2, y2 = i * cell_width, 0, i * cell_width, height * cell_height
+        canvas.create_line(x1, y1, x2, y2, fill='black', width=5)
+    for i in range(height + 1):
+        x1, y1, x2, y2 = 0, i * cell_height, width * cell_width, i * cell_height
+        canvas.create_line(x1, y1, x2, y2, fill='black', width=5)
+
+def on_right_click(event, canvas, cell_width, cell_height, width, height, selected_cells):
+    box_number = (event.y // cell_height) * width + (event.x // cell_width)
+    box_y = (box_number // width) + 1
+    box_x = (box_number % width) + 1
+    if (box_x, box_y) in selected_cells:
+        selected_cells.remove((box_x, box_y))
+        print(f"Removed cell ({box_x}, {box_y})")
+    else:
+        selected_cells.append((box_x, box_y))
+        print(f"Added cell ({box_x}, {box_y})")
+    draw_grid_and_text(canvas, cell_width, cell_height, width, height)
+    for x, y in selected_cells:
+        cell_x = (x - 1) * cell_width
+        cell_y = (y - 1) * cell_height
+        canvas.create_rectangle(cell_x, cell_y, cell_x + cell_width, cell_y + cell_height, outline="red", width=2)
+
+def on_canvas_click(event, cell_width, cell_height, width, map_data):
     box_number = (event.y // cell_height) * width + (event.x // cell_width)
     print(f"Box number clicked: {box_number}")
-    handle_user_input(canvas, cell_width, cell_height, map_data, box_number, width)
+    handle_user_input(map_data, box_number, width)
 
-def handle_user_input(canvas, cell_width, cell_height, map_data, box_number, width):
+def handle_user_input(map_data, box_number, width):
     adding = True
     while adding:
         new_object = get_user_input()
@@ -91,7 +102,7 @@ def handle_user_input(canvas, cell_width, cell_height, map_data, box_number, wid
         mapEntities_file_path = 'mapEntities.json'
         entities = read_asset_json(mapEntities_file_path)
 
-        if map_data['path'] not in entities:
+        if map_data['path'] not in entities and not new_object['type'] == 'remove':
             entities[map_data['path']] = []
 
         box_y = (box_number // width) + 1
@@ -105,6 +116,18 @@ def handle_user_input(canvas, cell_width, cell_height, map_data, box_number, wid
                 "faction": new_object.get('faction', None)
             })
             adding = False
+        elif new_object['type'] == 'remove':  # New condition for 'remove'
+            mapassets = read_asset_json('assets.json')
+            os.remove(f'../static/{map_data['path']}')
+            mapassets = [item for item in mapassets if item['path'] != map_data['path']]
+            save_asset_json('assets.json', mapassets)
+        elif new_object['type'] == 'trap':  # New condition for fall trap
+            entities[map_data['path']].append({
+                "x": box_x,
+                "y": box_y,
+                "type": new_object['type']
+            })
+            adding = False
         else:
             entities[map_data['path']].append({
                 "x": box_x,
@@ -113,7 +136,7 @@ def handle_user_input(canvas, cell_width, cell_height, map_data, box_number, wid
             })
             adding = False
 
-        save_asset_json(mapEntities_file_path, entities)
+    save_asset_json(mapEntities_file_path, entities)
 
 def main():
     assets = read_asset_json('assets.json')
@@ -139,13 +162,13 @@ def main():
                             entities[map_data['path']] = []
                         entities[map_data['path']].extend(existing_objects)
 
-                # Save the updated entities to the file after copying
                 save_asset_json(mapEntities_file_path, entities)
                 if map_data['path'] in entities:
                     print(f"Image {asset['path']} variant coppied. Skipping...")
                     continue
 
-                # Proceed to display the image and allow user to add objects
+                print(map_data['path'])
+
                 root = tk.Tk()
                 root.title("Image Grid")
 
@@ -153,28 +176,72 @@ def main():
                 cell_height = result_image.height // height
 
                 canvas = tk.Canvas(root, width=result_image.width, height=result_image.height)
-                canvas.pack()
 
+                scrollbar_x = tk.Scrollbar(root, orient=tk.HORIZONTAL, command=canvas.xview)
+                scrollbar_y = tk.Scrollbar(root, orient=tk.VERTICAL, command=canvas.yview)
+
+                canvas.configure(xscrollcommand=scrollbar_x.set, yscrollcommand=scrollbar_y.set)
+
+                canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+                scrollbar_x.pack(side=tk.BOTTOM, fill=tk.X)
+                scrollbar_y.pack(side=tk.RIGHT, fill=tk.Y)
+                selected_cells = []
+
+                def apply_attribute(selected_cells):
+
+                    if map_data['path'] not in entities:
+                        entities[map_data['path']] = []
+
+                    print("Enter attribute to apply (hidden, lava, aid):")
+                    attribute = input().strip().lower()
+
+                    if attribute == "entity":
+                        faction = input("Enter the faction for the entity (e.g., red team): ")
+                        for x, y in selected_cells:
+                            entities[map_data['path']].append({
+                                "x": x,
+                                "y": y,
+                                "type": attribute,
+                                "faction": faction
+                            })
+                            print(f"Applied '{attribute}' to cell ({x}, {y})")
+                    else:
+                        for x, y in selected_cells:
+                            entities[map_data['path']].append({
+                                "x": x,
+                                "y": y,
+                                "type": attribute
+                            })
+                            print(f"Applied '{attribute}' to cell ({x}, {y})")
+                    
+                    selected_cells = []
+
+                    save_asset_json(mapEntities_file_path, entities)
+                    print("Changes saved to mapEntities.json")
+
+                    draw_grid_and_text(canvas, cell_width, cell_height, width, height)
+                    for x, y in selected_cells:
+                        cell_x = (x - 1) * cell_width
+                        cell_y = (y - 1) * cell_height
+                        canvas.create_rectangle(cell_x, cell_y, cell_x + cell_width, cell_y + cell_height, outline="red", width=2)
+
+                # Bind key press to root window to ensure focus
+                def on_key(event):
+                    if event.char == 'a':
+                        apply_attribute(selected_cells)
+
+                root.bind('<KeyPress>', on_key)
+
+                # Create the image and draw grid
                 photo = ImageTk.PhotoImage(result_image)
-
-                for i in range(width + 1):
-                    x1, y1, x2, y2 = i * cell_width, 0, i * cell_width, result_image.height
-                    canvas.create_line(x1, y1, x2, y2, fill='black', width=5)
-
-                for i in range(height + 1):
-                    x1, y1, x2, y2 = 0, i * cell_height, result_image.width, i * cell_height
-                    canvas.create_line(x1, y1, x2, y2, fill='black', width=5)
-
-                for x in range(width):
-                    for y in range(height):
-                        cell_x1, cell_y1 = x * cell_width, y * cell_height
-                        text = f"{y * width + x}"
-                        text_x = cell_x1 + (cell_width // 2)
-                        text_y = cell_y1 + (cell_height // 2)
-                        canvas.create_text(text_x, text_y, text=text, fill='lightgrey')
-
-                canvas.bind('<Button-1>', lambda e: on_canvas_click(e, canvas, cell_width, cell_height, width, map_data))
+                draw_grid_and_text(canvas, cell_width, cell_height, width, height)
                 canvas.create_image(0, 0, anchor=tk.NW, image=photo)
+
+                # Bind mouse events
+                canvas.bind('<Button-1>', lambda e: on_canvas_click(e, cell_width, cell_height, width, map_data))
+                canvas.bind('<Button-3>', lambda e: on_right_click(e, canvas, cell_width, cell_height, width, height, selected_cells))
+
+                canvas.config(scrollregion=canvas.bbox("all"))
 
                 root.mainloop()
             except (ValueError, KeyError) as e:
@@ -182,3 +249,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    main()
+

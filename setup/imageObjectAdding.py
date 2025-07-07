@@ -141,6 +141,9 @@ def main():
 
                 # Save the updated entities to the file after copying
                 save_asset_json(mapEntities_file_path, entities)
+                if map_data['path'] in entities:
+                    print(f"Image {asset['path']} variant coppied. Skipping...")
+                    continue
 
                 # Proceed to display the image and allow user to add objects
                 root = tk.Tk()

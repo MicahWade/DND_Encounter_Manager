@@ -1,6 +1,7 @@
 const mapSearch = document.getElementById('mapSearch');
 const mapDropdown = document.getElementById('mapDropdown');
 let debounceTimeout = null;
+let mapSize = null;
 
 const floorArrows = document.getElementById('floorArrows');
 const arrowUp = document.getElementById('arrowUp');
@@ -9,6 +10,13 @@ let currentFloors = [];
 let currentFloorIndex = 0;
 let currentMapTitle = null;
 let mainMapPath = null;
+
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+    return null;
+}
 
 async function loadFloorsForMap() {
     // Fetch all floors for this map using the given path
@@ -26,76 +34,72 @@ async function loadFloorsForMap() {
     updateFloorArrows();
 }
 
-function rotateImageIfNeeded(img, size) {
+function rotateImageIfNeeded(img) {
     if (!img) return;
-    img.style.transform = '';
-    img.style.maxWidth = '';
-    img.style.maxHeight = '';
-    img.style.width = '';
-    img.style.height = '';
     img.addEventListener('load', function handler() {
-        img.removeEventListener('load', handler);
-        const parent = img.parentElement;
-        const parentRect = parent.getBoundingClientRect();
-        if (img.naturalHeight > img.naturalWidth) {
-            img.style.transform = 'translate(-50%, -50%) rotate(90deg)';
-            img.style.maxWidth = `${parentRect.height}px`;
-            img.style.maxHeight = `${parentRect.width}px`;
-            addGridOverlay(img, size, [parentRect.width, parentRect.height], true)
-        } else {
-            img.style.transform = 'translate(-50%, -50%)';
-            img.style.maxWidth = `${parentRect.width}px`;
-            img.style.maxHeight = `${parentRect.height}px`;
-            addGridOverlay(img, size, [parentRect.height, parentRect.width], false)
-        }
-        img.style.position = 'absolute';
-        img.style.left = '50%';
-        img.style.top = '50%';
+        this.removeEventListener('load', handler);
+        addGridOverlay(this, mapSize)
     });
 }
 
-function addGridOverlay(img, size, imagesize, rotate = false) {
-    if (!img || !size) return;
-    var [cols, rows] = size.split('x').map(Number);
+function addGridOverlay(img, size) {
+    if (!img) return;
+    let [cols, rows] = size.split('x').map(Number);
     if (isNaN(cols) || isNaN(rows) || cols <= 0 || rows <= 0) {
         console.error("Invalid grid size provided. Expected format 'WxH' (e.g., '10x8').");
         return;
     }
-    const parent = img.parentElement;
-    parent.style.position = 'relative'; // Ensure parent is positioned for absolute overlay
-    // Remove any existing grid overlay
-    const existingGrid = parent.querySelector('.grid-overlay');
-    if (existingGrid) {
-        existingGrid.remove();
-    }
-    const gridOverlay = document.createElement('div');
-    gridOverlay.className = 'grid-overlay absolute inset-0 pointer-events-none';
-    gridOverlay.style.display = 'grid';
-    gridOverlay.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
-    gridOverlay.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
-    gridOverlay.style.left ='50%';
-    gridOverlay.style.top ='50%';
-    if (rotate === true){
-        gridOverlay.style.transform = 'translate(-50%, -50%) rotate(90deg)';
+
+    // Create a canvas element
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+
+    // Set canvas size based on image
+    if (img.naturalHeight > img.naturalWidth) {
+        canvas.height = img.width;
+        canvas.width = img.height;
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        [cols, rows] = [rows, cols]
     } else {
-        gridOverlay.style.transform = 'translate(-50%, -50%)';
+        canvas.width = img.width;
+        canvas.height = img.height;
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
     }
-    gridOverlay.style.height = imagesize[0] + 'px';
-    gridOverlay.style.width = imagesize[1] + 'px';
-    gridOverlay.style.zIndex = '10'; // Ensure it's above the image but below other UI elements
-    // Add grid lines
-    for (let i = 0; i < rows; i++) {
-        for (let j = 0; j < cols; j++) {
-            const cell = document.createElement('div');
-            cell.style.border = '1px solid rgba(0, 0, 0, 0.3)'; // Subtle black lines
-            cell.style.boxSizing = 'border-box'; // Include padding and border in the element's total width and height
-            gridOverlay.appendChild(cell);
-        }
+
+    // Draw grid lines
+    const cellWidth = canvas.width / cols;
+    const cellHeight = canvas.height / rows;
+
+    
+    for (let i = 0; i <= cols; i++) {
+        ctx.beginPath();
+        ctx.moveTo(i * cellWidth, 0);
+        ctx.lineTo(i * cellWidth, canvas.height);
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.3)';
+        ctx.stroke();
     }
-    parent.appendChild(gridOverlay);
+    
+    for (let j = 0; j <= rows; j++) {
+        ctx.beginPath();
+        ctx.moveTo(0, j * cellHeight);
+        ctx.lineTo(canvas.width, j * cellHeight);
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.3)';
+        ctx.stroke();
+    }
+    
+    ctx.rotate(Math.PI / 2);
+
+    // Replace the original image with the canvas and keep its data
+    const newImg = document.createElement('img');
+    newImg.src = canvas.toDataURL('image/png');
+
+    for (let i = 0; i < img.classList.length; i++) {
+        newImg.classList.add(img.classList[i]);
+    }
+    newImg.id = img.id;
+    newImg.alt = img.alt;
+    img.parentNode.replaceChild(newImg, img);
 }
-
-
 function updateFloorArrows() {
     if (!currentFloors || currentFloors.length <= 1) {
         arrowUp.classList.add('hidden');
@@ -119,12 +123,17 @@ function updateFloorArrows() {
 function setMapImageByFloor(idx) {
     if (!currentFloors[idx]) return;
     const [floorNumber, path] = currentFloors[idx];
-    const img = document.querySelector('.content-center img');
-    if (img) {
-        img.src = `../static/${mainMapPath}`;
-        img.alt = currentMapTitle || '';
-        rotateImageIfNeeded(img);
-    }
+    
+    const mapContainer = document.getElementById('mapContainer');
+    const img = document.createElement('img');
+    img.src = `../static/${mainMapPath}`;
+    img.alt = currentMapTitle || '';
+    img.classList.add('max-w-full', 'max-h-full'); // Ensure image is contained
+    rotateImageIfNeeded(img);
+
+    // Clear previous image
+    mapContainer.innerHTML = '';
+    mapContainer.appendChild(img);
 }
 
 arrowUp.addEventListener('click', (e) => {
@@ -153,19 +162,20 @@ mapDropdown.addEventListener('click', async (e) => {
         mapSearch.value = title;
         mapDropdown.classList.add('hidden');
         currentMapTitle = title;
-
-        // Fetch map info and set image
+        
+        // Fetch map info and  setimage
         try {
             const response = await fetch(`/map/get/${encodeURIComponent(title)}`);
             if (response.ok) {
                 const mapInfo = await response.json();
                 mainMapPath = mapInfo.image_path;
+                mapSize = mapInfo.size; 
                 if (mainMapPath) {
-                    const img = document.querySelector('.content-center img');
+                    const img = document.getElementById('mapImage');
                     if (img) {
                         img.src = `../static/${mainMapPath}`;
                         img.alt = title;
-                        rotateImageIfNeeded(img, mapInfo.size)
+                        rotateImageIfNeeded(img)
                     }
                     if (mapInfo.floor != 0){
                         await loadFloorsForMap();

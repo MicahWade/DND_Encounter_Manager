@@ -17,12 +17,12 @@ function getCookie(name) {
     if (parts.length === 2) return parts.pop().split(';').shift();
     return null;
 }
-
 async function loadFloorsForMap() {
     // Fetch all floors for this map using the given path
     const floorResp = await fetch(`/map/floor/get/${encodeURIComponent(mainMapPath.split(".")[0])}`);
     if (!floorResp.ok) return;
     const floors = await floorResp.json();
+    console.log(floors);
 
     // Find current floor index
     let floorIdx = 0;
@@ -33,15 +33,6 @@ async function loadFloorsForMap() {
     currentFloorIndex = floorIdx >= 0 ? floorIdx : 0;
     updateFloorArrows();
 }
-
-function rotateImageIfNeeded(img) {
-    if (!img) return;
-    img.addEventListener('load', function handler() {
-        this.removeEventListener('load', handler);
-        addGridOverlay(this, mapSize)
-    });
-}
-
 function addGridOverlay(img, size) {
     if (!img) return;
     let [cols, rows] = size.split('x').map(Number);
@@ -53,18 +44,9 @@ function addGridOverlay(img, size) {
     // Create a canvas element
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
-
-    // Set canvas size based on image
-    if (img.naturalHeight > img.naturalWidth) {
-        canvas.height = img.width;
-        canvas.width = img.height;
-        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-        [cols, rows] = [rows, cols]
-    } else {
-        canvas.width = img.width;
-        canvas.height = img.height;
-        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-    }
+    canvas.width = img.width;
+    canvas.height = img.height;
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
     // Draw grid lines
     const cellWidth = canvas.width / cols;
@@ -86,8 +68,6 @@ function addGridOverlay(img, size) {
         ctx.strokeStyle = 'rgba(0, 0, 0, 0.3)';
         ctx.stroke();
     }
-    
-    ctx.rotate(Math.PI / 2);
 
     // Replace the original image with the canvas and keep its data
     const newImg = document.createElement('img');
@@ -96,7 +76,7 @@ function addGridOverlay(img, size) {
     for (let i = 0; i < img.classList.length; i++) {
         newImg.classList.add(img.classList[i]);
     }
-    newImg.id = img.id;
+    newImg.id = "mapImage";
     newImg.alt = img.alt;
     img.parentNode.replaceChild(newImg, img);
 }
@@ -106,13 +86,11 @@ function updateFloorArrows() {
         arrowDown.classList.add('hidden');
         return;
     }
-    // Show/hide up arrow
     if (currentFloorIndex < currentFloors.length - 1) {
         arrowUp.classList.remove('hidden');
     } else {
         arrowUp.classList.add('hidden');
     }
-    // Show/hide down arrow
     if (currentFloorIndex > 0) {
         arrowDown.classList.remove('hidden');
     } else {
@@ -128,11 +106,11 @@ function setMapImageByFloor(idx) {
     const img = document.createElement('img');
     img.src = `../static/${mainMapPath}`;
     img.alt = currentMapTitle || '';
-    img.classList.add('max-w-full', 'max-h-full'); // Ensure image is contained
-    rotateImageIfNeeded(img);
 
     // Clear previous image
-    mapContainer.innerHTML = '';
+    if (mapContainer) {
+        mapContainer.innerHTML = '';
+    }
     mapContainer.appendChild(img);
 }
 
@@ -155,31 +133,31 @@ arrowDown.addEventListener('click', (e) => {
 
 // Fill input when clicking a dropdown item
 mapDropdown.addEventListener('click', async (e) => {
-    // Find the closest dropdown item div
     const itemDiv = e.target.closest('div.p-2');
     if (itemDiv && mapDropdown.contains(itemDiv)) {
         const title = itemDiv.querySelector('span').textContent;
         mapSearch.value = title;
         mapDropdown.classList.add('hidden');
         currentMapTitle = title;
-        
-        // Fetch map info and  setimage
+
         try {
             const response = await fetch(`/map/get/${encodeURIComponent(title)}`);
             if (response.ok) {
                 const mapInfo = await response.json();
                 mainMapPath = mapInfo.image_path;
-                mapSize = mapInfo.size; 
+                mapSize = mapInfo.size;
                 if (mainMapPath) {
                     const img = document.getElementById('mapImage');
                     if (img) {
                         img.src = `../static/${mainMapPath}`;
                         img.alt = title;
-                        rotateImageIfNeeded(img)
+                        img.addEventListener('load', function handler() {
+                            this.removeEventListener('load', handler);
+                            addGridOverlay(this, mapSize);
+                        });
                     }
-                    if (mapInfo.floor != 0){
-                        await loadFloorsForMap();
-                        setMapImageByFloor(currentFloorIndex);
+                    if (mapInfo.floor != 0) {
+                        await loadFloorsForMap(); // Load all floors and render them
                     } else {
                         currentFloors = [];
                         currentFloorIndex = 0;

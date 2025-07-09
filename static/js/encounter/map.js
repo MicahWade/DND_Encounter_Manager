@@ -6,7 +6,8 @@ let mapSize = null;
 const floorArrows = document.getElementById('floorArrows');
 const arrowUp = document.getElementById('arrowUp');
 const arrowDown = document.getElementById('arrowDown');
-let currentFloors = [];
+const mapContainer = document.getElementById('mapContainer')
+let floorImages = [];
 let currentFloorIndex = 0;
 let currentMapTitle = null;
 let mainMapPath = null;
@@ -22,18 +23,30 @@ async function loadFloorsForMap() {
     const floorResp = await fetch(`/map/floor/get/${encodeURIComponent(mainMapPath.split(".")[0])}`);
     if (!floorResp.ok) return;
     const floors = await floorResp.json();
-    console.log(floors);
-
     // Find current floor index
     let floorIdx = 0;
     if (Array.isArray(floors)) {
         floorIdx = floors.findIndex(f => f[1] === mainMapPath);
     }
-    currentFloors = floors;
     currentFloorIndex = floorIdx >= 0 ? floorIdx : 0;
+
+    floors.forEach(element => {
+        if(element[1] != mainMapPath){
+            const img = document.createElement('img');
+            img.classList.add('hidden');
+            img.src = `../static/${element[1]}`;
+            img.classList = 'max-w-full max-h-full object-contain ';
+            mapContainer.appendChild(img);
+            img.addEventListener('load', function handler() {
+                img.removeEventListener('load', handler);
+                addGridOverlay(img, element[2], true, element[0] - 1 );
+            });
+        }
+    });
+
     updateFloorArrows();
 }
-function addGridOverlay(img, size) {
+function addGridOverlay(img, size, hidden = false, floorIndex = 0) {
     if (!img) return;
     let [cols, rows] = size.split('x').map(Number);
     if (isNaN(cols) || isNaN(rows) || cols <= 0 || rows <= 0) {
@@ -52,7 +65,6 @@ function addGridOverlay(img, size) {
     const cellWidth = canvas.width / cols;
     const cellHeight = canvas.height / rows;
 
-    
     for (let i = 0; i <= cols; i++) {
         ctx.beginPath();
         ctx.moveTo(i * cellWidth, 0);
@@ -60,7 +72,7 @@ function addGridOverlay(img, size) {
         ctx.strokeStyle = 'rgba(0, 0, 0, 0.3)';
         ctx.stroke();
     }
-    
+
     for (let j = 0; j <= rows; j++) {
         ctx.beginPath();
         ctx.moveTo(0, j * cellHeight);
@@ -76,17 +88,28 @@ function addGridOverlay(img, size) {
     for (let i = 0; i < img.classList.length; i++) {
         newImg.classList.add(img.classList[i]);
     }
-    newImg.id = "mapImage";
+
+    // Position absolutely and set z-index
+    if (hidden) {
+        newImg.id = `mapImage${floorIndex}`;
+        newImg.classList.add('hidden');
+        floorImages[floorIndex] = newImg;
+        newImg.classList.add('absolute', 'left-0', 'top-0', 'w-full', 'h-full', `z-[${floorIndex}]`);
+    } else {
+        newImg.id = `mapImage${currentFloorIndex}`;
+        floorImages[currentFloorIndex] = newImg;
+    }
+
     newImg.alt = img.alt;
     img.parentNode.replaceChild(newImg, img);
 }
 function updateFloorArrows() {
-    if (!currentFloors || currentFloors.length <= 1) {
+    if (!floorImages || floorImages.length <= 1) {
         arrowUp.classList.add('hidden');
         arrowDown.classList.add('hidden');
         return;
     }
-    if (currentFloorIndex < currentFloors.length - 1) {
+    if (currentFloorIndex < floorImages.length - 1) {
         arrowUp.classList.remove('hidden');
     } else {
         arrowUp.classList.add('hidden');
@@ -98,35 +121,29 @@ function updateFloorArrows() {
     }
 }
 
-function setMapImageByFloor(idx) {
-    if (!currentFloors[idx]) return;
-    const [floorNumber, path] = currentFloors[idx];
-    
-    const mapContainer = document.getElementById('mapContainer');
-    const img = document.createElement('img');
-    img.src = `../static/${mainMapPath}`;
-    img.alt = currentMapTitle || '';
-
-    // Clear previous image
-    if (mapContainer) {
-        mapContainer.innerHTML = '';
+function setMapImageByFloor(idx, hidden) {
+    if (!floorImages[idx]) return;
+    img = floorImages[idx];
+    if (hidden){
+        img.classList.add('hidden')
+    } else{
+        img.classList.remove('hidden')
     }
-    mapContainer.appendChild(img);
 }
 
 arrowUp.addEventListener('click', (e) => {
     e.preventDefault();
-    if (currentFloorIndex < currentFloors.length - 1) {
+    if (currentFloorIndex < floorImages.length - 1) {
         currentFloorIndex++;
-        setMapImageByFloor(currentFloorIndex);
+        setMapImageByFloor(currentFloorIndex, false);
         updateFloorArrows();
     }
 });
 arrowDown.addEventListener('click', (e) => {
     e.preventDefault();
     if (currentFloorIndex > 0) {
+        setMapImageByFloor(currentFloorIndex, true);
         currentFloorIndex--;
-        setMapImageByFloor(currentFloorIndex);
         updateFloorArrows();
     }
 });
@@ -147,6 +164,7 @@ mapDropdown.addEventListener('click', async (e) => {
                 mainMapPath = mapInfo.image_path;
                 mapSize = mapInfo.size;
                 if (mainMapPath) {
+                    floorImages = new Array(mapInfo.floor + 1)
                     const img = document.getElementById('mapImage');
                     if (img) {
                         img.src = `../static/${mainMapPath}`;
@@ -159,8 +177,7 @@ mapDropdown.addEventListener('click', async (e) => {
                     if (mapInfo.floor != 0) {
                         await loadFloorsForMap(); // Load all floors and render them
                     } else {
-                        currentFloors = [];
-                        currentFloorIndex = 0;
+                        currentFloorIndex = mapInfo.floor;
                         arrowUp.classList.add('hidden');
                         arrowDown.classList.add('hidden');
                     }

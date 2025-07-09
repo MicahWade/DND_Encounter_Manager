@@ -275,7 +275,6 @@ class Database():
     def GetFloors(self, path):
         print(path)
         term = path.split("Floor")[0]
-        print(f"term {term}")
         # Join Maps and Floor to get all floors for maps matching the path term
         floors = self.server.execute(
             """

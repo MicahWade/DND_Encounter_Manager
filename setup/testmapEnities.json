@@ -1,0 +1,135 @@
+{
+    "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Dark - Floor 1 - 14x15 - 300 DPI.webp": [
+        {
+            "x": 11,
+            "y": 5,
+            "type": "level up"
+        },
+        {
+            "x": 8,
+            "y": 11,
+            "type": "level up"
+        },
+        {
+            "x": 12,
+            "y": 9,
+            "type": "entity",
+            "faction": "shopkeeper"
+        }
+    ],
+    "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Dark - Floor 2 - 14x15 - 300 DPI.webp": [
+        {
+            "x": 8,
+            "y": 11,
+            "type": "level down"
+        },
+        {
+            "x": 11,
+            "y": 5,
+            "type": "level down"
+        }
+    ],
+    "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Light - Floor 1 - 14x15 - 300 DPI.webp": [
+        {
+            "x": 11,
+            "y": 5,
+            "type": "level up"
+        },
+        {
+            "x": 8,
+            "y": 11,
+            "type": "level up"
+        },
+        {
+            "x": 12,
+            "y": 9,
+            "type": "entity",
+            "faction": "shopkeeper"
+        }
+    ],
+    "images/maps/Alchemy_Shop___Herbalist/Alchemy Shop - Herbalist - Light - Floor 2 - 14x15 - 300 DPI.webp": [
+        {
+            "x": 8,
+            "y": 11,
+            "type": "level down"
+        },
+        {
+            "x": 11,
+            "y": 5,
+            "type": "level down"
+        }
+    ],
+    "images/maps/Artist_Atelier___Art_Class/Artist Atelier - Art Class - Day - 14x16 - 300 DPI.webp": [
+        {
+            "x": 4,
+            "y": 9,
+            "type": "entry"
+        },
+        {
+            "x": 6,
+            "y": 12,
+            "type": "entity",
+            "faction": "owner"
+        },
+        {
+            "x": 10,
+            "y": 8,
+            "type": "entity",
+            "faction": "owner"
+        },
+        {
+            "x": 8,
+            "y": 5,
+            "type": "entity",
+            "faction": "owner"
+        },
+        {
+            "x": 5,
+            "y": 3,
+            "type": "level up"
+        }
+    ],
+    "images/maps/Artist_Atelier___Art_Class/Artist Atelier - Art Class - Day - Loft - 9x6 - 300 DPI.webp": [
+        {
+            "x": 4,
+            "y": 3,
+            "type": "level down"
+        },
+        {
+            "x": 7,
+            "y": 4,
+            "type": "entity",
+            "faction": "owner"
+        }
+    ],
+    "images/maps/Artist_Atelier___Art_Class/Artist Atelier - Art Class - Night - 14x16 - 300 DPI.webp": [
+        {
+            "x": 4,
+            "y": 9,
+            "type": "entry"
+        },
+        {
+            "x": 6,
+            "y": 12,
+            "type": "entity",
+            "faction": "owner"
+        },
+        {
+            "x": 10,
+            "y": 8,
+            "type": "entity",
+            "faction": "owner"
+        },
+        {
+            "x": 8,
+            "y": 5,
+            "type": "entity",
+            "faction": "owner"
+        },
+        {
+            "x": 5,
+            "y": 3,
+            "type": "level up"
+        }
+    ]
+}

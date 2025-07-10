@@ -8,6 +8,7 @@ const arrowUp = document.getElementById('arrowUp');
 const arrowDown = document.getElementById('arrowDown');
 const mapContainer = document.getElementById('mapContainer')
 let floorImages = [];
+let floorObjects = [];
 let currentFloorIndex = 0;
 let currentMapTitle = null;
 let mainMapPath = null;
@@ -31,6 +32,17 @@ async function loadFloorsForMap() {
     currentFloorIndex = floorIdx >= 0 ? floorIdx : 0;
 
     floors.forEach(element => {
+        fetch(`../map/objects/get/${element[1]}`)
+        .then(response => {
+            if (!response.ok) throw new Error("Network response was not ok");
+            return response.json();
+        })
+        .then(data => {
+            floorObjects[element[0] - 1] = data
+        })
+        .catch(error => {
+            console.error("Error fetching map data:", error);
+        });
         if(element[1] != mainMapPath){
             const img = document.createElement('img');
             img.classList.add('hidden');
@@ -164,7 +176,8 @@ mapDropdown.addEventListener('click', async (e) => {
                 mainMapPath = mapInfo.image_path;
                 mapSize = mapInfo.size;
                 if (mainMapPath) {
-                    floorImages = new Array(mapInfo.floor + 1)
+                    floorImages = new Array(mapInfo.floor + 1);
+                    floorObjects = new Array(mapInfo.floor + 1);
                     const img = document.getElementById('mapImage');
                     if (img) {
                         img.src = `../static/${mainMapPath}`;

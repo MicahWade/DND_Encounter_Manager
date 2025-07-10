@@ -4,6 +4,7 @@ import os
 from flask import *
 from werkzeug.security import generate_password_hash, check_password_hash
 import user
+from setup.mapEntitiesSQL import importMapEntities
 from setup.sqlEnter import insert_assets_from_json
 from dotenv import load_dotenv
 from defults import create_default_weapons, create_default_enemys
@@ -44,10 +45,8 @@ def searchEnemys(term):
 
 @app.route("/map/floor/get/<path:path>")
 def getFloor(path):
-    print(path)
     server = Database.Database(False)
     results = server.GetFloors(path)
-    print(results)
     return jsonify(results)
 
 @app.route("/enemys")
@@ -216,7 +215,6 @@ def getWeaponInfo():
         return redirect(url_for('login'))
     server = Database.Database(False)
     weapon = server.GetWeapon(0)
-    print(weapon)
     if request.method == "GET":
         try:
             weapon_id = request.args.get("weapon")
@@ -224,8 +222,6 @@ def getWeaponInfo():
             weapon = server.GetWeapon(int(weapon_id))
             if weapon is None:
                 return "Not found", 404
-            print(weapon)
-            print(weapon.JsonDetails())
             return jsonify(weapon.JsonDetails())
         except:
             return "Not found", 404
@@ -277,7 +273,6 @@ def register():
 
             user_obj = db.getUserByEmail(data.get("email", ""))
             resp = { "unique": user_obj is None }
-            print(resp)
             return jsonify(resp)
         else:
             return redirect(url_for('login'))
@@ -304,6 +299,13 @@ def register():
     else:
         redirect(url_for("login"))
 
+@app.route("/map/objects/get/<path:path>", methods=["GET"])
+def mapObjects(path):
+    db = Database.Database(False)
+    mapObjects = db.GetMapObjects(path)
+    print()
+    return jsonify(mapObjects)
+
 # Error Handling
 @app.errorhandler(405)
 def method_not_allowed(error):
@@ -317,6 +319,7 @@ if __name__ == "__main__":
     server = Database.Database(True)
     if server.wasfirst:
         insert_assets_from_json(server)
+        importMapEntities(server)
         create_default_enemys()
         create_default_weapons()
     app.run(debug=True, port=3333)

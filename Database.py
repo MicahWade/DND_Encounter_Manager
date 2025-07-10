@@ -68,6 +68,7 @@ class Database():
             Size TEXT
         )
         ''')
+        cursor.execute('''CREATE INDEX IF NOT EXISTS MapPath ON Maps (Path)''')
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS Floor (
             FloorNumber INTEGER,
@@ -92,6 +93,18 @@ class Database():
             Path TEXT,
             Size TEXT
         )
+        ''')
+        cursor.execute('''
+        CREATE TABLE IF NOT EXISTS MapObject(
+            MapID INTEGER,
+            Xcoordinate INTEGER,
+            Ycoordinate INTEGER,
+            Type TEXT,
+            Faction TEXT,
+            FOREIGN KEY (MapID) REFERENCES Maps(MapID))
+        ''')
+        cursor.execute('''
+        CREATE INDEX IF NOT EXISTS MapObjectIndex ON MapObject (MapID)
         ''')
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS EnemyTag (
@@ -273,7 +286,6 @@ class Database():
             encounters.append([encounter[0], encounter[1]])
         return encounters
     def GetFloors(self, path):
-        print(path)
         term = path.split("Floor")[0]
         # Join Maps and Floor to get all floors for maps matching the path term
         floors = self.server.execute(
@@ -366,6 +378,15 @@ class Database():
         except Exception as e:
             print(e)
             return []
+
+    def GetMapObjects(self, mapPath):
+        try:    
+            mapObjects = self.server.execute("SELECT o.Type, o.Xcoordinate, o.Ycoordinate, o.Faction FROM MapObject o JOIN Maps m ON m.MapID = o.MapID WHERE m.Path = ?", (mapPath,)).fetchall()
+            return mapObjects
+        except Exception as e:
+            print(e)
+            return []
+
     #endregion
 
 

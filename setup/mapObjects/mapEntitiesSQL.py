@@ -5,7 +5,7 @@ import Database
 def importMapEntities(db: Database.Database) -> None:
     conn = db.server
     try:
-        with open('setup/mapEntities.json', 'r') as f:
+        with open('setup/mapObjects/mapEntities.json', 'r') as f:
             map_data = json.load(f)
         
         cursor = conn.cursor()

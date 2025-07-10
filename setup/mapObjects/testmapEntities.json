@@ -101,35 +101,5 @@
             "type": "entity",
             "faction": "owner"
         }
-    ],
-    "images/maps/Artist_Atelier___Art_Class/Artist Atelier - Art Class - Night - 14x16 - 300 DPI.webp": [
-        {
-            "x": 4,
-            "y": 9,
-            "type": "entry"
-        },
-        {
-            "x": 6,
-            "y": 12,
-            "type": "entity",
-            "faction": "owner"
-        },
-        {
-            "x": 10,
-            "y": 8,
-            "type": "entity",
-            "faction": "owner"
-        },
-        {
-            "x": 8,
-            "y": 5,
-            "type": "entity",
-            "faction": "owner"
-        },
-        {
-            "x": 5,
-            "y": 3,
-            "type": "level up"
-        }
     ]
 }

@@ -19,6 +19,42 @@ function getCookie(name) {
     if (parts.length === 2) return parts.pop().split(';').shift();
     return null;
 }
+function highlightMapEntities(entities, floorIndex = 0) {
+    const img = floorImages[floorIndex];
+    if (!img) return;
+
+    // Retrieve the grid size for the current map
+    const size = mapSize;
+    const [cols, rows] = size.split('x').map(Number);
+
+    // Create a new canvas and draw the image
+    const canvas = document.createElement('canvas');
+    canvas.width = img.width;
+    canvas.height = img.height;
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+    // Define color mappings based on entity type
+    const colorMap = {
+        'level up': 'rgba(0, 255, 0, 0.3)', // Green
+        'entity': 'rgba(255, 0, 0, 0.3)',   // Red
+        'shopkeeper': 'rgba(0, 0, 255, 0.3)', // Blue
+        default: 'rgba(255, 255, 0, 0.3)'  // Yellow
+    };
+
+    // Process each entity
+    entities.forEach(([type, x, y, data]) => {
+        const cellWidth = canvas.width / cols;
+        const cellHeight = canvas.height / rows;
+
+        const color = colorMap[type] || colorMap.default;
+        ctx.fillStyle = color;
+        ctx.fillRect(x * cellWidth, y * cellHeight, cellWidth, cellHeight);
+    });
+
+    // Replace the image with the new canvas
+    img.src = canvas.toDataURL('image/png');
+}
 async function loadFloorsForMap() {
     // Fetch all floors for this map using the given path
     const floorResp = await fetch(`/map/floor/get/${encodeURIComponent(mainMapPath.split(".")[0])}`);
@@ -38,7 +74,9 @@ async function loadFloorsForMap() {
             return response.json();
         })
         .then(data => {
-            floorObjects[element[0] - 1] = data
+            floorObjects[element[0] - 1] = data;
+            // console.log(data);
+            highlightMapEntities(data, element[0] - 1)
         })
         .catch(error => {
             console.error("Error fetching map data:", error);

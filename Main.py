@@ -4,7 +4,7 @@ import os
 from flask import *
 from werkzeug.security import generate_password_hash, check_password_hash
 import user
-from setup.mapEntitiesSQL import importMapEntities
+from setup.mapObjects.mapEntitiesSQL import importMapEntities
 from setup.sqlEnter import insert_assets_from_json
 from dotenv import load_dotenv
 from defults import create_default_weapons, create_default_enemys

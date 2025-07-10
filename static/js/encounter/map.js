@@ -58,6 +58,15 @@ async function loadFloorsForMap() {
 
     updateFloorArrows();
 }
+
+function clear() {
+    floorImages.forEach(element => {
+        if (element.id != "mapImage0") {
+            element.remove()
+        }
+    });
+}
+
 function addGridOverlay(img, size, hidden = false, floorIndex = 0) {
     if (!img) return;
     let [cols, rows] = size.split('x').map(Number);
@@ -176,9 +185,10 @@ mapDropdown.addEventListener('click', async (e) => {
                 mainMapPath = mapInfo.image_path;
                 mapSize = mapInfo.size;
                 if (mainMapPath) {
+                    clear()
                     floorImages = new Array(mapInfo.floor + 1);
                     floorObjects = new Array(mapInfo.floor + 1);
-                    const img = document.getElementById('mapImage');
+                    const img = document.getElementById('mapImage0');
                     if (img) {
                         img.src = `../static/${mainMapPath}`;
                         img.alt = title;

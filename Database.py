@@ -403,7 +403,16 @@ class Database():
     def searchMap(self, term):
         searchterm = f"{term}%"
         titleTerm = f"%{term}%"
-        mapdb = self.server.execute(f"SELECT DISTINCT map.Title, map.Path FROM Maps map LEFT JOIN MapTags tag ON map.MapID = tag.MapID WHERE map.Title LIKE ? OR tag.Tag LIKE ? LIMIT 10", (titleTerm, searchterm)).fetchall()
+        mapdb = self.server.execute(
+            """SELECT DISTINCT map.Title, map.Path 
+               FROM Maps map 
+               LEFT JOIN MapTags tag ON map.MapID = tag.MapID 
+               LEFT JOIN Floor f ON map.MapID = f.MapID 
+               WHERE (map.Title LIKE ? OR tag.Tag LIKE ?) 
+               AND (f.FloorNumber = 1 OR f.FloorNumber IS NULL) 
+               LIMIT 10""",
+            (titleTerm, searchterm)
+        ).fetchall()
         return mapdb
 
     #endregion

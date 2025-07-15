@@ -56,41 +56,38 @@ function highlightMapEntities(entities, floorIndex = 0) {
     img.src = canvas.toDataURL('image/png');
 }
 async function loadFloorsForMap() {
-    // Fetch all floors for this map using the given path
     const floorResp = await fetch(`/map/floor/get/${encodeURIComponent(mainMapPath.split(".")[0])}`);
     if (!floorResp.ok) return;
     const floors = await floorResp.json();
-    // Find current floor index
     let floorIdx = 0;
     if (Array.isArray(floors)) {
         floorIdx = floors.findIndex(f => f[1] === mainMapPath);
     }
     currentFloorIndex = floorIdx >= 0 ? floorIdx : 0;
 
-    floors.forEach(element => {
-        fetch(`../map/objects/get/${element[1]}`)
-        .then(response => {
-            if (!response.ok) throw new Error("Network response was not ok");
-            return response.json();
-        })
-        .then(data => {
-            floorObjects[element[0] - 1] = data;
-            // console.log(data);
-            highlightMapEntities(data, element[0] - 1)
-        })
-        .catch(error => {
-            console.error("Error fetching map data:", error);
+    floors.forEach(async (element) => {
+        const response = await fetch(`../map/objects/get/${element[1]}`);
+        if (!response.ok) throw new Error("Network response was not ok");
+        const data = await response.json();
+        floorObjects[element[0] - 1] = data;
+        console.log(data);
+        highlightMapEntities(data, element[0] - 1);
+    });
+
+    // Load images and apply grid overlays
+    floors.forEach((element) => {
+        const img = document.createElement('img');
+        img.classList.add('hidden');
+        img.src = `../static/${element[1]}`;
+        img.classList = 'max-w-full max-h-full object-contain ';
+        mapContainer.appendChild(img);
+        img.addEventListener('load', function handler() {
+            this.removeEventListener('load', handler);
+            addGridOverlay(this, element[2], true, element[0] - 1);
         });
-        if(element[1] != mainMapPath){
-            const img = document.createElement('img');
-            img.classList.add('hidden');
-            img.src = `../static/${element[1]}`;
-            img.classList = 'max-w-full max-h-full object-contain ';
-            mapContainer.appendChild(img);
-            img.addEventListener('load', function handler() {
-                img.removeEventListener('load', handler);
-                addGridOverlay(img, element[2], true, element[0] - 1 );
-            });
+        // Apply overlay immediately if image is already loaded
+        if (img.complete) {
+            addGridOverlay(img, element[2], true, element[0] - 1);
         }
     });
 
@@ -99,8 +96,8 @@ async function loadFloorsForMap() {
 
 function clear() {
     floorImages.forEach(element => {
-        if (element.id != "mapImage0") {
-            element.remove()
+        if (element.id !== "mapImage0") {
+            element.remove();
         }
     });
 }
@@ -180,13 +177,14 @@ function updateFloorArrows() {
     }
 }
 
+// In the map.js file
 function setMapImageByFloor(idx, hidden) {
     if (!floorImages[idx]) return;
-    img = floorImages[idx];
-    if (hidden){
-        img.classList.add('hidden')
-    } else{
-        img.classList.remove('hidden')
+    const img = floorImages[idx];
+    if (hidden) {
+        img.classList.add('hidden');
+    } else {
+        img.classList.remove('hidden');
     }
 }
 

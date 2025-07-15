@@ -34,10 +34,13 @@ def insert_assets_from_json(db, json_path="setup/assets.json"):
                 (title, path, variants, size)
             )
             map_id = cursor.lastrowid
-            # Extract floor number from path if present (e.g., "Floor2" or "floor3")
-            floor_match = re.search(r"[Ff]loor\s*(\d+)", path)
+            # Extract floor number from path if present (e.g., "Floor2" or "cellar")
+            floor_match = re.search(r"[Ff]loor\s*(\d+)|[Cc]ellar", path)
             if floor_match:
-                floor_number = int(floor_match.group(1))
+                if floor_match.group(1) is not None:
+                    floor_number = int(floor_match.group(1))
+                else:
+                    floor_number = 0  # Treat "cellar" as floor zero
                 db.server.execute(
                     "INSERT INTO Floor (FloorNumber, MapID) VALUES (?, ?)",
                     (floor_number, map_id)

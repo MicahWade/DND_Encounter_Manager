@@ -1,7 +1,8 @@
 import json
+import os
 from PIL import Image, ImageDraw, ImageFont, ImageTk
 import tkinter as tk
-import os
+from tkinter import messagebox
 
 def extract_base_path(path: str) -> str:
     parts = path.split(" - ")
@@ -138,7 +139,7 @@ def handle_user_input(map_data, box_number, width):
 
     save_asset_json(mapEntities_file_path, entities)
 
-def main():
+def ObjectAddind():
     assets = read_asset_json('assets.json')
     for asset in assets:
         if asset['type'] == 'map':
@@ -247,7 +248,90 @@ def main():
             except (ValueError, KeyError) as e:
                 print(f"Error displaying grid or image for {asset.get('title', 'Unknown')}: {e}")
 
+def levelFloors():
+    assets = read_asset_json('../assets.json')
+    floor_data = {}
+
+    for asset in assets:
+        if asset['type'] == 'map' and ('floor' in asset['path'].lower() or 'cellar' in asset['path'].lower()):
+            base_path = extract_base_path(asset['path'])
+            if base_path not in floor_data:
+                floor_data[base_path] = []
+            floor_data[base_path].append({
+                "path": asset['path'],
+                "size": int(asset['size'].split('x')[0])
+            })
+
+    for base_path, floors in floor_data.items():
+        size_set = {floor['size'] for floor in floors}
+        if len(size_set) != len(floors):
+            print(f"Some floors have the same size. Skipping pop-up.")
+            continue
+
+        # If all sizes are different, create a new window with floor images
+        root = tk.Tk()
+        root.title("Floor Images")
+
+        for floor in floors:
+            image_path = '../../static/' + floor['path']
+            try:
+                img = Image.open(image_path).resize((200, 200), Image.LANCZOS)
+                photo = ImageTk.PhotoImage(img)
+
+                def apply_attribute(floor):
+                    selected_cells = []
+                    print(f"Select cells for {floor['path']}. Press 'a' to apply attribute or any other key to skip.")
+                    
+                    def on_key(event):
+                        if event.char == 'a':
+                            apply_attribute(selected_cells)
+                        else:
+                            root.destroy()
+
+                    root.bind('<KeyPress>', on_key)
+
+                    def click_callback(event, selected_cells):
+                        box_number = (event.y // 20) * 10 + (event.x // 20)
+                        box_y = (box_number // 10) + 1
+                        box_x = (box_number % 10) + 1
+                        if (box_x, box_y) in selected_cells:
+                            selected_cells.remove((box_x, box_y))
+                            print(f"Removed cell ({box_x}, {box_y})")
+                        else:
+                            selected_cells.append((box_x, box_y))
+                            print(f"Added cell ({box_x}, {box_y})")
+
+                    canvas = tk.Canvas(root, width=200, height=200)
+                    canvas.pack()
+                    
+                    for i in range(10):
+                        for j in range(10):
+                            x1, y1, x2, y2 = i * 20, j * 20, (i + 1) * 20, (j + 1) * 20
+                            canvas.create_rectangle(x1, y1, x2, y2, outline="black")
+                            canvas.tag_bind(f"rect_{i}_{j}", '<Button-1>', lambda event: click_callback(event, selected_cells))
+                            canvas.addtag_withtag(f"rect_{i}_{j}", f"box_{i}_{j}")
+                        
+                    root.mainloop()
+
+                button = tk.Button(root, image=photo, command=lambda floor=floor: apply_attribute(floor), compound=tk.CENTER)
+                button.image = photo
+                button.pack(side=tk.LEFT, padx=10, pady=10)
+
+            except Exception as e:
+                print(f"Error loading {image_path}: {e}")
+
+def main():
+    popups = True
+    print("Enter Object or level for Getting Level")
+    while popups:
+        data = input() 
+        if data != None:
+            popups = False
+            if data == "Object":
+                ObjectAddind()
+            if data == "level":
+                levelFloors()
+
+
 if __name__ == "__main__":
     main()
-    main()
-

@@ -76,18 +76,20 @@ async function loadFloorsForMap() {
 
     // Load images and apply grid overlays
     floors.forEach((element) => {
-        const img = document.createElement('img');
-        img.classList.add('hidden');
-        img.src = `../static/${element[1]}`;
-        img.classList = 'max-w-full max-h-full object-contain ';
-        mapContainer.appendChild(img);
-        img.addEventListener('load', function handler() {
-            this.removeEventListener('load', handler);
-            addGridOverlay(this, element[2], true, element[0] - 1);
-        });
-        // Apply overlay immediately if image is already loaded
-        if (img.complete) {
-            addGridOverlay(img, element[2], true, element[0] - 1);
+        if(element[0] !== 1){
+            const img = document.createElement('img');
+            img.classList.add('hidden');
+            img.src = `../static/${element[1]}`;
+            img.classList = 'max-w-full max-h-full object-contain ';
+            mapContainer.appendChild(img);
+            img.addEventListener('load', function handler() {
+                this.removeEventListener('load', handler);
+                addGridOverlay(this, element[2], true, element[0] - 1);
+            });
+            // Apply overlay immediately if image is already loaded
+            if (img.complete) {
+                addGridOverlay(img, element[2], true, element[0] - 1);
+            }
         }
     });
 
@@ -103,18 +105,22 @@ function clear() {
 }
 
 function addGridOverlay(img, size, hidden = false, floorIndex = 0) {
-    if (!img) return;
-    let [cols, rows] = size.split('x').map(Number);
+    // Safety check: ensure the image is in the DOM
+    if (!img || !img.parentNode) {
+        return;
+    }
+
+    const [cols, rows] = size.split('x').map(Number);
     if (isNaN(cols) || isNaN(rows) || cols <= 0 || rows <= 0) {
         console.error("Invalid grid size provided. Expected format 'WxH' (e.g., '10x8').");
         return;
     }
 
-    // Create a canvas element
+    // Create a canvas
     const canvas = document.createElement('canvas');
-    const ctx = canvas.getContext('2d');
     canvas.width = img.width;
     canvas.height = img.height;
+    const ctx = canvas.getContext('2d');
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
     // Draw grid lines
@@ -137,27 +143,18 @@ function addGridOverlay(img, size, hidden = false, floorIndex = 0) {
         ctx.stroke();
     }
 
-    // Replace the original image with the canvas and keep its data
-    const newImg = document.createElement('img');
-    newImg.src = canvas.toDataURL('image/png');
-
-    for (let i = 0; i < img.classList.length; i++) {
-        newImg.classList.add(img.classList[i]);
-    }
-
-    // Position absolutely and set z-index
     if (hidden) {
-        newImg.id = `mapImage${floorIndex}`;
-        newImg.classList.add('hidden');
-        floorImages[floorIndex] = newImg;
-        newImg.classList.add('absolute', 'left-0', 'top-0', 'w-full', 'h-full', `z-[${floorIndex}]`);
+        img.id = `mapImage${floorIndex}`;
+        img.classList.add('hidden');
+        floorImages[floorIndex] = img;
+        img.classList.add('absolute', 'left-0', 'top-0', 'w-full', 'h-full', `z-[${floorIndex}]`);
     } else {
-        newImg.id = `mapImage${currentFloorIndex}`;
-        floorImages[currentFloorIndex] = newImg;
+        img.id = `mapImage${floorIndex}`;
+        floorImages[floorIndex] = img;
     }
 
-    newImg.alt = img.alt;
-    img.parentNode.replaceChild(newImg, img);
+    // Update the image's src to the canvas data URL (no need to replace the image)
+    img.src = canvas.toDataURL('image/png');
 }
 function updateFloorArrows() {
     if (!floorImages || floorImages.length <= 1) {
